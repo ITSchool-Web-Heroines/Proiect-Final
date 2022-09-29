@@ -1,0 +1,23 @@
+{
+  "source": "./src/index.html",
+  "browserslist": [
+    "> 1% in RO",
+    "> 0.1%"
+  ],
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build --no-optimize"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "latest",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

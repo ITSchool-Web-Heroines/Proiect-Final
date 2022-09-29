@@ -1,7 +1,8 @@
-import { createElement, Component } from "react";
+import { Component } from "react";
 import { createRoot } from "react-dom/client";
+import Navbar from "./Navbar";
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <div>
