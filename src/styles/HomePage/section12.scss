@@ -1,0 +1,39 @@
+#section12 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    .col1,
+    .col2,
+    .col3,
+    .col4 {
+        flex-basis: 25%;
+        text-align: center;
+        color: white;
+        padding-block: 2rem;
+        padding-inline: 2rem;
+
+        p {
+            margin-block: 0.5rem;
+            font-family: customFont2;
+        }
+    }
+
+    .col1 {
+        background-color: #8F2539;
+    }
+
+    .col2 {
+        background-color: #CA4B60;
+    }
+
+    .col3 {
+        background-color: #D2687A;
+    }
+
+    .col4 {
+        background-color: #EC8594;
+    }
+}

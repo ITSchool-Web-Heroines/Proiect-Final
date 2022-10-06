@@ -1,0 +1,123 @@
+@font-face {
+    font-family: customFont;
+    src: url("../Reey-Regular.otf") format('opentype')
+}
+
+@font-face {
+    font-family: customFont2;
+    src: url("../Gotham Book Font.otf") format('opentype')
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    margin-block-end: 0;
+    background: #D2687A;
+    color: white;
+    padding: 40px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+
+    .row {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .col {
+        flex-basis: 25%;
+        padding: 10px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 4vh;
+        margin-block-end: 10px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 2vh;
+        font-family: customFont2;
+    }
+
+    h4 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .email-id {
+        text-align: center;
+        border-bottom: 1px solid white;
+        margin-inline: 2rem;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 2vh;
+        font-family: customFont2;
+    }
+
+    form {
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        margin-bottom: 50px;
+
+    }
+
+    input[type=email] {
+        height: 4vh;
+        background-color: #D2687A;
+        outline: none;
+        border: none;
+        color: white;
+        font-family: customFont2;
+    }
+
+    ::-webkit-input-placeholder {
+        color: white;
+        font-family: customFont2;
+        text-align: center;
+    }
+
+    button {
+        background-color: #EC8594;
+        color: white;
+        outline: none;
+        border: none;
+        padding-block: 0.5rem;
+        padding-inline: 0.8rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        cursor: pointer;
+
+    }
+
+    hr {
+            margin-inline: 4rem;
+            outline-style: dotted;
+            color: white;
+            outline-color: white;
+    }
+
+    .copyright {
+        padding-block-start: 1rem;
+    }
+
+}

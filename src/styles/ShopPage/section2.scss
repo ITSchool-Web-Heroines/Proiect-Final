@@ -1,0 +1,36 @@
+#section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:white;
+    width:100%;
+    padding-block-start: 4rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    img {
+        position: absolute;
+        margin-block-start: -8rem;
+        align-self: center;
+        width:15%;
+    }
+    .award {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../../images/AwardWinner-Background-Desktop.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height:32vh;
+
+        h3 {
+            font-size: 3vh;
+            padding-block-end: 1rem;
+        }
+        h4 {
+            font-family: customFont2;
+            font-size: 2vh;
+        }
+    }
+}

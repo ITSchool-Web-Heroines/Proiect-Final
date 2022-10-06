@@ -1,0 +1,33 @@
+#header {
+    padding-block: 9rem;
+    display: flex;
+    flex-direction: column;
+    background-size:cover;
+    background-image: url(../../images/20220516-50OffPML_DesktopSlider.png);
+    width:100%;
+
+    h2 {
+        padding-inline-start:0.5rem ;
+        font-family: customFont2;
+        color: white;
+        font-size: 6vh;
+        align-self: center;
+        justify-self: flex-start;
+
+    }
+    button {
+        align-self: center;
+        font-size: 4vh;
+        font-family: customFont;
+        font-style:oblique;
+        margin-block-start: 1rem;
+        color:white;
+        margin-inline-start: -0.5rem;
+        padding-block: 1rem;
+        padding-inline: 2rem;
+        background-color: transparent;
+        border-color: white;
+        border-style: double;
+        cursor: pointer;
+    }
+}

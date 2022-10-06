@@ -1,0 +1,27 @@
+#section1 {
+    padding-block-start: 4rem;
+    padding-block-end: 4rem;
+    background: #EC8594;
+    ;
+    text-align: center;
+    padding-inline: 4rem;
+
+    .quote1 {
+        font-family: customFont2;
+        font-size: 8vh;
+        color: white;
+    }
+
+    .quote2 {
+        font-family: customFont2;
+        font-size: 6vh;
+        color: white;
+    }
+
+    .info {
+        padding-block-start: 1rem;
+        font-family: customFont2;
+        font-size: 3vh;
+        color: white;
+    }
+}

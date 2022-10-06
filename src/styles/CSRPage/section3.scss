@@ -1,0 +1,75 @@
+#section3 {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    margin-inline: none;
+
+    .col {
+        width:50%;
+        display: flex;
+        flex-direction: column;
+        display: grid;
+        margin-inline: none;
+    }
+
+    .yes {
+        width:100%;
+        color: white;
+        font-family: customFont2;
+        padding-block: 1rem;
+        text-align: center;
+        font-size: 5vh;
+        background-color: #D2687A;
+        grid-column: 1/3;
+    }
+
+    .no {
+        width:100%;
+        color: white;
+        font-family: customFont2;
+        padding-block: 1rem;
+        text-align: center;
+        font-size: 5vh;
+        background-color: #8F2539;
+        grid-column: 1/3;
+    }
+
+    .infoyes1 {
+        width: 100%;
+        padding-block: 1rem;
+        font-family: customFont2;
+        background-color: #EC8594;
+        grid-column: 1/2;
+        padding-inline: 2rem;
+    }
+
+    .infoyes2 {
+        width: 100%;
+        padding-block: 1rem;
+        background-color: #EC8594;
+        grid-column: 2/3;
+        padding-inline: 2rem;
+    }
+
+    .infono1 {
+        width: 100%;
+        font-family: customFont2;
+        padding-block: 1rem;
+        background-color: #CA4B60;
+        grid-column: 1/2;
+        padding-inline: 2rem;
+    }
+
+    .infono2 {
+        width: 100%;
+        padding-block: 1rem;
+        background-color: #CA4B60;
+        grid-column: 2/3;
+        padding-inline: 2rem;
+    }
+
+    p {
+        font-family: customFont2;
+    }
+}
+  

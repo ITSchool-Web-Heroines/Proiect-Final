@@ -1,0 +1,24 @@
+#section2 {
+    width: 100%;
+    display: flex;
+    padding-block: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-inline-end: 8rem;
+    background-image: url(../../images/20210303_LipLab_HP_Banner_Price_Desktop_1800x350.png);
+    background-size: cover;
+
+    h2 {
+        flex-basis: 50%;
+        font-family: customFont2;
+        color: #CA4B60;
+    }
+
+    h3 {
+        flex-basis: 50%;
+        font-family: customFont2;
+        color: #EC8594;
+    }
+
+}

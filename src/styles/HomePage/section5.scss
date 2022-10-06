@@ -1,0 +1,68 @@
+#section5 {
+    .row {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .c1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 32.9vw;
+                height: 70vh;
+                background: url(../../images/1.jpg);
+
+                button {
+                    padding-block: 1rem;
+                    outline: none;
+                    border: none;
+                    color: white;
+                    background: transparent;
+                    font-size: 6vh;
+                }
+            }
+
+            .c2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 32.9vw;
+                height: 70vh;
+                background: url(../../images/GiftCards.png);
+
+                button {
+                    padding-block: 1rem;
+                    outline: none;
+                    border: none;
+                    color: white;
+                    background: transparent;
+                    font-size: 6vh;
+                }
+            }
+
+            .c3 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 32.9vw;
+                height: 70vh;
+                background: url(../../images/2.jpg);
+
+                button {
+                    padding-block: 1rem;
+                    outline: none;
+                    border: none;
+                    color: white;
+                    background: transparent;
+                    font-size: 6vh;
+                }
+            }
+        }
+    }
+}

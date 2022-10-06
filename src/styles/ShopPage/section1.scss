@@ -1,0 +1,42 @@
+#section1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    .col1,
+    .col2,
+    .col3,
+    .col4 {
+        flex-basis: 25%;
+        text-align: center;
+        color: white;
+        padding-block: 2rem;
+        padding-inline: 1rem;
+
+        h2 {
+            font-size: 3vh;
+        }
+
+        p {
+            margin-block-start: 1rem;
+            font-family: customFont2;
+        }
+    }
+
+    .col1 {
+        background-color: #8F2539;
+    }
+
+    .col2 {
+        background-color: #CA4B60;
+    }
+
+    .col3 {
+        background-color: #D2687A;
+    }
+
+    .col4 {
+        background-color: #EC8594;
+    }
+}

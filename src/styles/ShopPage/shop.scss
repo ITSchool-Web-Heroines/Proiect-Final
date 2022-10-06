@@ -1,0 +1,71 @@
+#shop {
+    .title {
+        font-family: customFont2;
+        font-size: 8vh;
+        color: #8F2539;
+        text-align: center;
+        padding-block: 2rem;
+        background: white;
+    }
+}
+.pro-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    .pro {
+        width:25%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: none;
+        background: white;
+        cursor: pointer;
+        position: relative;
+        /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);*/
+
+        img {
+            width:100%;
+            border-radius: 20px;
+            
+        }
+        .hoverpicture {
+            width:90%;
+            margin-block: 0.1rem;
+            left:0;
+            margin-inline: 0.9rem;
+            position: absolute;
+            opacity:0;
+            transition: all .3s ease-in;
+        }
+        :hover {
+        opacity:1;
+        }
+
+        .description {
+            h5 {
+                font-family: customFont;
+                font-size: 4vh;;
+            }
+            .star {
+                margin-block-start: 1rem;
+                color:#8F2539;
+            }
+            h4 {
+                font-family: customFont2;
+                font-size: 3vh;
+            }
+            button {
+                width:40px;
+                height:40px;
+                background: transparent;
+                color:#8F2539;
+                border: none;
+                cursor: pointer;
+            }
+        
+        }
+
+
+
+    }
+}

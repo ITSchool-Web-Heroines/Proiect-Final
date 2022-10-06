@@ -1,0 +1,26 @@
+{
+    "source": "src/index.html",
+    "browserslist": "> 5%",
+    "scripts": {
+        "start": "parcel",
+        "build": "parcel build",
+        "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+    },
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.7.0",
+        "parcel": "^2.7.0",
+        "process": "^0.11.10",
+        "push-dir": "^0.4.1"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.2.0",
+        "@fortawesome/free-solid-svg-icons": "^6.2.0",
+        "@fortawesome/react-fontawesome": "^0.2.0",
+        "@popperjs/core": "^2.11.6",
+        "bootstrap": "^5.2.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-icons": "^4.4.0",
+        "styled-components": "^5.3.6"
+    }
+}
