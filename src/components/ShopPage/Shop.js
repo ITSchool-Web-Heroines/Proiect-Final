@@ -79,16 +79,16 @@ import tatinlips from "../../images/lipliner/tatin lips.jpg"
 import {FaHeart, FaShoppingBag} from "react-icons/fa"
 
 
-
-
 const Shop = () => {
     return (
        <div id="shop">
+        <a href="../../lipstick.html">Lipstick</a>
+        <a href="../../lipliner.html">Lipliner</a>
         <h2 class="title">Our beloved standard lippie goodies</h2>
         <div class="pro-container">
-            <div class="pro">
+            <div class="pro" id="beetroot">
                 <img src={beetroot}/>
-                <img class="hoverpicture " src={beetrootlips}/>
+                    <img class="hoverpicture " src={beetrootlips}/>
                 <div class="description">
                     <h5>Beetroot</h5>
                     <div class="star">
