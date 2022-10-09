@@ -53,12 +53,16 @@
             h4 {
                 font-family: customFont2;
                 font-size: 3vh;
+                padding-block-end: 0.5rem;
             }
             button {
-                width:40px;
-                height:40px;
-                background: transparent;
-                color:#8F2539;
+                font-size: 3.5vh;
+                text-align: center;
+                padding-block: 1.5rem;
+                padding-inline: 1rem;
+                margin-inline: 4rem;
+                background-color:#8F2539;
+                color: white;
                 border: none;
                 cursor: pointer;
             }

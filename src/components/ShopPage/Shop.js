@@ -84,6 +84,7 @@ const Shop = () => {
        <div id="shop">
         <a href="../../lipstick.html">Lipstick</a>
         <a href="../../lipliner.html">Lipliner</a>
+        <a href="../../agavecream.html">Agave</a>
         <h2 class="title">Our beloved standard lippie goodies</h2>
         <div class="pro-container">
             <div class="pro" id="beetroot">
@@ -99,7 +100,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                    <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -115,7 +116,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -131,7 +132,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -147,7 +148,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -163,7 +164,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -179,7 +180,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -195,7 +196,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -211,7 +212,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -227,7 +228,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -243,7 +244,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -259,7 +260,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -275,7 +276,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -291,7 +292,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -307,7 +308,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -323,7 +324,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -339,7 +340,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -355,7 +356,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -371,7 +372,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -387,7 +388,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -403,7 +404,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -419,7 +420,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -435,7 +436,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -451,7 +452,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -467,7 +468,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -483,7 +484,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -499,7 +500,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -515,7 +516,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -531,7 +532,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -547,7 +548,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -563,7 +564,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -579,7 +580,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -595,7 +596,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -611,7 +612,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -627,7 +628,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -643,7 +644,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
             <div class="pro">
@@ -659,7 +660,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                    <button href="#"><FaShoppingBag/></button> 
+                        <button href="#">Add to cart</button> 
                 </div>
             </div>
         </div>
