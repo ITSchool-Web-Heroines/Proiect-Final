@@ -1,0 +1,368 @@
+@use "../styles/mixins.scss" as *;
+// ANIMATIONS
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes left-in {
+  from {
+    inset-inline-start: -30%;
+  }
+  to {
+    inset-inline-start: 50%;
+  }
+}
+@keyframes right-in {
+  from {
+    inset-inline-start: 80%;
+  }
+  to {
+    inset-inline-start: 50%;
+  }
+}
+@keyframes drop-in {
+  from {
+    inset-block-start: 0%;
+  }
+  to {
+    inset-block-start: 50%;
+  }
+}
+// CONTENT
+.banner_box {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+.banner_content {
+  width: 18rem;
+  height: 100vh;
+  margin: 0rem auto;
+  align-self: end;
+  div {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+  }
+}
+nav {
+  .about,
+  .projects {
+    width: 7rem;
+    height: 1.5rem;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    @include font-details(#000, "ag-regular", 1.25rem, uppercase);
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 8;
+    border-block-end: 0.15rem solid #000;
+    transition: filter 0.5s;
+    animation: fade-in 3s ease-in;
+  }
+  .about {
+    inset-block-start: 5.5rem;
+    transform: translateX(0.15rem) rotate(-90deg);
+    -webkit-backface-visibility: hidden;
+    will-change: transform;
+    -webkit-perspective: 1000;
+    &:hover {
+      filter: drop-shadow(-1rem -2rem 0rem rgba(0, 0, 0, 0.2));
+    }
+  }
+  .projects {
+    inset-block-end: 5rem;
+    &:hover {
+      filter: drop-shadow(1rem 2rem 0rem rgba(0, 0, 0, 0.2));
+    }
+  }
+}
+.concept,
+.line {
+  animation: fade-in 3s ease-in;
+}
+.concept {
+  inset-block-start: 9rem;
+  transform: translateX(5rem);
+  position: absolute;
+  @include font-details(rgba(0, 0, 0, 0.3), "bc-bold", 0.7rem, uppercase);
+  letter-spacing: 7px;
+}
+.line {
+  position: absolute;
+  width: 1rem;
+  inset-inline-end: 5rem;
+  transform: translate(18rem, 3.3rem);
+  letter-spacing: 5px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  @include font-details(rgba(0, 0, 0, 0.3), "bc-bold", 0.7rem, uppercase);
+}
+
+.details_background {
+  background-image: url(../public/images/home/background.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: translate(-27%, -45%);
+  width: 12rem;
+  height: 18rem;
+  z-index: 0;
+  transition: all 1s;
+  animation-name: drop-in, fade-in;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  @media (min-height: 710px) {
+    height: 25rem;
+  }
+  @media (min-height: 800px) {
+    height: 33rem;
+  }
+  @media (min-height: 850px) {
+    height: 35rem;
+  }
+  @media (min-height: 880px) {
+    height: 38rem;
+  }
+}
+.details_logo {
+  background-image: url(../public/images/home/sn.png);
+  background-size: cover;
+  background-position: center;
+  transform: translate(-49%, -3%);
+  width: 20rem;
+  height: 7rem;
+  z-index: 0;
+  animation-name: left-in, fade-in;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+.details_text {
+  @include font-details(#000, "bc-medium", 0.7rem, uppercase);
+  letter-spacing: 2px;
+  z-index: 1;
+  transform: translate(3.15rem, 5.5rem);
+  animation-name: right-in, fade-in;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+// RESPONSIVE
+@media (max-width: 320px) {
+  .line {
+    transform: translate(17.6rem, 3.3rem);
+  }
+  nav .projects {
+    transform: translateX(2rem);
+  }
+  .details_text {
+    transform: translate(2.8rem, 5.5rem);
+  }
+  .details_background {
+    transform: translate(-28%, -45%);
+  }
+}
+@media (min-width: 375px) {
+  .banner_content {
+    width: 22.5rem;
+  }
+  .details_background {
+    transform: translate(-34%, -46%);
+    width: 15rem;
+  }
+  nav {
+    .about {
+      transform: translateX(1rem) rotate(-90deg);
+    }
+    .projects {
+      transform: translateX(1.7rem);
+    }
+  }
+  .details_logo {
+    transform: translate(-51%, -3%);
+    width: 23rem;
+    height: 9.5rem;
+  }
+  .concept {
+    transform: translateX(5.7rem);
+  }
+  .line {
+    transform: translate(21.6rem, 3.3rem);
+  }
+  .details_text {
+    transform: translate(3.5rem, 6.5rem);
+  }
+}
+@media (min-width: 550px) {
+  .banner_content {
+    width: 30rem;
+  }
+  .details_background {
+    transform: translate(-37%, -46%);
+    width: 24rem;
+  }
+
+  .details_logo {
+    transform: translate(-65%, -3%);
+    width: 25rem;
+    height: 10.5rem;
+  }
+  .line {
+    transform: translate(30.5rem, 3.3rem);
+  }
+  .details_text {
+    transform: translate(0.5rem, 7.5rem);
+  }
+}
+@media (min-width: 800px) {
+  .banner_content {
+    width: 45rem;
+  }
+  nav {
+    .about {
+      transform: translateX(6rem) rotate(-90deg);
+    }
+    .projects {
+      transform: translateX(6.7rem);
+    }
+  }
+  .details_background {
+    transform: translate(-33%, -46%);
+    width: 33rem;
+  }
+  .details_logo {
+    transform: translate(-58%, -3%);
+    width: 40rem;
+    height: 15rem;
+  }
+  .concept {
+    transform: translateX(11rem);
+    font-size: 0.8rem;
+  }
+  .line {
+    transform: translate(45rem, 3.3rem);
+    font-size: 0.8rem;
+  }
+  .details_text {
+    transform: translate(2.5rem, 10.5rem);
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1000px) {
+  .banner_content {
+    width: 50rem;
+  }
+  .details_background {
+    transform: translate(-33%, -46%);
+    width: 38rem;
+  }
+  .details_logo {
+    transform: translate(-64%, -3%);
+    width: 40rem;
+    height: 15rem;
+  }
+  .line {
+    transform: translate(51rem, 3.3rem);
+  }
+  .details_text {
+    transform: translate(0rem, 10.5rem);
+  }
+}
+@media (min-width: 1000px) and (min-height: 970px) {
+  nav {
+    .about,
+    .projects {
+      width: 8rem;
+      height: 1.75rem;
+      font-size: 1.5rem;
+    }
+  }
+  .concept {
+    transform: translateX(11.5rem);
+    font-size: 1rem;
+  }
+
+  .details_text {
+    font-size: 1.2rem;
+  }
+  .line {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1000px) and (min-height: 1100px) {
+  .banner_content {
+    width: 60rem;
+  }
+  nav {
+    .about,
+    .projects {
+      width: 9rem;
+      height: 2rem;
+      font-size: 1.75rem;
+    }
+  }
+  .concept {
+    transform: translate(12rem, 1rem);
+    font-size: 1rem;
+  }
+  .details_background {
+    width: 45rem;
+    height: 45rem;
+  }
+  .details_logo {
+    width: 55rem;
+    height: 19rem;
+  }
+  .details_text {
+    font-size: 1.2rem;
+    transform: translate(0rem, 13.5rem);
+  }
+  .line {
+    font-size: 1rem;
+    transform: translate(61rem, 3.3rem);
+  }
+}
+// PHONE LANDSCAPE
+@media (max-height: 490px) and (max-width: 1200px) and (orientation: landscape) {
+  nav {
+    .about,
+    .projects {
+      width: 5rem;
+      height: 1.15rem;
+      font-size: 1rem;
+    }
+    .projects {
+      inset-block-end: 4rem;
+    }
+  }
+  .details_background {
+    height: 11rem;
+  }
+  .details_logo {
+    width: 24rem;
+    transform: translate(-60%, -32%);
+  }
+  .concept {
+    inset-block-start: 3.5rem;
+    transform: translateX(4.6rem);
+  }
+  .details_text {
+    transform: translate(1rem, 3.5rem);
+  }
+}
+@media (max-height: 490px) and (min-width: 800px) and (orientation: landscape) {
+  .details_logo {
+    width: 26rem;
+    transform: translate(-81%, -32%);
+  }
+  .concept {
+    transform: translateX(9.6rem);
+  }
+  .details_text {
+    transform: translate(-4.5rem, 3rem);
+  }
+}

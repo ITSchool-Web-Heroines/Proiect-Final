@@ -1,0 +1,97 @@
+@use "../styles/mixins.scss" as *;
+
+// MENU
+.menu {
+  margin: auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 0.5rem;
+  width: 95vw;
+  a {
+    @include font-details(#000, "ag-regular", 1.25rem, uppercase);
+    text-decoration: none;
+    padding-block: 0.2rem;
+    &.home {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+    &.projects {
+      grid-row: 1/2;
+      grid-column: 3/4;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    transform: translateY(1.8rem);
+    background-color: #000;
+    width: 95vw;
+    height: 0.15rem;
+    animation: hor-menu-ani 2s;
+  }
+}
+@media (min-width: 800px) {
+  .menu {
+    margin: 0;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 4rem;
+    inset-inline-end: 0.5rem;
+    inset-block-start: 1rem;
+    inset-block-end: 1rem;
+    position: fixed;
+    padding: 0.5rem;
+    -webkit-backface-visibility: hidden;
+    will-change: transform;
+    -webkit-perspective: 1000;
+    &::after {
+      content: "";
+      position: absolute;
+      transform: translateY(0rem);
+      background-color: #000;
+      height: 95vh;
+      width: 0.15rem;
+      animation: ver-menu-ani 2s;
+    }
+    a {
+      position: absolute;
+      outline: 1px solid transparent;
+      -webkit-backface-visibility: hidden;
+      will-change: transform;
+      -webkit-perspective: 1000;
+      transform: rotate(-90deg);
+      &.home {
+        grid-row: 2/3;
+        grid-column: 2/3;
+      }
+      &.projects {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+      &.about {
+        grid-row: 3/4;
+        grid-column: 1/2;
+      }
+    }
+  }
+}
+@keyframes hor-menu-ani {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 95%;
+  }
+}
+@keyframes ver-menu-ani {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 97%;
+  }
+}

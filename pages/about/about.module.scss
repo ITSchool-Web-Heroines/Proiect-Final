@@ -1,0 +1,114 @@
+@use "../../styles/mixins.scss" as *;
+
+.main {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+.header {
+  height: 15rem;
+  .photo {
+    transform: translateX(1.5rem);
+    width: 11rem;
+    height: 11rem;
+    background-color: black;
+  }
+  .text {
+    position: absolute;
+    background-color: #cccccc;
+    transform: translate(-1.5rem, -7rem);
+    width: 11rem;
+    height: 11rem;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.2rem;
+    p {
+      padding-inline: 0.5rem;
+    }
+    .title {
+      @include font-details(#000, "bc-regular", 1.1rem, uppercase);
+    }
+    .sub_title {
+      @include font-details(#000, "bc-light", 0.75rem, uppercase);
+      letter-spacing: 5px;
+      padding-block-end: 0.5rem;
+    }
+  }
+}
+// ABOUT SECTIONS - COMMON
+.section_title {
+  @include font-details(#000, "bc-light", 1.2rem, uppercase);
+  letter-spacing: 2px;
+}
+.main {
+  section {
+    padding: 0.5rem;
+    display: grid;
+    gap: 0.5rem;
+    width: 14rem;
+    ul {
+      width: 13rem;
+      padding-inline-start: 1rem;
+      list-style-type: square;
+      .list_item {
+        @include font-details(#000, "bc-regular", 1rem, none);
+      }
+    }
+  }
+  .digitals {
+    li.list_item {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.box {
+  display: grid;
+  justify-items: start;
+}
+.subtitle,
+.details {
+  @include font-details(#000, "bc-regular", 1rem, none);
+}
+.institution,
+.information div p:nth-child(2) {
+  @include font-details(#000, "bc-medium", 1rem, none);
+}
+@media (min-width: 320px) {
+  .header {
+    height: 18rem;
+    .photo,
+    .text {
+      width: 14rem;
+      height: 14rem;
+    }
+    .text {
+      transform: translate(-1.7rem, -10rem);
+      p {
+        padding-inline: 1rem;
+      }
+      .title {
+        font-size: 1.25rem;
+      }
+      .sub_title {
+        font-size: 1rem;
+      }
+    }
+  }
+  .main {
+    section {
+      width: 17rem;
+      ul {
+        width: 16rem;
+      }
+    }
+  }
+}
+@media (min-width: 800px) {
+  .main {
+    padding-block: 2rem;
+  }
+}
