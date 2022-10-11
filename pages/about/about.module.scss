@@ -53,6 +53,8 @@
       width: 13rem;
       padding-inline-start: 1rem;
       list-style-type: square;
+      display: grid;
+      gap: 0.5rem;
       .list_item {
         @include font-details(#000, "bc-regular", 1rem, none);
       }
@@ -64,11 +66,6 @@
     }
   }
 }
-
-.box {
-  display: grid;
-  justify-items: start;
-}
 .subtitle,
 .details {
   @include font-details(#000, "bc-regular", 1rem, none);
@@ -76,6 +73,17 @@
 .institution,
 .information div p:nth-child(2) {
   @include font-details(#000, "bc-medium", 1rem, none);
+}
+.school,
+.languages,
+.orgs,
+.profs {
+  p,
+  li {
+    list-style-position: inside;
+    text-align: end;
+    float: right;
+  }
 }
 @media (min-width: 320px) {
   .header {
@@ -105,6 +113,51 @@
         width: 16rem;
       }
     }
+  }
+}
+@media (min-width: 420px) {
+  .header {
+    height: 24rem;
+    .photo,
+    .text {
+      width: 18rem;
+      height: 18rem;
+    }
+    .text {
+      transform: translate(-2.9rem, -12rem);
+      p {
+        padding-inline: 1rem;
+      }
+      .title {
+        font-size: 1.5rem;
+      }
+      .sub_title {
+        font-size: 1.25rem;
+      }
+    }
+    .photo {
+      transform: translateX(3.5rem);
+    }
+  }
+  .main {
+    section {
+      width: 24rem;
+      ul {
+        width: 23rem;
+        .list_item {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+  .section_title {
+    font-size: 1.5rem;
+  }
+  .subtitle,
+  .details,
+  .institution,
+  .information div p:nth-child(2) {
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 800px) {
