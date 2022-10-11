@@ -1,6 +1,6 @@
 const languages = [
   "ROMÂNĂ - limba maternă",
-  "ENGLEZĂ - nivel utilizator independent",
-  "ITALIANĂ - nivel utilizator de bază",
+  "ENGLEZĂ -  utilizator independent",
+  "ITALIANĂ -  utilizator de bază",
 ];
 export default languages;

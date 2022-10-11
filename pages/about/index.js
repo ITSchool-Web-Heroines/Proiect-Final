@@ -82,7 +82,7 @@ function MyAboutPage() {
         <section className={styles.digitals}>
           <p className={styles.section_title}>competențe digitale</p>
           <ul className={styles.abilities_list}>
-            <li className={styles.list_item}>
+            <li className={`${styles.list_item} ${styles.autodesk}`}>
               autodesk
               <ul>
                 <li className={styles.list_item}>Revit</li>
@@ -91,7 +91,7 @@ function MyAboutPage() {
                 <SkillsBar level={5} />
               </ul>
             </li>
-            <li className={styles.list_item}>
+            <li className={`${styles.list_item} ${styles.microsoft}`}>
               microsoft
               <ul>
                 <li className={styles.list_item}>word</li>
@@ -100,7 +100,7 @@ function MyAboutPage() {
                 <SkillsBar level={5} />
               </ul>
             </li>
-            <li className={styles.list_item}>
+            <li className={`${styles.list_item} ${styles.adobe}`}>
               Adobe
               <ul>
                 <li className={styles.list_item}>photoshop</li>
@@ -111,9 +111,11 @@ function MyAboutPage() {
                 <SkillsBar level={4} />
               </ul>
             </li>
-            <li className={styles.list_item}>sketchup</li>
+            <li className={`${styles.list_item} ${styles.sketchup}`}>
+              sketchup
+            </li>
             <SkillsBar level={3} />
-            <li className={styles.list_item}>lumion</li>
+            <li className={`${styles.list_item} ${styles.lumion}`}>lumion</li>
             <SkillsBar level={5} />
           </ul>
         </section>
