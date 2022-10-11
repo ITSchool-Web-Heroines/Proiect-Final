@@ -8,6 +8,7 @@ ReactDom.render(
 );
 
 
+
 /*Carousel Slider*/
 const carouselSlideshow = document.getElementsByClassName("slideshow-img");
 
@@ -23,3 +24,4 @@ function nextImage() {
     currentImageCounter = (currentImageCounter + 1) % carouselSlideshow.length;
     carouselSlideshow[currentImageCounter].style.opacity = 1;
 }
+
