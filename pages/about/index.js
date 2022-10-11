@@ -3,6 +3,7 @@ import Head from "next/head";
 
 // STYLES
 import styles from "./about.module.scss";
+
 // DATA
 import informations from "../../data/about/information";
 import schools from "../../data/about/schools";

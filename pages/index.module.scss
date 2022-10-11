@@ -272,7 +272,7 @@ nav {
     transform: translate(0rem, 10.5rem);
   }
 }
-@media (min-width: 1000px) and (min-height: 950px) {
+@media (min-width: 900px) and (min-height: 950px) {
   nav {
     .about,
     .projects {
@@ -295,7 +295,7 @@ nav {
 }
 @media (min-width: 1000px) and (min-height: 1100px) {
   .banner_content {
-    width: 60rem;
+    width: 66rem;
   }
   nav {
     .about,
@@ -310,16 +310,18 @@ nav {
     font-size: 1rem;
   }
   .details_background {
+    transform: translate(-40%, -46%);
     width: 45rem;
     height: 45rem;
   }
   .details_logo {
-    width: 55rem;
-    height: 19rem;
+    transform: translate(-67%, -3%);
+    width: 57rem;
+    height: 20rem;
   }
   .details_text {
     font-size: 1.2rem;
-    transform: translate(0rem, 13.5rem);
+    transform: translate(-2rem, 14rem);
   }
   .line {
     font-size: 1rem;

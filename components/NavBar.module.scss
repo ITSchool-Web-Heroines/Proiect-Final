@@ -4,6 +4,7 @@
 .menu {
   margin: auto;
   display: grid;
+  z-index: 5;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -11,6 +12,7 @@
   width: 95vw;
   a {
     @include font-details(#000, "ag-regular", 1.25rem, uppercase);
+    background-image: #fff;
     text-decoration: none;
     padding-block: 0.2rem;
     &.home {
@@ -58,6 +60,7 @@
       animation: ver-menu-ani 2s;
     }
     a {
+      font-size: 1.5rem;
       position: absolute;
       outline: 1px solid transparent;
       -webkit-backface-visibility: hidden;
