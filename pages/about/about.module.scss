@@ -210,6 +210,9 @@
       &::before {
         transform: translate(22rem, -3.5rem) rotate(40deg);
       }
+      &::after {
+        transform: translate(25rem, 0rem);
+      }
     }
     .school,
     .digitals,
@@ -221,7 +224,7 @@
     ul {
       align-content: center;
     }
-    .information,
+    .information > .box:nth-child(2),
     .languages {
       &::after {
         content: "";
@@ -234,9 +237,6 @@
     }
     // INDIVIDUAL
     .information {
-      &::after {
-        transform: translate(18.5rem, 11.5rem);
-      }
       > .box:nth-child(1) {
         .section_title {
           padding-inline-start: 16rem;
@@ -268,24 +268,27 @@
         }
       }
       > .box:nth-child(2) {
+        &::after {
+          transform: translate(18.5rem, 0rem);
+        }
         .section_title {
           padding-inline-start: 19.5rem;
           transform: translateY(1.7rem);
         }
         .one {
           .title {
-            padding-inline-start: 13rem;
+            padding-inline-start: 12.5rem;
           }
           .text {
-            padding-inline-start: 11rem;
+            padding-inline-start: 10.5rem;
           }
         }
         .two {
           .title {
-            padding-inline-start: 12.5rem;
+            padding-inline-start: 12rem;
           }
           .text {
-            padding-inline-start: 1rem;
+            padding-inline-start: 0.5rem;
           }
         }
       }

@@ -1,6 +1,12 @@
 import Head from "next/head";
+import Image from "next/future/image";
+
+// COMPONENTS
 import NavLink from "../components/NavLink";
+// STYLES
 import styles from "./index.module.scss";
+// IMGS
+import Logo from "../images/home/sn.png";
 
 export default function Home() {
   return (
@@ -23,7 +29,7 @@ export default function Home() {
           <span className={styles.line}>reper de artă</span>
           <span className={styles.concept}>concept</span>
           <div className={styles.details_background}></div>
-          <div className={styles.details_logo}></div>
+          <Image src={Logo} className={styles.details_logo} alt="Logo" />
           <div className={styles.details_text}>
             <p className={styles.title}>maria mădălina</p>
             <p className={styles.sub_title}>arhitect</p>

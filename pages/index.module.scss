@@ -69,7 +69,7 @@ nav {
   .about {
     inset-block-start: 5.5rem;
     transform: translateX(0.15rem) rotate(-90deg);
-    visibility: hidden;
+    backface-visibility: hidden;
     will-change: transform;
     perspective: 1000;
     &:hover {
@@ -106,7 +106,7 @@ nav {
 }
 
 .details_background {
-  background-image: url(../public/images/home/background.jpg);
+  background-image: url(../public/background.jpg);
   background-size: cover;
   background-position: center;
   transform: translate(-27%, -45%);
@@ -131,9 +131,9 @@ nav {
   }
 }
 .details_logo {
-  background-image: url(../public/images/home/sn.png);
-  background-size: cover;
-  background-position: center;
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
   transform: translate(-49%, -3%);
   width: 20rem;
   height: 7rem;
@@ -183,8 +183,8 @@ nav {
     }
   }
   .details_logo {
-    transform: translate(-51%, -3%);
-    width: 23rem;
+    transform: translate(-54%, -3%);
+    width: 28rem;
     height: 9.5rem;
   }
   .concept {
@@ -194,7 +194,7 @@ nav {
     transform: translate(21.6rem, 3.3rem);
   }
   .details_text {
-    transform: translate(3.5rem, 6.5rem);
+    transform: translate(2.5rem, 6.5rem);
   }
 }
 @media (min-width: 550px) {
@@ -205,9 +205,8 @@ nav {
     transform: translate(-37%, -46%);
     width: 24rem;
   }
-
   .details_logo {
-    transform: translate(-65%, -3%);
+    transform: translate(-69%, -3%);
     width: 25rem;
     height: 10.5rem;
   }
@@ -215,7 +214,7 @@ nav {
     transform: translate(30.5rem, 3.3rem);
   }
   .details_text {
-    transform: translate(0.5rem, 7.5rem);
+    transform: translate(-1.5rem, 7.5rem);
   }
 }
 @media (min-width: 800px) {
@@ -236,7 +235,7 @@ nav {
   }
   .details_logo {
     transform: translate(-58%, -3%);
-    width: 40rem;
+    width: 45rem;
     height: 15rem;
   }
   .concept {
@@ -262,7 +261,7 @@ nav {
   }
   .details_logo {
     transform: translate(-64%, -3%);
-    width: 40rem;
+    width: 45rem;
     height: 15rem;
   }
   .line {
@@ -358,7 +357,8 @@ nav {
 }
 @media (max-height: 490px) and (min-width: 800px) and (orientation: landscape) {
   .details_logo {
-    width: 26rem;
+    width: 32rem;
+    height: 12rem;
     transform: translate(-81%, -32%);
   }
   .concept {
