@@ -1,0 +1,16 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  padding-block: 2rem;
+  font-size: 1.4rem;
+}
+.menu-anchor:hover {
+  color: #9b2226;
+}
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
