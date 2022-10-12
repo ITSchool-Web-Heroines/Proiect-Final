@@ -1,5 +1,4 @@
 @use "../../styles/mixins.scss" as *;
-
 .main {
   display: grid;
   justify-items: center;
@@ -8,6 +7,7 @@
 }
 .header {
   height: 15rem;
+  @include fade-in();
   .photo {
     transform: translateX(1.5rem);
     width: 11rem;
@@ -49,15 +49,30 @@
     display: grid;
     gap: 0.5rem;
     width: 14rem;
-    ul {
-      width: 13rem;
-      padding-inline-start: 1rem;
-      list-style-type: square;
-      display: grid;
-      gap: 0.5rem;
-      .list_item {
-        @include font-details(#000, "bc-regular", 1rem, none);
-      }
+    opacity: 0;
+  }
+  .information,
+  .school,
+  .jobs,
+  .languages,
+  .orgs,
+  .profs,
+  .digitals,
+  .coms {
+    @include fade-in();
+    &.elementInView {
+      transition: opacity 2s;
+      opacity: 1;
+    }
+  }
+  ul {
+    width: 13rem;
+    padding-inline-start: 1rem;
+    list-style-type: square;
+    display: grid;
+    gap: 0.5rem;
+    .list_item {
+      @include font-details(#000, "bc-regular", 1rem, none);
     }
   }
   .digitals {
