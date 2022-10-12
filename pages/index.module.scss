@@ -29,7 +29,7 @@
 .banner_box {
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: var(--background);
 }
 .banner_content {
   width: 18rem;
@@ -50,11 +50,11 @@ nav {
     position: absolute;
     text-decoration: none;
     color: #fff;
-    @include font-details(#000, "ag-regular", 1.25rem, uppercase);
+    @include font-details(var(--text-color), "ag-regular", 1.25rem, uppercase);
     letter-spacing: 2px;
     text-align: center;
     z-index: 8;
-    border-block-end: 0.15rem solid #000;
+    border-block-end: 0.15rem solid var(--text-color);
     transition: filter 0.5s;
     @include fade-in();
   }
@@ -63,7 +63,7 @@ nav {
     transform: translateX(0.15rem) rotate(-90deg);
     backface-visibility: hidden;
     will-change: transform;
-    perspective: 1000;
+    perspective: 1000px;
     &:hover {
       filter: drop-shadow(-1rem -2rem 0rem rgba(0, 0, 0, 0.2));
     }
@@ -77,28 +77,27 @@ nav {
 }
 .concept,
 .line {
-  animation: fade-in 3s ease-in;
+  position: absolute;
+  @include fade-in();
+  opacity: 0.5;
+  @include font-details(var(--text-color), "bc-medium", 0.7rem, uppercase);
 }
 .concept {
   inset-block-start: 9rem;
   transform: translateX(5rem);
-  position: absolute;
-  @include font-details(rgba(0, 0, 0, 0.3), "bc-bold", 0.7rem, uppercase);
   letter-spacing: 7px;
 }
 .line {
-  position: absolute;
   width: 1rem;
   inset-inline-end: 5rem;
   transform: translate(18rem, 3.3rem);
   letter-spacing: 5px;
   writing-mode: vertical-lr;
   text-orientation: upright;
-  @include font-details(rgba(0, 0, 0, 0.3), "bc-bold", 0.7rem, uppercase);
 }
 
 .details_background {
-  background-image: url(../public/background.jpg);
+  background-image: var(--background-image);
   background-size: cover;
   background-position: center;
   transform: translate(-27%, -45%);
@@ -135,7 +134,7 @@ nav {
   animation-timing-function: ease-out;
 }
 .details_text {
-  @include font-details(#000, "bc-medium", 0.7rem, uppercase);
+  @include font-details(var(--text-color), "bc-medium", 0.7rem, uppercase);
   letter-spacing: 2px;
   z-index: 1;
   transform: translate(3.15rem, 5.5rem);

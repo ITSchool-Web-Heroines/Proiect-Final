@@ -1,5 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import Head from "next/head";
+import useLocalStorage from "use-local-storage";
 
 // STYLES
 import styles from "./about.module.scss";
@@ -12,23 +13,15 @@ import languages from "../../data/about/languages";
 import orgs from "../../data/about/orgs";
 import coms from "../../data/about/coms";
 import profs from "../../data/about/profs";
-
+// FUNCTIONS
+import elementIsInView from "../../functions/elementIsInView";
 // COMPONENTS
+import ThemeButton from "../../components/ThemeButton";
 import NavBar from "../../components/NavBar";
 import InfoBox from "../../components/InfoBox";
 import ExpBox from "../../components/ExpBox";
 import AbilityList from "../../components/AbilityList";
 import SkillsBar from "../../components/SkillsBar";
-
-function elementIsInView(myRef, setState) {
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      const entry = entries[0];
-      setState(entry.isIntersecting);
-    });
-    observer.observe(myRef.current);
-  }, []);
-}
 
 function MyAboutPage() {
   const informationSection = useRef();
@@ -63,12 +56,27 @@ function MyAboutPage() {
   const [profsIsVisible, setProfsIsVisible] = useState();
   elementIsInView(profsSection, setProfsIsVisible);
 
+  // CHANGE THEME BUTTON
+  const [theme, setTheme] = useLocalStorage("theme", "light");
+  const changeTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
+  const aboutStyle = {
+    insetBlockStart: "10rem",
+    insetInlineStart: "1%",
+  };
   return (
-    <>
+    <div className={styles.app} data-theme={theme}>
       <Head>
         <title>Detalii</title>
       </Head>
       <NavBar />
+      <ThemeButton
+        styles={aboutStyle}
+        theme={theme}
+        handleClick={changeTheme}
+      />
       <main className={styles.main}>
         <header className={styles.header}>
           <div className={styles.photo}></div>
@@ -218,7 +226,7 @@ function MyAboutPage() {
           <AbilityList abilities={profs} />
         </section>
       </main>
-    </>
+    </div>
   );
 }
 

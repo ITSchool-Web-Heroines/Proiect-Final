@@ -1,4 +1,8 @@
 @use "../../styles/mixins.scss" as *;
+
+.app {
+  background-color: var(--background);
+}
 .main {
   display: grid;
   justify-items: center;
@@ -8,39 +12,97 @@
 .header {
   height: 15rem;
   @include fade-in();
+  animation: fade-in 2s ease-in;
   .photo {
     transform: translateX(1.5rem);
     width: 11rem;
     height: 11rem;
-    background-color: black;
+    background-color: #cccccc;
   }
   .text {
     position: absolute;
-    background-color: #cccccc;
+    background-color: var(--text-color);
     transform: translate(-1.5rem, -7rem);
     width: 11rem;
     height: 11rem;
-    z-index: -1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     gap: 0.2rem;
     p {
+      color: var(--background);
       padding-inline: 0.5rem;
     }
     .title {
-      @include font-details(#000, "bc-regular", 1.1rem, uppercase);
+      @include font-details(var(--background), "bc-regular", 1.1rem, uppercase);
     }
     .sub_title {
-      @include font-details(#000, "bc-light", 0.75rem, uppercase);
+      @include font-details(var(--background), "bc-light", 0.75rem, uppercase);
       letter-spacing: 5px;
       padding-block-end: 0.5rem;
     }
   }
 }
+// LEVEL SQUARES
+.square_box {
+  display: none;
+  span {
+    border: 0.1rem solid var(--text-color);
+    width: 1rem;
+    height: 1rem;
+    &::after {
+      content: "";
+      width: 1.1rem;
+      height: 1.1rem;
+      transform: translate(-1px, -1px);
+      position: absolute;
+      animation: square-fill 1s linear;
+      animation-delay: 0.2s;
+    }
+  }
+}
+@keyframes square-fill {
+  0% {
+    width: 0rem;
+  }
+  100% {
+    width: 1.1rem;
+  }
+}
+.square_box {
+  &.medium {
+    span:nth-child(-n + 3) {
+      &::after {
+        background-color: var(--text-color);
+      }
+    }
+  }
+  &.good {
+    span:nth-child(-n + 4) {
+      &::after {
+        content: "";
+        background-color: var(--text-color);
+      }
+    }
+  }
+  &.advanced {
+    span:nth-child(-n + 5) {
+      &::after {
+        background-color: var(--text-color);
+      }
+    }
+  }
+  &.proficient {
+    span:nth-child(-n + 6) {
+      &::after {
+        background-color: var(--text-color);
+      }
+    }
+  }
+}
 // ABOUT SECTIONS - COMMON
 .section_title {
-  @include font-details(#000, "bc-light", 1.2rem, uppercase);
+  @include font-details(var(--text-color), "bc-light", 1.2rem, uppercase);
   letter-spacing: 2px;
 }
 .main {
@@ -63,6 +125,15 @@
     &.elementInView {
       transition: opacity 2s;
       opacity: 1;
+      .abilities_list {
+        .square_box {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          gap: 1rem;
+          align-items: center;
+        }
+      }
     }
   }
   ul {
@@ -72,7 +143,7 @@
     display: grid;
     gap: 0.5rem;
     .list_item {
-      @include font-details(#000, "bc-regular", 1rem, none);
+      @include font-details(var(--text-color), "bc-regular", 1rem, none);
     }
   }
   .digitals {
@@ -83,11 +154,11 @@
 }
 .subtitle,
 .details {
-  @include font-details(#000, "bc-regular", 1rem, none);
+  @include font-details(var(--text-color), "bc-regular", 1rem, none);
 }
 .institution,
 .information div p:nth-child(2) {
-  @include font-details(#000, "bc-medium", 1rem, none);
+  @include font-details(var(--text-color), "bc-medium", 1rem, none);
 }
 .school,
 .languages,
@@ -200,7 +271,7 @@
       &::before {
         content: "";
         position: absolute;
-        background-color: #000;
+        background-color: var(--text-color);
         width: 0.1rem;
         height: 26rem;
         outline: 1px solid transparent;
@@ -241,11 +312,11 @@
     }
     .information > .box:nth-child(2),
     .languages {
-      &::after {
+      &::before {
         content: "";
         position: absolute;
         z-index: 5;
-        background-color: #fff;
+        background-color: var(--background);
         width: 3rem;
         height: 0.75rem;
       }
@@ -283,7 +354,7 @@
         }
       }
       > .box:nth-child(2) {
-        &::after {
+        &::before {
           transform: translate(18.5rem, 0rem);
         }
         .section_title {
@@ -409,6 +480,11 @@
           ul {
             padding: 0.5rem 0;
           }
+          .square_box span {
+            &::after {
+              transform: translate(1px, -1px);
+            }
+          }
         }
         .autodesk {
           transform: translate(-10rem, -0rem);
@@ -483,7 +559,7 @@
     .languages {
       grid-row: 6/7;
       grid-column: 1/2;
-      &::after {
+      &::before {
         transform: translate(6rem, 10rem);
       }
       p,

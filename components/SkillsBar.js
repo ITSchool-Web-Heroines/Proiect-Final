@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import styles from "./SkillsBar.module.scss";
+import React from "react";
+import styles from "../pages/about/about.module.scss";
+
 function SkillsBar(props) {
   let levelClass;
   if (props.level <= 3) {

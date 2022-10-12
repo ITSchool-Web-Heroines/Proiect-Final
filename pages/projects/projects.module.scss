@@ -1,0 +1,9 @@
+@use "../../styles/mixins.scss" as *;
+
+.title {
+  color: var(--text-color);
+}
+.app {
+  background-color: var(--background);
+  height: 80rem;
+}

@@ -49,10 +49,24 @@ body,
 * {
   padding: 0;
   margin: 0;
-  transition: all 1s;
+  transition: all 0.5s;
+}
+
+:root {
+  --background: #fff;
+  --text-color: #000;
+  --background-image: url(../public/background.jpg);
+}
+
+[data-theme="dark"] {
+  --background: #000;
+  --text-color: #fff;
+  --background-image: url(../public/backgrounddark.jpg);
 }
 
 body {
+  background-color: var(--background);
+  color: var(--text-color);
   scrollbar-color: #000 transparent;
   overflow-y: auto;
   overflow-x: hidden;
