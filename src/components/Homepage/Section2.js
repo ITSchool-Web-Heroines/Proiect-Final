@@ -32,7 +32,7 @@ const Section2 = () => {
                                 <FaHeart />
                             </div>
                             <h4>$30</h4>
-                            <button href="#">Add to cart</button>
+                            <button><a href="lipstick.html">View more</a></button>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ const Section2 = () => {
                                 <FaHeart />
                             </div>
                             <h4>$20</h4>
-                            <button href="#">Add to cart</button>
+                            <button><a href="lipliner.html">View more</a></button>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const Section2 = () => {
                                 <FaHeart />
                             </div>
                             <h4>$30</h4>
-                            <button href="#">Add to cart</button>
+                            <button><a href="agavecream.html">View more</a></button>
                         </div>
                     </div>
                 </div>

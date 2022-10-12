@@ -39,7 +39,7 @@ const Section4 = () => {
                     <p>We never, ever test on animals. Period. And, we never use animal-derived ingredients</p>
                 </div>
             </div>
-            <button>Learn more</button>
+            <button><a href="csr.html">Learn more</a></button>
         </div>
 
     )

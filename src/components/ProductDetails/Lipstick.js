@@ -65,6 +65,7 @@ import aperolips from "../../images/lipstick/aperolips.png"
 import aperoicon from "../../images/lipstick/cayenne icon.png"
 
 const Lipstick = () => {
+
     return (
         <div id="lipstick">
             <div class="shopdetails">

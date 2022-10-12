@@ -11,7 +11,7 @@ const Section3 = () => {
             </div>
             <div class="col2">
                 <img src={Picture2} />
-                <button>Buy Now</button>
+                <button><a href="gidtcards.html">Buy Now</a></button>
             </div>
         </div>
     )

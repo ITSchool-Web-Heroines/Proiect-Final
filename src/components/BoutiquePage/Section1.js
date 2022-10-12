@@ -20,7 +20,7 @@ const Section1 = () => {
                 <img src={Picture3} />
                 <p>Apply to be part of the Lippie Factory Team</p>
                 <br />
-                <button>Apply Now</button>
+                <button><a href="jobapplication.html">Apply Now</a></button>
             </div>
         </div>
     )

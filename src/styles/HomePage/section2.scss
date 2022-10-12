@@ -85,6 +85,11 @@
                         border: none;
                         cursor: pointer;
                         /*margin-block-end: 2rem;*/
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
                     }
                 }
             }

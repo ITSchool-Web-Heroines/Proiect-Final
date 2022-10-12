@@ -76,15 +76,12 @@ import sugarcanelips from "../../images/lipliner/sugarcane lips.jpg"
 import tatin from "../../images/lipliner/tatin.png"
 import tatinlips from "../../images/lipliner/tatin lips.jpg"
 
-import {FaHeart, FaShoppingBag} from "react-icons/fa"
+import {FaHeart} from "react-icons/fa"
 
 
 const Shop = () => {
     return (
        <div id="shop">
-        <a href="../../lipstick.html">Lipstick</a>
-        <a href="../../lipliner.html">Lipliner</a>
-        <a href="../../agavecream.html">Agave</a>
         <h2 class="title">Our beloved standard lippie goodies</h2>
         <div class="pro-container">
             <div class="pro" id="beetroot">
@@ -100,7 +97,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                    <button href="#">Add to cart</button> 
+                    <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -420,7 +417,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Agavecream.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -436,7 +433,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">

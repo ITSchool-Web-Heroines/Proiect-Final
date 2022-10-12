@@ -10,7 +10,6 @@ const Section4 = () => {
     const [btn, setBtn]=useState("appointment");
     return (
         <div id="section4">
-            <img src={Image} />
             <div id="container">
                 <nav class="buttons">
                     <a className={btn=="appointment" && "active"} onClick={()=>setBtn("appointment")}>Book an appointment</a>
@@ -101,6 +100,7 @@ const Section4 = () => {
                     </article>
                 </main>
             </div>
+            <img src={Image} />
         </div>
         
     )
