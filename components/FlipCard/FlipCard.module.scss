@@ -34,7 +34,8 @@
   justify-content: center;
   transform: rotateY(180deg);
   a {
-    @include font-details(var(--background), "ag-regular", 1.9rem, uppercase);
+    @include font-details(var(--background), "ag-regular", 1.9rem);
+    text-transform: uppercase;
     text-decoration: none;
   }
 }

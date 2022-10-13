@@ -30,7 +30,8 @@
   height: 1.5rem;
   position: absolute;
   text-decoration: none;
-  @include font-details(var(--text-color), "ag-regular", 1.25rem, uppercase);
+  @include font-details(var(--text-color), "ag-regular", 1.25rem);
+  text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
   z-index: 8;

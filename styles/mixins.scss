@@ -1,8 +1,7 @@
-@mixin font-details($color, $family, $size, $transform) {
+@mixin font-details($color, $family, $size) {
   color: $color;
   font-family: $family, sans-serif;
   font-size: $size;
-  text-transform: $transform;
 }
 @mixin fade-in() {
   animation: fade-in 2s ease-in;

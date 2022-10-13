@@ -15,7 +15,7 @@
 .header {
   height: 15rem;
   @include fade-in();
-  animation: fade-in 2s ease-in;
+  transition: all 1s;
   .photo {
     transform: translateX(1.5rem);
     width: 11rem;
@@ -38,10 +38,12 @@
       padding-inline: 0.5rem;
     }
     .title {
-      @include font-details(var(--background), "bc-regular", 1.1rem, uppercase);
+      @include font-details(var(--background), "bc-regular", 1.1rem);
+      text-transform: uppercase;
     }
     .sub_title {
-      @include font-details(var(--background), "bc-light", 0.75rem, uppercase);
+      @include font-details(var(--background), "bc-light", 0.75rem);
+      text-transform: uppercase;
       letter-spacing: 5px;
       padding-block-end: 0.5rem;
     }
@@ -124,7 +126,8 @@
 }
 // ABOUT SECTIONS - COMMON
 .section_title {
-  @include font-details(var(--text-color), "bc-light", 1.2rem, uppercase);
+  @include font-details(var(--text-color), "bc-light", 1.2rem);
+  text-transform: uppercase;
   letter-spacing: 2px;
 }
 .main {
@@ -145,7 +148,6 @@
   .coms {
     @include fade-in();
     &.elementInView {
-      transition: opacity 2s;
       opacity: 1;
       .abilities_list {
         .square_box {
@@ -161,7 +163,7 @@
     display: grid;
     gap: 0.5rem;
     .list_item {
-      @include font-details(var(--text-color), "bc-regular", 1rem, none);
+      @include font-details(var(--text-color), "bc-regular", 1rem);
     }
   }
   .digitals {
@@ -170,13 +172,23 @@
     }
   }
 }
-.subtitle,
-.details {
-  @include font-details(var(--text-color), "bc-regular", 1rem, none);
+.subtitle {
+  @include font-details(var(--text-color), "bc-regular", 1rem);
 }
-.institution,
-.information div p:nth-child(2) {
-  @include font-details(var(--text-color), "bc-medium", 1rem, none);
+.information .details {
+  transition: none;
+}
+.details {
+  @include font-details(var(--text-color), "bc-regular", 1rem);
+  p {
+    transition: none;
+    &.title {
+      font-family: "bc-medium";
+    }
+  }
+}
+.institution {
+  @include font-details(var(--text-color), "bc-medium", 1rem);
 }
 .school,
 .languages,

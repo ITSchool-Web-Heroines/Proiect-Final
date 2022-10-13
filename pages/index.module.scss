@@ -30,6 +30,9 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--background);
+  * {
+    transition: all 1s;
+  }
 }
 .banner_content {
   width: 18rem;
@@ -50,7 +53,8 @@ nav {
     position: absolute;
     text-decoration: none;
     color: #fff;
-    @include font-details(var(--text-color), "ag-regular", 1.25rem, uppercase);
+    @include font-details(var(--text-color), "ag-regular", 1.25rem);
+    text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
     z-index: 8;
@@ -80,7 +84,8 @@ nav {
   position: absolute;
   @include fade-in();
   opacity: 0.5;
-  @include font-details(var(--text-color), "bc-medium", 0.7rem, uppercase);
+  @include font-details(var(--text-color), "bc-medium", 0.7rem);
+  text-transform: uppercase;
 }
 .concept {
   inset-block-start: 9rem;
@@ -135,7 +140,8 @@ nav {
   animation-timing-function: ease-out;
 }
 .details_text {
-  @include font-details(var(--text-color), "bc-medium", 0.7rem, uppercase);
+  @include font-details(var(--text-color), "bc-medium", 0.7rem);
+  text-transform: uppercase;
   letter-spacing: 2px;
   z-index: 1;
   transform: translate(3.15rem, 5.5rem);
