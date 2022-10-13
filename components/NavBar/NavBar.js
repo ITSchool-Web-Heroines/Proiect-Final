@@ -1,8 +1,8 @@
 import React from "react";
-import NavLink from "./NavLink";
+import NavLink from "../NavLink";
 import styles from "./NavBar.module.scss";
 
-function NavBar() {
+export default function NavBar() {
   return (
     <nav className={styles.menu}>
       <NavLink href="/" className={styles.home}>
@@ -17,5 +17,3 @@ function NavBar() {
     </nav>
   );
 }
-
-export default NavBar;

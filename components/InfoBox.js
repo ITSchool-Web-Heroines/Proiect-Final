@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../pages/about/about.module.scss";
 
-function InfoBox(props) {
+export default function InfoBox(props) {
   return (
     <div className={styles.box}>
       <p className={styles.section_title}>{props.title}</p>
@@ -24,5 +24,3 @@ function InfoBox(props) {
     </div>
   );
 }
-
-export default InfoBox;

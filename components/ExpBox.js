@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../pages/about/about.module.scss";
 
-function ExpBox(props) {
+export default function ExpBox(props) {
   return (
     <div className={styles.box}>
       <p className={styles.subtitle}>
@@ -12,5 +12,3 @@ function ExpBox(props) {
     </div>
   );
 }
-
-export default ExpBox;

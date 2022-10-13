@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 import Image from "next/future/image";
-import NavLink from "./NavLink";
+import NavLink from "../NavLink";
 
 import styles from "./FlipCard.module.scss";
 
-function FlipCard(props) {
+export default function FlipCard(props) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   function flip() {
@@ -35,5 +35,3 @@ function FlipCard(props) {
     </div>
   );
 }
-
-export default FlipCard;

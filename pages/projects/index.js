@@ -1,16 +1,15 @@
 import React from "react";
 import Head from "next/head";
 import useLocalStorage from "use-local-storage";
-import CustomParticles from "../../components/CustomParticles";
 
 // STYLES
 import styles from "./projects.module.scss";
 // FUNCTIONS
 
 // COMPONENTS
-import NavBar from "../../components/NavBar";
-import ThemeButton from "../../components/ThemeButton";
-import FlipCard from "../../components/FlipCard";
+import NavBar from "../../components/NavBar/NavBar";
+import ThemeButton from "../../components/ThemeButton/ThemeButton";
+import FlipCard from "../../components/FlipCard/FlipCard";
 
 // IMAGES
 import boutique from "../../images/projects/boutique/boutique.png";

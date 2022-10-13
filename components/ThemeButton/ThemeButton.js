@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ThemeButton.module.scss";
 
-function ThemeButton(props) {
+export default function ThemeButton(props) {
   return (
     <div
       className={
@@ -17,5 +17,3 @@ function ThemeButton(props) {
     </div>
   );
 }
-
-export default ThemeButton;

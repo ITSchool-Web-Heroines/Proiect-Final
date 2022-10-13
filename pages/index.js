@@ -11,7 +11,7 @@ import styles from "./index.module.scss";
 // IMGS
 import WLogo from "../images/home/sa.png";
 import BLogo from "../images/home/sn.png";
-import ThemeButton from "../components/ThemeButton";
+import ThemeButton from "../components/ThemeButton/ThemeButton";
 
 export default function Home() {
   4;

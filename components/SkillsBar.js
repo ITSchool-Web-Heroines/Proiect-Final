@@ -1,19 +1,17 @@
 import React from "react";
 import styles from "../pages/about/about.module.scss";
 
-function SkillsBar(props) {
+export default function SkillsBar(props) {
   let levelClass;
   if (props.level <= 3) {
-    levelClass = `${styles.square_box} ${styles.medium}`;
+    levelClass = styles.medium;
   } else if (props.level == 4) {
-    levelClass = `${styles.square_box} ${styles.good}`;
+    levelClass = styles.good;
   } else if (props.level == 5) {
-    levelClass = `${styles.square_box} ${styles.advanced}`;
+    levelClass = styles.advanced;
   } else {
-    levelClass = `${styles.square_box} ${styles.proficient}`;
+    levelClass = styles.proficient;
   }
 
-  return <li className={levelClass}></li>;
+  return <li className={`${styles.square_box} ${levelClass}`}></li>;
 }
-
-export default SkillsBar;

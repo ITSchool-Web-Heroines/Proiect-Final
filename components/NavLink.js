@@ -1,7 +1,16 @@
 import Link from "next/link";
 import React from "react";
 
-function NavLink({ href, children, ...props }) {
+export default function NavLink({
+  href,
+  children,
+  prefertch = true,
+  replace = false,
+  scroll = true,
+  shallow = false,
+  locale = true,
+  ...props
+}) {
   return (
     <>
       <Link href={href}>
@@ -10,5 +19,3 @@ function NavLink({ href, children, ...props }) {
     </>
   );
 }
-
-export default NavLink;

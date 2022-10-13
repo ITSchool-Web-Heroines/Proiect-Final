@@ -16,13 +16,13 @@ import profs from "../../data/about/profs";
 // FUNCTIONS
 import elementIsInView from "../../functions/elementIsInView";
 // COMPONENTS
-import ThemeButton from "../../components/ThemeButton";
-import NavBar from "../../components/NavBar";
+import ThemeButton from "../../components/ThemeButton/ThemeButton";
+import NavBar from "../../components/NavBar/NavBar";
 import InfoBox from "../../components/InfoBox";
 import ExpBox from "../../components/ExpBox";
 import AbilityList from "../../components/AbilityList";
 import SkillsBar from "../../components/SkillsBar";
-import CustomParticles from "../../components/CustomParticles";
+import CustomParticles from "../../components/CustomParticles/CustomParticles";
 
 function MyAboutPage() {
   const informationSection = useRef();
