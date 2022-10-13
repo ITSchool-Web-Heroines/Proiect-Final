@@ -22,6 +22,7 @@ import InfoBox from "../../components/InfoBox";
 import ExpBox from "../../components/ExpBox";
 import AbilityList from "../../components/AbilityList";
 import SkillsBar from "../../components/SkillsBar";
+import CustomParticles from "../../components/CustomParticles";
 
 function MyAboutPage() {
   const informationSection = useRef();
@@ -63,7 +64,7 @@ function MyAboutPage() {
     setTheme(newTheme);
   };
   const aboutStyle = {
-    insetBlockStart: "10rem",
+    insetBlockStart: "2.5rem",
     insetInlineStart: "1%",
   };
   return (
@@ -226,6 +227,7 @@ function MyAboutPage() {
           <AbilityList abilities={profs} />
         </section>
       </main>
+      <CustomParticles color={theme === "light" ? "#000" : "#fff"} />
     </div>
   );
 }

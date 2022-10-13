@@ -1,0 +1,7 @@
+@use "../styles/mixins.scss" as *;
+
+.particles {
+  opacity: 0.3;
+  z-index: -10;
+  @include fade-in();
+}

@@ -65,13 +65,13 @@ nav {
     will-change: transform;
     perspective: 1000px;
     &:hover {
-      filter: drop-shadow(-1rem -2rem 0rem rgba(0, 0, 0, 0.2));
+      filter: drop-shadow(-1rem -0.5rem 0rem rgba(0, 0, 0, 0.2));
     }
   }
   .projects {
     inset-block-end: 5rem;
     &:hover {
-      filter: drop-shadow(1rem 2rem 0rem rgba(0, 0, 0, 0.2));
+      filter: drop-shadow(1rem 0.5rem 0rem rgba(0, 0, 0, 0.2));
     }
   }
 }
@@ -84,12 +84,13 @@ nav {
 }
 .concept {
   inset-block-start: 9rem;
+  padding-inline-start: 0.5rem;
   transform: translateX(5rem);
   letter-spacing: 7px;
 }
 .line {
   width: 1rem;
-  inset-inline-end: 5rem;
+  inset-inline-end: 11.5rem;
   transform: translate(18rem, 3.3rem);
   letter-spacing: 5px;
   writing-mode: vertical-lr;
@@ -313,7 +314,7 @@ nav {
   }
 }
 // PHONE LANDSCAPE
-@media (max-height: 490px) and (max-width: 1200px) and (orientation: landscape) {
+@media (max-height: 660px) and (max-width: 1200px) and (orientation: landscape) {
   nav {
     .about,
     .projects {
@@ -329,27 +330,14 @@ nav {
     height: 11rem;
   }
   .details_logo {
-    width: 24rem;
-    transform: translate(-76%, -32%);
+    width: 30rem;
+    transform: translate(-83%, -40%);
   }
   .concept {
     inset-block-start: 3.5rem;
-    transform: translateX(4.6rem);
+    transform: translateX(9.5rem);
   }
   .details_text {
-    transform: translate(1rem, 3.5rem);
-  }
-}
-@media (max-height: 490px) and (min-width: 800px) and (orientation: landscape) {
-  .details_logo {
-    width: 30rem;
-    transform: translate(-83%, -35%);
-  }
-  .concept {
-    transform: translateX(9.6rem);
-  }
-  .details_text {
-    font-size: 0.9rem;
-    transform: translate(-6rem, 3.5rem);
+    transform: translate(-6rem, 3rem);
   }
 }

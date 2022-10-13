@@ -13,16 +13,7 @@ function SkillsBar(props) {
     levelClass = `${styles.square_box} ${styles.proficient}`;
   }
 
-  return (
-    <li className={levelClass}>
-      <span className={styles.square}></span>
-      <span className={styles.square}></span>
-      <span className={styles.square}></span>
-      <span className={styles.square}></span>
-      <span className={styles.square}></span>
-      <span className={styles.square}></span>
-    </li>
-  );
+  return <li className={levelClass}></li>;
 }
 
 export default SkillsBar;

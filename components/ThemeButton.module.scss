@@ -2,12 +2,13 @@
 
 .button {
   position: absolute;
-  width: 5rem;
   inset-block-start: 50%;
   inset-inline-start: 50%;
   width: 5rem;
   height: 5rem;
   padding: 1rem;
+  transition: all 1s;
+  cursor: pointer;
   @include fade-in();
   &::before {
     content: "";
@@ -17,11 +18,11 @@
     height: 5rem;
     transform-origin: center;
     transform: translate(2.5rem, -0.1rem) rotate(90deg);
+    transition: all 1s;
   }
 }
 .button.active {
   transform: rotate(180deg);
-  transition: transform 1s;
 }
 .dark,
 .light {
@@ -35,7 +36,7 @@
   z-index: 8;
 }
 .light {
-  transform: translate(0.2rem, 1rem) rotate(0deg);
+  transform: translate(0.2rem, 1rem);
   backface-visibility: hidden;
   will-change: transform;
   perspective: 1000px;
@@ -45,4 +46,21 @@
   backface-visibility: hidden;
   will-change: transform;
   perspective: 1000px;
+}
+@media (max-width: 395px) {
+  .button {
+    width: 2rem;
+    height: 2rem;
+    &::before {
+      height: 3rem;
+      transform: translate(0.75rem, 0.9rem) rotate(90deg);
+    }
+  }
+  .dark,
+  .light {
+    width: 2rem;
+  }
+  .light {
+    transform: translate(-0.5rem, 1rem);
+  }
 }

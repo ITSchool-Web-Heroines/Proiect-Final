@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import useLocalStorage from "use-local-storage";
+import CustomParticles from "../../components/CustomParticles";
+
 // STYLES
 import styles from "./projects.module.scss";
 // FUNCTIONS

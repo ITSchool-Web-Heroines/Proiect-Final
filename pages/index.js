@@ -21,8 +21,8 @@ export default function Home() {
     setTheme(newTheme);
   };
   const homeStyle = {
-    insetBlockStart: "3rem",
-    insetInlineStart: "72%",
+    insetBlockStart: "6rem",
+    insetInlineStart: "75%",
   };
   return (
     <>
