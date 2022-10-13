@@ -1,8 +1,9 @@
-.shopdetails {
+#acaismith, #brandy, #cava, #cognac, #damson, #hardcider, #honeycrisp, #nonino, #pastille, #pavlova, #redvelvet, #scarlet, #stinger, #sugarcane, #tatin {
     background: white;
     display: flex;
     flex-direction: row;
     padding-inline: 2rem;
+    padding-block-end: 1rem;
 
     .single-pro-image {
         display: flex;
@@ -110,4 +111,10 @@
             }
         }
     }
+}
+#lipliner article {
+    display: none;
+}
+#lipliner article.active {
+    display:inline-flex;
 }

@@ -1,4 +1,4 @@
-.shopdetails {
+#beetroot, #apero, #cayenne, #chai, #expressobrava, #extrasugarbuns, #sugarbuns, #fig, #gingermalt, #harissa, #hottomato, #praline, #sesame, #tamarind, #tannin, #juniper, #maple, #mulberry, #pluot, #pomelo, #radicchio {
     background: white;
     display:flex;
     flex-direction: row;
@@ -97,6 +97,14 @@
             }
         }
     }
+}
+
+#lipstick article {
+    display: none;
+}
+
+#lipstick article.active {
+    display: inline-flex;
 }
 
 

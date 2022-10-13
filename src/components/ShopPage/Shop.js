@@ -184,7 +184,7 @@ const Shop = () => {
                 <img src={gingermalt}/>
                 <img class="hoverpicture " src={gingermaltlips}/>
                 <div class="description">
-                    <h5>Ginger Malt</h5>
+                    <h5>Gingermalt</h5>
                     <div class="star">
                             <FaHeart/>
                             <FaHeart />
