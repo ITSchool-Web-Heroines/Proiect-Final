@@ -1,18 +1,18 @@
 const jobs = [
   {
-    period: "2019",
-    location: "București, România",
-    institution: "Bogdan Radu - birou individual de arhitectură - intern",
+    id: 1,
+    subtitle: "2019 - București, România",
+    title: "Bogdan Radu - birou individual de arhitectură - intern",
   },
   {
-    period: "2021",
-    location: "București, România",
-    institution: "mânadelucru - intern",
+    id: 2,
+    subtitle: "2021 - București, România",
+    title: "mânadelucru - intern",
   },
   {
-    period: "în curs",
-    location: "Neamț | București, România",
-    institution: "proiecte individuale",
+    id: 3,
+    subtitle: "în curs - Neamț | București, România",
+    title: "proiecte individuale",
   },
 ];
 export default jobs;

@@ -1,20 +1,20 @@
 const schools = [
   {
-    period: "2013_2015",
-    location: "Neamț, România",
-    institution: "COLEGIUL NAȚIONAL “PETRU RAREȘ”",
+    id: 1,
+    subtitle: "2013_2015 - Neamț, România",
+    title: "COLEGIUL NAȚIONAL “PETRU RAREȘ”",
     details: "secția ȘTIINȚE SOCIALE",
   },
   {
-    period: "2016_2017",
-    location: "Napoli, Italia",
-    institution: "UNIVERSITA DEGLI STUDI DI NAPOLI “FREDERICO II”",
+    id: 2,
+    subtitle: "2016_2017 - Napoli, Italia",
+    title: "UNIVERSITA DEGLI STUDI DI NAPOLI “FREDERICO II”",
     details: "ERASMUS",
   },
   {
-    period: "2015_2021",
-    location: "București, România",
-    institution: "UNIVERSITATEA DE ARHITECTURĂ SI URBANISM “ION MINCU”",
+    id: 3,
+    subtitle: "2015_2021 - București, România",
+    title: "UNIVERSITATEA DE ARHITECTURĂ SI URBANISM “ION MINCU”",
     details: "specializarea ARHITECTURĂ",
   },
 ];

@@ -5,7 +5,6 @@ import styles from "./CustomParticles.module.scss";
 
 export default function CustomParticles(props) {
   const particlesInit = async main => {
-    console.log(main);
     await loadFull(main);
   };
   const options = useMemo(

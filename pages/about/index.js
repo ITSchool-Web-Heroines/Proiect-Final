@@ -1,61 +1,39 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import Head from "next/head";
 import useLocalStorage from "use-local-storage";
+import { useInView } from "react-intersection-observer";
 
 // STYLES
 import styles from "./about.module.scss";
 
 // DATA
-import informations from "../../data/about/information";
+import informations from "../../data/about/informations";
+import contact from "../../data/about/contact";
 import schools from "../../data/about/schools";
 import jobs from "../../data/about/jobs";
 import languages from "../../data/about/languages";
 import orgs from "../../data/about/orgs";
 import coms from "../../data/about/coms";
 import profs from "../../data/about/profs";
-// FUNCTIONS
-import elementIsInView from "../../functions/elementIsInView";
+
 // COMPONENTS
 import ThemeButton from "../../components/ThemeButton/ThemeButton";
 import NavBar from "../../components/NavBar/NavBar";
-import InfoBox from "../../components/InfoBox";
-import ExpBox from "../../components/ExpBox";
-import AbilityList from "../../components/AbilityList";
+import InfoBox from "../../components/InfoBox/InfoBox";
 import SkillsBar from "../../components/SkillsBar";
 import CustomParticles from "../../components/CustomParticles/CustomParticles";
+import AbilityList from "../../components/AbilityList/AbilityList";
 
 function MyAboutPage() {
-  const informationSection = useRef();
-  const [informationIsVisible, setInformationIsVisible] = useState();
-  elementIsInView(informationSection, setInformationIsVisible);
-
-  const schoolSection = useRef();
-  const [schoolIsVisible, setSchoolIsVisible] = useState();
-  elementIsInView(schoolSection, setSchoolIsVisible);
-
-  const jobsSection = useRef();
-  const [jobsIsVisible, setJobsIsVisible] = useState();
-  elementIsInView(jobsSection, setJobsIsVisible);
-
-  const languagesSection = useRef();
-  const [languagesIsVisible, setLanguageIsVisible] = useState();
-  elementIsInView(languagesSection, setLanguageIsVisible);
-
-  const digitalsSection = useRef();
-  const [digitalsIsVisible, setDigitalsIsVisible] = useState();
-  elementIsInView(digitalsSection, setDigitalsIsVisible);
-
-  const orgsSection = useRef();
-  const [orgsIsVisible, setOrgsIsVisible] = useState();
-  elementIsInView(orgsSection, setOrgsIsVisible);
-
-  const comsSection = useRef();
-  const [comsIsVisible, setComsIsVisible] = useState();
-  elementIsInView(comsSection, setComsIsVisible);
-
-  const profsSection = useRef();
-  const [profsIsVisible, setProfsIsVisible] = useState();
-  elementIsInView(profsSection, setProfsIsVisible);
+  const { ref: informationRef, inView: informationIsVisible } = useInView();
+  const { ref: contactRef, inView: contactIsVisible } = useInView();
+  const { ref: schoolRef, inView: schoolIsVisible } = useInView();
+  const { ref: jobsRef, inView: jobsIsVisible } = useInView();
+  const { ref: digitalsRef, inView: digitalsIsVisible } = useInView();
+  const { ref: languagesRef, inView: languagesIsVisible } = useInView();
+  const { ref: orgsRef, inView: orgsIsVisible } = useInView();
+  const { ref: comsRef, inView: comsIsVisible } = useInView();
+  const { ref: profsRef, inView: profsIsVisible } = useInView();
 
   // CHANGE THEME BUTTON
   const [theme, setTheme] = useLocalStorage("theme", "light");
@@ -87,128 +65,128 @@ function MyAboutPage() {
           </div>
         </header>
         <section
-          className={`${styles.information} ${
-            informationIsVisible ? styles.elementInView : ""
+          className={`${styles.inview_section} ${styles.information} ${
+            informationIsVisible ? styles.appear : ""
           }`}
-          ref={informationSection}
+          ref={informationRef}
         >
-          {informations.map(information => (
+          <p className={styles.section_title}>date personale</p>
+          {informations.map(item => (
             <InfoBox
-              key={information.id}
-              title={information.title}
-              subtitle_one={information.subtitle_one}
-              text_one={information.text_one}
-              subtitle_two={information.subtitle_two}
-              text_two={information.text_two}
-              subtitle_three={information.subtitle_three}
-              text_three={information.text_three}
+              key={item.id}
+              title={item.title}
+              subtitle={item.subtitle}
             />
           ))}
         </section>
         <section
-          className={`${styles.school} ${
-            schoolIsVisible ? styles.elementInView : ""
+          className={`${styles.inview_section} ${styles.contact} ${
+            contactIsVisible ? styles.appear : ""
           }`}
-          ref={schoolSection}
+          ref={contactRef}
+        >
+          <p className={styles.section_title}>contact</p>
+          {contact.map(item => (
+            <InfoBox
+              key={item.id}
+              title={item.title}
+              subtitle={item.subtitle}
+            />
+          ))}
+        </section>
+        <section
+          className={`${styles.inview_section} ${styles.school} ${
+            schoolIsVisible ? styles.appear : ""
+          }`}
+          ref={schoolRef}
         >
           <p className={styles.section_title}>
             educație și formare profesională
           </p>
-          {schools.map(school => (
-            <ExpBox
-              key={school.period}
-              period={school.period}
-              location={school.location}
-              institution={school.institution}
-              details={school.details}
+          {schools.map(item => (
+            <InfoBox
+              key={item.id}
+              title={item.title}
+              subtitle={item.subtitle}
             />
           ))}
         </section>
         <section
-          className={`${styles.jobs} ${
-            jobsIsVisible ? styles.elementInView : ""
+          className={`${styles.inview_section} ${styles.jobs} ${
+            jobsIsVisible ? styles.appear : ""
           }`}
-          ref={jobsSection}
+          ref={jobsRef}
         >
           <p className={styles.section_title}>experiență profesională</p>
-          {jobs.map(jobs => (
-            <ExpBox
-              key={jobs.period}
-              period={jobs.period}
-              location={jobs.location}
-              institution={jobs.institution}
-              details={jobs.details}
+          {jobs.map(item => (
+            <InfoBox
+              key={item.id}
+              title={item.title}
+              subtitle={item.subtitle}
             />
           ))}
         </section>
         <section
-          className={`${styles.languages} ${
-            languagesIsVisible ? styles.elementInView : ""
+          className={`${styles.inview_section} ${styles.digitals} ${
+            digitalsIsVisible ? styles.appear : ""
           }`}
-          ref={languagesSection}
+          ref={digitalsRef}
         >
-          <p className={styles.section_title}>competențe lingvistice</p>
+          <p className={styles.section_title}>competențe digitale</p>
+          <p className={`${styles.title} ${styles.autodesk}`}> autodesk</p>
+          <ul className={styles.second_list}>
+            <li className={styles.list_item}>Revit</li>
+            <SkillsBar level={4} />
+            <li className={styles.list_item}>autocad</li>
+            <SkillsBar level={5} />
+          </ul>
+          <p className={`${styles.title} ${styles.microsoft}`}>microsoft</p>
+          <ul className={styles.second_list}>
+            <li className={styles.list_item}>word</li>
+            <SkillsBar level={6} />
+            <li className={styles.list_item}>excel</li>
+            <SkillsBar level={5} />
+          </ul>
+          <p className={`${styles.title} ${styles.adobe}`}>Adobe</p>
+          <ul className={styles.second_list}>
+            <li className={styles.list_item}>photoshop</li>
+            <SkillsBar level={4} />
+            <li className={styles.list_item}>illustrator</li>
+            <SkillsBar level={4} />
+            <li className={styles.list_item}>indesign</li>
+            <SkillsBar level={4} />
+          </ul>
+          <p className={`${styles.title} ${styles.sketchup}`}>
+            sketchup <SkillsBar level={3} />
+          </p>
+          <p className={`${styles.title} ${styles.lumion}`}>
+            lumion
+            <SkillsBar level={5} />
+          </p>
+        </section>
+        <section
+          className={`${styles.inview_section} ${styles.languages} ${
+            languagesIsVisible ? styles.appear : ""
+          }`}
+          ref={languagesRef}
+        >
+          <p className={styles.section_title}>competențe lingvistice </p>
           <AbilityList abilities={languages} />
         </section>
         <section
-          className={`${styles.digitals} ${
-            digitalsIsVisible ? styles.elementInView : ""
+          className={`${styles.inview_section} ${styles.orgs} ${
+            orgsIsVisible ? styles.appear : ""
           }`}
-          ref={digitalsSection}
+          ref={orgsRef}
         >
-          <p className={styles.section_title}>competențe digitale</p>
-          <ul className={styles.abilities_list}>
-            <li className={`${styles.list_item} ${styles.autodesk}`}>
-              autodesk
-              <ul>
-                <li className={styles.list_item}>Revit</li>
-                <SkillsBar level={4} />
-                <li className={styles.list_item}>autocad</li>
-                <SkillsBar level={5} />
-              </ul>
-            </li>
-            <li className={`${styles.list_item} ${styles.microsoft}`}>
-              microsoft
-              <ul>
-                <li className={styles.list_item}>word</li>
-                <SkillsBar level={6} />
-                <li className={styles.list_item}>excel</li>
-                <SkillsBar level={5} />
-              </ul>
-            </li>
-            <li className={`${styles.list_item} ${styles.adobe}`}>
-              Adobe
-              <ul>
-                <li className={styles.list_item}>photoshop</li>
-                <SkillsBar level={4} />
-                <li className={styles.list_item}>illustrator</li>
-                <SkillsBar level={4} />
-                <li className={styles.list_item}>indesign</li>
-                <SkillsBar level={4} />
-              </ul>
-            </li>
-            <li className={`${styles.list_item} ${styles.sketchup}`}>
-              sketchup
-            </li>
-            <SkillsBar level={3} />
-            <li className={`${styles.list_item} ${styles.lumion}`}>lumion</li>
-            <SkillsBar level={5} />
-          </ul>
-        </section>
-        <section
-          className={`${styles.orgs} ${
-            orgsIsVisible ? styles.elementInView : ""
-          }`}
-          ref={orgsSection}
-        >
-          <p className={styles.section_title}>competențe organizatorice</p>
+          <p className={styles.section_title}>competențe organizatorice </p>
           <AbilityList abilities={orgs} />
         </section>
         <section
-          className={`${styles.coms} ${
-            comsIsVisible ? styles.elementInView : ""
+          className={`${styles.inview_section} ${styles.coms} ${
+            comsIsVisible ? styles.appear : ""
           }`}
-          ref={comsSection}
+          ref={comsRef}
         >
           <p className={styles.section_title}>
             competențe de comunicare. interpersonale
@@ -216,14 +194,12 @@ function MyAboutPage() {
           <AbilityList abilities={coms} />
         </section>
         <section
-          className={`${styles.profs} ${
-            profsIsVisible ? styles.elementInView : ""
+          className={`${styles.inview_section} ${styles.profs} ${
+            profsIsVisible ? styles.appear : ""
           }`}
-          ref={profsSection}
+          ref={profsRef}
         >
-          <p className={styles.section_title}>
-            competențe dobândite la locul de muncă
-          </p>
+          <p className={styles.section_title}>dobândite la locul de muncă </p>
           <AbilityList abilities={profs} />
         </section>
       </main>
