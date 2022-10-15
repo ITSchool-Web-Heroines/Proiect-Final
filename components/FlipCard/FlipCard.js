@@ -7,14 +7,14 @@ import styles from "./FlipCard.module.scss";
 
 export default function FlipCard(props) {
   const [isFlipped, setIsFlipped] = useState(false);
-
+  const { name } = props;
   function flip() {
     setIsFlipped(!isFlipped);
   }
   return (
     <div className={styles.container} onClick={flip}>
       <div
-        className={`${styles.card} ${`styles.${props.name}`} ${
+        className={`${styles.card} ${styles[name]} ${
           isFlipped ? styles.isFlipped : ""
         }`}
       >
@@ -28,7 +28,7 @@ export default function FlipCard(props) {
           style={props.styles}
         >
           <NavLink href={`${props.page}`} className={styles.navlink}>
-            {props.name}
+            {name}
           </NavLink>
         </div>
       </div>

@@ -153,13 +153,10 @@ function MyAboutPage() {
             <li className={styles.list_item}>indesign</li>
             <SkillsBar level={4} />
           </ul>
-          <p className={`${styles.title} ${styles.sketchup}`}>
-            sketchup <SkillsBar level={3} />
-          </p>
-          <p className={`${styles.title} ${styles.lumion}`}>
-            lumion
-            <SkillsBar level={5} />
-          </p>
+          <p className={`${styles.title} ${styles.sketchup}`}>sketchup</p>
+          <SkillsBar level={3} />
+          <p className={`${styles.title} ${styles.lumion}`}>lumion</p>
+          <SkillsBar level={5} />
         </section>
         <section
           className={`${styles.inview_section} ${styles.languages} ${

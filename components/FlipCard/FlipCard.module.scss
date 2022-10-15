@@ -1,20 +1,27 @@
 @use "../../styles/mixins.scss" as *;
 
 .container {
-  perspective: 1500px;
+  perspective: 100rem;
 }
 .card {
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   display: block;
   cursor: pointer;
   transform-style: preserve-3d;
-  transform-origin: center right;
+  perspective-origin: left;
+  transform-origin: center;
   transition: transform 1s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  &.culturall,
+  &.skyscraper {
+    width: 9rem;
+    height: 9rem;
+  }
 }
 .card.isFlipped {
-  transform: translateX(-100%) rotateY(-180deg);
+  perspective-origin: right;
+  transform: rotateY(180deg);
 }
 .card:focus,
 .card:focus-within {
@@ -34,7 +41,7 @@
   justify-content: center;
   transform: rotateY(180deg);
   a {
-    @include font-details(var(--background), "ag-regular", 1.9rem);
+    @include font-details(var(--background), "ag-regular", 1.3rem);
     text-transform: uppercase;
     text-decoration: none;
   }

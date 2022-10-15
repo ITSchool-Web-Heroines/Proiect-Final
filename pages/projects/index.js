@@ -40,42 +40,54 @@ function MyProjectsPage() {
         handleClick={theme.setTheme}
       />
       <main className={styles.projects_box}>
-        <FlipCard
-          name={"culturall"}
-          source={culturall}
-          styles={{ backgroundColor: "#9e5a4c" }}
-          page={"about"}
-        />
-        <FlipCard
-          name={"boutique"}
-          source={boutique}
-          styles={{ backgroundColor: "#748867" }}
-          page={"about"}
-        />
-        <FlipCard
-          name={"manufacturat"}
-          source={manufacturat}
-          styles={{ backgroundColor: "#ba9569" }}
-          page={"about"}
-        />
-        <FlipCard
-          name={"landmark"}
-          source={landmark}
-          styles={{ backgroundColor: "#566c57" }}
-          page={"about"}
-        />
-        <FlipCard
-          name={"skyscraper"}
-          source={skyscraper}
-          styles={{ backgroundColor: "#486478" }}
-          page={"about"}
-        />
-        <FlipCard
-          name={"industrial"}
-          source={industrial}
-          styles={{ backgroundColor: "#ac6c53" }}
-          page={"about"}
-        />
+        <div className={styles.culturall}>
+          <FlipCard
+            name={"culturall"}
+            source={culturall}
+            styles={{ backgroundColor: "#9e5a4c" }}
+            page={"about"}
+          />
+        </div>
+        <div className={styles.boutique}>
+          <FlipCard
+            name={"boutique"}
+            source={boutique}
+            styles={{ backgroundColor: "#748867" }}
+            page={"about"}
+          />
+        </div>
+        <div className={styles.manufacturat}>
+          <FlipCard
+            name={"manufacturat"}
+            source={manufacturat}
+            styles={{ backgroundColor: "#ba9569" }}
+            page={"about"}
+          />
+        </div>
+        <div className={styles.landmark}>
+          <FlipCard
+            name={"landmark"}
+            source={landmark}
+            styles={{ backgroundColor: "#566c57" }}
+            page={"about"}
+          />
+        </div>
+        <div className={styles.skyscraper}>
+          <FlipCard
+            name={"skyscraper"}
+            source={skyscraper}
+            styles={{ backgroundColor: "#486478" }}
+            page={"about"}
+          />
+        </div>
+        <div className={styles.industrial}>
+          <FlipCard
+            name={"industrial"}
+            source={industrial}
+            styles={{ backgroundColor: "#ac6c53" }}
+            page={"about"}
+          />
+        </div>
       </main>
     </div>
   );
