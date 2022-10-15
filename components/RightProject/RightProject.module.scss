@@ -1,0 +1,64 @@
+@use "../../styles/mixins.scss" as *;
+
+.right_project {
+  height: 15rem;
+  width: 15rem;
+  > * {
+    position: absolute;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0.09rem;
+    transform: translate(7.5rem, 0rem);
+    height: 1rem;
+    background-color: var(--text-color);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0.01rem;
+    transform: translate(7.5rem, 1.5rem);
+    height: 13.5rem;
+    background-color: var(--text-color);
+  }
+  .title {
+    width: 7rem;
+    transform: translate(8.2rem, 2.5rem);
+    @include font-details(var(--text-color), "ag-regular", 1rem);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1.8rem;
+      transform: translate(-0.15rem, -0.2rem);
+      height: 0.08rem;
+      background-color: var(--text-color);
+    }
+  }
+  .culturall {
+    @include font-details(var(--text-color), "ag-regular", 0.7rem);
+    text-transform: uppercase;
+    transform: translate(0rem, 4.8rem);
+    display: grid;
+    gap: 0.5rem;
+    .logo {
+      height: 7rem;
+      width: 7rem;
+    }
+    .subtitle {
+      display: grid;
+      justify-items: end;
+      gap: 0.3rem;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 7rem;
+        transform: translateY(0.9rem);
+        height: 0.08rem;
+        background-color: var(--text-color);
+      }
+    }
+  }
+}

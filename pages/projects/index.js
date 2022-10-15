@@ -9,8 +9,8 @@ import styles from "./projects.module.scss";
 
 // COMPONENTS
 import NavBar from "../../components/NavBar/NavBar";
-import FlipCard from "../../components/FlipCard/FlipCard";
 import ThemeButton from "../../components/ThemeButton/ThemeButton";
+import CustomParticles from "../../components/CustomParticles/CustomParticles";
 
 // IMAGES
 import boutique from "../../images/projects/boutique/boutique.png";
@@ -19,6 +19,8 @@ import industrial from "../../images/projects/industrial/industrial.png";
 import landmark from "../../images/projects/landmark/landmark.png";
 import manufacturat from "../../images/projects/manufacturat/manufacturat.png";
 import skyscraper from "../../images/projects/skyscraper/skyscraper.png";
+import RightProject from "../../components/RightProject/RightProject";
+import LeftProject from "../../components/LeftProject/LeftProject";
 
 // STYLES
 const projects = {
@@ -40,55 +42,57 @@ function MyProjectsPage() {
         handleClick={theme.setTheme}
       />
       <main className={styles.projects_box}>
-        <div className={styles.culturall}>
-          <FlipCard
-            name={"culturall"}
-            source={culturall}
-            styles={{ backgroundColor: "#9e5a4c" }}
-            page={"about"}
-          />
-        </div>
-        <div className={styles.boutique}>
-          <FlipCard
-            name={"boutique"}
-            source={boutique}
-            styles={{ backgroundColor: "#748867" }}
-            page={"about"}
-          />
-        </div>
-        <div className={styles.manufacturat}>
-          <FlipCard
-            name={"manufacturat"}
-            source={manufacturat}
-            styles={{ backgroundColor: "#ba9569" }}
-            page={"about"}
-          />
-        </div>
-        <div className={styles.landmark}>
-          <FlipCard
-            name={"landmark"}
-            source={landmark}
-            styles={{ backgroundColor: "#566c57" }}
-            page={"about"}
-          />
-        </div>
-        <div className={styles.skyscraper}>
-          <FlipCard
-            name={"skyscraper"}
-            source={skyscraper}
-            styles={{ backgroundColor: "#486478" }}
-            page={"about"}
-          />
-        </div>
-        <div className={styles.industrial}>
-          <FlipCard
-            name={"industrial"}
-            source={industrial}
-            styles={{ backgroundColor: "#ac6c53" }}
-            page={"about"}
-          />
-        </div>
+        <RightProject
+          source={culturall}
+          subtitle={"CENTRU CULTURAL PENTRU TOTI"}
+          text={"VI - 2021"}
+          title_one={"cul"}
+          title_two={"tur"}
+          title_three={"all"}
+        />
+        <LeftProject
+          source={boutique}
+          subtitle={"BOUTIQUE HOTEL"}
+          text={"VI - 2021"}
+          title_one={"bou"}
+          title_two={"tiq"}
+          title_three={"ue"}
+        />
+        <RightProject
+          source={manufacturat}
+          subtitle={"ATELIER DE CREATIE - EXPOZITIE"}
+          text={"V - 2019"}
+          title_one={"man"}
+          title_two={"ufa"}
+          title_three={"ctu"}
+          title_four={"rat"}
+        />
+        <LeftProject
+          source={skyscraper}
+          subtitle={"CLADIRE DE BIROURI"}
+          text={"IV - 2020"}
+          title_one={"SKY"}
+          title_two={"SCR"}
+          title_three={"APER"}
+        />
+        <RightProject
+          source={industrial}
+          subtitle={"REVITALIZARE UZINA ELECTRICA"}
+          text={"IV - 2019"}
+          title_one={"ind"}
+          title_two={"ust"}
+          title_three={"rial"}
+        />
+        <LeftProject
+          source={landmark}
+          subtitle={"HOTEL URBAN ****"}
+          text={"IV - 2020"}
+          title_one={"LAN"}
+          title_two={"DMA"}
+          title_three={"rk"}
+        />
       </main>
+      <CustomParticles color={theme.isDark ? "#fff" : "#000"} />
     </div>
   );
 }
