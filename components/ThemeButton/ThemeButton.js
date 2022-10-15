@@ -5,9 +5,9 @@ export default function ThemeButton(props) {
   return (
     <div
       className={
-        props.theme == "light"
-          ? styles.button
-          : `${styles.button} ${styles.active}`
+        props.theme
+          ? `${styles.button} ${styles.dark}`
+          : `${styles.button} ${styles.light}`
       }
       onClick={props.handleClick}
       style={props.styles}

@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import useLocalStorage from "use-local-storage";
+import { ThemeContext } from "../../context/theme";
+import { useContext } from "react";
 
 // STYLES
 import styles from "./projects.module.scss";
@@ -8,8 +9,8 @@ import styles from "./projects.module.scss";
 
 // COMPONENTS
 import NavBar from "../../components/NavBar/NavBar";
-import ThemeButton from "../../components/ThemeButton/ThemeButton";
 import FlipCard from "../../components/FlipCard/FlipCard";
+import ThemeButton from "../../components/ThemeButton/ThemeButton";
 
 // IMAGES
 import boutique from "../../images/projects/boutique/boutique.png";
@@ -20,27 +21,23 @@ import manufacturat from "../../images/projects/manufacturat/manufacturat.png";
 import skyscraper from "../../images/projects/skyscraper/skyscraper.png";
 
 // STYLES
+const projects = {
+  insetBlockStart: "3.5rem",
+  insetInlineStart: "1rem",
+};
 
-function MyPortfolioPage() {
-  const [theme, setTheme] = useLocalStorage("theme", "light");
-  const changeTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-  };
-  const projectsStyle = {
-    insetBlockStart: "10rem",
-    insetInlineStart: "1%",
-  };
+function MyProjectsPage() {
+  const theme = useContext(ThemeContext);
   return (
-    <div className={styles.app} data-theme={theme}>
+    <div className={theme.isDark ? "app dark" : "app"}>
       <Head>
         <title>Proiecte</title>
       </Head>
       <NavBar />
       <ThemeButton
-        styles={projectsStyle}
-        theme={theme}
-        handleClick={changeTheme}
+        styles={projects}
+        theme={theme.isDark}
+        handleClick={theme.setTheme}
       />
       <main className={styles.projects_box}>
         <FlipCard
@@ -84,4 +81,4 @@ function MyPortfolioPage() {
   );
 }
 
-export default MyPortfolioPage;
+export default MyProjectsPage;

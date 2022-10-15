@@ -1,7 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import useLocalStorage from "use-local-storage";
 import { useInView } from "react-intersection-observer";
+import { ThemeContext } from "../../context/theme";
+import { useContext } from "react";
 
 // STYLES
 import styles from "./about.module.scss";
@@ -17,12 +18,12 @@ import coms from "../../data/about/coms";
 import profs from "../../data/about/profs";
 
 // COMPONENTS
-import ThemeButton from "../../components/ThemeButton/ThemeButton";
 import NavBar from "../../components/NavBar/NavBar";
 import InfoBox from "../../components/InfoBox/InfoBox";
 import SkillsBar from "../../components/SkillsBar";
 import CustomParticles from "../../components/CustomParticles/CustomParticles";
 import AbilityList from "../../components/AbilityList/AbilityList";
+import ThemeButton from "../../components/ThemeButton/ThemeButton";
 
 function MyAboutPage() {
   const { ref: informationRef, inView: informationIsVisible } = useInView();
@@ -36,25 +37,21 @@ function MyAboutPage() {
   const { ref: profsRef, inView: profsIsVisible } = useInView();
 
   // CHANGE THEME BUTTON
-  const [theme, setTheme] = useLocalStorage("theme", "light");
-  const changeTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-  };
-  const aboutStyle = {
-    insetBlockStart: "2.5rem",
-    insetInlineStart: "1%",
+  const theme = useContext(ThemeContext);
+  const about = {
+    insetBlockStart: "3.5rem",
+    insetInlineStart: "1rem",
   };
   return (
-    <div className={styles.app} data-theme={theme}>
+    <div className={theme.isDark ? "app dark" : "app"}>
       <Head>
         <title>Detalii</title>
       </Head>
       <NavBar />
       <ThemeButton
-        styles={aboutStyle}
-        theme={theme}
-        handleClick={changeTheme}
+        styles={about}
+        theme={theme.isDark}
+        handleClick={theme.setTheme}
       />
       <main className={styles.main}>
         <header className={styles.header}>
@@ -203,7 +200,7 @@ function MyAboutPage() {
           <AbilityList abilities={profs} />
         </section>
       </main>
-      <CustomParticles color={theme === "light" ? "#000" : "#fff"} />
+      <CustomParticles color={theme.isDark ? "#fff" : "#000"} />
     </div>
   );
 }

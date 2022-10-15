@@ -1,9 +1,7 @@
 @use "../../styles/mixins.scss" as *;
 
-.app {
-  background-color: var(--background);
-}
 .projects_box {
+  background-color: var(--background);
   display: grid;
   justify-items: center;
   gap: 1rem;

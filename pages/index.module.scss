@@ -30,16 +30,13 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--background);
-  * {
-    transition: all 1s;
-  }
 }
 .banner_content {
   width: 18rem;
   height: 100vh;
   margin: 0rem auto;
   align-self: end;
-  div {
+  > div {
     position: absolute;
     inset-block-start: 50%;
     inset-inline-start: 50%;
@@ -90,14 +87,14 @@ nav {
 .concept {
   inset-block-start: 9rem;
   padding-inline-start: 0.5rem;
-  transform: translateX(5rem);
+  transform: translateX(4.5rem);
   letter-spacing: 7px;
 }
 .line {
   width: 1rem;
   inset-inline-end: 11.5rem;
-  transform: translate(18rem, 3.3rem);
-  letter-spacing: 5px;
+  transform: translate(17rem, 3.3rem);
+  letter-spacing: 3px;
   writing-mode: vertical-lr;
   text-orientation: upright;
 }
@@ -106,11 +103,10 @@ nav {
   background-image: var(--background-image);
   background-size: cover;
   background-position: center;
-  transform: translate(-27%, -45%);
+  transform: translate(-35%, -45%);
   width: 12rem;
   height: 18rem;
   z-index: 0;
-  transition: all 1s;
   animation-name: drop-in, fade-in;
   animation-duration: 2s;
   animation-timing-function: ease-out;
@@ -126,13 +122,16 @@ nav {
   @media (min-height: 880px) {
     height: 38rem;
   }
+  @media (min-height: 1000px) {
+    height: 45rem;
+  }
 }
 .details_logo {
   position: absolute;
   inset-block-start: 50%;
   inset-inline-start: 50%;
-  transform: translate(-50%, -3%);
-  width: 24rem;
+  transform: translate(-55%, -3%);
+  width: 17rem;
   height: auto;
   z-index: 0;
   animation-name: left-in, fade-in;
@@ -140,30 +139,17 @@ nav {
   animation-timing-function: ease-out;
 }
 .details_text {
-  @include font-details(var(--text-color), "bc-medium", 0.7rem);
+  @include font-details(var(--text-color), "bc-medium", 0.6rem);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   z-index: 1;
-  transform: translate(3.15rem, 5.5rem);
+  transform: translate(2.8rem, 5.5rem);
   animation-name: right-in, fade-in;
   animation-duration: 2s;
   animation-timing-function: ease-in;
 }
 // RESPONSIVE
-@media (max-width: 320px) {
-  .line {
-    transform: translate(17.6rem, 3.3rem);
-  }
-  nav .projects {
-    transform: translateX(2rem);
-  }
-  .details_text {
-    transform: translate(2.8rem, 5.5rem);
-  }
-  .details_background {
-    transform: translate(-28%, -45%);
-  }
-}
+
 @media (min-width: 400px) {
   .banner_content {
     width: 22.5rem;
@@ -182,7 +168,7 @@ nav {
   }
   .details_logo {
     transform: translate(-52%, -3%);
-    width: 28rem;
+    width: 22rem;
   }
   .concept {
     transform: translateX(5.7rem);
@@ -191,31 +177,34 @@ nav {
     transform: translate(21.6rem, 3.3rem);
   }
   .details_text {
-    transform: translate(3rem, 6.5rem);
+    transform: translate(4.2rem, 7rem);
+    font-size: 0.7rem;
   }
 }
 @media (min-width: 550px) {
   .banner_content {
-    width: 30rem;
+    width: 33rem;
   }
   .details_background {
-    transform: translate(-37%, -46%);
+    transform: translate(-40%, -46%);
     width: 24rem;
   }
   .details_logo {
-    transform: translate(-58%, -3%);
-    width: 35rem;
+    transform: translate(-68%, -3%);
+    width: 25rem;
   }
   .line {
-    transform: translate(30.5rem, 3.3rem);
+    transform: translate(31.5rem, 3.3rem);
   }
   .details_text {
-    transform: translate(1.5rem, 8rem);
+    transform: translate(1rem, 8rem);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
   }
 }
 @media (min-width: 800px) {
   .banner_content {
-    width: 45rem;
+    width: 48rem;
   }
   nav {
     .about {
@@ -226,19 +215,19 @@ nav {
     }
   }
   .details_background {
-    transform: translate(-33%, -46%);
-    width: 33rem;
+    transform: translate(-36%, -46%);
+    width: 35rem;
   }
   .details_logo {
-    transform: translate(-58%, -3%);
-    width: 45rem;
+    transform: translate(-68%, -3%);
+    width: 35rem;
   }
   .concept {
     transform: translateX(11rem);
     font-size: 0.8rem;
   }
   .line {
-    transform: translate(45rem, 3.3rem);
+    transform: translate(46.5rem, 3.3rem);
     font-size: 0.8rem;
   }
   .details_text {
@@ -246,77 +235,30 @@ nav {
     font-size: 0.9rem;
   }
 }
-@media (min-width: 1000px) {
-  .banner_content {
-    width: 50rem;
-  }
-  .details_background {
-    transform: translate(-33%, -46%);
-    width: 38rem;
-  }
-  .details_logo {
-    transform: translate(-64%, -3%);
-  }
-  .line {
-    transform: translate(51rem, 3.3rem);
-  }
-  .details_text {
-    transform: translate(0rem, 10.5rem);
-  }
-}
-@media (min-width: 900px) and (min-height: 950px) {
-  nav {
-    .about,
-    .projects {
-      width: 8rem;
-      height: 1.75rem;
-      font-size: 1.5rem;
-    }
-  }
-  .concept {
-    transform: translateX(11.5rem);
-    font-size: 1rem;
-  }
 
-  .details_text {
-    font-size: 1.2rem;
-  }
-  .line {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1000px) and (min-height: 1100px) {
+@media (min-width: 1200px) {
   .banner_content {
-    width: 66rem;
-  }
-  nav {
-    .about,
-    .projects {
-      width: 9rem;
-      height: 2rem;
-      font-size: 1.75rem;
-    }
-  }
-  .concept {
-    transform: translate(12rem, 1rem);
-    font-size: 1rem;
+    width: 62rem;
   }
   .details_background {
-    transform: translate(-40%, -46%);
+    transform: translate(-36%, -46%);
     width: 45rem;
-    height: 45rem;
   }
   .details_logo {
-    transform: translate(-63%, -3%);
-    width: 60rem;
+    transform: translate(-75%, -3%);
+    width: 43rem;
   }
   .details_text {
-    font-size: 1.2rem;
-    transform: translate(0rem, 14rem);
+    transform: translate(-1rem, 14.5rem);
+    font-size: 1rem;
   }
   .line {
-    font-size: 1rem;
-    transform: translate(61rem, 3.3rem);
+    transform: translate(60.5rem, 3.3rem);
+  }
+  .concept,
+  .line {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
   }
 }
 // PHONE LANDSCAPE

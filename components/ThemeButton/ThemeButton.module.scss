@@ -2,66 +2,58 @@
 
 .button {
   position: absolute;
-  inset-block-start: 50%;
-  inset-inline-start: 50%;
   width: 5rem;
   height: 5rem;
-  padding: 1rem;
-  transition: all 1s;
-  cursor: pointer;
   @include fade-in();
+  cursor: pointer;
   &::before {
     content: "";
     position: absolute;
-    background-color: var(--text-color);
-    width: 0.02rem;
-    height: 5rem;
+    width: 5rem;
+    height: 0.1rem;
     transform-origin: center;
-    transform: translate(2.5rem, -0.1rem) rotate(90deg);
-    transition: all 1s;
-  }
-}
-.button.active {
-  transform: rotate(180deg);
-}
-.dark,
-.light {
-  width: 5rem;
-  height: 1.5rem;
-  position: absolute;
-  text-decoration: none;
-  @include font-details(var(--text-color), "ag-regular", 1.25rem);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  z-index: 8;
-}
-.light {
-  transform: translate(0.2rem, 1rem);
-  backface-visibility: hidden;
-  will-change: transform;
-  perspective: 1000px;
-}
-.dark {
-  transform: translate(0rem, 2.3rem) rotate(180deg);
-  backface-visibility: hidden;
-  will-change: transform;
-  perspective: 1000px;
-}
-@media (max-width: 395px) {
-  .button {
-    width: 2rem;
-    height: 2rem;
-    &::before {
-      height: 3rem;
-      transform: translate(0.75rem, 0.9rem) rotate(90deg);
-    }
+    transform: translate(0rem, 2.35rem);
   }
   .dark,
   .light {
-    width: 2rem;
+    width: 5rem;
+    height: 1.5rem;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
   }
   .light {
-    transform: translate(-0.5rem, 1rem);
+    transform: translate(0.2rem, 1rem);
+    backface-visibility: hidden;
+    will-change: transform;
+    perspective: 1000px;
+  }
+  .dark {
+    transform: translate(0rem, 2.3rem) rotate(180deg);
+    backface-visibility: hidden;
+    will-change: transform;
+    perspective: 1000px;
+  }
+}
+
+.button.light {
+  @include font-details(#000, "ag-regular", 1.25rem);
+  &::before {
+    background-color: #000;
+  }
+}
+.button.dark {
+  transform-origin: center;
+  transform: rotate(180deg);
+  @include font-details(#fff, "ag-regular", 1.25rem);
+  &::before {
+    background-color: #fff;
+  }
+}
+@media (max-width: 400px) {
+  .button {
+    transform: scale(0.8);
   }
 }

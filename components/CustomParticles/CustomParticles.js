@@ -45,7 +45,7 @@ export default function CustomParticles(props) {
           random: false,
           anim: {
             enable: false,
-            speed: 40,
+            speed: 1000,
             size_min: 0.1,
             sync: false,
           },
