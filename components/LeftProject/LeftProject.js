@@ -2,10 +2,16 @@ import React from "react";
 import Image from "next/future/image";
 
 import styles from "./LeftProject.module.scss";
+import { useInView } from "react-intersection-observer";
 
 function LeftProject(props) {
+  const { ref: myRef, inView: refIsVisible } = useInView();
+
   return (
-    <section className={styles.left_project}>
+    <section
+      className={`${styles.left_project} ${refIsVisible ? styles.appear : ""}`}
+      ref={myRef}
+    >
       <div className={styles.project}>
         <Image className={styles.logo} src={props.source} alt="LogoProiect" />
         <div className={styles.subtitle}>
