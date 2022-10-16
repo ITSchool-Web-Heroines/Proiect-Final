@@ -6,7 +6,7 @@ import styles from "./RightProject.module.scss";
 function RightProject(props) {
   return (
     <section className={styles.right_project}>
-      <div className={styles.culturall}>
+      <div className={styles.project}>
         <Image className={styles.logo} src={props.source} alt="LogoProiect" />
         <div className={styles.subtitle}>
           <p>{props.subtitle}</p>

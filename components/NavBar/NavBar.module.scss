@@ -3,6 +3,7 @@
 // MENU
 .menu {
   background-color: var(--background);
+  box-shadow: 0rem 0rem 1rem 1rem var(--background);
   display: grid;
   z-index: 5;
   justify-items: center;

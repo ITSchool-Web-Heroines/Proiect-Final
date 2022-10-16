@@ -53,4 +53,15 @@
   .button {
     transform: scale(0.7);
   }
+  .button.dark {
+    transform: rotate(180deg) scale(0.7);
+  }
+}
+@media (max-width: 600px) {
+  .button {
+    transform: scale(0.85);
+  }
+  .button.dark {
+    transform: rotate(180deg) scale(0.85);
+  }
 }

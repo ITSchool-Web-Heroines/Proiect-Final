@@ -23,8 +23,9 @@
     background-color: var(--text-color);
   }
   .title {
-    width: 7rem;
-    transform: translate(5.2rem, 2.5rem);
+    display: grid;
+    justify-items: end;
+    transform: translate(5rem, 2.5rem);
     @include font-details(var(--text-color), "ag-regular", 1rem);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -32,12 +33,12 @@
       content: "";
       position: absolute;
       width: 1.8rem;
-      transform: translate(-0.15rem, -0.2rem);
+      transform: translate(0rem, -0.2rem);
       height: 0.08rem;
       background-color: var(--text-color);
     }
   }
-  .culturall {
+  .project {
     @include font-details(var(--text-color), "ag-regular", 0.7rem);
     text-transform: uppercase;
     transform: translate(8.2rem, 4.8rem);
@@ -58,6 +59,46 @@
         transform: translateY(0.9rem);
         height: 0.08rem;
         background-color: var(--text-color);
+      }
+    }
+  }
+}
+@media (min-width: 375px) {
+  .left_project {
+    height: 18rem;
+    width: 18rem;
+    &::before {
+      width: 0.15rem;
+      transform: translate(9rem, 0rem);
+      height: 1rem;
+    }
+    &::after {
+      width: 0.02rem;
+      transform: translate(9rem, 1.5rem);
+      height: 16.5rem;
+    }
+    .title {
+      transform: translate(6.2rem, 3.5rem);
+      font-size: 1.25rem;
+      &::before {
+        width: 2rem;
+        transform: translate(-0.15rem, -0.2rem);
+        height: 0.15rem;
+      }
+    }
+    .project {
+      font-size: 0.85rem;
+      transform: translate(10rem, 5.25rem);
+      .logo {
+        height: 8.5rem;
+        width: 8.5rem;
+      }
+      .subtitle {
+        &::before {
+          width: 8.5rem;
+          transform: translateY(1.2rem);
+          height: 0.15rem;
+        }
       }
     }
   }
