@@ -56,14 +56,6 @@
     transform: translate(8.2rem, 4.8rem);
     display: grid;
     gap: 0.5rem;
-    .logo {
-      height: 7rem;
-      width: 7rem;
-      filter: grayscale(5) contrast(1);
-      &:hover {
-        filter: none;
-      }
-    }
     .subtitle {
       display: grid;
       justify-items: start;
@@ -105,10 +97,6 @@
     .project {
       font-size: 0.85rem;
       transform: translate(10rem, 5.25rem);
-      .logo {
-        height: 8.5rem;
-        width: 8.5rem;
-      }
       .subtitle {
         &::before {
           width: 8.5rem;
@@ -145,10 +133,6 @@
       letter-spacing: 3px;
       font-size: 1.25rem;
       transform: translate(15.5rem, 9rem);
-      .logo {
-        height: 13rem;
-        width: 13rem;
-      }
       .subtitle {
         &::before {
           width: 13.2rem;

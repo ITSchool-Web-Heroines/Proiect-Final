@@ -1,12 +1,11 @@
 import React from "react";
-import Image from "next/future/image";
 import { useInView } from "react-intersection-observer";
+import FlipCard from "../FlipCard/FlipCard";
 
 // STYLES
 import styles from "./RightProject.module.scss";
 
 // COMPONENTS
-import NavLink from "../NavLink";
 
 function RightProject(props) {
   const { ref: myRef, inView: refIsVisible } = useInView();
@@ -17,9 +16,12 @@ function RightProject(props) {
       ref={myRef}
     >
       <div className={styles.project}>
-        <NavLink href={"/"}>
-          <Image className={styles.logo} src={props.source} alt="LogoProiect" />
-        </NavLink>
+        <FlipCard
+          name={props.image}
+          source={props.source}
+          styles={{ backgroundColor: `${props.color}` }}
+          page={props.page}
+        />
         <div className={styles.subtitle}>
           <p>{props.subtitle}</p>
           <p>{props.text}</p>

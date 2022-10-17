@@ -50,6 +50,9 @@ function MyProjectsPage() {
           title_one={"cul"}
           title_two={"tur"}
           title_three={"all"}
+          imageName={"culturall"}
+          color={"#9e5a4c"}
+          page={"/about"}
         />
         <LeftProject
           source={boutique}
@@ -58,6 +61,9 @@ function MyProjectsPage() {
           title_one={"bou"}
           title_two={"tiq"}
           title_three={"ue"}
+          imageName={"boutique"}
+          color={"#748867"}
+          page={"/about"}
         />
         <RightProject
           source={manufacturat}
@@ -67,6 +73,9 @@ function MyProjectsPage() {
           title_two={"ufa"}
           title_three={"ctu"}
           title_four={"rat"}
+          imageName={"manufacturat"}
+          color={"#ba9569"}
+          page={"/about"}
         />
         <LeftProject
           source={skyscraper}
@@ -75,6 +84,9 @@ function MyProjectsPage() {
           title_one={"SKY"}
           title_two={"SCR"}
           title_three={"APER"}
+          imageName={"skyscraper"}
+          color={"#486478"}
+          page={"/about"}
         />
         <RightProject
           source={industrial}
@@ -83,6 +95,9 @@ function MyProjectsPage() {
           title_one={"ind"}
           title_two={"ust"}
           title_three={"rial"}
+          imageName={"industrial"}
+          color={"#ac6c53"}
+          page={"/about"}
         />
         <LeftProject
           source={landmark}
@@ -91,6 +106,9 @@ function MyProjectsPage() {
           title_one={"LAN"}
           title_two={"DMA"}
           title_three={"rk"}
+          imageName={"landmark"}
+          color={"#566c57"}
+          page={"/"}
         />
       </main>
       <CustomParticles color={theme.isDark ? "#fff" : "#000"} />
