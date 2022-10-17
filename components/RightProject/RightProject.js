@@ -1,8 +1,12 @@
 import React from "react";
 import Image from "next/future/image";
-
-import styles from "./RightProject.module.scss";
 import { useInView } from "react-intersection-observer";
+
+// STYLES
+import styles from "./RightProject.module.scss";
+
+// COMPONENTS
+import NavLink from "../NavLink";
 
 function RightProject(props) {
   const { ref: myRef, inView: refIsVisible } = useInView();
@@ -13,7 +17,9 @@ function RightProject(props) {
       ref={myRef}
     >
       <div className={styles.project}>
-        <Image className={styles.logo} src={props.source} alt="LogoProiect" />
+        <NavLink href={"/"}>
+          <Image className={styles.logo} src={props.source} alt="LogoProiect" />
+        </NavLink>
         <div className={styles.subtitle}>
           <p>{props.subtitle}</p>
           <p>{props.text}</p>

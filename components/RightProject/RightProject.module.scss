@@ -56,9 +56,15 @@
     transform: translate(0rem, 4.8rem);
     display: grid;
     gap: 0.5rem;
+
     .logo {
       height: 7rem;
       width: 7rem;
+      transition: filter 0.5s;
+      filter: grayscale(5) contrast(1);
+      &:hover {
+        filter: none;
+      }
     }
     .subtitle {
       display: grid;
@@ -148,7 +154,7 @@
       }
       .subtitle {
         &::before {
-          width: 13rem;
+          width: 13.2rem;
           transform: translateY(1.5rem);
         }
       }

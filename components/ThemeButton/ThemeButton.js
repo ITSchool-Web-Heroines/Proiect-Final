@@ -1,4 +1,6 @@
 import React from "react";
+
+// STYLES
 import styles from "./ThemeButton.module.scss";
 
 export default function ThemeButton(props) {

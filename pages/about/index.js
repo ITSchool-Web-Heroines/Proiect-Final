@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import { useInView } from "react-intersection-observer";
+
+// CONTEXT
 import { ThemeContext } from "../../context/theme";
 import { useContext } from "react";
 
@@ -19,23 +21,15 @@ import profs from "../../data/about/profs";
 
 // COMPONENTS
 import NavBar from "../../components/NavBar/NavBar";
-import InfoBox from "../../components/InfoBox/InfoBox";
-import SkillsBar from "../../components/SkillsBar";
+import SkillsBar from "../../components/SkillsBar/SkillsBar";
 import CustomParticles from "../../components/CustomParticles/CustomParticles";
-import AbilityList from "../../components/AbilityList/AbilityList";
 import ThemeButton from "../../components/ThemeButton/ThemeButton";
+import LoadingWrap from "../../components/LoadingWrap/LoadingWrap";
+import AbilitySection from "../../components/AbilitySection/AbilitySection";
+import InfoSection from "../../components/InfoSection/InfoSection";
+import DigitalList from "../../components/DigitalList/DigitalList";
 
 function MyAboutPage() {
-  const { ref: informationRef, inView: informationIsVisible } = useInView();
-  const { ref: contactRef, inView: contactIsVisible } = useInView();
-  const { ref: schoolRef, inView: schoolIsVisible } = useInView();
-  const { ref: jobsRef, inView: jobsIsVisible } = useInView();
-  const { ref: digitalsRef, inView: digitalsIsVisible } = useInView();
-  const { ref: languagesRef, inView: languagesIsVisible } = useInView();
-  const { ref: orgsRef, inView: orgsIsVisible } = useInView();
-  const { ref: comsRef, inView: comsIsVisible } = useInView();
-  const { ref: profsRef, inView: profsIsVisible } = useInView();
-
   // CHANGE THEME BUTTON
   const theme = useContext(ThemeContext);
   const about = {
@@ -43,7 +37,7 @@ function MyAboutPage() {
     insetInlineStart: "1rem",
   };
   return (
-    <div className={theme.isDark ? "app dark" : "app"}>
+    <LoadingWrap>
       <Head>
         <title>Detalii</title>
       </Head>
@@ -61,144 +55,46 @@ function MyAboutPage() {
             <p className={styles.sub_title}>arhitect</p>
           </div>
         </header>
-        <section
-          className={`${styles.inview_section} ${styles.information} ${
-            informationIsVisible ? styles.appear : ""
-          }`}
-          ref={informationRef}
-        >
-          <p className={styles.section_title}>date personale</p>
-          {informations.map(item => (
-            <InfoBox
-              key={item.id}
-              title={item.title}
-              subtitle={item.subtitle}
-            />
-          ))}
-        </section>
-        <section
-          className={`${styles.inview_section} ${styles.contact} ${
-            contactIsVisible ? styles.appear : ""
-          }`}
-          ref={contactRef}
-        >
-          <p className={styles.section_title}>contact</p>
-          {contact.map(item => (
-            <InfoBox
-              key={item.id}
-              title={item.title}
-              subtitle={item.subtitle}
-            />
-          ))}
-        </section>
-        <section
-          className={`${styles.inview_section} ${styles.school} ${
-            schoolIsVisible ? styles.appear : ""
-          }`}
-          ref={schoolRef}
-        >
-          <p className={styles.section_title}>
-            educație și formare profesională
-          </p>
-          {schools.map(item => (
-            <InfoBox
-              key={item.id}
-              title={item.title}
-              subtitle={item.subtitle}
-            />
-          ))}
-        </section>
-        <section
-          className={`${styles.inview_section} ${styles.jobs} ${
-            jobsIsVisible ? styles.appear : ""
-          }`}
-          ref={jobsRef}
-        >
-          <p className={styles.section_title}>experiență profesională</p>
-          {jobs.map(item => (
-            <InfoBox
-              key={item.id}
-              title={item.title}
-              subtitle={item.subtitle}
-            />
-          ))}
-        </section>
-        <section
-          className={`${styles.inview_section} ${styles.digitals} ${
-            digitalsIsVisible ? styles.appear : ""
-          }`}
-          ref={digitalsRef}
-        >
-          <p className={styles.section_title}>competențe digitale</p>
-          <p className={`${styles.title} ${styles.autodesk}`}> autodesk</p>
-          <ul className={styles.second_list}>
-            <li className={styles.list_item}>Revit</li>
-            <SkillsBar level={4} />
-            <li className={styles.list_item}>autocad</li>
-            <SkillsBar level={5} />
-          </ul>
-          <p className={`${styles.title} ${styles.microsoft}`}>microsoft</p>
-          <ul className={styles.second_list}>
-            <li className={styles.list_item}>word</li>
-            <SkillsBar level={6} />
-            <li className={styles.list_item}>excel</li>
-            <SkillsBar level={5} />
-          </ul>
-          <p className={`${styles.title} ${styles.adobe}`}>Adobe</p>
-          <ul className={styles.second_list}>
-            <li className={styles.list_item}>photoshop</li>
-            <SkillsBar level={4} />
-            <li className={styles.list_item}>illustrator</li>
-            <SkillsBar level={4} />
-            <li className={styles.list_item}>indesign</li>
-            <SkillsBar level={4} />
-          </ul>
-          <p className={`${styles.title} ${styles.sketchup}`}>sketchup</p>
-          <SkillsBar level={3} />
-          <p className={`${styles.title} ${styles.lumion}`}>lumion</p>
-          <SkillsBar level={5} />
-        </section>
-        <section
-          className={`${styles.inview_section} ${styles.languages} ${
-            languagesIsVisible ? styles.appear : ""
-          }`}
-          ref={languagesRef}
-        >
-          <p className={styles.section_title}>competențe lingvistice </p>
-          <AbilityList abilities={languages} />
-        </section>
-        <section
-          className={`${styles.inview_section} ${styles.orgs} ${
-            orgsIsVisible ? styles.appear : ""
-          }`}
-          ref={orgsRef}
-        >
-          <p className={styles.section_title}>competențe organizatorice </p>
-          <AbilityList abilities={orgs} />
-        </section>
-        <section
-          className={`${styles.inview_section} ${styles.coms} ${
-            comsIsVisible ? styles.appear : ""
-          }`}
-          ref={comsRef}
-        >
-          <p className={styles.section_title}>
-            competențe de comunicare. interpersonale
-          </p>
-          <AbilityList abilities={coms} />
-        </section>
-        <section
-          className={`${styles.inview_section} ${styles.profs} ${
-            profsIsVisible ? styles.appear : ""
-          }`}
-          ref={profsRef}
-        >
-          <p className={styles.section_title}>dobândite la locul de muncă </p>
-          <AbilityList abilities={profs} />
-        </section>
+        <InfoSection
+          title={"date personale"}
+          info={informations}
+          infoClass={"information"}
+        />
+        <InfoSection title={"contact"} info={contact} infoClass={"contact"} />
+        <InfoSection
+          title={"educație și formare profesională"}
+          info={schools}
+          infoClass={"schools"}
+        />
+        <InfoSection
+          title={"experiență profesională"}
+          info={jobs}
+          infoClass={"jobs"}
+        />
+        <DigitalList abilityClass={"digitals"} />
+        <AbilitySection
+          title={"lingvistice"}
+          ability={languages}
+          abilityClass={"languages"}
+        />
+        <AbilitySection
+          title={"organizatorice"}
+          ability={orgs}
+          abilityClass={"orgs"}
+        />
+        <AbilitySection
+          title={"de comunicare. interpersonale"}
+          ability={coms}
+          abilityClass={"coms"}
+        />
+        <AbilitySection
+          title={"dobândite la locul de muncă"}
+          ability={profs}
+          abilityClass={"profs"}
+        />
       </main>
       <CustomParticles color={theme.isDark ? "#fff" : "#000"} />
-    </div>
+    </LoadingWrap>
   );
 }
 

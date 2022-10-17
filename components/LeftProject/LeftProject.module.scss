@@ -59,6 +59,10 @@
     .logo {
       height: 7rem;
       width: 7rem;
+      filter: grayscale(5) contrast(1);
+      &:hover {
+        filter: none;
+      }
     }
     .subtitle {
       display: grid;
@@ -147,7 +151,7 @@
       }
       .subtitle {
         &::before {
-          width: 13rem;
+          width: 13.2rem;
           transform: translateY(1.5rem);
         }
       }

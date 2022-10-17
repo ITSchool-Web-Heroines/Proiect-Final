@@ -1,6 +1,8 @@
 import React, { useMemo } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+
+// STYLES
 import styles from "./CustomParticles.module.scss";
 
 export default function CustomParticles(props) {

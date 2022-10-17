@@ -1,4 +1,6 @@
 import React from "react";
+
+// STYLES
 import styles from "./InfoBox.module.scss";
 
 export default function InfoBox(props) {

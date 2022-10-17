@@ -48,144 +48,6 @@
   }
 }
 
-// ABOUT SECTIONS - COMMON
-.inview_section {
-  width: 13rem;
-  display: grid;
-  gap: 0.25rem;
-  opacity: 0;
-  position: relative;
-  padding-inline: 1rem;
-}
-.section_title {
-  @include font-details(var(--text-color), "bc-light", 1.25rem);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-.contact,
-.jobs,
-.languages,
-.coms {
-  text-align: right;
-  .section_title {
-    text-align: right;
-  }
-  ul {
-    direction: rtl;
-  }
-}
-.title {
-  @include font-details(var(--text-color), "bc-medium", 1rem);
-  text-transform: uppercase;
-}
-.second_list {
-  list-style: square;
-  display: grid;
-  list-style-position: inside;
-  gap: 0.5rem;
-  .list_item {
-    @include font-details(var(--text-color), "bc-regular", 1rem);
-    text-transform: uppercase;
-  }
-}
-
-.abilities_list {
-  list-style: square;
-  display: grid;
-  gap: 0.5rem;
-  list-style-position: inside;
-  .list_item {
-    @include font-details(var(--text-color), "bc-regular", 1rem);
-  }
-}
-.sketchup,
-.lumion {
-  padding-block-end: 0.5rem;
-}
-
-// LEVEL SQUARES
-.square_box {
-  display: none;
-  border: 0.1rem solid var(--text-color);
-  height: 1.5rem;
-  width: 11.9rem;
-  background-color: var(--background);
-  transition: all 2s;
-  &::after {
-    content: "";
-    width: 0rem;
-    height: 1.6rem;
-    background-color: var(--text-color);
-    transform: translate(-1px, -1px);
-    position: absolute;
-  }
-}
-// APPEAR ON SCROLL
-.inview_section.appear {
-  opacity: 1;
-  transform: translateX(0);
-  animation: right-in 2s linear;
-  .square_box {
-    display: block;
-    &.medium {
-      &::after {
-        width: 6rem;
-        animation: medium-animation 2s linear;
-        @keyframes medium-animation {
-          0% {
-            width: 0rem;
-          }
-          100% {
-            width: 6rem;
-          }
-        }
-      }
-    }
-    &.good {
-      &::after {
-        width: 8rem;
-        animation: good-animation 2s linear;
-        @keyframes good-animation {
-          0% {
-            width: 0rem;
-          }
-          100% {
-            width: 8rem;
-          }
-        }
-      }
-    }
-    &.advanced {
-      &::after {
-        width: 10rem;
-        animation: advanced-animation 2s linear;
-        @keyframes advanced-animation {
-          0% {
-            width: 0rem;
-          }
-          100% {
-            width: 10rem;
-          }
-        }
-      }
-    }
-    &.proficient {
-      &::after {
-        width: 12rem;
-        animation: proficient-animation 2s linear;
-        @keyframes proficient-animation {
-          0% {
-            width: 0rem;
-          }
-          100% {
-            width: 12rem;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media (min-width: 320px) {
   .header {
     height: 18rem;
@@ -206,9 +68,6 @@
         font-size: 1rem;
       }
     }
-  }
-  .inview_section {
-    width: 16.5rem;
   }
 }
 @media (min-width: 420px) {
@@ -234,28 +93,5 @@
     .photo {
       transform: translateX(3.5rem);
     }
-  }
-  .inview_section {
-    width: 23.5rem;
-  }
-  .section_title {
-    font-size: 1.5rem;
-  }
-  .title,
-  .second_list .list_item,
-  .abilities_list .list_item {
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 550px) {
-  .inview_section {
-    transform: translateX(-4rem);
-  }
-
-  .contact,
-  .jobs,
-  .languages,
-  .coms {
-    transform: translateX(4rem);
   }
 }

@@ -1,30 +1,5 @@
 @use "../styles/mixins.scss" as *;
 
-// ANIMATIONS
-@keyframes left-in {
-  from {
-    inset-inline-start: -30%;
-  }
-  to {
-    inset-inline-start: 50%;
-  }
-}
-@keyframes right-in {
-  from {
-    inset-inline-start: 80%;
-  }
-  to {
-    inset-inline-start: 50%;
-  }
-}
-@keyframes drop-in {
-  from {
-    inset-block-start: 0%;
-  }
-  to {
-    inset-block-start: 50%;
-  }
-}
 // CONTENT
 .banner_box {
   width: 100vw;
@@ -40,6 +15,9 @@
     position: absolute;
     inset-block-start: 50%;
     inset-inline-start: 50%;
+  }
+  * {
+    @include fade-in();
   }
 }
 nav {
@@ -107,9 +85,6 @@ nav {
   width: 12rem;
   height: 18rem;
   z-index: 0;
-  animation-name: drop-in, fade-in;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
   @media (min-height: 710px) {
     height: 25rem;
   }
@@ -118,12 +93,6 @@ nav {
   }
   @media (min-height: 850px) {
     height: 35rem;
-  }
-  @media (min-height: 880px) {
-    height: 38rem;
-  }
-  @media (min-height: 1000px) {
-    height: 45rem;
   }
 }
 .details_logo {
@@ -134,9 +103,6 @@ nav {
   width: 17rem;
   height: auto;
   z-index: 0;
-  animation-name: left-in, fade-in;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
 }
 .details_text {
   @include font-details(var(--text-color), "bc-medium", 0.6rem);
@@ -144,12 +110,9 @@ nav {
   letter-spacing: 1px;
   z-index: 1;
   transform: translate(2.8rem, 5.5rem);
-  animation-name: right-in, fade-in;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
 }
-// RESPONSIVE
 
+// RESPONSIVE
 @media (min-width: 400px) {
   .banner_content {
     width: 22.5rem;
@@ -202,16 +165,29 @@ nav {
     letter-spacing: 2px;
   }
 }
+@media (min-width: 600px) {
+  .details_logo {
+    transform: translate(-72%, -3%);
+    width: 25rem;
+  }
+  .details_text {
+    transform: translate(0rem, 8rem);
+  }
+}
 @media (min-width: 800px) {
   .banner_content {
     width: 48rem;
   }
   nav {
     .about {
+      font-size: 1.5rem;
       transform: translateX(6rem) rotate(-90deg);
+      border-block-end: 0.1rem solid var(--text-color);
     }
     .projects {
+      font-size: 1.5rem;
       transform: translateX(6.7rem);
+      border-block-end: 0.1rem solid var(--text-color);
     }
   }
   .details_background {
@@ -219,50 +195,29 @@ nav {
     width: 35rem;
   }
   .details_logo {
-    transform: translate(-68%, -3%);
-    width: 35rem;
+    transform: translate(-69%, -3%);
+    width: 33rem;
   }
   .concept {
-    transform: translateX(11rem);
-    font-size: 0.8rem;
+    font-size: 1rem;
+    transform: translate(11rem, -0.2rem);
   }
   .line {
+    font-size: 1rem;
     transform: translate(46.5rem, 3.3rem);
-    font-size: 0.8rem;
+    inset-inline-end: 12rem;
   }
   .details_text {
-    transform: translate(2.5rem, 10.5rem);
+    transform: translate(1rem, 10.5rem);
     font-size: 0.9rem;
   }
 }
 
-@media (min-width: 1200px) {
-  .banner_content {
-    width: 62rem;
-  }
-  .details_background {
-    transform: translate(-36%, -46%);
-    width: 45rem;
-  }
-  .details_logo {
-    transform: translate(-75%, -3%);
-    width: 43rem;
-  }
-  .details_text {
-    transform: translate(-1rem, 14.5rem);
-    font-size: 1rem;
-  }
-  .line {
-    transform: translate(60.5rem, 3.3rem);
-  }
-  .concept,
-  .line {
-    font-size: 0.8rem;
-    letter-spacing: 4px;
-  }
-}
 // PHONE LANDSCAPE
-@media (max-height: 660px) and (max-width: 1200px) and (orientation: landscape) {
+@media (max-height: 600px) and (max-width: 1500px) and (orientation: landscape) {
+  .banner_content {
+    width: 33rem;
+  }
   nav {
     .about,
     .projects {
@@ -270,22 +225,34 @@ nav {
       height: 1.15rem;
       font-size: 1rem;
     }
+    .about {
+      transform: translateX(1rem) rotate(-90deg);
+    }
     .projects {
       inset-block-end: 4rem;
+      transform: translateX(1.7rem);
     }
   }
   .details_background {
     height: 11rem;
+    width: 24rem;
   }
   .details_logo {
-    width: 30rem;
-    transform: translate(-83%, -40%);
+    width: 18rem;
+    transform: translate(-90%, -29%);
   }
   .concept {
+    font-size: 0.7rem;
     inset-block-start: 3.5rem;
-    transform: translateX(9.5rem);
+    transform: translateX(4.5rem);
+  }
+  .line {
+    inset-inline-end: 5rem;
+    font-size: 0.7rem;
+    transform: translate(32rem, 3.3rem);
   }
   .details_text {
-    transform: translate(-6rem, 3rem);
+    transform: translate(-3.5rem, 3.5rem);
+    font-size: 0.7rem;
   }
 }

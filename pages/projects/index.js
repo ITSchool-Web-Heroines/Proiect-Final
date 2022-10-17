@@ -21,6 +21,7 @@ import manufacturat from "../../images/projects/manufacturat/manufacturat.png";
 import skyscraper from "../../images/projects/skyscraper/skyscraper.png";
 import RightProject from "../../components/RightProject/RightProject";
 import LeftProject from "../../components/LeftProject/LeftProject";
+import LoadingWrap from "../../components/LoadingWrap/LoadingWrap";
 
 // STYLES
 const projects = {
@@ -31,7 +32,7 @@ const projects = {
 function MyProjectsPage() {
   const theme = useContext(ThemeContext);
   return (
-    <div className={theme.isDark ? "app dark" : "app"}>
+    <LoadingWrap>
       <Head>
         <title>Proiecte</title>
       </Head>
@@ -93,7 +94,7 @@ function MyProjectsPage() {
         />
       </main>
       <CustomParticles color={theme.isDark ? "#fff" : "#000"} />
-    </div>
+    </LoadingWrap>
   );
 }
 

@@ -1,0 +1,39 @@
+@use "../../styles/mixins.scss" as *;
+
+.loading {
+  height: 100vh;
+}
+.cube {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+  width: 18rem;
+  opacity: 1;
+  height: auto;
+  animation: fade 1s linear 2s;
+}
+
+@keyframes fade {
+  from {
+    transform: translate3d(0);
+  }
+
+  to {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .cube {
+    width: 25rem;
+    height: auto;
+  }
+}
+@media (min-width: 600px) {
+  .cube {
+    width: 30rem;
+    height: auto;
+  }
+}

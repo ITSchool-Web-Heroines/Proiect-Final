@@ -1,5 +1,9 @@
 import React from "react";
+
+// STYLES
 import NavLink from "../NavLink";
+
+// COMPONENTS
 import styles from "./NavBar.module.scss";
 
 export default function NavBar() {
