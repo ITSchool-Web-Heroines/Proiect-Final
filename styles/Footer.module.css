@@ -29,7 +29,3 @@
     display: flex;
     gap: 1rem;
 }
-
-.social>*{
-    fill: var(--themeRed);
-}

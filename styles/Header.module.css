@@ -32,6 +32,31 @@
   cursor: pointer;
   color: red;
 }
+
 .rightSide {
   flex: 1;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.cart{
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.badge{
+  position: absolute;
+  display: flex;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -0.5rem;
 }

@@ -1,6 +1,7 @@
 import css from '../styles/Header.module.css'
+import Image from 'next/image'
 import Logo from '../images/Logo.png'
-import ShoppingBag from '../images/Sbag.jpg'
+import {UilShoppingBag} from '@iconscout/react-unicons'
 
 
 export default function Header () {
@@ -8,9 +9,7 @@ export default function Header () {
     <div className={css.header}>
       {/* logo side */}
       <div className={css.logo}>
-      <img src={Logo} alt =""
-      width={50} height={50}/>
-      <span>Rhevox</span>
+        <Image src={Logo} alt ="" width={50} height={50}/>
       </div>
 
       {/* menu side */}
@@ -24,7 +23,8 @@ export default function Header () {
       {/* right side */}
       <div className={css.rightSide}>
         <div className={css.cart}>
-        <img src={ShoppingBag} alt ="" size={50}/>
+          <UilShoppingBag/>
+        <div className={css.badge}>1</div>
         </div>
       </div>
     </div>
