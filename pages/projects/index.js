@@ -3,8 +3,12 @@ import Head from "next/head";
 import { ThemeContext } from "../../context/theme";
 import { useContext } from "react";
 
+// SUPABASE
+import supabase from "../../utils/supabaseClient";
+
 // STYLES
 import styles from "./projects.module.scss";
+
 // FUNCTIONS
 
 // COMPONENTS
@@ -25,6 +29,8 @@ import impreuna from "../../images/projects/impreuna.png";
 import manufacturat from "../../images/projects/manufacturat.png";
 
 function MyProjectsPage() {
+  console.log(supabase);
+
   // STYLES
   const project = {
     insetBlockStart: "3.5rem",
@@ -136,6 +142,7 @@ function MyProjectsPage() {
       <main className={styles.projects_box}>
         {projects.map(project => (
           <ProjectTile
+            key={project.projectName}
             source={project.source}
             projectName={project.projectName}
             subtitle={project.subtitle}
