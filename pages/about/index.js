@@ -21,7 +21,6 @@ import profs from "../../data/about/profs";
 
 // COMPONENTS
 import NavBar from "../../components/NavBar/NavBar";
-import SkillsBar from "../../components/SkillsBar/SkillsBar";
 import CustomParticles from "../../components/CustomParticles/CustomParticles";
 import ThemeButton from "../../components/ThemeButton/ThemeButton";
 import LoadingWrap from "../../components/LoadingWrap/LoadingWrap";

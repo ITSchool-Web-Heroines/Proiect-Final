@@ -15,12 +15,14 @@ import LoadingWrap from "../../components/LoadingWrap/LoadingWrap";
 import ProjectTile from "../../components/ProjectTile/ProjectTile";
 
 // IMAGES
-import boutique from "../../images/projects/boutique/boutique.png";
-import culturall from "../../images/projects/culturall/culturall.png";
-import industrial from "../../images/projects/industrial/industrial.png";
-import landmark from "../../images/projects/landmark/landmark.png";
-import manufacturat from "../../images/projects/manufacturat/manufacturat.png";
-import skyscraper from "../../images/projects/skyscraper/skyscraper.png";
+import culturall from "../../images/projects/culturall.png";
+import boutique from "../../images/projects/boutique.png";
+import medical from "../../images/projects/medical.png";
+import industrial from "../../images/projects/industrial.png";
+import skyscraper from "../../images/projects/skyscraper.png";
+import landmark from "../../images/projects/landmark.png";
+import impreuna from "../../images/projects/impreuna.png";
+import manufacturat from "../../images/projects/manufacturat.png";
 
 function MyProjectsPage() {
   // STYLES
@@ -52,26 +54,14 @@ function MyProjectsPage() {
       page: "/about",
     },
     {
-      source: manufacturat,
-      projectName: "manufacturat",
-      subtitle: "ATELIER DE CREATIE - EXPOZITIE",
-      text: "V - 2019",
-      title_one: "man",
-      title_two: "ufa",
-      title_three: "ctu",
-      title_four: "rat",
-      color: "#ba9569",
-      page: "/about",
-    },
-    {
-      source: skyscraper,
-      projectName: "skyscraper",
-      subtitle: "CLADIRE DE BIROURI",
-      text: "IV - 2020",
-      title_one: "SKY",
-      title_two: "SCR",
-      title_three: "APER",
-      color: "#486478",
+      source: medical,
+      projectName: "medical",
+      subtitle: "CABINET MEDICAL",
+      text: "VI - 2021",
+      title_one: "me",
+      title_two: "di",
+      title_three: "cal",
+      color: "#b79950",
       page: "/about",
     },
     {
@@ -86,6 +76,17 @@ function MyProjectsPage() {
       page: "/about",
     },
     {
+      source: skyscraper,
+      projectName: "skyscraper",
+      subtitle: "CLADIRE DE BIROURI",
+      text: "IV - 2020",
+      title_one: "SKY",
+      title_two: "SCR",
+      title_three: "APER",
+      color: "#486478",
+      page: "/about",
+    },
+    {
       source: landmark,
       projectName: "landmark",
       subtitle: "HOTEL URBAN ****",
@@ -95,6 +96,29 @@ function MyProjectsPage() {
       title_three: "rk",
       color: "#566c57",
       page: "/",
+    },
+    {
+      source: impreuna,
+      projectName: "impreuna",
+      subtitle: "LOCUINTE COLECTIVE",
+      text: "IV - 2020",
+      title_one: "im",
+      title_two: "pre",
+      title_three: "una",
+      color: "#cba751",
+      page: "/",
+    },
+    {
+      source: manufacturat,
+      projectName: "manufacturat",
+      subtitle: "ATELIER DE CREATIE - EXPOZITIE",
+      text: "V - 2019",
+      title_one: "man",
+      title_two: "ufa",
+      title_three: "ctu",
+      title_four: "rat",
+      color: "#ba9569",
+      page: "/about",
     },
   ];
   const theme = useContext(ThemeContext);
