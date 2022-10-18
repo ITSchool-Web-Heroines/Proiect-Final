@@ -6,11 +6,9 @@ import NavLink from "../NavLink";
 import styles from "./FlipCard.module.scss";
 
 export default function FlipCard(props) {
-  const { name } = props;
-
   return (
     <div className={styles.container}>
-      <div className={`${styles.card} ${styles[name]}`}>
+      <div className={styles.card}>
         <Image
           className={`${styles.card_front} ${styles.card_face}`}
           src={props.source}
@@ -21,8 +19,8 @@ export default function FlipCard(props) {
           style={props.styles}
         >
           <NavLink href={`${props.page}`} className={styles.arrow_container}>
-            <div class={styles.top}></div>
-            <div class={styles.bottom}></div>
+            <div className={styles.top}></div>
+            <div className={styles.bottom}></div>
           </NavLink>
         </div>
       </div>

@@ -2,22 +2,23 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 
 // STYLES
-import styles from "./LeftProject.module.scss";
+import styles from "./ProjectTile.module.scss";
 
 // COMPONENTS
 import FlipCard from "../FlipCard/FlipCard";
 
-function LeftProject(props) {
+export default function ProjectTile(props) {
   const { ref: myRef, inView: refIsVisible } = useInView();
+
+  const { projectName } = props;
 
   return (
     <section
-      className={`${styles.left_project} ${refIsVisible ? styles.appear : ""}`}
+      className={`${styles[projectName]} ${refIsVisible ? styles.appear : ""}`}
       ref={myRef}
     >
       <div className={styles.project}>
         <FlipCard
-          name={props.image}
           source={props.source}
           styles={{ backgroundColor: `${props.color}` }}
           page={props.page}
@@ -36,5 +37,3 @@ function LeftProject(props) {
     </section>
   );
 }
-
-export default LeftProject;

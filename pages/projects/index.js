@@ -11,6 +11,8 @@ import styles from "./projects.module.scss";
 import NavBar from "../../components/NavBar/NavBar";
 import ThemeButton from "../../components/ThemeButton/ThemeButton";
 import CustomParticles from "../../components/CustomParticles/CustomParticles";
+import LoadingWrap from "../../components/LoadingWrap/LoadingWrap";
+import ProjectTile from "../../components/ProjectTile/ProjectTile";
 
 // IMAGES
 import boutique from "../../images/projects/boutique/boutique.png";
@@ -19,17 +21,82 @@ import industrial from "../../images/projects/industrial/industrial.png";
 import landmark from "../../images/projects/landmark/landmark.png";
 import manufacturat from "../../images/projects/manufacturat/manufacturat.png";
 import skyscraper from "../../images/projects/skyscraper/skyscraper.png";
-import RightProject from "../../components/RightProject/RightProject";
-import LeftProject from "../../components/LeftProject/LeftProject";
-import LoadingWrap from "../../components/LoadingWrap/LoadingWrap";
-
-// STYLES
-const projects = {
-  insetBlockStart: "3.5rem",
-  insetInlineStart: "1rem",
-};
 
 function MyProjectsPage() {
+  // STYLES
+  const project = {
+    insetBlockStart: "3.5rem",
+    insetInlineStart: "1rem",
+  };
+  const projects = [
+    {
+      source: culturall,
+      projectName: "culturall",
+      subtitle: "CENTRU CULTURAL PENTRU TOTI",
+      text: "VI - 2021",
+      title_one: "cul",
+      title_two: "tur",
+      title_three: "all",
+      color: "#9e5a4c",
+      page: "/",
+    },
+    {
+      source: boutique,
+      projectName: "boutique",
+      subtitle: "BOUTIQUE HOTEL",
+      text: "VI - 2021",
+      title_one: "bou",
+      title_two: "tiq",
+      title_three: "ue",
+      color: "#748867",
+      page: "/about",
+    },
+    {
+      source: manufacturat,
+      projectName: "manufacturat",
+      subtitle: "ATELIER DE CREATIE - EXPOZITIE",
+      text: "V - 2019",
+      title_one: "man",
+      title_two: "ufa",
+      title_three: "ctu",
+      title_four: "rat",
+      color: "#ba9569",
+      page: "/about",
+    },
+    {
+      source: skyscraper,
+      projectName: "skyscraper",
+      subtitle: "CLADIRE DE BIROURI",
+      text: "IV - 2020",
+      title_one: "SKY",
+      title_two: "SCR",
+      title_three: "APER",
+      color: "#486478",
+      page: "/about",
+    },
+    {
+      source: industrial,
+      projectName: "industrial",
+      subtitle: "REVITALIZARE UZINA ELECTRICA",
+      text: "IV - 2019",
+      title_one: "ind",
+      title_two: "ust",
+      title_three: "rial",
+      color: "#ac6c53",
+      page: "/about",
+    },
+    {
+      source: landmark,
+      projectName: "landmark",
+      subtitle: "HOTEL URBAN ****",
+      text: "IV - 2020",
+      title_one: "LAN",
+      title_two: "DMA",
+      title_three: "rk",
+      color: "#566c57",
+      page: "/",
+    },
+  ];
   const theme = useContext(ThemeContext);
   return (
     <LoadingWrap>
@@ -38,78 +105,25 @@ function MyProjectsPage() {
       </Head>
       <NavBar />
       <ThemeButton
-        styles={projects}
+        styles={project}
         theme={theme.isDark}
         handleClick={theme.setTheme}
       />
       <main className={styles.projects_box}>
-        <RightProject
-          source={culturall}
-          subtitle={"CENTRU CULTURAL PENTRU TOTI"}
-          text={"VI - 2021"}
-          title_one={"cul"}
-          title_two={"tur"}
-          title_three={"all"}
-          imageName={"culturall"}
-          color={"#9e5a4c"}
-          page={"/about"}
-        />
-        <LeftProject
-          source={boutique}
-          subtitle={"BOUTIQUE HOTEL"}
-          text={"VI - 2021"}
-          title_one={"bou"}
-          title_two={"tiq"}
-          title_three={"ue"}
-          imageName={"boutique"}
-          color={"#748867"}
-          page={"/about"}
-        />
-        <RightProject
-          source={manufacturat}
-          subtitle={"ATELIER DE CREATIE - EXPOZITIE"}
-          text={"V - 2019"}
-          title_one={"man"}
-          title_two={"ufa"}
-          title_three={"ctu"}
-          title_four={"rat"}
-          imageName={"manufacturat"}
-          color={"#ba9569"}
-          page={"/about"}
-        />
-        <LeftProject
-          source={skyscraper}
-          subtitle={"CLADIRE DE BIROURI"}
-          text={"IV - 2020"}
-          title_one={"SKY"}
-          title_two={"SCR"}
-          title_three={"APER"}
-          imageName={"skyscraper"}
-          color={"#486478"}
-          page={"/about"}
-        />
-        <RightProject
-          source={industrial}
-          subtitle={"REVITALIZARE UZINA ELECTRICA"}
-          text={"IV - 2019"}
-          title_one={"ind"}
-          title_two={"ust"}
-          title_three={"rial"}
-          imageName={"industrial"}
-          color={"#ac6c53"}
-          page={"/about"}
-        />
-        <LeftProject
-          source={landmark}
-          subtitle={"HOTEL URBAN ****"}
-          text={"IV - 2020"}
-          title_one={"LAN"}
-          title_two={"DMA"}
-          title_three={"rk"}
-          imageName={"landmark"}
-          color={"#566c57"}
-          page={"/"}
-        />
+        {projects.map(project => (
+          <ProjectTile
+            source={project.source}
+            projectName={project.projectName}
+            subtitle={project.subtitle}
+            text={project.text}
+            title_one={project.title_one}
+            title_two={project.title_two}
+            title_three={project.title_three}
+            title_four={project.title_four}
+            color={project.color}
+            page={project.page}
+          />
+        ))}
       </main>
       <CustomParticles color={theme.isDark ? "#fff" : "#000"} />
     </LoadingWrap>
