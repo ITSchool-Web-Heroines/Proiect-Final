@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/future/image";
-import image from "./image.jpg";
+import image from "././pictures/image.jpg";
 import styles from "../styles/Home.module.css";
 
 export default function ImageF() {

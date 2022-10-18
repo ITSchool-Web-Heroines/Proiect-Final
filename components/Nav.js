@@ -20,7 +20,7 @@ export default function Nav() {
         </li>
         <li>
           <a href="#" className={styles["nav-item"]}>
-            Contact
+            Order
           </a>
         </li>
       </ul>

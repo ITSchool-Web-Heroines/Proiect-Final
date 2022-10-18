@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/future/image";
-import search from "./search.png";
-import process from "./process.png";
-import delivery from "./delivery.png";
+import search from "././pictures/search.png";
+import process from "././pictures/process.png";
+import delivery from "././pictures/delivery.png";
 import styles from "../styles/process.module.css";
 import Link from "next/link";
 

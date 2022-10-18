@@ -2,9 +2,9 @@ import React from "react";
 import styles from "../styles/footer.module.css";
 import Link from "next/link";
 import Image from "next/future/image";
-import facebook from "./facebook.png";
-import instagram from "./instagram.png";
-import whatsapp from "./whatsapp.png";
+import facebook from "././pictures/facebook.png";
+import instagram from "././pictures/instagram.png";
+import whatsapp from "././pictures/whatsapp.png";
 
 export default function Footer() {
   return (
@@ -27,7 +27,7 @@ export default function Footer() {
         </Link>
         <Link href="/">
           <a className={styles["menu-anchor"]}>
-            <p>Contact</p>
+            <p>Order</p>
           </a>
         </Link>
       </div>
