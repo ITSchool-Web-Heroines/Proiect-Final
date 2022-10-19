@@ -110,6 +110,15 @@
     }
   }
 }
+.boutique,
+.medical,
+.skyscraper,
+.landmark,
+.impreuna {
+  .project {
+    letter-spacing: 2px;
+  }
+}
 @media (min-width: 375px) {
   .boutique,
   .industrial,
@@ -136,7 +145,7 @@
       &::before {
         width: 2rem;
         height: 0.15rem;
-        transform: translate(-0.15rem, -0.2rem);
+        transform: translate(-0.1rem, -0.2rem);
       }
     }
     .project {
@@ -170,6 +179,15 @@
     }
     .project {
       transform: translate(0rem, 5.25rem);
+    }
+  }
+  .boutique,
+  .medical,
+  .skyscraper,
+  .landmark,
+  .impreuna {
+    .project {
+      letter-spacing: 2.5px;
     }
   }
 }

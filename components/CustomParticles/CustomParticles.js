@@ -33,7 +33,7 @@ export default function CustomParticles(props) {
           },
         },
         opacity: {
-          value: 0.8,
+          value: 0.5,
           random: false,
           anim: {
             enable: false,
@@ -58,7 +58,7 @@ export default function CustomParticles(props) {
           direction: "clockwise",
           animation: {
             enable: true,
-            speed: 2,
+            speed: 0,
             sync: false,
           },
         },
@@ -66,12 +66,12 @@ export default function CustomParticles(props) {
           enable: true,
           distance: 600,
           color: props.color,
-          opacity: 0.3,
+          opacity: 0.2,
           width: 1,
         },
         move: {
           enable: true,
-          speed: 1,
+          speed: 0.5,
           direction: "none",
           random: false,
           straight: false,
@@ -89,34 +89,13 @@ export default function CustomParticles(props) {
             enable: true,
             mode: ["grab"],
           },
-          onclick: {
-            enable: false,
-            mode: "bubble",
-          },
-          resize: true,
         },
         modes: {
           grab: {
             distance: 400,
             line_linked: {
-              opacity: 0.5,
+              opacity: 0.3,
             },
-          },
-          bubble: {
-            distance: 400,
-            size: 40,
-            duration: 2,
-            opacity: 0.8,
-            speed: 3,
-          },
-          repulse: {
-            distance: 200,
-          },
-          push: {
-            particles_nb: 5,
-          },
-          remove: {
-            particles_nb: 2,
           },
         },
       },

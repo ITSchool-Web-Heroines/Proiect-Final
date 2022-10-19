@@ -1,25 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import { ThemeContext } from "../../context/theme";
 import { useContext } from "react";
 
 // SUPABASE
 import supabase from "../../utils/supabaseClient";
-
-// STYLES
-import styles from "./projects.module.scss";
-
-// FUNCTIONS
-
-// COMPONENTS
-import NavBar from "../../components/NavBar/NavBar";
-import ThemeButton from "../../components/ThemeButton/ThemeButton";
-import CustomParticles from "../../components/CustomParticles/CustomParticles";
-import LoadingWrap from "../../components/LoadingWrap/LoadingWrap";
-import ProjectTile from "../../components/ProjectTile/ProjectTile";
-
-export async function getServerSideProps(context) {
-  let { data, error, status } = await supabase
+export async function getServerSideProps() {
+  let { data } = await supabase
     .from("projects")
     .select(
       "projectName, source, subtitle, text,title_one, title_two, title_three, title_four, color, page"
@@ -31,6 +18,17 @@ export async function getServerSideProps(context) {
     },
   };
 }
+
+// STYLES
+import styles from "./projects.module.scss";
+
+// COMPONENTS
+import NavBar from "../../components/NavBar/NavBar";
+import ThemeButton from "../../components/ThemeButton/ThemeButton";
+import CustomParticles from "../../components/CustomParticles/CustomParticles";
+import LoadingWrap from "../../components/LoadingWrap/LoadingWrap";
+import ProjectTile from "../../components/ProjectTile/ProjectTile";
+
 function MyProjectsPage({ projects }) {
   // STYLES
   const project = {

@@ -1,0 +1,159 @@
+@use "../../styles/mixins.scss" as *;
+
+// COMMON
+.container {
+  width: 12rem;
+  .logo {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+.description {
+  display: grid;
+  background-color: transparent;
+}
+.title {
+  @include font-details(var(--text-color), "bc-regular", 0.926rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.subtitle {
+  @include font-details(var(--text-color), "bc-light", 0.85rem);
+  text-transform: uppercase;
+  text-align: justify;
+}
+.text {
+  @include font-details(var(--text-color), "bc-regular", 0.8rem);
+  text-align: justify;
+}
+// INDIVIDUAL
+.boutique {
+  .title {
+    letter-spacing: 7.65px;
+  }
+  .subtitle {
+    letter-spacing: 2.5px;
+  }
+}
+.medical {
+  .title {
+    letter-spacing: 6.9px;
+  }
+  .subtitle {
+    letter-spacing: 2.57px;
+  }
+}
+.industrial {
+  .title {
+    letter-spacing: 5.05px;
+  }
+  .subtitle {
+    letter-spacing: 1.5px;
+  }
+}
+.skyscraper {
+  .title {
+    letter-spacing: 4.95px;
+  }
+}
+.landmark {
+  .title {
+    letter-spacing: 6.1px;
+  }
+}
+.impreuna {
+  .title {
+    letter-spacing: 4.6px;
+  }
+  .subtitle {
+    letter-spacing: 3.6px;
+  }
+}
+.manufacturat {
+  .title {
+    letter-spacing: 4.4px;
+  }
+  .subtitle {
+    letter-spacing: 3.6px;
+  }
+}
+@media (min-width: 375px) {
+  .container {
+    width: 15rem;
+    .logo {
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+  .title {
+    font-size: 1.1rem;
+    letter-spacing: 1.55px;
+  }
+  .subtitle {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    text-align: justify;
+  }
+  .text {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  // INDIVIDUAL
+  .boutique {
+    .title {
+      letter-spacing: 9.94px;
+    }
+    .subtitle {
+      letter-spacing: 3.5px;
+    }
+  }
+  .medical {
+    .title {
+      letter-spacing: 9px;
+    }
+    .subtitle {
+      letter-spacing: 3.2px;
+    }
+  }
+  .industrial {
+    .title {
+      letter-spacing: 6.68px;
+    }
+    .subtitle {
+      letter-spacing: 2px;
+    }
+  }
+  .skyscraper {
+    .title {
+      letter-spacing: 6.65px;
+    }
+    .subtitle {
+      letter-spacing: 0.2px;
+    }
+  }
+  .landmark {
+    .title {
+      letter-spacing: 8.1px;
+    }
+    .subtitle {
+      letter-spacing: 0.3px;
+    }
+  }
+  .impreuna {
+    .title {
+      letter-spacing: 6.2px;
+    }
+    .subtitle {
+      letter-spacing: 4.5px;
+    }
+  }
+  .manufacturat {
+    .title {
+      letter-spacing: 6px;
+    }
+    .subtitle {
+      letter-spacing: 4.9px;
+    }
+  }
+}
