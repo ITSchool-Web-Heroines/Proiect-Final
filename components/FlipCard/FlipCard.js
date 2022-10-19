@@ -11,8 +11,10 @@ export default function FlipCard(props) {
       <div className={styles.card}>
         <Image
           className={`${styles.card_front} ${styles.card_face}`}
-          src={props.source}
+          src={`${props.source}`}
           alt="LogoProiect"
+          width="1000"
+          height="1000"
         />
         <div
           className={`${styles.card_back} ${styles.card_face}`}
