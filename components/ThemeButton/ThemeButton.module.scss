@@ -49,16 +49,25 @@
     background-color: #fff;
   }
 }
-@media (max-width: 400px) {
-  .button {
+
+@media (max-width: 450px) {
+  .button.light {
+    transform: scale(0.6);
+  }
+  .button.dark {
+    transform: rotate(180deg) scale(0.6);
+  }
+}
+@media (min-width: 450px) {
+  .button.light {
     transform: scale(0.7);
   }
   .button.dark {
     transform: rotate(180deg) scale(0.7);
   }
 }
-@media (max-width: 600px) {
-  .button {
+@media (min-width: 600px) {
+  .button.light {
     transform: scale(0.85);
   }
   .button.dark {
@@ -66,7 +75,7 @@
   }
 }
 @media (max-height: 660px) and (max-width: 1500px) and (orientation: landscape) {
-  .button {
+  .button.light {
     transform: scale(0.7);
   }
   .button.dark {

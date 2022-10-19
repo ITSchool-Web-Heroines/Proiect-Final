@@ -13,7 +13,7 @@
   grid-template-rows: 1fr 1fr;
   padding: 0.5rem;
   a {
-    @include font-details(var(--text-color), "ag-regular", 1.25rem);
+    @include font-details(var(--text-color), "ag-regular", 1rem);
     text-transform: uppercase;
     text-decoration: none;
     padding-block: 0.2rem;
@@ -29,7 +29,7 @@
   &::after {
     content: "";
     position: absolute;
-    transform: translateY(1.8rem);
+    transform: translateY(1.5rem);
     background-color: var(--text-color);
     width: 95vw;
     height: 0.08rem;
@@ -62,7 +62,7 @@
       animation: ver-menu-ani 2s;
     }
     a {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       position: absolute;
       outline: 1px solid transparent;
       -webkit-backface-visibility: hidden;
