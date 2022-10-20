@@ -3,30 +3,29 @@
 .container {
   padding: 0.5rem;
   padding-inline-end: 0;
-  margin-block: 1rem;
   overflow-y: hidden;
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   width: 95vw;
   overflow-x: scroll;
-  background: transparent;
+  background: var(--background);
   white-space: nowrap;
   &::before {
     content: "";
     position: absolute;
     transform: translateY(3.4rem);
     background-color: var(--text-color);
-    width: 98vw;
+    width: 95vw;
     height: 0.08rem;
   }
   &::-webkit-scrollbar {
     height: 5px;
   }
   &::-webkit-scrollbar-track {
-    background: #fff;
+    background: var(--background);
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #000;
+    background-color: var(--text-color);
   }
   div {
     display: grid;
@@ -47,4 +46,80 @@
 .picture {
   width: 14rem;
   height: 14rem;
+}
+@media (min-width: 375px) {
+  .picture {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+@media (min-width: 550px) {
+  .picture {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+@media (min-width: 650px) {
+  .container div p {
+    width: 16rem;
+    font-size: 0.9rem;
+  }
+  .picture {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media (min-width: 870px) {
+  .container div p {
+    width: 18rem;
+  }
+  .picture {
+    width: 23rem;
+    height: 23rem;
+  }
+}
+@media (min-width: 1220px) {
+  .container {
+    width: 72rem;
+    &::before {
+      width: 72rem;
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 81rem;
+    &::before {
+      width: 81rem;
+    }
+  }
+  .picture {
+    width: 25rem;
+    height: 25rem;
+  }
+  .container {
+    justify-content: space-between;
+    div {
+      width: 25rem;
+      p {
+        width: 25rem;
+      }
+    }
+  }
+}
+@media (min-width: 1550px) {
+  .container {
+    width: 89rem;
+    &::before {
+      width: 89rem;
+    }
+  }
+}
+@media (min-width: 1700px) {
+  .container {
+    width: 96.5rem;
+    &::before {
+      width: 96.5rem;
+    }
+  }
 }

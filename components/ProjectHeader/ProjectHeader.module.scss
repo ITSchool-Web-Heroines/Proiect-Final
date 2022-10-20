@@ -9,6 +9,7 @@
   width: 16rem;
   align-items: center;
   padding-block: 0.5rem;
+  background-color: var(--background);
 }
 .scroll_container {
   grid-column: 2/3;
@@ -24,10 +25,10 @@
     height: 5px;
   }
   &::-webkit-scrollbar-track {
-    background: #fff;
+    background: var(--background);
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #000;
+    background-color: var(--text-color);
   }
   .cover {
     height: 85vh;
@@ -87,6 +88,11 @@
 .impreuna {
   .title_box .subtitle {
     letter-spacing: 3px;
+  }
+}
+.manufacturat {
+  .title_box .subtitle {
+    letter-spacing: 6px;
   }
 }
 // HEIGHT

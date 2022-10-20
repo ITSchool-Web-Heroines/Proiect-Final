@@ -69,6 +69,7 @@ body,
 
 body {
   scrollbar-color: #000 transparent;
+  background-color: var(--background);
   overflow-y: auto;
   overflow-x: hidden;
   &::-webkit-scrollbar {
@@ -81,4 +82,7 @@ body {
     background-color: #000;
     border-radius: 0rem;
   }
+}
+main {
+  background-color: var(--background);
 }

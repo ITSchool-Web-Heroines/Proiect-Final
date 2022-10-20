@@ -26,15 +26,12 @@ import NavBar from "../../../components/NavBar/NavBar";
 import ThemeButton from "../../../components/ThemeButton/ThemeButton";
 import CustomParticles from "../../../components/CustomParticles/CustomParticles";
 import ProjectHeader from "../../../components/ProjectHeader/ProjectHeader";
+import NavProjects from "../../../components/NavProjects/NavProjects";
 
 export default function ProjectDetails({ projects }) {
   const theme = useContext(ThemeContext);
   console.log(projects);
-  // BUTTON
-  const project = {
-    insetBlockStart: "3.5rem",
-    insetInlineStart: "0rem",
-  };
+
   // TAB TITLE
   const { projectName } = projects;
   let tabTitle = projectName.toUpperCase();
@@ -45,6 +42,7 @@ export default function ProjectDetails({ projects }) {
         <title>{tabTitle}</title>
       </Head>
       <NavBar />
+      <ThemeButton theme={theme.isDark} handleClick={theme.setTheme} />
       <ProjectHeader
         projectName={projectName}
         coverSource={projects.cover}
@@ -52,6 +50,13 @@ export default function ProjectDetails({ projects }) {
         title={projects.description.title}
         subtitle={projects.description.subtitle}
         text={projects.description.text}
+      />
+      <NavProjects
+        currentPage={""}
+        nextLink={"/projects/landmark"}
+        nextProject={"landmark"}
+        previousLink={"/projects/industrial"}
+        previousProject={"industrial"}
       />
     </LoadingWrap>
   );

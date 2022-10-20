@@ -7,26 +7,26 @@
   overflow-y: hidden;
   display: grid;
   gap: 1rem;
-  width: 100vw;
+  width: 95vw;
   overflow-x: scroll;
-  background: transparent;
+  background: var(--background);
   white-space: nowrap;
   &::before {
     content: "";
     position: absolute;
     transform: translateY(3.5rem);
     background-color: var(--text-color);
-    width: 100vw;
+    width: 95vw;
     height: 0.08rem;
   }
   &::-webkit-scrollbar {
     height: 5px;
   }
   &::-webkit-scrollbar-track {
-    background: #fff;
+    background: var(--background);
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #000;
+    background-color: var(--text-color);
   }
   div {
     display: flex;
@@ -49,4 +49,50 @@
 .plan {
   width: auto;
   height: 14rem;
+}
+@media (min-width: 375px) {
+  .plan {
+    height: 16rem;
+  }
+}
+
+@media (min-width: 550px) {
+  .plan {
+    height: 18rem;
+  }
+}
+@media (min-width: 650px) {
+  .container div p {
+    font-size: 0.9rem;
+  }
+  .plan {
+    height: 20rem;
+  }
+}
+@media (min-width: 800px) {
+  .container div p {
+    padding-inline: 4rem;
+  }
+  .plan {
+    height: 25rem;
+  }
+}
+@media (min-width: 870px) {
+  .plan {
+    height: 30rem;
+  }
+}
+@media (min-width: 1220px) {
+  .plan {
+    height: 35rem;
+    padding-block: 1rem;
+  }
+}
+@media (min-width: 1900px) {
+  .container {
+    width: 119rem;
+    &::before {
+      width: 118rem;
+    }
+  }
 }

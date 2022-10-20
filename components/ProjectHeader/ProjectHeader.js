@@ -7,11 +7,7 @@ export default function ProjectHeader(props) {
   const imageRef = useRef();
   const { projectName } = props;
 
-  const centerDiv = () => {
-    console.log("loaded", imageRef);
-  };
   useEffect(() => {
-    centerDiv();
     imageRef.current.scrollLeft =
       (imageRef.current.scrollWidth - imageRef.current.clientWidth) / 2;
   }, []);

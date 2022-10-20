@@ -26,6 +26,7 @@ import NavBar from "../../../components/NavBar/NavBar";
 import ThemeButton from "../../../components/ThemeButton/ThemeButton";
 import CustomParticles from "../../../components/CustomParticles/CustomParticles";
 import ProjectHeader from "../../../components/ProjectHeader/ProjectHeader";
+import NavProjects from "../../../components/NavProjects/NavProjects";
 
 export default function ProjectDetails({ projects }) {
   const theme = useContext(ThemeContext);
@@ -49,6 +50,13 @@ export default function ProjectDetails({ projects }) {
         title={projects.description.title}
         subtitle={projects.description.subtitle}
         text={projects.description.text}
+      />
+      <NavProjects
+        currentPage={""}
+        nextLink={"/projects/manufacturat"}
+        nextProject={"manufacturat"}
+        previousLink={"/projects/landmark"}
+        previousProject={"landmark"}
       />
     </LoadingWrap>
   );

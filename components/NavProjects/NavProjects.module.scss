@@ -1,69 +1,60 @@
 @use "../../styles/mixins.scss" as *;
 
-.next_project {
-  @include font-details(var(--text-color), "ag-regular", 1rem);
+.navbox,
+.navnext,
+.navback {
+  background: var(--background);
+}
+.next_project,
+.previous_project {
+  @include font-details(var(--text-color), "ag-regular", 0.9rem);
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   text-decoration: none;
   text-align: center;
-  width: 10rem;
-  display: block;
-  margin: 0rem auto;
-  padding: 1.5rem 0rem;
+  width: 7rem;
+  padding: 0.2rem 0rem;
   transition: filter 0.5s;
+  border-block-end: 0.1rem solid var(--text-color);
   @include fade-in();
-  &::before {
-    content: ">";
-    @include font-details(var(--text-color), "ag-regular", 2rem);
-    position: absolute;
-    transform: translate(-1.5rem, 0.1rem);
-    opacity: 0;
-    transition: opacity, transform 300ms;
-  }
-  &:hover::before {
-    opacity: 1;
-    transform: translate(7rem, 0.1rem);
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    transform: translate(-7.5rem, 1.4rem);
-    background-color: var(--text-color);
-    width: 10rem;
-    height: 0.05rem;
+}
+// NEXT
+.navnext {
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-end;
+}
+.next_project {
+  &:hover,
+  &:focus,
+  &:focus-within {
+    filter: drop-shadow(-1rem -0.5rem 0rem rgba(0, 0, 0, 0.2));
   }
 }
-
+// PREVIOUS
+.navback {
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-start;
+}
 .previous_project {
-  @include font-details(var(--text-color), "ag-regular", 1rem);
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  text-decoration: none;
-  text-align: center;
-  width: 10rem;
-  display: block;
-  margin: 0rem auto;
-  padding: 1.5rem 0rem;
-  transition: filter 0.5s;
-  @include fade-in();
-  &::before {
-    content: ">";
-    @include font-details(var(--text-color), "ag-regular", 2rem);
-    position: absolute;
-    transform: translate(-1.5rem, 0.1rem);
-    opacity: 0;
-    transition: opacity, transform 300ms;
+  &:hover,
+  &:focus,
+  &:focus-within {
+    filter: drop-shadow(1rem -0.5rem 0rem rgba(0, 0, 0, 0.2));
   }
-  &:hover::before {
-    opacity: 1;
-    transform: translate(6.5rem, 0.1rem);
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    transform: translate(-7.5rem, 1.4rem);
-    background-color: var(--text-color);
-    width: 10rem;
-    height: 0.05rem;
+}
+// BOTH
+.navbox {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+@media (min-width: 800px) {
+  .navbox,
+  .navnext,
+  .navback {
+    padding-inline: 6rem;
   }
 }
