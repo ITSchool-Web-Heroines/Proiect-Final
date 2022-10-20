@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container } from 'react-bootstrap';
+import { Container } from 'reactstrap';
 import classes from './header.module.css'
 import Link from "next/link"
 
@@ -18,7 +18,7 @@ import Link from "next/link"
 //     },
 // ]
 
-function Header () {
+const Header = ()  => {
     const NAV_LINK = [
         {
             path: '/',
@@ -62,7 +62,7 @@ function Header () {
             </Container>
         </header>
     
-
+       
     )
 };
 

@@ -1,9 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "reactstrap";
 import Section from "./Section";
 import classes from '../../styles/services.module.css'
 import ServicesItem from "./Servicesitem";
-const Services = () => {
+
+function Services() {
     return (
         <section id="services">
             <Row>
@@ -25,6 +26,7 @@ const Services = () => {
                 </Col>
             </Row>
         </section>
+        
     )
 }
 
