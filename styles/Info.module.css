@@ -9,21 +9,20 @@
     gap: 2rem;
 }
 
-.phoneDiv{
+.miniboxDiv{
     display: flex;
     align-items: center;
     justify-content: center;
     width: fit-content;
-    background-color: pink;
-    margin-top: 3rem;
+    border: 0.1rem solid black;
+    margin-block-start: 3rem;
     padding: 1rem;
     border-radius: 2rem;
-    font-style: 0.8rem;
-    color: blue;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
-.infoText{
+.sloganText{
     display: flex;
     flex-direction: column;
     font-size: 4rem;
@@ -32,10 +31,9 @@
 
 .miniText{
     width: 70%;
-    color: blue;
-    font-weight: 600;
-}
+    font-weight: 800;
 
+}
 .btn{
     padding: 1rem 2.5rem;
 }
@@ -45,26 +43,24 @@
 }
 
 .imageContainer{
-    width: 38rem;
-    position: absolute;
-    top: -5rem;
-    left: -5rem;
+    width: 60rem;
+    position: relative;
+    margin-block-start: 5rem;
+    margin-inline-start: 50rem;
 }
 
 .ContactUs{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
     width: max-content;
     padding: 1rem;
     border-radius: 5rem;
-    top: 6rem;
-    left: -6rem;
     gap: 1rem;
     background-color: white;
     box-shadow: var(--shadow);
-    color: blue;
+    margin-block-start: -40rem;
+    margin-inline-start: 100rem;
 }
 
 .ContactUs>div{
@@ -80,38 +76,4 @@
 .ContactUs:hover{
     cursor: pointer;
     transform: scale(1.1);
-}
-
-.Mobile{
-    display: flex;
-    gap: 1rem;
-    background-color: white;
-    box-shadow: var(--shadow);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    position: absolute;
-    bottom: 4rem;
-    left: 19rem;
-    witdh: max-content;
-}
-
-.Mobile>:nth-child(1)
-{
-    width: 6rem;
-    height: 4rem;
-    overflow: hidden;
-    border-radius: .5rem;
-}
-
-.Mobile>:nth-child(2)
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-weight: bold;
-}
-
-.Mobile:hover{
-    transform: scale(1.1);
-    cursor: pointer;
 }

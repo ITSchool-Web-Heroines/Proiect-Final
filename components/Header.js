@@ -1,6 +1,4 @@
 import css from '../styles/Header.module.css'
-import Image from 'next/image'
-import Logo from '../images/Logo.png'
 import {UilShoppingBag} from '@iconscout/react-unicons'
 
 
@@ -9,7 +7,7 @@ export default function Header () {
     <div className={css.header}>
       {/* logo side */}
       <div className={css.logo}>
-        <Image src={Logo} alt ="" width={50} height={50}/>
+        <p>Rhevox</p>
       </div>
 
       {/* menu side */}
@@ -19,12 +17,11 @@ export default function Header () {
         <li>Contact</li>
       </ul>
 
-
       {/* right side */}
       <div className={css.rightSide}>
         <div className={css.cart}>
-          <UilShoppingBag/>
-        <div className={css.badge}>1</div>
+          <UilShoppingBag size={35}/>
+        <div className={css.badge}>0</div>
         </div>
       </div>
     </div>

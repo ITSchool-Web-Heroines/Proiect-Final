@@ -1,16 +1,40 @@
 import Head from 'next/head'
-import Navbar from '../components/Header'
-import styles from '../styles/Home.module.css'
+import css from '../styles/Contact.module.scss'
 
 export default function Contact() {
   return (
-    <div className={styles.container}>
+    <div className={css.container}>
       <Head>
         <title>Rhevox</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar/>
-      <h1>Contact</h1>
+      
+      <h1>Contact us</h1>
+      <p>text</p>
+
+      <div id="contact-container">
+        <div className="contact-info">
+          <h4>
+            Contact Information
+          </h4>
+          <p> text</p>
+          <div className="icon-text">
+            <i className="icon"></i>
+            <p>text</p>
+          </div>
+          <div className="social-media">
+            <a href="#" className="icon-circle">
+              <i className="icon"></i>
+            </a>
+
+          </div>
+
+        </div>
+          <form>
+
+          </form>
+
+      </div>
     </div>
   )
 }

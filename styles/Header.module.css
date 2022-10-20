@@ -13,7 +13,7 @@
   flex: 1;
 }
 
-.logo>span{
+.logo>p{
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -25,12 +25,11 @@
   gap: 2rem;
   justify-content: center;
   z-index: 99;
-
 }
 
 .menu>li:hover{
   cursor: pointer;
-  color: red;
+  color: blue;
 }
 
 .rightSide {
@@ -53,8 +52,8 @@
   background-color: red;
   color: white;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   display: flex;
   justify-content: center;
   align-items: center;

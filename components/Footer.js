@@ -1,14 +1,18 @@
 import css from '../styles/Footer.module.css'
 import {UilFacebook} from '@iconscout/react-unicons'
 import {UilInstagram} from '@iconscout/react-unicons'
+import {UilTwitter} from '@iconscout/react-unicons'
+import {UilLinkedin} from '@iconscout/react-unicons'
 
 export default function Footer () {
     return(
       <div className={css.container}>
-        <span>ALL RIGHTS RESERVED</span>
+        <p>Contact Us</p>
             <div className={css.social}>
-            <UilFacebook color='black'/>
-            <UilInstagram color='black'/>
+            <UilFacebook size ="45" color='black'/>
+            <UilInstagram size ="45" color='black'/>
+            <UilLinkedin size ="45" color='black'/>
+            <UilTwitter size ="45" color='black'/>
             </div>
       </div>
     )

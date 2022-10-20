@@ -58,9 +58,9 @@ a {
   padding: 1rem;
   border-radius: 4rem;
   border: none;
-  color: white;
+  color: black;
   font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
-  background-color: blue;
-
+  background-color: rgb(169, 227, 242);
 }
