@@ -3,7 +3,6 @@
 // MENU
 .menu {
   background-color: var(--background);
-  box-shadow: 0rem 0rem 1rem 1rem var(--background);
   display: grid;
   z-index: 11;
   justify-items: center;
@@ -44,7 +43,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     width: 4rem;
-    inset-inline-end: 0.5rem;
+    inset-inline-end: 0rem;
     inset-block-start: 1rem;
     inset-block-end: 1rem;
     position: fixed;

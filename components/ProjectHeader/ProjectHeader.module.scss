@@ -3,11 +3,12 @@
 // COMMON
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 30% 70%;
+  grid-template-columns: 38% 62%;
+  grid-template-rows: 1fr;
   margin: auto;
   width: 16rem;
-  height: 35rem;
+  align-items: center;
+  padding-block: 0.5rem;
 }
 .scroll_container {
   grid-column: 2/3;
@@ -15,7 +16,7 @@
   overflow-y: hidden;
   display: flex;
   width: 10rem;
-  height: auto;
+  height: 87vh;
   overflow-x: auto;
   background: transparent;
   white-space: nowrap;
@@ -30,381 +31,340 @@
     background-color: #000;
   }
   .cover {
-    padding-block: 1rem;
-    height: auto;
+    height: 85vh;
   }
 }
 
-// TITLE
-.title {
-  display: grid;
-  align-content: center;
-  align-content: space-evenly;
-  position: absolute;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  transform: translate(-2.5rem, 2.5rem) rotate(-90deg);
-  width: 10.5rem;
-  height: 6rem;
-  backface-visibility: hidden;
-  will-change: transform;
-  perspective: 1000px;
-  .one {
-    @include font-details(var(--text-color), "bc-light", 1rem);
-    text-align: justify;
-    letter-spacing: 4.5px;
-    text-transform: uppercase;
-  }
-  .two {
-    @include font-details(var(--text-color), "bc-regular", 2rem);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-  }
-}
 // DESCRIPTION
-.description {
-  grid-column: 1/2;
-  grid-row: 2/3;
+.logo_title {
   display: grid;
-  gap: 0.3rem;
-  align-content: center;
-  width: 5.5rem;
+  gap: 0.5rem;
+  justify-items: center;
+  transform: translateX(-3.2rem);
   .logo {
     width: 5.5rem;
     height: auto;
   }
+  .title_box {
+    display: grid;
+    align-content: center;
+    gap: 0.5rem;
+    transform: rotate(-90deg);
+    width: 12rem;
+    height: 12rem;
+    backface-visibility: hidden;
+    will-change: transform;
+    perspective: 1000px;
+    .subtitle {
+      @include font-details(var(--text-color), "bc-light", 1rem);
+      text-align: justify;
+      letter-spacing: 4.5px;
+      text-transform: uppercase;
+    }
+    .title {
+      @include font-details(var(--text-color), "bc-regular", 2rem);
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+  }
+}
+.description {
+  height: 34rem;
+  display: grid;
+  gap: 0.3rem;
+  align-content: center;
   .one {
     width: 5.5rem;
     @include font-details(var(--text-color), "bc-light", 0.7rem);
-    letter-spacing: 0.43px;
+    letter-spacing: -0.1px;
     text-transform: uppercase;
   }
   .two {
     width: 5.5rem;
-    @include font-details(var(--text-color), "bc-regular", 0.468rem);
+    @include font-details(var(--text-color), "bc-regular", 0.46rem);
     text-align: justify;
   }
 }
-
-// INDIVIDUAL
-.boutique {
-  .title {
-    transform: translate(-2.5rem, 1.5rem) rotate(-90deg);
-  }
-  .description {
-    .one {
-      letter-spacing: 0.42px;
-    }
-    .two {
-      font-size: 0.52rem;
-      text-align: justify;
-    }
-  }
-}
-.medical,
-.industrial {
-  .title {
-    transform: translate(-2.5rem, 2.3rem) rotate(-90deg);
-    .one {
-      letter-spacing: 3.84px;
-    }
-  }
-  .description {
-    .one {
-      letter-spacing: 0.35px;
-    }
-    .two {
-      font-size: 0.469rem;
-      text-align: justify;
-    }
-  }
-}
-.skyscraper {
-  .title {
-    transform: translate(-2.5rem, 3.2rem) rotate(-90deg);
-    .one {
-      letter-spacing: 3px;
-    }
-  }
-  .description {
-    .one {
-      letter-spacing: 0.4px;
-    }
-    .two {
-      font-size: 0.468rem;
-      text-align: justify;
-    }
-  }
-}
-.landmark {
-  .title {
-    transform: translate(-2.5rem, 1.5rem) rotate(-90deg);
-    .one {
-      letter-spacing: 3px;
-    }
-  }
-  .description {
-    .one {
-      letter-spacing: 0.4px;
-    }
-    .two {
-      font-size: 0.48rem;
-      text-align: justify;
-    }
-  }
-}
 .impreuna {
-  .title {
-    transform: translate(-2.5rem, 1.5rem) rotate(-90deg);
-  }
-  .description {
-    .one {
-      letter-spacing: -0.05px;
-    }
-    .two {
-      font-size: 0.47rem;
-      text-align: justify;
-    }
+  .title_box .subtitle {
+    letter-spacing: 3px;
   }
 }
-.manufacturat {
-  .title {
-    transform: translate(-2.5rem, 2rem) rotate(-90deg);
-    .one {
-      letter-spacing: 2px;
-    }
-    .two {
-      letter-spacing: 0px;
-    }
-  }
-  .description {
-    .one {
-      letter-spacing: 0px;
-    }
-    .two {
-      font-size: 0.48rem;
-      text-align: justify;
-    }
-  }
-}
-@media (min-height: 650px) {
-  .header {
-    padding-block: 1rem;
-  }
-}
-@media (min-height: 700px) {
-  .header {
-    padding-block: 2.5rem;
-  }
-}
+// HEIGHT
 @media (min-height: 750px) {
   .header {
-    padding-block: 3rem;
-  }
-}
-@media (min-height: 810px) {
-  .header {
-    padding-block: 0rem;
-    height: 46rem;
-    grid-template-rows: 25% 75%;
-  }
-  .title {
-    transform: translate(-2.5rem, 3rem) rotate(-90deg);
-    .one {
-      letter-spacing: 4px;
-    }
-  }
-  .description {
-    .one {
-      font-size: 0.8rem;
-      letter-spacing: -0.2px;
-    }
-    .two {
-      font-size: 0.58rem;
-    }
-  }
-  .boutique {
-    .title {
-      transform: translate(-2.5rem, 3.5rem) rotate(-90deg);
-      .one,
-      .two {
-        letter-spacing: 5.5px;
-      }
-    }
-    .description {
-      .one {
-        letter-spacing: -0.18px;
-      }
-      .two {
-        font-size: 0.64rem;
-      }
-    }
-  }
-  .medical,
-  .industrial {
-    .description {
-      .one {
-        letter-spacing: -0.4px;
-      }
-      .two {
-        font-size: 0.6rem;
-      }
-    }
-  }
-  .medical {
-    .title {
-      transform: translate(-2.5rem, 3.5rem) rotate(-90deg);
-      .one {
-        letter-spacing: 4.5px;
-      }
-    }
-  }
-  .industrial {
-    .title {
-      transform: translate(-2.5rem, 3rem) rotate(-90deg);
-    }
-  }
-  .skyscraper {
-    .title {
-      transform: translate(-2.5rem, 3.2rem) rotate(-90deg);
-    }
-    .description {
-      .one {
-        letter-spacing: -0.17px;
-      }
-      .two {
-        font-size: 0.595rem;
-      }
-    }
-  }
-  .landmark {
-    .title {
-      transform: translate(-2.5rem, 3.5rem) rotate(-90deg);
-      .one {
-        letter-spacing: 3px;
-      }
-    }
-    .description {
-      .one {
-        letter-spacing: -0.18px;
-      }
-      .two {
-        font-size: 0.593rem;
-      }
-    }
-  }
-  .impreuna {
-    .title {
-      transform: translate(-2.5rem, 3.5rem) rotate(-90deg);
-      .one {
-        letter-spacing: 3px;
-      }
-    }
-    .description {
-      .one {
-        letter-spacing: -0.18px;
-      }
-      .two {
-        font-size: 0.57rem;
-      }
-    }
-  }
-  .manufacturat {
-    .title {
-      transform: translate(-2.5rem, 3.8rem) rotate(-90deg);
-      .one {
-        letter-spacing: 2.8px;
-      }
-      .two {
-        letter-spacing: 0px;
-      }
-    }
-    .description {
-      .one {
-        letter-spacing: -0.2px;
-      }
-      .two {
-        font-size: 0.59rem;
-      }
-    }
-  }
-}
-@media (min-height: 830px) {
-  .header {
     padding-block: 1rem;
   }
+  .description .two {
+    font-size: 0.5rem;
+  }
 }
-@media (min-height: 850px) {
+@media (min-height: 900px) {
+  .description .two {
+    font-size: 0.6rem;
+  }
+}
+@media (min-height: 1000px) {
+  .description .two {
+    font-size: 0.7rem;
+  }
+}
+@media (min-height: 1100px) {
+  .header {
+    padding-block: 1.5rem;
+  }
+  .description .two {
+    font-size: 0.75rem;
+  }
+}
+@media (min-height: 1200px) {
+  .scroll_container {
+    height: 90vh;
+    .cover {
+      height: 87vh;
+    }
+  }
+}
+
+// WIDTH
+@media (min-width: 375px) {
+  .header {
+    grid-template-columns: 30% 70%;
+    width: 21rem;
+  }
+  .scroll_container {
+    width: 14.5rem;
+  }
+}
+@media (min-width: 450px) {
+  .header {
+    grid-template-columns: 25% 75%;
+    width: 25rem;
+  }
+  .scroll_container {
+    width: 18.5rem;
+  }
+}
+@media (min-width: 600px) {
+  .header {
+    grid-template-columns: 16% 84%;
+    width: 38rem;
+  }
+  .scroll_container {
+    width: 32rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 800px) {
   .header {
     padding-block: 2rem;
-  }
-}
-@media (min-height: 950px) {
-  .header {
-    padding-block: 0rem;
-    height: 55rem;
-    grid-template-rows: 20% 80%;
-  }
-  .title {
-    transform: translate(-2.5rem, 4rem) rotate(-90deg);
+    margin-inline: 2rem 0;
+    grid-template-columns: 20% 80%;
+    width: 43rem;
   }
   .description {
+    .one {
+      width: 7.5rem;
+      font-size: 0.8rem;
+    }
     .two {
-      font-size: 0.65rem;
+      width: 7.5rem;
+      font-size: 0.7rem;
+    }
+  }
+  .scroll_container {
+    height: 94vh;
+    width: 34rem;
+    .cover {
+      height: 92vh;
+    }
+  }
+  .logo_title {
+    transform: translateX(-2.2rem);
+    .title_box {
+      gap: 1rem;
+    }
+    .logo {
+      width: 7.5rem;
+      height: auto;
+    }
+  }
+  .culturall,
+  .skyscraper {
+    .description .one {
+      letter-spacing: 1.2px;
     }
   }
   .boutique {
-    .description {
-      .two {
-        font-size: 0.75rem;
-      }
-    }
-  }
-  .medical,
-  .industrial {
-    .description {
-      .two {
-        font-size: 0.715rem;
-      }
+    .description .one {
+      letter-spacing: 0.3px;
     }
   }
   .medical {
-    .title {
-      transform: translate(-2.5rem, 3.8rem) rotate(-90deg);
+    .description .one {
+      letter-spacing: -0.02px;
     }
   }
-  .skyscraper {
-    .title {
-      transform: translate(-2.5rem, 3.5rem) rotate(-90deg);
-    }
-    .description {
-      .two {
-        font-size: 0.7rem;
-      }
-    }
-  }
-  .landmark {
-    .description {
-      .two {
-        font-size: 0.71rem;
-      }
-    }
-  }
-  .impreuna {
-    .title {
-      transform: translate(-2.5rem, 3.3rem) rotate(-90deg);
-    }
-    .description {
-      .two {
-        font-size: 0.67rem;
-      }
-    }
-  }
+  .impreuna,
   .manufacturat {
-    .description {
-      .two {
-        font-size: 0.69rem;
-      }
+    .description .one {
+      letter-spacing: 0.8px;
+    }
+  }
+  .landmark,
+  .industrial {
+    .description .one {
+      letter-spacing: 1.5px;
+    }
+  }
+}
+@media (min-height: 800px) and (min-width: 860px) {
+  .header {
+    margin-inline: 2.5rem 0;
+    grid-template-columns: 16% 84%;
+    width: 52.5rem;
+  }
+  .scroll_container {
+    width: 44rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 950px) {
+  .header {
+    grid-template-columns: 15% 85%;
+    width: 56.5rem;
+  }
+  .scroll_container {
+    width: 48rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 1050px) {
+  .header {
+    grid-template-columns: 13.5% 86.5%;
+    width: 62.5rem;
+  }
+  .scroll_container {
+    width: 54rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 1150px) {
+  .header {
+    grid-template-columns: 12.5% 87.5%;
+    width: 68.5rem;
+  }
+  .scroll_container {
+    width: 60rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 1250px) {
+  .header {
+    margin-inline: 2rem 0;
+    grid-template-columns: 11% 89%;
+    width: 75.5rem;
+  }
+  .scroll_container {
+    width: 67rem;
+  }
+}
+
+@media (min-height: 800px) and (min-width: 1350px) {
+  .header {
+    margin-inline: 2.5rem 0;
+    grid-template-columns: 10.5% 89.5%;
+    width: 81rem;
+  }
+  .scroll_container {
+    width: 72.5rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 1450px) {
+  .header {
+    grid-template-columns: 9.5% 90.5%;
+    width: 87.5rem;
+  }
+  .scroll_container {
+    width: 79rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 1550px) {
+  .header {
+    grid-template-columns: 9% 91%;
+    width: 93.5rem;
+  }
+  .scroll_container {
+    width: 85rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 1650px) {
+  .header {
+    grid-template-columns: 8.5% 91.5%;
+    width: 100rem;
+  }
+  .scroll_container {
+    width: 91.5rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 1650px) {
+  .header {
+    grid-template-columns: 8.5% 91.5%;
+    width: 100rem;
+  }
+  .scroll_container {
+    width: 91.5rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 1750px) {
+  .header {
+    grid-template-columns: 8% 92%;
+    width: 105rem;
+  }
+  .scroll_container {
+    width: 95.7rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 1850px) {
+  .header {
+    width: 112rem;
+  }
+  .scroll_container {
+    width: 103rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 1950px) {
+  .header {
+    grid-template-columns: 7.5% 92.5%;
+    width: 119rem;
+  }
+  .scroll_container {
+    width: 110rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 2100px) {
+  .header {
+    grid-template-columns: 7% 93%;
+    width: 127rem;
+  }
+  .scroll_container {
+    width: 118rem;
+  }
+}
+@media (min-height: 800px) and (min-width: 2200px) {
+  .header {
+    margin: auto;
+  }
+}
+@media (min-height: 980px) and (min-width: 1000px) {
+  .description .two {
+    font-size: 0.8rem;
+  }
+}
+// PHONE LANDSCAPE
+@media (max-height: 500px) {
+  .description {
+    height: 23rem;
+  }
+  .logo_title {
+    transform: translateX(-0.2rem);
+    .title_box {
+      display: none;
     }
   }
 }
