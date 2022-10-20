@@ -1,0 +1,50 @@
+@use "../../styles/mixins.scss" as *;
+
+.container {
+  padding: 0.5rem;
+  padding-inline-end: 0;
+  margin-block: 1rem;
+  overflow-y: hidden;
+  display: flex;
+  gap: 0.5rem;
+  width: 95vw;
+  overflow-x: scroll;
+  background: transparent;
+  white-space: nowrap;
+  &::before {
+    content: "";
+    position: absolute;
+    transform: translateY(3.4rem);
+    background-color: var(--text-color);
+    width: 98vw;
+    height: 0.08rem;
+  }
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #000;
+  }
+  div {
+    display: grid;
+    justify-items: start;
+    gap: 1rem;
+    p {
+      @include font-details(var(--text-color), "bc-regular", 0.8rem);
+      text-transform: uppercase;
+      display: flex;
+      align-items: flex-end;
+      text-align: justify;
+      width: 12rem;
+      height: 3rem;
+      white-space: normal;
+    }
+  }
+}
+.picture {
+  width: 14rem;
+  height: 14rem;
+}

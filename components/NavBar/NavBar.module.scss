@@ -2,8 +2,8 @@
 
 // MENU
 .menu {
-  background-color: var(--background);
   display: grid;
+  background-color: var(--background);
   z-index: 11;
   justify-items: center;
   inset-block-start: 1rem;

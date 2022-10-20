@@ -4,12 +4,15 @@
   position: absolute;
   width: 5rem;
   height: 5rem;
+  inset-block-start: 1rem;
+  inset-inline-start: 0.5rem;
   cursor: pointer;
   &::before {
     content: "";
     position: absolute;
     width: 5rem;
     height: 0.08rem;
+    background-color: var(--text-color);
     transform-origin: center;
     transform: translate(0rem, 2.35rem);
   }
@@ -50,35 +53,14 @@
   }
 }
 
-@media (max-width: 450px) {
-  .button.light {
-    transform: scale(0.6);
-  }
-  .button.dark {
-    transform: rotate(180deg) scale(0.6);
-  }
+.button.light {
+  transform: scale(0.6) rotate(-90deg);
 }
-@media (min-width: 450px) {
-  .button.light {
-    transform: scale(0.7);
-  }
-  .button.dark {
-    transform: rotate(180deg) scale(0.7);
-  }
+.button.dark {
+  transform: rotate(-270deg) scale(0.6);
 }
-@media (min-width: 600px) {
-  .button.light {
-    transform: scale(0.85);
-  }
-  .button.dark {
-    transform: rotate(180deg) scale(0.85);
-  }
-}
-@media (max-height: 660px) and (max-width: 1500px) and (orientation: landscape) {
-  .button.light {
-    transform: scale(0.7);
-  }
-  .button.dark {
-    transform: rotate(180deg) scale(0.7);
+@media (min-width: 800px) {
+  .button {
+    inset-inline-start: 0rem;
   }
 }

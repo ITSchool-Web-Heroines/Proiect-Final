@@ -1,0 +1,24 @@
+@use "../../styles/mixins.scss" as *;
+
+.container {
+  display: grid;
+  gap: 1rem;
+  padding-block: 1rem;
+  width: 14rem;
+  margin: auto;
+  div {
+    display: grid;
+    justify-items: start;
+    gap: 1rem;
+    p {
+      @include font-details(var(--text-color), "bc-regular", 0.8rem);
+      text-transform: uppercase;
+      text-align: justify;
+      white-space: normal;
+    }
+  }
+}
+.picture {
+  width: 14rem;
+  height: 14rem;
+}

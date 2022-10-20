@@ -30,11 +30,7 @@ import ProjectHeader from "../../../components/ProjectHeader/ProjectHeader";
 export default function ProjectDetails({ projects }) {
   const theme = useContext(ThemeContext);
   console.log(projects);
-  // BUTTON
-  const project = {
-    insetBlockStart: "3.5rem",
-    insetInlineStart: "0rem",
-  };
+
   // TAB TITLE
   const { projectName } = projects;
   let tabTitle = projectName.toUpperCase();
@@ -45,6 +41,7 @@ export default function ProjectDetails({ projects }) {
         <title>{tabTitle}</title>
       </Head>
       <NavBar />
+      <ThemeButton theme={theme.isDark} handleClick={theme.setTheme} />
       <ProjectHeader
         projectName={projectName}
         coverSource={projects.cover}

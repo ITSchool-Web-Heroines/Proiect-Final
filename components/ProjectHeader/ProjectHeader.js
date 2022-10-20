@@ -5,8 +5,17 @@ import styles from "./ProjectHeader.module.scss";
 
 export default function ProjectHeader(props) {
   const imageRef = useRef();
-
   const { projectName } = props;
+
+  const centerDiv = () => {
+    console.log("loaded", imageRef);
+  };
+  useEffect(() => {
+    centerDiv();
+    imageRef.current.scrollLeft =
+      (imageRef.current.scrollWidth - imageRef.current.clientWidth) / 2;
+  }, []);
+
   return (
     <header className={`${styles.header}  ${styles[projectName]}`}>
       <div className={styles.scroll_container} ref={imageRef}>

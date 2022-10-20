@@ -31,21 +31,14 @@ import DigitalList from "../../components/DigitalList/DigitalList";
 function MyAboutPage() {
   // CHANGE THEME BUTTON
   const theme = useContext(ThemeContext);
-  const about = {
-    insetBlockStart: "3.5rem",
-    insetInlineStart: "1rem",
-  };
+
   return (
     <LoadingWrap>
       <Head>
         <title>Detalii</title>
       </Head>
       <NavBar />
-      <ThemeButton
-        styles={about}
-        theme={theme.isDark}
-        handleClick={theme.setTheme}
-      />
+      <ThemeButton theme={theme.isDark} handleClick={theme.setTheme} />
       <main className={styles.main}>
         <header className={styles.header}>
           <div className={styles.photo}></div>

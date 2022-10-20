@@ -30,11 +30,6 @@ import LoadingWrap from "../../components/LoadingWrap/LoadingWrap";
 import ProjectTile from "../../components/ProjectTile/ProjectTile";
 
 function MyProjectsPage({ projects }) {
-  // STYLES
-  const project = {
-    insetBlockStart: "3.5rem",
-    insetInlineStart: "1rem",
-  };
   const theme = useContext(ThemeContext);
   return (
     <LoadingWrap>
@@ -42,11 +37,7 @@ function MyProjectsPage({ projects }) {
         <title>Proiecte</title>
       </Head>
       <NavBar />
-      <ThemeButton
-        styles={project}
-        theme={theme.isDark}
-        handleClick={theme.setTheme}
-      />
+      <ThemeButton theme={theme.isDark} handleClick={theme.setTheme} />
       {projects && (
         <main className={styles.projects_box}>
           {projects.map(project => (
