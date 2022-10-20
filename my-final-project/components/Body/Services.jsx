@@ -18,15 +18,18 @@ function Services() {
 
                             <ServicesItem subtitle='Lorem ipsum lore ipsum' icon='ri-artboard-line' />
                         </div>
-                        <ServicesItem subtitle='Lorem ipsum lore ipsum' icon='ri-artboard-line' />
                     </div>
 
                 </Col>
                 <Col lg='6' md='6'>
+                    <Section title='De ce noi?'></Section>
+                    <h4> Despre noi ca echipa</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id massa erat. Maecenas porttitor elementum ante ac consequat. Fusce pretium velit sit amet arcu ornare blandit. Pellentesque venenatis vel arcu sit amet congue. Mauris quis sagittis mi, eu tincidunt dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In quis arcu pretium, ornare sapien ut, porttitor turpis.</p>
+
                 </Col>
             </Row>
         </section>
-        
+
     )
 }
 

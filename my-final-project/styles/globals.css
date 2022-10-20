@@ -70,4 +70,13 @@ footer{
     color: white;
     background: black;
   }
+
+  ::-webkit-scrollbar{
+    width:0.5em;
+    background-color: orange;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background: #171f38dc;
+  }
 }
