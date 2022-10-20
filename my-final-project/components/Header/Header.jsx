@@ -4,21 +4,35 @@ import { Container } from 'react-bootstrap';
 import classes from './header.module.css'
 import Link from "next/link"
 
-const NAV_LINK = [
-    {
-        path: '/',
-        display: 'Acasa'
-    },
-    {
-        path: '#proiecte',
-        display: 'Proiecte'
-    }, {
-        path: '#contact',
-        display: 'Contact'
-    },
-]
+// const NAV_LINK = [
+//     {
+//         path: '/',
+//         display: 'Acasa'
+//     },
+//     {
+//         path: '#proiecte',
+//         display: 'Proiecte'
+//     }, {
+//         path: '#contact',
+//         display: 'Contact'
+//     },
+// ]
 
-const Header = () => {
+function Header () {
+    const NAV_LINK = [
+        {
+            path: '/',
+            display: 'Acasa'
+        },
+        {
+            path: '#proiecte',
+            display: 'Proiecte'
+        }, {
+            path: '#contact',
+            display: 'Contact'
+        },
+    ]
+
     return (
         <header className={`${classes.header}`}>
             <Container>
@@ -46,8 +60,10 @@ const Header = () => {
                     </div>
                 </div>
             </Container>
-        </header> 
-        
+        </header>
+    
+
     )
-}
+};
+
 export default Header

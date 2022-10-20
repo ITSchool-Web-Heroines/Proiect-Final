@@ -1,10 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap"
 import classes from './footer.module.css'
-import Link from 'next/link'
+import Link from "next/link";
 
 
-const Footer = () => {
+
+const Footer= () => {
 
     const date = new Date()
     const year = date.getFullYear()
@@ -29,7 +30,7 @@ const Footer = () => {
                 </Col>
             </Row>
         </Container>
-           
+
     )
 }
 

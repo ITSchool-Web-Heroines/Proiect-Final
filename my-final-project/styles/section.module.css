@@ -16,7 +16,7 @@
 }
 .body_image {
     margin-block-start: -15%;
-    margin-inline-start: 10%;
+    margin-inline-start: 1em;
 }
 .body_image img{
     border-radius:50% 50% 50% 50%;
@@ -36,13 +36,9 @@
     margin-block-start: 2em;
 }
 
-.body-skills span i {
-    color:orange;
-    background: transparent;
-}
-
 .body_skills span {
     background:transparent;
+    color:orange;
 }
 .body_skills {
     

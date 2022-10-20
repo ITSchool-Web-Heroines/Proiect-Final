@@ -2,19 +2,19 @@ import React from 'react'
 import Section from './Section';
 import { Container, Row, Col } from 'reactstrap';
 import Image from 'next/image'
-import Link from 'next/link';
 import bgImg from '../../images/bg.jpg';
 import classes from '../../styles/section.module.css'
 
 
 
-const Body = () => {
+function Body() {
     return (
+        
         <section className={`${classes.body}`}>
             <Container>
                 <Row>
                     {/*  */}
-                    <Col>
+                    <Col lg='6' md='6'>
                         <div className={`${classes.body_image} d-flex align-items-center gap-3`}>
                             <Image alt="" src={bgImg} width='400' height='400' />
                         </div>
@@ -23,9 +23,8 @@ const Body = () => {
                             <h5>Experienta</h5>
                             <h5>De peste 6 ani in pictura</h5>
                         </div>
-
                     </Col>
-                    <Col>
+                    <Col lg='6' md='6'>
                         <div className={`${classes.body_content}`}>
                             <Section title="Bine ai venit pe pagina mea!" />
                             <h2>Lorem ipsum</h2>
@@ -36,7 +35,6 @@ const Body = () => {
                     </Col>
                 </Row>
             </Container>
-
         </section>
     )
 }
