@@ -4,7 +4,7 @@ import Tech from '../images/Tech.gif'
 import {UilCircuit} from '@iconscout/react-unicons'
 import {UilPhone} from '@iconscout/react-unicons'
 
-export default function Hero() {
+export default function Info() {
     return(
         <div className={css.container}>
             
