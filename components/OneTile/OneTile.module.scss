@@ -6,18 +6,21 @@
   padding-inline-end: 0;
   overflow-y: hidden;
   display: grid;
-  gap: 1rem;
+  gap: 0.7rem;
   width: 95vw;
   overflow-x: scroll;
   background: var(--background);
   white-space: nowrap;
-  &::before {
-    content: "";
-    position: absolute;
-    transform: translateY(3.5rem);
-    background-color: var(--text-color);
-    width: 95vw;
-    height: 0.08rem;
+  opacity: 0;
+  transition: opacity 1s;
+  transform: translateX(-5rem);
+  transition: transform 1s;
+  &.active {
+    cursor: grabbing;
+  }
+  &.inview {
+    opacity: 1;
+    transform: translateX(0rem);
   }
   &::-webkit-scrollbar {
     height: 5px;
@@ -49,7 +52,10 @@
 .plan {
   width: auto;
   height: 14rem;
+  padding-block-start: 1rem;
+  border-block-start: 0.1rem solid var(--text-color);
 }
+
 @media (min-width: 375px) {
   .plan {
     height: 16rem;
@@ -86,6 +92,10 @@
   .plan {
     height: 35rem;
     padding-block: 1rem;
+  }
+  .container div p {
+    padding-inline: 4rem;
+    width: 18rem;
   }
 }
 @media (min-width: 1900px) {

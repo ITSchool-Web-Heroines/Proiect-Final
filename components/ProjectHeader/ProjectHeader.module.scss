@@ -10,6 +10,7 @@
   align-items: center;
   padding-block: 0.5rem;
   background-color: var(--background);
+  @include fade-in();
 }
 .scroll_container {
   grid-column: 2/3;
@@ -33,6 +34,9 @@
   .cover {
     height: 85vh;
   }
+}
+.scroll_container.active {
+  cursor: grabbing;
 }
 
 // DESCRIPTION

@@ -1,12 +1,20 @@
 import React from "react";
 import Image from "next/future/image";
+import { useInView } from "react-intersection-observer";
 
+// STYLES
 import styles from "./TwoTiles.module.scss";
 
 export default function TwoTiles(props) {
+  const { ref: firstRef, inView: firstRefIsVisible } = useInView();
+  const { ref: secondRef, inView: secondRefIsVisible } = useInView();
+
   return (
     <section className={styles.container}>
-      <div className={styles.one}>
+      <div
+        ref={firstRef}
+        className={`${styles.one} ${firstRefIsVisible ? styles.inview : ""}`}
+      >
         <p>{props.oneTitle}</p>
         <Image
           src={`${props.oneSource}`}
@@ -16,7 +24,10 @@ export default function TwoTiles(props) {
           alt="Picture"
         />
       </div>
-      <div className={styles.two}>
+      <div
+        ref={secondRef}
+        className={`${styles.two} ${secondRefIsVisible ? styles.inview : ""}`}
+      >
         <p>{props.twoTitle}</p>
         <Image
           src={`${props.twoSource}`}

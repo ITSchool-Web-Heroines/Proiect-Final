@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import NavLink from "../NavLink";
 
 import styles from "./NavProjects.module.scss";
 
-function NavProjects(props) {
+export default function NavProjects(props) {
   let navigation;
   if (props.currentPage === "culturall") {
     navigation = (
@@ -35,5 +35,3 @@ function NavProjects(props) {
   }
   return <>{navigation}</>;
 }
-
-export default NavProjects;

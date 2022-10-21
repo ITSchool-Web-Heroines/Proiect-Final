@@ -1,12 +1,16 @@
 import React from "react";
 import Image from "next/future/image";
 
-import styles from "./OneTile.module.scss";
+// STYLES
+import OneStyles from "./OneTile.module.scss";
+
+// COMPONENTS
+import ScrollContainer from "../ScrollContainer/ScrollContainer";
 
 export default function OneTile(props) {
   return (
-    <section className={styles.container}>
-      <div className={styles.title}>
+    <ScrollContainer currentComp={"one"}>
+      <div className={OneStyles.title}>
         <p>{props.oneTitle}</p>
         <p>{props.twoTitle}</p>
         {props.threeTitle && <p>{props.threeTitle}</p>}
@@ -14,11 +18,11 @@ export default function OneTile(props) {
       </div>
       <Image
         src={`${props.planSource}`}
-        className={styles.plan}
+        className={OneStyles.plan}
         width="3307"
         height="973"
         alt="plan"
       />
-    </section>
+    </ScrollContainer>
   );
 }

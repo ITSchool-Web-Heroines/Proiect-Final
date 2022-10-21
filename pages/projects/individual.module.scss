@@ -2,16 +2,16 @@
 
 .main {
   display: grid;
-  padding: 1rem 0rem;
+  padding: 2rem 0rem;
   justify-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 @media (min-width: 800px) {
   .main {
     width: 91vw;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .main {
     width: 94vw;
   }

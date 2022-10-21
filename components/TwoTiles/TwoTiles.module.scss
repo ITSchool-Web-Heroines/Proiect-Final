@@ -12,6 +12,11 @@
     justify-items: start;
     width: 14rem;
     gap: 0.7rem;
+    opacity: 0;
+    transition: opacity 1.5s;
+    &.inview {
+      opacity: 1;
+    }
     p {
       @include font-details(var(--text-color), "bc-regular", 0.8rem);
       text-transform: uppercase;
@@ -23,6 +28,7 @@
     }
   }
 }
+
 .picture {
   width: 14rem;
   height: 14rem;
@@ -99,6 +105,11 @@
       align-items: flex-end;
       &:nth-child(1) {
         flex-direction: row-reverse;
+      }
+      &:nth-child(2) {
+        p {
+          text-align: right;
+        }
       }
       p {
         width: 23rem;

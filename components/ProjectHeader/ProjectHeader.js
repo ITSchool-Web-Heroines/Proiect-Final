@@ -1,44 +1,42 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/future/image";
 
-import styles from "./ProjectHeader.module.scss";
+// STYLES
+import HeaderStyles from "./ProjectHeader.module.scss";
+
+// COMPONENTS
+import ScrollContainer from "../ScrollContainer/ScrollContainer";
 
 export default function ProjectHeader(props) {
-  const imageRef = useRef();
   const { projectName } = props;
 
-  useEffect(() => {
-    imageRef.current.scrollLeft =
-      (imageRef.current.scrollWidth - imageRef.current.clientWidth) / 2;
-  }, []);
-
   return (
-    <header className={`${styles.header}  ${styles[projectName]}`}>
-      <div className={styles.scroll_container} ref={imageRef}>
+    <header className={`${HeaderStyles.header}  ${HeaderStyles[projectName]}`}>
+      <ScrollContainer currentComp={"header"}>
         <Image
           src={`${props.coverSource}`}
-          className={styles.cover}
+          className={HeaderStyles.cover}
           width="2253"
           height="1173"
           alt="cover"
         />
-      </div>
-      <div className={styles.description}>
-        <div className={styles.logo_title}>
-          <div className={styles.title_box}>
-            <p className={styles.subtitle}>{props.title}</p>
-            <p className={styles.title}>{projectName}</p>
+      </ScrollContainer>
+      <div className={HeaderStyles.description}>
+        <div className={HeaderStyles.logo_title}>
+          <div className={HeaderStyles.title_box}>
+            <p className={HeaderStyles.subtitle}>{props.title}</p>
+            <p className={HeaderStyles.title}>{projectName}</p>
           </div>
           <Image
             src={`${props.logoSource}`}
-            className={styles.logo}
+            className={HeaderStyles.logo}
             width="400"
             height="400"
             alt="logo"
           />
         </div>
-        <p className={styles.one}>{props.subtitle}</p>
-        <p className={styles.two}>{props.text}</p>
+        <p className={HeaderStyles.one}>{props.subtitle}</p>
+        <p className={HeaderStyles.two}>{props.text}</p>
       </div>
     </header>
   );

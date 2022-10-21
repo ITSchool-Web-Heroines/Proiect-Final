@@ -6,6 +6,7 @@
   height: 5rem;
   inset-block-start: 1rem;
   inset-inline-start: 0.5rem;
+  @include fade-in();
   cursor: pointer;
   &::before {
     content: "";
