@@ -11,16 +11,21 @@
   overflow-x: scroll;
   background: var(--background);
   white-space: nowrap;
-  opacity: 0;
-  transition: opacity 1s;
-  transform: translateX(-5rem);
-  transition: transform 1s;
+
   &.active {
     cursor: grabbing;
   }
+  * {
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translateX(-5rem);
+    transition: transform 1s;
+  }
   &.inview {
-    opacity: 1;
-    transform: translateX(0rem);
+    * {
+      opacity: 1;
+      transform: translateX(0rem);
+    }
   }
   &::-webkit-scrollbar {
     height: 5px;
