@@ -6,7 +6,7 @@ const ContactForm = () => {
       <section className="contact" id="contact">
         <h1 className="heading">Contacteaza-ne rapid!</h1>
         <div className="row">
-          <form className="form-contact">
+          <form className="form-contact" method="POST" data-netfly="true">
             <h3>Trimite un mesaj</h3>
             <input type="text" placeholder="Numele" className="input-box" />
             <input type="email" placeholder="Email" className="input-box" />
