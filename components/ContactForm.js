@@ -16,7 +16,7 @@ const ContactForm = () => {
               name
               placeholder="Mesaj"
               className="input-box"
-              
+
               cols={30}
               rows={10}
               value={""}
