@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "../components/ContactFormj";
+import ContactForm from "../components/ContactForm";
 import Credit from "../components/Credit";
 import Navbar from "../components/Navbar";
 
