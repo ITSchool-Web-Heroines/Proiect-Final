@@ -1,5 +1,5 @@
 import Head from "next/head";
-import ContactForm from "../components/ContactFormj.js";
+import ContactForm from "../components/ContactForm.js";
 import Credit from "../components/Credit.js";
 import HomeMain from "../components/HomeMain";
 import Navbar from "../components/Navbar";
