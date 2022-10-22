@@ -14,14 +14,14 @@ const Contact = () => {
             <img src="images/home-img-1.png" alt="" />
           </div>
           <div className="content">
-            <h3>Agentie de Marketing Sportiv</h3>
+            <h3>Ai o afacere pe care vrei sa o cresti?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              id repellendus numquam. Maxime veritatis consequatur nobis
-              architecto incidunt rem esse?
+            Hai sa discutam despre proiectul tau! Te rog sa ne trimiti o descriere cu ceea ce urmaresti tu sa obtii.
+
+
             </p>
-            <a href="#" className="btn">
-              read more
+            <a href="#contact" className="btn">
+              Mergi la contact
             </a>
           </div>
         </div>

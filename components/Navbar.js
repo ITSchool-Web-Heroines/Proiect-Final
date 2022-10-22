@@ -1,9 +1,49 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
+
+const NavLinks = [
+  {
+    pathname: "/",
+    label: "Home"
+  },
+  {
+    pathname: "/desprenoi",
+    label: "Despre Noi"
+  },
+
+  {
+    pathname: "/servicii",
+    label: "Servicii"
+  },
+
+  {
+    pathname: "/portofoliu",
+    label: "Portofoliu"
+  },
+
+  {
+    pathname: "/testimoniale",
+    label: "Testimoniale"
+  },
+
+  {
+    pathname: "/contact",
+    label: "Contact"
+  },
+
+  
+  {
+    pathname: "/blog",
+    label: "Blog"
+  },
+];
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const router = useRouter();
   return (
+
     <>
       <nav className="navbar">
         <div className="brand-title">Motion Agency</div>
@@ -19,38 +59,15 @@ const Navbar = () => {
           <span className="bar"></span>
         </a>
         <div className={`navbar-links ${toggle ? "active" : ""}`}>
-          <ul>
-            <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/desprenoi">
-                <a>Despre Noi</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/servicii">
-                <a>Servicii</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/portofoliu">
-                <a>Portofoliu</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/testimoniale">
-                <a>Testimoniale</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="contact">
-                <a>Contact</a>
-              </Link>
-            </li>
-          </ul>
+          
+            {NavLinks.map((link) => (
+              <li key={link.pathname} className={router.pathname == link.pathname ? "active" : ""}>
+                <Link href={link.pathname}>
+                  <a>{link.label}</a>
+                </Link>
+              </li>
+            ))}
+          
         </div>
       </nav>
     </>

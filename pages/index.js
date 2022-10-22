@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Head>
         <meta charset="utf-8" />
-        <title>Proiect JavaScript</title>
+        <title>Motion Agency</title>
         <meta
           name="viewport"
           content="width=device-width,initial-scale=1.0"
