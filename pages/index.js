@@ -19,14 +19,10 @@ import BLogo from "../images/home/sn.png";
 
 export default function Home() {
   // THEME BUTTON
-  const home = {
-    insetInlineEnd: "1rem",
-    insetInlineStart: "90%",
-    insetBlockStart: "-5rem",
-  };
+
   const theme = useContext(ThemeContext);
   return (
-    <LoadingWrap>
+    <LoadingWrap title={"a.casa"}>
       <Head>
         <title>Portofoliu</title>
         <link rel="icon" href="/favicon.ico" />
@@ -45,7 +41,7 @@ export default function Home() {
           <span className={styles.concept}>concept</span>
           <div className={styles.details_background}>
             <ThemeButton
-              styles={home}
+              home={true}
               theme={theme.isDark}
               handleClick={theme.setTheme}
             />

@@ -1,21 +1,32 @@
 import React from "react";
 
 // STYLES
-import styles from "./ThemeButton.module.scss";
-
+import home_styles from "./HomeThemeButton.module.scss";
+import nav_styles from "./NavThemeButton.module.scss";
 export default function ThemeButton(props) {
-  return (
+  return props.home ? (
     <div
       className={
         props.theme
-          ? `${styles.button} ${styles.dark}`
-          : `${styles.button} ${styles.light}`
+          ? `${home_styles.button} ${home_styles.dark}`
+          : `${home_styles.button} ${home_styles.light}`
       }
       onClick={props.handleClick}
-      style={props.styles}
     >
-      <p className={styles.light}>Light</p>
-      <p className={styles.dark}>Dark</p>
+      <p className={home_styles.light}>Light</p>
+      <p className={home_styles.dark}>Dark</p>
+    </div>
+  ) : (
+    <div
+      className={
+        props.theme
+          ? `${nav_styles.button} ${nav_styles.dark}`
+          : `${nav_styles.button} ${nav_styles.light}`
+      }
+      onClick={props.handleClick}
+    >
+      <p className={nav_styles.light}>Light</p>
+      <p className={nav_styles.dark}>Dark</p>
     </div>
   );
 }

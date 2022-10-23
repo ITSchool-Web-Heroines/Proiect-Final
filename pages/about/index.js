@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import { useInView } from "react-intersection-observer";
 
 // CONTEXT
 import { ThemeContext } from "../../context/theme";
@@ -22,23 +21,19 @@ import profs from "../../data/about/profs";
 // COMPONENTS
 import NavBar from "../../components/NavBar/NavBar";
 import CustomParticles from "../../components/CustomParticles/CustomParticles";
-import ThemeButton from "../../components/ThemeButton/ThemeButton";
 import LoadingWrap from "../../components/LoadingWrap/LoadingWrap";
 import AbilitySection from "../../components/AbilitySection/AbilitySection";
 import InfoSection from "../../components/InfoSection/InfoSection";
 import DigitalList from "../../components/DigitalList/DigitalList";
 
 function MyAboutPage() {
-  // CHANGE THEME BUTTON
   const theme = useContext(ThemeContext);
-
   return (
-    <LoadingWrap>
+    <LoadingWrap title={"detalii"}>
       <Head>
         <title>Detalii</title>
       </Head>
       <NavBar />
-      <ThemeButton theme={theme.isDark} handleClick={theme.setTheme} />
       <main className={styles.main}>
         <header className={styles.header}>
           <div className={styles.photo}></div>
@@ -86,6 +81,11 @@ function MyAboutPage() {
         />
       </main>
       <CustomParticles color={theme.isDark ? "#fff" : "#000"} />
+      <svg className={styles.svg} viewBox="0 0 1320 300">
+        <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+          culturall
+        </text>
+      </svg>
     </LoadingWrap>
   );
 }

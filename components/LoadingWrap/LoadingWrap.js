@@ -6,9 +6,7 @@ import { useContext } from "react";
 
 import React, { useEffect, useState } from "react";
 
-import signature from "../../images/home/gif.gif";
-
-import style from "./LoadingWrap.module.scss";
+import styles from "./LoadingWrap.module.scss";
 
 export default function LoadingWrap(props) {
   const [loading, setLoading] = useState(false);
@@ -16,19 +14,23 @@ export default function LoadingWrap(props) {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 4500);
   }, []);
 
   const theme = useContext(ThemeContext);
 
   return (
-    <div className={style.loading}>
+    <div className={styles.loading}>
       {loading ? (
         <div>
           <Head>
             <title>Portofoliu</title>
           </Head>
-          <Image className={style.cube} src={signature} alt="CubeAnimation" />
+          <svg className={styles.svg} viewBox="0 0 1320 300">
+            <text x="50%" y="50%" dy=".35em" textAnchor="middle">
+              {props.title}
+            </text>
+          </svg>
         </div>
       ) : (
         <div className={theme.isDark ? "app dark" : "app"}>

@@ -2,25 +2,52 @@
 
 .loading {
   height: 100vh;
+  animation: fade 1s linear 4s;
 }
-.cube {
+.svg {
+  font-family: "ag-regular";
   position: absolute;
-  inset-block-start: 50%;
-  inset-inline-start: 50%;
-  transform: translate(-50%, -50%);
-  width: 18rem;
-  opacity: 1;
-  height: auto;
-  animation: fade 1s linear 2s;
+  width: 100%;
+  height: 100%;
+}
+.svg text {
+  text-transform: uppercase;
+  animation: stroke 4s infinite alternate;
+  stroke-width: 2;
+  stroke: #000;
+  font-size: 10rem;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(0, 0, 0, 0);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(0, 0, 0, 0);
+    stroke: rgba(0, 0, 0, 1);
+  }
+  80% {
+    fill: rgba(0, 0, 0, 0);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgba(0, 0, 0, 1);
+    stroke: rgba(0, 0, 0, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
 }
 
 @keyframes fade {
   from {
-    transform: translate3d(0);
+    opacity: 1;
   }
-
   to {
-    transform: translate(-50%, -100%);
     opacity: 0;
   }
 }

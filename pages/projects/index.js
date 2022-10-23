@@ -24,7 +24,6 @@ import styles from "./projects.module.scss";
 
 // COMPONENTS
 import NavBar from "../../components/NavBar/NavBar";
-import ThemeButton from "../../components/ThemeButton/ThemeButton";
 import CustomParticles from "../../components/CustomParticles/CustomParticles";
 import LoadingWrap from "../../components/LoadingWrap/LoadingWrap";
 import ProjectTile from "../../components/ProjectTile/ProjectTile";
@@ -32,12 +31,11 @@ import ProjectTile from "../../components/ProjectTile/ProjectTile";
 function MyProjectsPage({ projects }) {
   const theme = useContext(ThemeContext);
   return (
-    <LoadingWrap>
+    <LoadingWrap title={"proiecte"}>
       <Head>
         <title>Proiecte</title>
       </Head>
       <NavBar />
-      <ThemeButton theme={theme.isDark} handleClick={theme.setTheme} />
       {projects && (
         <main className={styles.projects_box}>
           {projects.map(project => (

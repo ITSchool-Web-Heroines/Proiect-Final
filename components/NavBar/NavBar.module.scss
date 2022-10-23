@@ -8,7 +8,7 @@
   justify-items: center;
   inset-block-start: 1rem;
   inset-block-end: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 30% 30% 30% 10%;
   grid-template-rows: 1fr 1fr;
   padding: 0.5rem;
   a {
@@ -35,13 +35,23 @@
     animation: hor-menu-ani 2s;
   }
 }
+@media (max-width: 301px) {
+  .menu {
+    grid-template-columns: 23% 23% 23% 31%;
+  }
+}
+@media (min-width: 301px) and (max-width: 600px) {
+  .menu {
+    grid-template-columns: 26% 26% 26% 22%;
+  }
+}
 @media (min-width: 800px) {
   .menu {
     margin: 0;
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 30% 30% 30% 10%;
     width: 4rem;
     inset-inline-end: 0rem;
     inset-block-start: 0rem;
