@@ -1,3 +1,14 @@
 .tab_btn_active {
     color:orange;
+    background: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+}
+.tab_btn_inactive {
+    color:aliceblue;
+    background: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
 }

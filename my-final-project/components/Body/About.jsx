@@ -4,9 +4,9 @@ import classes from '../../styles/about.module.css'
 import Link from 'next/link'
 import Section from "./Section";
 import Image from 'next/image'
-import about02 from '../../images/about-02.jpg'
-import about01 from '../../images/about-01.jpg'
-import about from '../../images/about.jpg'
+import about02 from '../images-page/about-02.jpg'
+import about01 from '../images-page/about-01.jpg'
+import about from '../images-page/about.jpg'
 
 const About = () => {
     return (

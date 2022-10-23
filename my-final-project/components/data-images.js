@@ -2,57 +2,57 @@ const proiect = [
     {
       id: "01",
       subtitle: "Tablou",
-      img: "/images/poza-01.jpg",
+      image: "/images/poza-01.jpg",
       category: "Pensula",
-      keyword: [ "App"]
+      keyword: [ "Portret"]
     },
   
     {
       id: "02",
-      subtitle: "Tablou",
-      img: "/images/poza-02.jpg",
+      subtitle: "Tablou-02",
+      image: "/images/poza-02.jpg",
       category: "Pensula",
-      keyword: [ "App"]
+      keyword: [ "Portret"]
     },
   
     {
       id: "03",
-      subtitle: "Tablou",
-      img: "/images/poza-03.jpg",
+      subtitle: "Tablou-03",
+      image: "/images/poza-03.jpg",
       category: "Pensula",
-      keyword: [ "App"]
+      keyword: [ "Portret"]
     },
   
-    {
-      id: "04",
-      subtitle: "Tablou",
-      img: "/images/poza-04.jpg",
-      category: "Pensula",
-      keyword: [ "App"]
-    },
+    // {
+    //   id: "04",
+    //   subtitle: "Tablou-04",
+    //   image: "/images/poza-04.jpg",
+    //   category: "Pensula",
+    //   keyword: [ "Portret"]
+    // },
   
     {
       id: "05",
-      subtitle: "Tablou",
-      img: "/images/poza-05.jpg",
+      subtitle: "Tablou-05",
+      image: "/images/poza-05.jpg",
       category: "Creion",
-      keyword: [ "App"]
+      keyword: [ "Creatie"]
     },
   
     {
       id: "06",
-      subtitle: "Tablou",
-      img: "/images/poza-06.jpg",
+      subtitle: "Tablou-06",
+      image: "/images/poza-06.jpg",
       category: "Creion",
-      keyword: [ "Web design"]
+      keyword: [ "Creatie"]
     },
   
     {
       id: "07",
-      subtitle: "Tablou",
-      img: "/images/poza-07.png",
+      subtitle: "Tablou-07",
+      image: "/images/poza-07.jpg",
       category: "Creion",
-      keyword: ["Web design"]
+      keyword: ["Creatie"]
     }
   ];
   

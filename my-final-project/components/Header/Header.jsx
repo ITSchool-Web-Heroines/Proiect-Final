@@ -1,8 +1,9 @@
 import React from 'react';
-
+import { useRef } from 'react';
 import { Container } from 'reactstrap';
 import classes from './header.module.css'
 import Link from "next/link"
+import { useEffect } from 'react';
 
 // const NAV_LINK = [
 //     {
@@ -18,7 +19,24 @@ import Link from "next/link"
 //     },
 // ]
 
-const Header = ()  => {
+const Header = () => {
+
+    const headerRef = useRef(null);
+
+    const headerFunc = () => {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            headerRef.current.classList.add(`${classes.header__shrink}`)
+        } else {
+            headerRef.current.classList.remove(`${classes.header__shrink}`)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', headerFunc)
+
+        return () => window.removeEventListener('scroll', headerFunc)
+    })
+
     const NAV_LINK = [
         {
             path: '/',
@@ -34,7 +52,7 @@ const Header = ()  => {
     ]
 
     return (
-        <header className={`${classes.header}`}>
+        <header className={`${classes.header}`} ref={headerRef}>
             <Container>
                 <div className={`${classes.nav_wrapper}`}>
 
@@ -61,8 +79,8 @@ const Header = ()  => {
                 </div>
             </Container>
         </header>
-    
-       
+
+
     )
 };
 

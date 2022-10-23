@@ -2,7 +2,7 @@ import React from 'react'
 import Section from './Section';
 import { Container, Row, Col } from 'reactstrap';
 import Image from 'next/image'
-import bgImg from '../../images/bg.jpg';
+import bgImg from '../images-page/bg.jpg';
 import classes from '../../styles/section.module.css'
 
 
