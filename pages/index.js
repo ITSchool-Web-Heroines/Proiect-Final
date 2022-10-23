@@ -1,9 +1,10 @@
+import css from '../styles/Home.module.css'
 import Head from 'next/head'
 import Info from '../components/Info'
 import Layout from '../components/Layout'
-import Products from '../components/Products'
-import Services from '../components/Services'
-import css from '../styles/Home.module.css'
+import Section1 from '../components/Section1'
+import Section2 from '../components/Section2'
+import Location from '../components/Location'
 
 export default function Home() {
   return (
@@ -17,8 +18,9 @@ export default function Home() {
       {/* body */}
       <main>
         <Info/>
-        <Services/>
-        <Products/>
+        <Section1/>
+        <Section2/>
+        <Location/>
       </main>
     </div>
 

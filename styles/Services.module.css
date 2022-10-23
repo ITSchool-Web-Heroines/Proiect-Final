@@ -1,61 +1,66 @@
-.heading{
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-}
-
-.heading>:nth-child(1)
-{
-    color:black;
-    font-size: 3rem;
-}
-
-.heading>:nth-child(2), .heading>:nth-child(3)
-{
-    font-size: 2rem;
-}
-
 .services{
-    display: flex;
-    margin-top: 3rem;
-    gap: 3rem;
-    align-items: center;
-    justify-content: center;
+  width: 100rem;
+  padding: 5rem 1rem;
+  margin: auto;
 }
 
-.feature{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+.services h1{
+ text-align: center;
+  font-size: 3rem;
+  position: relative;
+  font-weight: 600;
 }
 
-.ImageWrapper{
-    width: 15rem;
-    height: 15rem;
+.services h1:after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  width: 10rem;
+  height: 0.2rem;
+  background-color: blue;
 }
-
-.feature>:nth-child(2)
-{
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.feature>:nth-child(3)
-{
-    color: black;
-    word-wrap: break-word;
-    width: 20rem;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.ImageWrapper:hover {
-    box-shadow: 0 0.5rem 2.5rem 0rem whitesmoke;
-    width: 20rem;
-    height: 15rem;
-  }
+ 
+.cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
   
+}
+
+.card{
+  width: calc(34% - 1.35rem);
+  background: #f2f2f2;
+  color: #333;
+  padding: 2.5rem 0.75rem;
+  margin: 0 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sbox h3{
+  font-size: 1.5rem;
+}
+
+.sbox p{
+  margin: 1.25rem 0;
+}
+
+.sbox a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: peachpuff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.sbox a:hover{
+  background: transparent;
+  background: rgb(41, 147, 157);
+  border: 0.2rem solid black;
+  transform: scale(1.1);
+}

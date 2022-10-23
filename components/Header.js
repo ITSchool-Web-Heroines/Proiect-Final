@@ -12,9 +12,10 @@ export default function Header () {
 
       {/* menu side */}
       <ul className={css.menu}>
+        <li>About</li>
+        <li>Contact</li>
         <li>Home</li>
         <li>Products</li>
-        <li>Contact</li>
       </ul>
 
       {/* right side */}

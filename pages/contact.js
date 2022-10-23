@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
-import Form from '../components/Form'
+import Contact from '../components/Contact'
 import css from '../styles/Home.module.css'
 
-export default function Products () {
+export default function Form () {
   return (
     <Layout>
 
@@ -14,7 +14,7 @@ export default function Products () {
       </Head>
       {/* body */}
       <main>
-        <Form/>
+        <Contact/>
       </main>
     </div>
 

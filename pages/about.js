@@ -1,10 +1,10 @@
 import Head from 'next/head'
+import About from '../components/About'
 import Layout from '../components/Layout'
-import Products from '../components/Products'
+import Services from '../components/Services'
 import css from '../styles/Home.module.css'
-import React from "react";
 
-export default function Goods() {
+export default function Details () {
   return (
     <Layout>
 
@@ -15,7 +15,8 @@ export default function Goods() {
       </Head>
       {/* body */}
       <main>
-        <Products/>
+        <About/>
+        <Services/>
       </main>
     </div>
 

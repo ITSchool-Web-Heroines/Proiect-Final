@@ -1,6 +1,5 @@
 .container {
-    height: calc(100vh - 100px);
-    background-color: #d1411e;
+    height: calc(100vh - 6.25rem);
     overflow: hidden;
     position: relative;
   }
@@ -34,3 +33,4 @@
       height: 50vh;
     }
   }
+  
