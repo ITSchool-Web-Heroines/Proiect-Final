@@ -1,5 +1,6 @@
 import React from "react";
 import { FaHeart } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Cards = ({item}) => {
     const {id, name, price, image, hoverpicture, button } = item;
@@ -18,7 +19,7 @@ const Cards = ({item}) => {
                     <FaHeart />
                 </div>
                 <h4>{price}</h4>
-                <button><a href={button}>Add to cart</a></button>
+                <button><NavLink to={button}>Add to cart</NavLink></button>
             </div>
         </div>
     );

@@ -9,7 +9,7 @@ const Section1 = () => {
             <div class="col">
                 <h2>Have you met our color experts yet?</h2>
                 <h3>Book a custom lipstick-making experience</h3>
-                <button><a href ="/boutique#container">Book an Appointment</a></button>
+                <button><NavLink to ="/boutique">Book an Appointment</NavLink></button>
             </div>
             <div class="image-box">
                 <img src={Picture} />

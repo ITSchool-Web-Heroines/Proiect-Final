@@ -6,6 +6,7 @@ import "../styles/login.scss";
 import AuthContext from "../context/AuthProvider";
 
 import axios from "../api/axios";
+import { NavLink } from "react-router-dom";
 
 
 const Login = () => {
@@ -97,7 +98,7 @@ const Login = () => {
                     <p>
                         Need an Account?<br />
                         <span className="line">
-                            <a href="/register">Sign Up</a>
+                            <NavLink to="/register">Sign Up</NavLink>
                         </span>
                     </p>
                 </section>

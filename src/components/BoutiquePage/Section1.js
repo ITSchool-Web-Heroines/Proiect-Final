@@ -3,6 +3,7 @@ import "../../styles/BoutiquePage/section1.scss"
 import Picture from "../../images/4.png"
 import Picture2 from "../../images/5.png"
 import Picture3 from "../../images/6.png"
+import { NavLink } from "react-router-dom";
 
 const Section1 = () => {
     return (
@@ -20,7 +21,7 @@ const Section1 = () => {
                 <img src={Picture3} />
                 <p>Apply to be part of the Lippie Factory Team</p>
                 <br />
-                <button><a href="/jobapplication">Apply Now</a></button>
+                <button><NavLink to="/jobapplication">Apply Now</NavLink></button>
             </div>
         </div>
     )
