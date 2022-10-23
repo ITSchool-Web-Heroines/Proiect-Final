@@ -58,7 +58,7 @@ const Header = () => {
 
 
                     <div className={`${classes.logo}`}>
-                        <h1><span>Pic</span>tures</h1>
+                        <h1><span>Abby Despina</span> ART</h1>
                     </div>
 
                     <div className={`${classes.navigation}`}>

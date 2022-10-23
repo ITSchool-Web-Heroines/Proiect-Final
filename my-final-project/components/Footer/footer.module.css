@@ -28,3 +28,7 @@
     width: 100%;
     text-align: start;
 }
+.footer_subchild i {
+    color:orange;
+    padding:0.2em;
+}

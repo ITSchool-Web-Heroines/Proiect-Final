@@ -1,26 +1,30 @@
 .service_item {
     background: #171f38;
-    padding:30px;
-    color:aliceblue;
-   margin-inline-start: 5em;
+    padding: 30px;
+    color: aliceblue;
+    margin-inline-start: 5em;
     margin-bottom: 1em;
-    display:flex;
+    display: flex;
     align-items: center;
-    column-gap:1em;
-    transition:0.3s;
+    column-gap: 1em;
+    transition: 0.3s;
     border-radius: 10px 10px 10px 10px;
 }
-.service_item:hover{
+
+.service_item:hover {
     background: aliceblue;
-    color:black;
+    color: black;
     cursor: pointer;
-    transform:translateY(-20px);
+    transform: translateY(-20px);
 }
-.service_item span, .service_item h5, .service_item span i {
-    background:transparent !important;
+
+.service_item span,
+.service_item h5,
+.service_item span i {
+    background: transparent !important;
 }
 
 .service_item span i {
-    font-size:2rem;
-    color:orange;
+    font-size: 2rem;
+    color: orange;
 }

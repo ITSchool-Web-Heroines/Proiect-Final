@@ -12,11 +12,11 @@ function Services() {
                 <Col lg='6' md='6'>
                     <div className={`${classes.services_container}d-flex align-items-center gap-3`}>
                         <div>
-                            <ServicesItem subtitle='Lorem ipsum lore ipsum' icon='ri-artboard-line' />
+                            <ServicesItem subtitle='Portret patruped clasic - ulei pe panza' icon='ri-artboard-line' />
 
-                            <ServicesItem subtitle='Lorem ipsum lore ispum' icon='ri-artboard-line' />
+                            <ServicesItem subtitle='Portret patruped digital' icon='ri-computer-line' />
 
-                            <ServicesItem subtitle='Lorem ipsum lore ipsum' icon='ri-artboard-line' />
+                            <ServicesItem subtitle='Altele: peisaje, natura statica, etc' icon='ri-landscape-fill' />
                         </div>
                     </div>
 
@@ -24,7 +24,11 @@ function Services() {
                 <Col lg='6' md='6'>
                     <Section title='De ce noi?'></Section>
                     <h4> Despre noi ca echipa</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id massa erat. Maecenas porttitor elementum ante ac consequat. Fusce pretium velit sit amet arcu ornare blandit. Pellentesque venenatis vel arcu sit amet congue. Mauris quis sagittis mi, eu tincidunt dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In quis arcu pretium, ornare sapien ut, porttitor turpis.</p>
+                    <p>Portrete pictate, desenate sau digitale, realizate dupa fotografii.
+
+                        Numele meu este Despina Theodora Barabas, sunt medic veterinar cu afinitate in portrete traditionale cu animale de companie, realizate dupa fotografii.
+
+                        Aceste lucrari artistice sunt mai mult decat simple copii ale fotografiilor, ele sunt menite sa capteze vitalitatea unica din expresia fiecarui companion in parte prin detalii, tonuri si culori care va vor incanta sufletul si atmosfera camerelor in care vor fi expuse.</p>
 
                 </Col>
             </Row>

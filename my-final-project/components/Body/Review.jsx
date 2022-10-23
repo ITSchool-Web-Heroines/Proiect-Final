@@ -29,15 +29,15 @@ const Review = () => {
                         <Slider {...settings} className={`${classes.slider_review}`}>
                             <div>
                                 <h6>Maria Popescu</h6>
-                                <p>Doamne feri, cel mai frumos cadou ever, I can not even</p>
+                                <p>Pe Despina am cunoscut-o prin prisma unui eveniment tragic din viata mea: mi-a murit primul meu caine - un cocker de 14 ani! An cautat sa-mi fac un tablou - o amintire deosebita pentru sufletul meu! Asa am gasit-o pe Despina si ea mi-a pictat un tablou portret si a redat exact ce reprezenta Paco pentru mine: culoare, emotie, iubire.</p>
                             </div>
                             <div>
                                 <h6>Maria Popescu</h6>
-                                <p>Doamne feri, cel mai frumos cadou ever, I can not even</p>
+                                <p>Din dorinta de a imortaliza imaginea catelului meu, am apelat la Despina, care a reusit cu succes sa transpuna pe panza realitatea compusa atat din caracteristici fizice cat si emotii. Rezultatul colaborarii noastre a fost un tablou frumos.</p>
                             </div>
                             <div>
                                 <h6>Maria Popescu</h6>
-                                <p>Doamne feri, cel mai frumos cadou ever, I can not even</p>
+                                <p>Foarte fain ii , seamana fix cu el , ia uite ce bine ii sta langa tablou</p>
                             </div>
                             <div>
                                 <h6>Maria Popescu</h6>

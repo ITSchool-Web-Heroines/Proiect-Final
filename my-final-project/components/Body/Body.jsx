@@ -9,7 +9,7 @@ import classes from '../../styles/section.module.css'
 
 function Body() {
     return (
-        
+
         <section className={`${classes.body}`}>
             <Container>
                 <Row>
@@ -21,16 +21,18 @@ function Body() {
                         <div className={`${classes.body_skills}`}>
                             <span><i class="ri-brush-line"></i></span>
                             <h5>Experienta</h5>
-                            <h5>De peste 6 ani in pictura</h5>
+                            <h5>De peste 9 ani in pictura</h5>
                         </div>
                     </Col>
                     <Col lg='6' md='6'>
                         <div className={`${classes.body_content}`}>
-                            <Section title="Bine ai venit pe pagina mea!" />
-                            <h2>Lorem ipsum</h2>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dictum vel lectus ac placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ipsum ornare, posuere leo vel, maximus diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed rhoncus et nibh sed sagittis. Nunc purus eros, dictum sed nulla eget, elementum consequat quam. Maecenas leo sapien, fringilla gravida fringilla in, ornare quis lorem. Integer vulputate velit id nunc volutpat, mollis scelerisque libero pharetra.</h4>
+                            <Section title="Salut!" />
+                            <h2>Despre artist</h2>
+                            <p>Portrete personalizate pentru patrupezi - se adresează tuturor celor care doresc să dăruiască un cadou original si unic persoanelor dragi.
+                                Pictura in ulei dateaza cu mii de ani in urma. <br></br>
+                                Reprezentarea picturii clasice s-a realizat mai ales asupra marilor personalități ale vremurilor trecute. Portretele au fost si vor ramane mereu  capodopere unice de artă.</p>
                         </div>
-                        <div className={`${classes.body_button}`}><button>Proiectele mele</button></div>
+                        {/* <div className={`${classes.body_button}`}><button>Proiectele mele</button></div> */}
 
                     </Col>
                 </Row>

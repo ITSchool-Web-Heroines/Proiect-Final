@@ -12,6 +12,7 @@ const Footer= () => {
 
     return (
         <Container>
+            <hr></hr>
             <Row>
                 <Col>
                     <div className={`${classes.nav_menu}`}>
@@ -20,9 +21,9 @@ const Footer= () => {
                 </Col>
                 <Col>
                     <div className={`${classes.footer_subchild}`}>
-                        <p>Instagram</p>
-                        <p>Facebook</p>
-                        <p>Gmail</p>
+                        <p><i class="ri-instagram-line"></i>Instagram</p>
+                        <p> <i class="ri-messenger-fill"></i> Facebook</p>
+                        <p><i class="ri-mail-send-line"></i>Gmail</p>
                     </div>
                     <div className={`${classes.footer_principal}`}>
                         <h4> &copy; Copyright Alexandra {year} </h4>

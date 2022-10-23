@@ -18,7 +18,10 @@ const About = () => {
                         </Section>
                         <h3> Hai sa ne cunoastem! </h3>
                         <h3> Sunt aici sa te ajut in alegerea cadoului personalizat</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id massa erat. Maecenas porttitor elementum ante ac consequat. Fusce pretium velit sit amet arcu ornare blandit. Pellentesque venenatis vel arcu sit amet congue. Mauris quis sagittis mi, eu tincidunt dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In quis arcu pretium, ornare sapien ut, porttitor turpis.</p>
+                        <p>La alegere se pot realiza picturi si in tehnica culorilor acrilice, tempera sau culorilor de apă.
+                            De asemenea, portretul grafic sau în carbune nu este de omis.Tabloul poate fi un cadou ideal atât pentru adulți cât și pentru copii.<br />
+                            Pentru orice intrebari la care nu va gasiti raspunsul pe site, contactati-ma  si va invit sa cititi cu drag fiecare pagina de pe acest site.
+                        </p>
                     </Col>
                     <Col lg='6' md='6'>
                         <div className={classes.about_images}>
