@@ -248,24 +248,28 @@ img {
     padding-inline: 18.5rem;
     position: inherit;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-color: #8F2539;
     padding-block-end: 2rem;
-    border-radius: 1rem;
-    visibility: hidden;
+    display: none;
 
     img {
+        align-self: center;
         margin-top: -50px;
         width:25%;
     }
     h7 {
+        align-self: center;
         font-size: 8vh;
 
     }
     p {
+        align-self: center;
         font-size: 4vh;
     }
     button {
+        align-self: center;
         width: 100px;
         margin-top: 50px;
         padding: 10px 0;
@@ -287,10 +291,10 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-block-start: 106rem;
+    margin-block-start: 107rem;
     padding-inline: 17rem;
     border-radius: 1rem;
-    visibility: hidden;
+    display: none;
 
     img {
             margin-top: -50px;

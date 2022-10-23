@@ -1,4 +1,5 @@
 #section1 {
+    width: 100%;
     display: flex;
     flex-direction: row;
     background-color: #EC8594;
@@ -34,6 +35,11 @@
             padding-block: 2rem;
             font-size: 5vh;
             margin-inline: 2rem;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 

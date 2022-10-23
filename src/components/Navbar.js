@@ -22,10 +22,8 @@ function Navbar() {
                 </button>
             </nav>
             <div class="buttons">
-                <button className="registerlogin">Register / Log in</button>
-                <button className="shoppingbag" href="../cart.html">
-                    <FaShoppingBag size="1.5em"/>
-                </button>
+                <button className="registerlogin"><a href="/register.html">Register / Log in</a></button>
+                <button className="shoppingbag"><a href="cart.html"><FaShoppingBag size="1.5em"/><span>0</span></a></button>
                 <button className="nav-btn" onClick={showNavbar}>
                     <FaBars />
                 </button>

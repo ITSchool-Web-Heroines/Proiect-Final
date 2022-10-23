@@ -8,12 +8,10 @@ const Section1 = () => {
             <div class="col">
                 <h2>Have you met our color experts yet?</h2>
                 <h3>Book a custom lipstick-making experience</h3>
-                <button>Book an Appointment</button>
+                <button><a href="boutique.html#appointment">Book an Appointment</a></button>
             </div>
-            <img src={Picture} />
+                <img src={Picture} />
         </div>
-
-
     )
 }
 export default Section1;

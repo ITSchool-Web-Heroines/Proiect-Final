@@ -27,6 +27,11 @@ header {
     background: transparent;
     color: white;
     cursor: pointer;
+
+    span {
+        font-family: customFont2;
+        font-size: 1em;
+    }
 }
 
 .registerlogin {
@@ -35,6 +40,7 @@ header {
     background: transparent;
     color: white;
     cursor: pointer;
+    
 }
 
 header a {

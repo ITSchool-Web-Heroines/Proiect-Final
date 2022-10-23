@@ -1,89 +1,24 @@
 import React from "react";
 import "../../styles/ShopPage/shop.scss";
-import beetroot from "../../images/lipstick/beetroot.png";
-import beetrootlips from "../../images/lipstick/beetrootlips.jpg"
-import cayenne from "../../images/lipstick/cayenne.png";
-import cayennelips from "../../images/lipstick/cayennelips.jpg"
-import chai from "../../images/lipstick/chai.png";
-import chailips from "../../images/lipstick/chailips.jpg"
-import expressobrava from "../../images/lipstick/expressobrava.png";
-import expressobravalips from "../../images/lipstick/expressobravalips.jpg"
-import extrasugarbuns from "../../images/lipstick/extrasugarbuns.png";
-import extrasugarbunslips from "../../images/lipstick/extrasugarbunslips.jpg"
-import fig from "../../images/lipstick/fig.png";
-import figlips from "../../images/lipstick/figlips.jpg"
-import gingermalt from "../../images/lipstick/gingermalt.png";
-import gingermaltlips from "../../images/lipstick/gingermaltlips.jpg"
-import harissa from "../../images/lipstick/harissa.png";
-import harissalips from "../../images/lipstick/harissalips.jpg"
-import hottomato from "../../images/lipstick/hottomato.png"
-import hottomatolips from "../../images/lipstick/hottomatolips.jpg"
-import juniper from "../../images/lipstick/juniper.png"
-import juniperlips from "../../images/lipstick/juniperlips.jpg"
-import maple from "../../images/lipstick/maple.png"
-import maplelips from "../../images/lipstick/maplelips.jpg"
-import mulberry from "../../images/lipstick/mulberry.png"
-import mulberrylips from "../../images/lipstick/mulberrylips.jpg"
-import pluot from "../../images/lipstick/pluot.png"
-import ploutlips from "../../images/lipstick/ploutlips.jpg"
-import pomelo from "../../images/lipstick/pomelo.png"
-import pomelolips from "../../images/lipstick/pomelolips.jpg"
-import praline from "../../images/lipstick/praline.png"
-import pralinelips from "../../images/lipstick/pralinelips.jpg"
-import radicchio from "../../images/lipstick/radicchio.png"
-import radicchiolips from "../../images/lipstick/radicchiolips.jpg"
-import sesame from "../../images/lipstick/sesame.png"
-import sesamelips from "../../images/lipstick/sesamelips.jpg"
-import sugarbuns from "../../images/lipstick/sugarbuns.png"
-import sugarbunslips from "../../images/lipstick/sugarbunslips.jpg"
-import tamarind from "../../images/lipstick/tamarind.png"
-import tamarindlips from "../../images/lipstick/tamarindlips.jpg"
-import tannin from "../../images/lipstick/tannin.png"
-import tanninlips from "../../images/lipstick/tanninlips.jpg"
-import apero from "../../images/lipstick/apero.png"
-import aperolips from "../../images/lipstick/aperolips.png"
-
 import agave from "../../images/lipliner/agave.png"
 import agave2 from "../../images/lipliner/agave2.jpg"
-import acaismith from "../../images/lipliner/acaismith.png"
-import acaismithlips from "../../images/lipliner/acaismith lips.jpg"
-import brandy from "../../images/lipliner/brandy.png"
-import brandylips from "../../images/lipliner/brandy lips.jpg"
-import cava from "../../images/lipliner/cava.png"
-import cavalips from "../../images/lipliner/cava lips.jpg"
-import cognac from "../../images/lipliner/cognac.png"
-import cognaclips from "../../images/lipliner/cognac lips.jpg"
-import damson from "../../images/lipliner/damson.png"
-import damsonlips from "../../images/lipliner/damson lips.jpg"
-import hardcider from "../../images/lipliner/hardcider.png"
-import hardciderlips from "../../images/lipliner/hardcider lips.jpg"
-import honeycrisp from "../../images/lipliner/honeycrisp.png"
-import honeycrisplips from "../../images/lipliner/honeycrisp lips.jpg"
-import nonino from "../../images/lipliner/nonino.png"
-import noninolips from "../../images/lipliner/nonino lips.jpg"
-import pastille from "../../images/lipliner/pastille.png"
-import pastillelips from "../../images/lipliner/pastille lips.jpg"
-import pavlova from "../../images/lipliner/pavlova.png"
-import pavlovalips from "../../images/lipliner/pavlova lips.jpg"
-import redvelvet from "../../images/lipliner/red velvet.png"
-import redvelvetlips from "../../images/lipliner/red velvet lips.jpg"
-import scarlet from "../../images/lipliner/scarlet.png"
-import scarletlips from "../../images/lipliner/scarlet lips.jpg"
-import stinger from "../../images/lipliner/stinger.png"
-import stingerlips from "../../images/lipliner/stinger lips.jpg"
-import sugarcane from "../../images/lipliner/sugarcane.png"
-import sugarcanelips from "../../images/lipliner/sugarcane lips.jpg"
-import tatin from "../../images/lipliner/tatin.png"
-import tatinlips from "../../images/lipliner/tatin lips.jpg"
-
 import {FaHeart} from "react-icons/fa"
-
+import list from "./Data";
+import Cards from "./Cards";
 
 const Shop = () => {
+
     return (
        <div id="shop">
         <h2 class="title">Our beloved standard lippie goodies</h2>
-        <div class="pro-container">
+        <div class = "pro-container">
+            {
+                list.map((item)=>(
+                    <Cards key={item.id} item={item}/>
+                ))
+            };
+        </div>
+        {/*<div class="pro-container">
             <div class="pro" id="beetroot">
                 <img src={beetroot}/>
                     <img class="hoverpicture " src={beetrootlips}/>
@@ -113,7 +48,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -129,7 +64,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -145,7 +80,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -161,7 +96,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -177,7 +112,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -193,7 +128,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -209,7 +144,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -225,7 +160,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -241,7 +176,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -257,7 +192,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -273,7 +208,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -289,7 +224,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -305,7 +240,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -321,7 +256,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -337,7 +272,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -353,7 +288,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -369,7 +304,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -385,7 +320,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -401,7 +336,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$30</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../lipstick.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -449,7 +384,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -465,7 +400,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -481,7 +416,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -497,7 +432,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -513,7 +448,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -529,7 +464,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -545,7 +480,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -561,7 +496,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -577,7 +512,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -593,7 +528,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -609,7 +544,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -625,7 +560,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -641,7 +576,7 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
             <div class="pro">
@@ -657,10 +592,10 @@ const Shop = () => {
                             <FaHeart />
                     </div>
                     <h4>$20</h4>
-                        <button href="#">Add to cart</button> 
+                        <button><a href="../Lipliner.html">Add to cart</a></button> 
                 </div>
             </div>
-        </div>
+    </div>*/}
        </div>
     )
 }

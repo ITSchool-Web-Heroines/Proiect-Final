@@ -8,6 +8,26 @@ import Validation from "../../images/404-tick.png"
 
 const Section4 = () => {
     const [btn, setBtn]=useState("appointment");
+    const popup = document.getElementById("popup");
+    const popup2 = document.getElementById("popup2");
+
+    const onSubmit = event => {
+        event.preventDefault();
+        popup.style.display = `inline-flex`;
+        popup2.style.display = `inline-flex`
+    }
+    /*const onSubmit = event => {
+        event.preventDefault();
+       
+    }*/
+    const close = event => {
+        popup.style.display = `none`;
+        popup2.style.display = `none`
+    }
+
+
+   
+
     return (
         <div id="section4">
             <div id="container">
@@ -19,7 +39,7 @@ const Section4 = () => {
                     <article id="appointment" className={btn=="appointment"&&"active"}>
                         <div class="col">
                             <img src={Appointment} />
-                            <form>
+                            <form onSubmit={onSubmit} >
                                 <label>Firstname and Surname</label>
                                 <input type="text" class="input" placeholder="..." required />
                                 <br />
@@ -34,6 +54,8 @@ const Section4 = () => {
                                 <br />
                                 <label>Time</label>
                                 <input type="time" class="time" placeholder="..." min="08:00" max="17:30" required />
+                                <br />
+                                <br />
                                 <div class="checkbox-group">
                                     <input type="checkbox" required />
                                     <p>I accept the Terms and Conditions</p>
@@ -44,20 +66,20 @@ const Section4 = () => {
                                     <button type="submit" class="submitbutton" id="submitbutton1">Submit</button>
                                 </div>
                             </form>
-                            <div class="popup" id="popup">
+                            <div id="popup">
                                 <img src={Validation} />
                                 <br />
                                 <br />
                                 <h7>Thank you!</h7>
                                 <p> Your request has been successfully submitted</p>
-                                <button type="button" id="closepopup1">Ok</button>
+                                <button type="button" id="closepopup1" onClick={close}>Ok</button>
                             </div>
                         </div>
                     </article>
                     <article id="party" className={btn == "party" && "active"}>
                         <div class="col">
                             <img src={Party} />
-                            <form>
+                            <form onSubmit={onSubmit}>
                                 <label>Firstname and Surname</label>
                                 <input type="text" class="input" placeholder="..." required />
                                 <br />
@@ -94,7 +116,7 @@ const Section4 = () => {
                                 <br />
                                 <h7>Thank you!</h7>
                                 <p> Your request has been successfully submitted</p>
-                                <button type="button" id="closepopup2">Ok</button>
+                                <button type="button" id="closepopup2" onClick={close}>Ok</button>
                             </div>
                         </div>
                     </article>

@@ -6,6 +6,7 @@
     .col {
         display: flex;
         flex-direction: column;
+        align-content: center;
         justify-content: center;
         text-align: center;
         padding-inline: 2rem;
@@ -34,6 +35,11 @@
             padding-block: 2rem;
             font-size: 5vh;
             margin-inline: 2rem;
+
+            a {
+                text-decoration: none;
+                color:white;
+            }
         }
     }
 
