@@ -61,8 +61,3 @@
 .button.dark {
   transform: translate(12%, -73%) rotate(180deg) scale(0.7);
 }
-@media (min-width: 800px) {
-  .button {
-    inset-inline-start: 0rem;
-  }
-}
