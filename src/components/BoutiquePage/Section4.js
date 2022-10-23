@@ -86,7 +86,7 @@ const Section4 = () => {
                                 <input type="tel" class="telephone" placeholder="..." required />
                                 <br />
                                 <label>Number of people</label>
-                                <input type="number" class="number" required />
+                                <input type="number" class="number" min="1"  max="15" required />
                                 <br />
                                 <label>Date</label>
                                 <input type="date" class="date" placeholder="..." min="2022-10-28"
