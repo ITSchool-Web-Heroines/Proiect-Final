@@ -1,16 +1,19 @@
 import React from "react";
 import "../../styles/HomePage/section1.scss"
-import Picture from "../../images/20220401_NEWLipLabServices_promobanner_Desktop.jpg"
+import Picture from "../../images/20220401_NEWLipLabServices_promobanner_Desktop.jpg";
+import { NavLink } from "react-router-dom";
 
 const Section1 = () => {
     return (
-        <div id="section1">
+        <div id="section1homepage">
             <div class="col">
                 <h2>Have you met our color experts yet?</h2>
                 <h3>Book a custom lipstick-making experience</h3>
-                <button><a href="boutique.html#appointment">Book an Appointment</a></button>
+                <button><a href ="/boutique#container">Book an Appointment</a></button>
             </div>
+            <div class="image-box">
                 <img src={Picture} />
+            </div>
         </div>
     )
 }

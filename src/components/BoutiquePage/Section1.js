@@ -6,7 +6,7 @@ import Picture3 from "../../images/6.png"
 
 const Section1 = () => {
     return (
-        <div id="section1">
+        <div id="section1boutique">
             <div class="col1">
                 <img src={Picture} />
             </div>
@@ -20,7 +20,7 @@ const Section1 = () => {
                 <img src={Picture3} />
                 <p>Apply to be part of the Lippie Factory Team</p>
                 <br />
-                <button><a href="jobapplication.html">Apply Now</a></button>
+                <button><a href="/jobapplication">Apply Now</a></button>
             </div>
         </div>
     )

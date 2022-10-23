@@ -7,10 +7,11 @@ import pastillelips from "../../images/lipliner/pastille lips.jpg"
 import agave from "../../images/lipliner/agave.png"
 import agave2 from "../../images/lipliner/agave2.jpg"
 import { FaHeart } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Section2 = () => {
     return (
-        <div id="section2">
+        <div id="section2home">
             <div class="row">
                 <div class="col">
                     <h2> Fresh</h2>
@@ -19,7 +20,7 @@ const Section2 = () => {
                     <h2>Lippie Products</h2>
                 </div>
                 <div class="col">
-                    <div class="pro" id="beetroot">
+                    <div class="pro" id="beetrootlipstick">
                         <img src={beetroot} />
                         <img class="hoverpicture " src={beetrootlips} />
                         <div class="description">
@@ -32,12 +33,12 @@ const Section2 = () => {
                                 <FaHeart />
                             </div>
                             <h4>$30</h4>
-                            <button><a href="lipstick.html">View more</a></button>
+                            <button><NavLink to="/lipstick">View more</NavLink></button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="pro" id="pastille">
+                    <div class="pro" id="pastillelipliner">
                         <img src={pastille} />
                         <img class="hoverpicture " src={pastillelips} />
                         <div class="description">
@@ -50,7 +51,7 @@ const Section2 = () => {
                                 <FaHeart />
                             </div>
                             <h4>$20</h4>
-                            <button><a href="lipliner.html">View more</a></button>
+                            <button><NavLink to="/lipliner">View more</NavLink></button>
                         </div>
                     </div>
                 </div>
@@ -68,7 +69,7 @@ const Section2 = () => {
                                 <FaHeart />
                             </div>
                             <h4>$30</h4>
-                            <button><a href="agavecream.html">View more</a></button>
+                            <button><NavLink to="/agavecream">View more</NavLink></button>
                         </div>
                     </div>
                 </div>

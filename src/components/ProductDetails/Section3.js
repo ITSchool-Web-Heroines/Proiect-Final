@@ -7,7 +7,7 @@ import Picture4 from "../../images/BB20031_20.png"
 
 const Section3 = () => {
     return (
-        <div id="section3">
+        <div id="section3product">
             <h2>Clean Beauty That Performs</h2>
             <div class="row">
                 <div class="col">

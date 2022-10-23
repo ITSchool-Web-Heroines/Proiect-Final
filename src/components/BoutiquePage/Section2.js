@@ -6,7 +6,7 @@ import Picture3 from "../../images/6.png"
 
 const Section2 = () => {
     return (
-        <div id="section2">
+        <div id="section2boutique">
             <h2>Special Pricing for October</h2>
             <br />
             <h3>One custom lipstick $30-$40</h3>

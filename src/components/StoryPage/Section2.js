@@ -1,11 +1,11 @@
 import React from "react";
-import "../../styles/StoryPage/section2.scss";
-import Picture from "../../images/collection-of-various-smears-lipstick-on-white-background_38364-13.png"
+import "../../styles/StoryPage/section2.scss"
+import Picture from "../../images/collection-of-various-smears-lipstick-on-white-background_38364-13.png";
 
 
 const Section2 = () => {
     return (
-        <div id="section2">
+        <div id="section2story">
             <div class="col">
                 <h2>Our story began...</h2>
                 <p>Back in 2015 when our founder was studying Business at the university and had to prepare a business plan for a fictional business, but in reality it wasn't just a fictional business plan, it was a dream to be pursued. So what started as an university project finally came to life in 2021 when we first open our boutique store in the Old Town of Bucharest.</p>

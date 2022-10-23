@@ -3,7 +3,7 @@ import "../../styles/ProductDetails/section2.scss"
 
 const Section2 = () => {
     return (
-        <div id="section2">
+        <div id="section2product">
             <h2>Crave-worthy details</h2>
             <div class="row">
                 <div class="col">

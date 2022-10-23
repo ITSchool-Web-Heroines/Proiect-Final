@@ -2,7 +2,7 @@ import React from "react";
 import { useRef, useState, useEffect } from "react";
 import { faCheck, faTimes, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../styles/login.scss"
+import "../styles/login.scss";
 import AuthContext from "../context/AuthProvider";
 
 import axios from "../api/axios";
@@ -58,6 +58,7 @@ const Login = () => {
     }
 
     return (
+        <div id="login">
         <>
             {success ? (
                 <section>
@@ -96,13 +97,13 @@ const Login = () => {
                     <p>
                         Need an Account?<br />
                         <span className="line">
-                            {/*put router link here*/}
-                            <a href="./register.html">Sign Up</a>
+                            <a href="/register">Sign Up</a>
                         </span>
                     </p>
                 </section>
             )}
         </>
+        </div>
     )
 }
 

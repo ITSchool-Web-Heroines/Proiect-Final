@@ -6,7 +6,7 @@ const Header = () => {
         <div id="header">
             <h2>Make your move.</h2>
             <h2>Pick your shade.</h2>
-            <button><a href="lipstick.html">Shop Lipstick</a></button>
+            <button><a href="/lipstick">Shop Lipstick</a></button>
         </div>
     )
 }

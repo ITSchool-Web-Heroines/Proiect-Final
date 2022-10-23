@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/HomePage/section4.scss"
+import "../../styles/HomePage/section4.scss";
 import Picture from "../../images/BITE_HompageAssetRefresh_Clean_CircleModule_CleanPromise.png"
 import Picture2 from "../../images/BITE_HompageAssetRefresh_Clean_CircleModule_Supercharged.png"
 import Picture3 from "../../images/BITE_HompageAssetRefresh_Clean_CircleModule_Superfood.png"
@@ -8,10 +8,10 @@ import Icon from "../../images/BITE_HompageAssetRefresh_Clean_CircleModule_Icon_
 import Icon2 from "../../images/BITE_HompageAssetRefresh_Clean_CircleModule_Icon_Supercharged.png"
 import Icon3 from "../../images/BITE_HompageAssetRefresh_Clean_CircleModule_Icon_Superfood.png"
 import Icon4 from "../../images/BITE_HompageAssetRefresh_Clean_CircleModule_Icon_Vegan.png"
-
+import { NavLink } from "react-router-dom";
 const Section4 = () => {
     return (
-        <div id="section4">
+        <div id="section4home">
             <h2>Clean Beauty That Performs</h2>
             <div class="row">
                 <div class="col">
@@ -39,7 +39,7 @@ const Section4 = () => {
                     <p>We never, ever test on animals. Period. And, we never use animal-derived ingredients</p>
                 </div>
             </div>
-            <button><a href="csr.html">Learn more</a></button>
+            <button><a href ="/csr#section1csr">Learn more</a></button>
         </div>
 
     )

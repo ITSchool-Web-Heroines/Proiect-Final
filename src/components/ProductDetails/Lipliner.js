@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../styles/ProductDetails/lipliner.scss"
+import "../../styles/ProductDetails/lipliner.scss";
 import acaismith from "../../images/lipliner/acaismith.png"
 import acaismithlips from "../../images/lipliner/acaismith lips.jpg"
 import acaismithicon from "../../images/lipliner/acaismith icon.png"

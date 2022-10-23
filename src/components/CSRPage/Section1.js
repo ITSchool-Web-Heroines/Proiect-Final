@@ -1,9 +1,9 @@
 import React from "react";
-import "../../styles/CSRPage/section1.scss"
+import "../../styles/CSRPage/section1.scss";
 
 const Section1 = () => {
     return (
-        <div id="section1">
+        <div id="section1csr">
             <h3 class="quote1">Clean beauty fueled by skin-loving superfoods</h3>
             <h4 class="quote2">Clean, vegan, cruelty free</h4>
             <p class="info">

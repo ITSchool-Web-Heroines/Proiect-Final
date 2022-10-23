@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import ls from 'local-storage'
-import "../../styles/ProductDetails/lipstick.scss"
+import "../../styles/ProductDetails/lipstick.scss";
 import beetroot from "../../images/lipstick/beetroot.png";
 import beetrootlips from "../../images/lipstick/beetrootlips.jpg"
 import beetrooticon from "../../images/lipstick/beetroot icon.png"
@@ -64,20 +63,15 @@ import tanninicon from "../../images/lipstick/tannin icon.png"
 import apero from "../../images/lipstick/apero.png"
 import aperolips from "../../images/lipstick/aperolips.png"
 import aperoicon from "../../images/lipstick/cayenne icon.png"
-import Cards from "./LipstickData/Cards";
-import list from "./LipstickData/Data";
 
 const Lipstick = () => {
     const [shade, setShade]  = useState("beetroot");
-    const addToCartBeetroot =() => {
-        console.log("beetroot");
-    }
 
     return (
         <div id="lipstick">
             <article id="beetroot" className={shade == "beetroot" && "active"}>
                 <div class="single-pro-image">
-                    <img src={beetroot} id="MainImg" width="100%" id="image"/>
+                    <img src={beetroot} id="MainImg" width="100%" />
                     <div class="small-img-group">
                         <img src={beetroot} class="small-img" />
                         <img src={beetrootlips} class="small-img" />
@@ -86,8 +80,8 @@ const Lipstick = () => {
                 </div>
                 <div class="single-pro-details">
                     <h6>Lipstick/Standard Lipstick</h6>
-                    <h4 id="name">Beetroot </h4>
-                    <h2 id="price">$30</h2>
+                    <h4>Beetroot</h4>
+                    <h2>$30</h2>
                     <h5>Product Details</h5>
                     <p>A clean, vegan, hydrating soft lipstick powered by cocoa butter, for lasting lightweight color</p>
                     <div class="form">
@@ -116,8 +110,8 @@ const Lipstick = () => {
                             <img src={tanninicon} className={shade == "tannin" && "active"} onClick={() => setShade("tannin")} />
                         </div>
                         <div class="button-group">
-                            <input type="number" placeholder="Qty" min="1" max="5" id="quantity" />
-                            <button onClick={addToCartBeetroot}>Add to Cart</button>
+                            <input type="number" placeholder="Qty" min="1" max="5" />
+                            <button>Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -1061,7 +1055,7 @@ const Lipstick = () => {
                         </div>
                     </div>
                 </div>
-    </article>
+            </article>
         </div>
     )
 }

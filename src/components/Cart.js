@@ -1,6 +1,5 @@
 import React from "react";
-import ls from 'local-storage'
-import "../styles/cart.scss";
+import "../styles/cart.scss"
 import { FaTimes } from "react-icons/fa"
 import Header from "../images/20211104-lip-lab-currently-cravings-launch-slider-desktop.png"
 import Beetroot from "../images/lipstick/beetroot.png"
@@ -11,7 +10,6 @@ const Cart = () => {
     return (
         <div id="cart">
             <img src={Header}/>
-            <span id="result"></span>
             <section id="shoppingcart" class="section-p1">
                 <br />
                 <table width="100%">

@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import { FaBars, FaTimes, FaShoppingBag } from "react-icons/fa";
 import { useRef } from "react";
-import "../styles/navbar.scss"
+import "../styles/navbar.scss";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
     const navRef = useRef();
@@ -11,19 +12,19 @@ function Navbar() {
 
     return (
         <header>
-            <h3><a class="nav-item" href="index.html">The Lippie Factory</a></h3>
+            <h3><NavLink class="nav-item" to="/">The Lippie Factory</NavLink></h3>
             <nav ref={navRef}>
-                <a class="nav-item" href="story.html">Our story</a>
-                <a class="nav-item" href="shop.html">Shop</a>
-                <a class="nav-item" href="csr.html">Our clean difference</a>
-                <a class="nav-item" href="boutique.html">The boutique</a>
+                <NavLink class="nav-item" to="/story">Our story</NavLink>
+                <NavLink class="nav-item" to="/shop">Shop</NavLink>
+                <NavLink class="nav-item" to="/csr">Our clean difference</NavLink>
+                <NavLink class="nav-item" to="/boutique">The boutique</NavLink>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />
                 </button>
             </nav>
             <div class="buttons">
-                <button className="registerlogin"><a href="/register.html">Register / Log in</a></button>
-                <button className="shoppingbag"><a href="cart.html"><FaShoppingBag size="1.5em"/><span>0</span></a></button>
+                <button className="registerlogin"><NavLink to="/register">Register / Log in</NavLink></button>
+                <button className="shoppingbag"><NavLink to="/cart"><FaShoppingBag size="1.5em"/></NavLink></button>
                 <button className="nav-btn" onClick={showNavbar}>
                     <FaBars />
                 </button>

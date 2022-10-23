@@ -3,7 +3,7 @@ import "../../styles/HomePage/section12.scss"
 
 const Section12 = () => {
     return (
-        <div id="section12">
+        <div id="section12home">
             <div class="col1">
                 <h2>Create your shade</h2>
                 <p>Mix your exact shade of nude, pink, red, blue–or whatever hue inspires you</p>

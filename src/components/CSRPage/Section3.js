@@ -3,7 +3,7 @@ import "../../styles/CSRPage/section3.scss"
 
 const Section3 = () => {
     return (
-        <div id="section3">
+        <div id="section3csr">
             <div class="col">
             <h2 class="yes">Yes, please</h2>
             <div class="infoyes1">

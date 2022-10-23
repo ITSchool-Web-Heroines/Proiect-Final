@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../styles/BoutiquePage/section4.scss"
+import "../../styles/BoutiquePage/section4.scss";
 import Validation from "../../images/404-tick.png"
 import Image from "../../images/BB20031_banner_4.jpg"
 import Appointment from "../../images/image2.png"
@@ -16,10 +16,6 @@ const Section4 = () => {
         popup.style.display = `inline-flex`;
         popup2.style.display = `inline-flex`
     }
-    /*const onSubmit = event => {
-        event.preventDefault();
-       
-    }*/
     const close = event => {
         popup.style.display = `none`;
         popup2.style.display = `none`
@@ -29,7 +25,7 @@ const Section4 = () => {
    
 
     return (
-        <div id="section4">
+        <div id="section4boutique">
             <div id="container">
                 <nav class="buttons">
                     <a className={btn=="appointment" && "active"} onClick={()=>setBtn("appointment")}>Book an appointment</a>

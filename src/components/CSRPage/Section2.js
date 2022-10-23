@@ -6,7 +6,7 @@ import Picture3 from "../../images/SUPERFOOD_MODULE_720X518_BEAUTY.jpg"
 
 const Section2 = () => {
     return (
-        <div id="section2">
+        <div id="section2csr">
             <div class="col">
             <img class="picture1" src={Picture} />
             <div class="text1">

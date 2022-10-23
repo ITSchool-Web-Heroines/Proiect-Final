@@ -3,7 +3,7 @@ import "../../styles/ShopPage/section1.scss"
 
 const Section1 = () => {
     return (
-        <div id="section1">
+        <div id="section1shop">
             <div class="col1">
                 <h2>Pomegranate Extract</h2>
                 <p>Gives your lips an antioxidant-rich boost, derived from the yummy seed of the fruit</p>

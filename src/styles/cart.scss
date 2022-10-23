@@ -31,8 +31,6 @@
                 font-family: customFont2;
 
                 input[type="number"] {
-                    align-self: center;
-                    border: none;
                     font-family: customFont2;
                     align-self: center;
                     width:2rem;
@@ -82,7 +80,6 @@
                 padding-block: 10px;
                 padding-inline: 20px;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-                cursor: pointer;
             }
         }
 
@@ -124,7 +121,6 @@
                 padding-block: 10px;
                 padding-inline: 20px;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-                cursor: pointer;
             }
         }
     }

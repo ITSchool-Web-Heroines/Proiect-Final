@@ -5,7 +5,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/beetroot.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/beetrootlips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
 
     {
@@ -14,7 +14,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/cayenne.png",   
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/cayennelips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
 
     {
@@ -23,7 +23,7 @@ const list = [
         price:"$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/chai.png",   
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/chailips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
 
     {
@@ -32,7 +32,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/expressobrava.png",   
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/expressobravalips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
 
     {
@@ -41,7 +41,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/extrasugarbuns.png",  
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/extrasugarbunslips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
 
     {
@@ -50,7 +50,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/fig.png",   
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/figlips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
 
     {
@@ -59,7 +59,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/gingermalt.png",   
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/gingermaltlips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
 
     {
@@ -68,7 +68,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/harissa.png",   
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/harissalips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
 
     {
@@ -77,7 +77,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/hottomato.png",  
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/hottomatolips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
 
     {
@@ -86,7 +86,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/juniper.png",  
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/juniperlips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
 
     {
@@ -95,7 +95,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/maple.png",   
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/maplelips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
 
     {
@@ -104,7 +104,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/mulberry.png",  
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/mulberrylips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
 
     {
@@ -113,7 +113,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/pluot.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/ploutlips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
     {
         id: 14,
@@ -121,7 +121,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/pomelo.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/pomelolips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
     {
         id: 15,
@@ -129,7 +129,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/praline.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/pralinelips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
     {
         id: 16,
@@ -137,7 +137,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/radicchio.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/radicchiolips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
     {
         id: 17,
@@ -145,7 +145,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/sesame.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/sesamelips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
     {
         id: 18,
@@ -153,7 +153,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/sugarbuns.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/sugarbunslips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
     {
         id: 19,
@@ -161,7 +161,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/tamarind.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/tamarindlips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
     {
         id: 20,
@@ -169,7 +169,7 @@ const list = [
         price: "$30",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/tannin.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipstick/tanninlips.jpg",
-        button: "../../lipstick.html",
+        button: "/lipstick",
     },
 
     {
@@ -178,7 +178,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/agave.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/agave2.jpg",
-        button: "../../agavecream.html",
+        button: "/agavecream",
     },
 
     {
@@ -187,7 +187,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/acaismith.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/acaismith%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -196,7 +196,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/brandy.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/brandy%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -205,7 +205,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/cava.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/cava%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -214,7 +214,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/cognac.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/cognac%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -223,7 +223,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/damson.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/damson%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -232,7 +232,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/hardcider.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/hardcider%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -241,7 +241,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/honeycrisp.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/honeycrisp%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -250,7 +250,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/nonino.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/nonino%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -259,7 +259,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/pastille.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/pastille%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -268,7 +268,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/pavlova.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/pavlova%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -277,7 +277,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/red%20velvet.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/red%20velvet%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -286,7 +286,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/Scarlet.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/scarlet%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -295,7 +295,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/stinger.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/stinger%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -304,7 +304,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/sugarcane.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/sugarcane%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 
     {
@@ -313,7 +313,7 @@ const list = [
         price: "$20",
         image: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/tatin.png",
         hoverpicture: "https://aegiqyoahkjicrjrctrf.supabase.co/storage/v1/object/public/shoppictures/lipliner/tatin%20lips.jpg",
-        button: "../../lipliner.html",
+        button: "/lipliner",
     },
 ];
 

@@ -5,7 +5,7 @@ import Picture from "../../images/section1image.gif"
 
 const Section1 = () => {
     return (
-        <div id="section1">
+        <div id="section1story">
             <img src={Picture} />
         </div>
     )

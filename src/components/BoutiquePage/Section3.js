@@ -5,13 +5,13 @@ import Picture2 from "../../images/6.png"
 
 const Section3 = () => {
     return (
-        <div id="section3">
+        <div id="section3boutique">
             <div class="col1">
                 <img src={Picture} />
             </div>
             <div class="col2">
                 <img src={Picture2} />
-                <button><a href="gidtcards.html">Buy Now</a></button>
+                <button><a href="/giftcards">Buy Now</a></button>
             </div>
         </div>
     )

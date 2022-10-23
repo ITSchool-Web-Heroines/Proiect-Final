@@ -5,7 +5,7 @@ import Picture2 from "../../images/610x551_PrimerSmear.jpg"
 
 const Section4 = () => {
     return (
-        <div id="section4">
+        <div id="section4csr">
             <h2>We're all about transparency</h2>
             <p class="info">We give it to you straight—what we formulate with, what we formulate without, how we test our products—because we
                 believe you deserve to know what you’re getting</p>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/ProductDetails/agavecream.scss"
+import "../../styles/ProductDetails/agavecream.scss";
 import agave from "../../images/lipliner/agave.png"
 import agave2 from "../../images/lipliner/agave2.jpg"
 import agave3 from "../../images/lipliner/agave3.jpg"
