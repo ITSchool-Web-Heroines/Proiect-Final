@@ -29,9 +29,6 @@ import T2 from '../images/Products/T2.jpeg'
 import T3 from '../images/Products/T3.jpeg'
 import T4 from '../images/Products/T4.jpeg'
 
-import React from 'react';  
-   
-
 export default function Products() {
     return(
         <>

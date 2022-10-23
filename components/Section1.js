@@ -5,7 +5,7 @@ import M2 from '../images/M2.jpg'
 import M3 from '../images/M3.jpg'
 import M4 from '../images/M4.jpg'
 
-export default function Services() {
+export default function Section1() {
     return(
         <>
         <div className={css.heading}>
