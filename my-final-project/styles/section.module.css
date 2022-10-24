@@ -50,3 +50,23 @@
     margin-block-start: -5%;
    
 }
+
+@media only screen and (max-width:768px) {
+    .body_image {
+        width:300px;
+        position: relative;
+        margin-inline-start: 20%;
+    }
+    .body_skills{
+        display:none;
+    }
+    .body_content{
+        font-size:0.8em;
+    }
+    .section_title{
+        color:orange !important;
+        font-weight: 400;
+        margin-block-start: 1em;
+        position: relative;
+    }
+}

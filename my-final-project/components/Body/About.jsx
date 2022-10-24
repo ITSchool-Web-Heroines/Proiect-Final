@@ -14,14 +14,16 @@ const About = () => {
             <Container>
                 <Row>
                     <Col lg='6' md='6'>
-                        <Section title='Despre mine '>
-                        </Section>
-                        <h3> Hai sa ne cunoastem! </h3>
-                        <h3> Sunt aici sa te ajut in alegerea cadoului personalizat</h3>
-                        <p>La alegere se pot realiza picturi si in tehnica culorilor acrilice, tempera sau culorilor de apă.
-                            De asemenea, portretul grafic sau în carbune nu este de omis.Tabloul poate fi un cadou ideal atât pentru adulți cât și pentru copii.<br />
-                            Pentru orice intrebari la care nu va gasiti raspunsul pe site, contactati-ma  si va invit sa cititi cu drag fiecare pagina de pe acest site.
-                        </p>
+                        <div className={`${classes.about_info}`}>
+                            <Section title='Despre mine '>
+                            </Section>
+                            <h3> Hai sa ne cunoastem! </h3>
+                            <h3> Sunt aici sa te ajut in alegerea cadoului personalizat</h3>
+                            <p>La alegere se pot realiza picturi si in tehnica culorilor acrilice, tempera sau culorilor de apă.
+                                De asemenea, portretul grafic sau în carbune nu este de omis.Tabloul poate fi un cadou ideal atât pentru adulți cât și pentru copii.<br />
+                                Pentru orice intrebari la care nu va gasiti raspunsul pe site, contactati-ma  si va invit sa cititi cu drag fiecare pagina de pe acest site.
+                            </p>
+                        </div>
                     </Col>
                     <Col lg='6' md='6'>
                         <div className={classes.about_images}>

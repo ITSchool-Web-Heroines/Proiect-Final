@@ -22,16 +22,16 @@ const Contact = () => {
                 Name.value = '';
                 email.value = '';
                 msg.value = '';
-            }, 2000);
-         
-            succes.style.display ='block';
+            }, 5000);
+
+            succes.style.display = 'block';
         }
 
         setTimeout((e) => {
-            danger.style.display ='none';
+            danger.style.display = 'none';
             succes.style.display = 'none';
-        },5000)
-        
+        }, 5000)
+
     }
 
 
@@ -40,52 +40,60 @@ const Contact = () => {
             <Container>
                 <Row>
                     <Col>
-                        <Image src={contact_image} height='300' width='500' />
-                    </Col>
-                    <Col>
-                        <Section title='Formular de contact' />
-                        <form>
-                            <div className={`${classes.form_contact} mb-3 pt-0`}>
-                                <input
-                                    type="text"
-                                    placeholder="Numele tau"
-                                    id="name"
-                                    name="name"
-                                    className="bg-white  rounded text-sm border-0 shado  text-black"
-                                    size="40"
-                                />
+                        <div className={`${classes.form}`}>
+                            <Col lg ='6' md ='6'>
+                                <div className={`${classes.image}`}>
+                                <Image src={contact_image} height='350' width='500' />
+                                </div>
+                            </Col>
+                            <Col lg ='6'>
+                                <div className={`${classes.form_contact}`}>
+                                    <Section title='Formular de contact' />
+                                    <form>
+                                        <div className="mb-3 pt-0">
+                                            <input
+                                                type="text"
+                                                placeholder="Numele tau"
+                                                id="name"
+                                                name="name"
+                                                className="bg-white  rounded text-sm border-0 shado  text-black"
+                                                size="40"
+                                            />
 
-                            </div>
-                            <div className={`${classes.form_contact} mb-3 pt-0`}>
-                                <input
-                                    type="email"
-                                    placeholder="Email"
-                                    id="email"
-                                    name="email"
-                                    className="bg-white  bg-white rounded text-sm border-0 shad  text-black"
-                                    size="40"
-                                />
-                            </div>
-                            <div className={`${classes.form_contact} mb-3 pt-0`}>
-                                <textarea
-                                    placeholder="Mesajul tau"
-                                    name="message"
-                                    id="message"
-                                    className="bg-white  bg-white rounded text-sm border-0 shad  text-black"
-                                    rows="5" cols="50"
-                                />
-                            </div>
-                            <div className="mb-3 pt-0">
-                                <button className={`${classes.btn_active}`}
-                                    type="button" onClick={sendMessage}>
-                                    Trimite un mesaj
-                                </button>
-                            </div>
-                            <div className="message-form">
-                                <div className={classes.succes} id="succes"> Mesajul a fost trimis cu succes</div>
-                                <div className={classes.danger} id="danger">Campurile sunt obligatorii</div>
-                            </div>
-                        </form>
+                                        </div>
+                                        <div className={`${classes.form_contact} mb-3 pt-0`}>
+                                            <input
+                                                type="email"
+                                                placeholder="Email"
+                                                id="email"
+                                                name="email"
+                                                className="bg-white  bg-white rounded text-sm border-0 shad  text-black"
+                                                size="40"
+                                            />
+                                        </div>
+                                        <div className={`${classes.form_contact} mb-3 pt-0`}>
+                                            <textarea
+                                                placeholder="Mesajul tau"
+                                                name="message"
+                                                id="message"
+                                                className="bg-white  bg-white rounded text-sm border-0 shad  text-black"
+                                                rows="5" cols="50"
+                                            />
+                                        </div>
+                                        <div className="mb-3 pt-0">
+                                            <button className={`${classes.btn_active}`}
+                                                type="button" onClick={sendMessage}>
+                                                Trimite un mesaj
+                                            </button>
+                                        </div>
+                                        <div className="message-form">
+                                            <div className={classes.succes} id="succes"> Mesajul a fost trimis cu succes</div>
+                                            <div className={classes.danger} id="danger">Campurile sunt obligatorii</div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </Col>
+                        </div>
                     </Col>
                 </Row>
             </Container>
