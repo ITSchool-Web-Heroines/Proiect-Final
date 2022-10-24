@@ -1,8 +1,8 @@
 import Image from "next/image";
-import css from "../styles/About.module.css";
+import css from "../styles/Details.module.css";
 import { useState } from "react";
 
-const About = () => {
+const Details = () => {
   const [index, setIndex] = useState(0);
   const images = [
     "/img/AB1.png",
@@ -38,4 +38,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Details;

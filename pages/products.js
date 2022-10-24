@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
-import Products from '../components/Products'
+import Products from '../components/Goods'
 import css from '../styles/Home.module.css'
-import React from "react";
 
 export default function Goods() {
   return (

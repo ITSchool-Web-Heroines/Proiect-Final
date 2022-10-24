@@ -1,6 +1,6 @@
-import css from "../styles/Contact.module.css";
+import css from "../styles/Form.module.css";
 
-const Contact = () => {
+const Form = () => {
     return (
         <div className={css.containter}>
             <div className={css.contact}>
@@ -15,4 +15,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Form

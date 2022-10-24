@@ -29,7 +29,7 @@ import T2 from '../images/Products/T2.jpeg'
 import T3 from '../images/Products/T3.jpeg'
 import T4 from '../images/Products/T4.jpeg'
 
-export default function Products() {
+export default function Goods() {
     return(
         <>
         <div className={css.heading}>
