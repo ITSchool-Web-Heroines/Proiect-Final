@@ -50,10 +50,7 @@ const Navbar = () => {
           <div className={`navbar-links`}>
             <ul>
               {NavLinks.map((link) => (
-                <li
-                  key={link.pathname}
-                  className={router.pathname == link.pathname ? "active" : ""}
-                >
+                <li key={link.pathname} className={router.pathname == link.pathname ? "active" : ""}>
                   <Link href={link.pathname}>
                     <a>{link.label}</a>
                   </Link>
