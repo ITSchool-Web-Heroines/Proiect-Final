@@ -11,9 +11,7 @@ const HomeMain = () => {
           <div className="content">
             <h3>Agentie de Marketing Sportiv</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              id repellendus numquam. Maxime veritatis consequatur nobis
-              architecto incidunt rem esse?
+            Noi suntem agentia ta de marketing online orientat spre rezultat!
             </p>
             <a href="#" className="btn">
               read more
@@ -29,8 +27,8 @@ const HomeMain = () => {
               id repellendus numquam. Maxime veritatis consequatur nobis
               architecto incidunt rem esse?
             </p>
-            <a href="#" className="btn">
-              read more
+            <a href="/desprenoi" className="btn">
+            Afla mai multe
             </a>
           </div>
           <div className="image">
@@ -45,9 +43,7 @@ const HomeMain = () => {
           <div className="content">
             <h3>Cere oferta personalizata</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              id repellendus numquam. Maxime veritatis consequatur nobis
-              architecto incidunt rem esse?
+            Suntem o agentie digitala full service si echipa noastra este formata din specialisti cu experienta de peste 10 ani
             </p>
             <a href="#" className="btn">
               read more

@@ -12,17 +12,8 @@ const Desprenoi = () => {
           <div className="content">
             <h3>Care este povestea Motion Agency?</h3>
             <h3>
-              <a href className="read-more-btn">
-                Read More
-              </a>
               <p className="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt id repellendus numquam. Maxime veritatis consequatur
-                nobis architecto incidunt rem esse?
-                <span className="dots">...</span>{" "}
-                <span className="more-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </span>
+                Noi suntem agentia ta de marketing online orientat spre rezultat!Viziunea Panorama Advertising este ca pe termen lung, sustinuti de activele si know how-ul nostru, sa dezvoltam noi servicii de publicitate si marketing online, care sa vina in sprijinul continuu si evolutiv al partenerilor, in promovarea si proiectarea ideilor de succes.
               </p>
             </h3>
           </div>

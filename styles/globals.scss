@@ -117,7 +117,7 @@ section {
         font-size: 1.5rem;
       }
 
-      &:hover {
+      &:hover.active {
         background-color: $light-red;
       }
       &.active {

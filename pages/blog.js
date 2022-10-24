@@ -10,20 +10,20 @@ import Newsletter from "../components/Newsletter";
 const blogs = [
   {
     id: 1,
-    title: "Virtual Tours - Ways to Travel From Home",
-    image: "/images/blog1.webp",
+    title: "Cele mai bune metode de promovare online",
+    image: "/images/blog1.jpg",
     date: "3/31/2021",
   },
   {
     id: 2,
-    title: "Am-EH-zing Places to Visit in Canada!",
-    image: "/images/blog3.webp",
+    title: "Ce canale de promovare trebuie sa utilizezi in 2022",
+    image: "/images/blog3.jpg",
     date: "3/24/2021",
   },
   {
     id: 3,
-    title: "Travel Photography Tips: 101",
-    image: "/images/blog4.webp",
+    title: "Cele mai bune campanii de promovare din 2022",
+    image: "/images/blog4.jpg",
     date: "3/25/2021",
   },
 ];

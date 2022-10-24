@@ -21,8 +21,7 @@ const Portololiu = () => {
           <div className="content">
             <h3>La ce proiecte am lucrat?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              id repellendus numquam. Maxime .
+            Specialistii nostri cu experienta de peste 10 ani in programare, creatie web design, suport, management de proiect, marketing online si strategii de marketing, au dezvoltat proiecte pentru:
             </p>
           </div>
         </div>

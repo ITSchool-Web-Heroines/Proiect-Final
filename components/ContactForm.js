@@ -4,7 +4,7 @@ const ContactForm = () => {
   return (
     <>
       <section className="contact" id="contact">
-        <h1 className="heading">Contacteaza-ne rapid!</h1>
+      
         <div className="row">
           <form className="form-contact" method="POST" data-netlify="true">
             <h3>Trimite un mesaj!</h3>
@@ -13,7 +13,7 @@ const ContactForm = () => {
             <input type="number" placeholder="Telefon" className="input-box" />
             <input type="text" placeholder="Subiect" className="input-box" />
             <textarea
-              name
+              name="form"
               placeholder="Mesaj"
               className="input-box"
 
