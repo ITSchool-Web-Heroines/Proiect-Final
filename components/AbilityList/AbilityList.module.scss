@@ -9,7 +9,7 @@
     @include font-details(var(--text-color), "bc-regular", 1rem);
   }
 }
-@media (min-width: 420px) {
+@media (min-width: 480px) {
   .abilities_list .list_item {
     font-size: 1.25rem;
   }

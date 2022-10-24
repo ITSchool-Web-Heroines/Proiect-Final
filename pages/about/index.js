@@ -25,6 +25,7 @@ import LoadingWrap from "../../components/LoadingWrap/LoadingWrap";
 import AbilitySection from "../../components/AbilitySection/AbilitySection";
 import InfoSection from "../../components/InfoSection/InfoSection";
 import DigitalList from "../../components/DigitalList/DigitalList";
+import FooterAndBackTop from "../../components/Footer/FooterAndBackTop";
 
 function MyAboutPage() {
   const theme = useContext(ThemeContext);
@@ -80,12 +81,8 @@ function MyAboutPage() {
           abilityClass={"profs"}
         />
       </main>
+      <FooterAndBackTop />
       <CustomParticles color={theme.isDark ? "#fff" : "#000"} />
-      <svg className={styles.svg} viewBox="0 0 1320 300">
-        <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-          culturall
-        </text>
-      </svg>
     </LoadingWrap>
   );
 }

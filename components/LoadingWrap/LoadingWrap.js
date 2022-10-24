@@ -1,4 +1,3 @@
-import Image from "next/future/image";
 import Head from "next/head";
 
 import { ThemeContext } from "../../context/theme";
@@ -20,7 +19,7 @@ export default function LoadingWrap(props) {
   const theme = useContext(ThemeContext);
 
   return (
-    <div className={styles.loading}>
+    <div className={`${styles.loading}  ${theme.isDark ? styles.dark : ""}`}>
       {loading ? (
         <div>
           <Head>

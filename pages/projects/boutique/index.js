@@ -26,6 +26,7 @@ import ProjectHeader from "../../../components/ProjectHeader/ProjectHeader";
 import NavProjects from "../../../components/NavProjects/NavProjects";
 import OneTile from "../../../components/OneTile/OneTile";
 import TwoTiles from "../../../components/TwoTiles/TwoTiles";
+import FooterAndBackTop from "../../../components/Footer/FooterAndBackTop";
 
 export default function ProjectDetails({ projects }) {
   console.log(projects);
@@ -83,6 +84,7 @@ export default function ProjectDetails({ projects }) {
         previousLink={"/projects/culturall"}
         previousProject={"culturall"}
       />
+      <FooterAndBackTop />
     </LoadingWrap>
   );
 }

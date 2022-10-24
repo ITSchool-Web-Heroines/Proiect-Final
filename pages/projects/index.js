@@ -27,6 +27,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import CustomParticles from "../../components/CustomParticles/CustomParticles";
 import LoadingWrap from "../../components/LoadingWrap/LoadingWrap";
 import ProjectTile from "../../components/ProjectTile/ProjectTile";
+import FooterAndBackTop from "../../components/Footer/FooterAndBackTop";
 
 function MyProjectsPage({ projects }) {
   const theme = useContext(ThemeContext);
@@ -55,6 +56,7 @@ function MyProjectsPage({ projects }) {
           ))}
         </main>
       )}
+      <FooterAndBackTop />
       <CustomParticles color={theme.isDark ? "#fff" : "#000"} />
     </LoadingWrap>
   );

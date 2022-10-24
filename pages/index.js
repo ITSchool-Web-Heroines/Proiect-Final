@@ -22,7 +22,7 @@ export default function Home() {
 
   const theme = useContext(ThemeContext);
   return (
-    <LoadingWrap title={"a.casa"}>
+    <LoadingWrap title={"arhitectura.arta"}>
       <Head>
         <title>Portofoliu</title>
         <link rel="icon" href="/favicon.ico" />

@@ -26,6 +26,7 @@ import ProjectHeader from "../../../components/ProjectHeader/ProjectHeader";
 import NavProjects from "../../../components/NavProjects/NavProjects";
 import ThreeTiles from "../../../components/ThreeTiles/ThreeTiles";
 import OneTile from "../../../components/OneTile/OneTile";
+import FooterAndBackTop from "../../../components/Footer/FooterAndBackTop";
 
 export default function ProjectDetails({ projects }) {
   // TAB TITLE
@@ -74,6 +75,7 @@ export default function ProjectDetails({ projects }) {
         previousLink={"/projects/landmark"}
         previousProject={"landmark"}
       />
+      <FooterAndBackTop />
     </LoadingWrap>
   );
 }
