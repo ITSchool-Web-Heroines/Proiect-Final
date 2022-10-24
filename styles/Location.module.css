@@ -1,40 +1,42 @@
 .container {
-    margin-top: 10rem;
+    margin-block-start: 15rem;
     height: calc(100vh - 6.25rem);
     background-color: white;
     display: flex;
   }
   
-  .item {
+.item {
     flex: 1;
     position: relative;
     display: flex;
-  }
+   
+}
   
-  .item:last-child {
+.item:last-child {
     flex: 2;
     padding: 2rem;
     justify-content: space-between;
-  }
+}
   
-  .card {
-    margin-top: 10rem;
+.card {
+    margin-block-start: 15rem;
     flex: 1;
     padding: 0 1rem;
-  }
+}
   
-  .title {
+.title {
     font-size: 1.5rem;
     color: black;
-  }
+}
   
-  .text {
-    color: lightgray;
-  }
+.text {
+    color: black;
+}
   
-  .motto {
-    color: rgb(211, 211, 211);
-  }
+.motto {
+  margin-block-start: 10rem;
+  color: black;
+}
   
   @media screen and (max-width: 480px) {
     .container {

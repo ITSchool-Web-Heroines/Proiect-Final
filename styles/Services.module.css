@@ -48,19 +48,15 @@
   margin: 1.25rem 0;
 }
 
-.sbox a{
-  text-decoration: none;
-  color: black;
+.toggle{
+  margin-inline-start: 2rem;
+  color: rgb(9, 44, 203);
+  cursor: pointer;
   font-size: 1.2rem;
-  font-weight: 500;
-  background: peachpuff;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
 }
 
-.sbox a:hover{
-  background: transparent;
-  background: rgb(41, 147, 157);
+.toggle:hover {
   border: 0.2rem solid black;
+  border-radius: 1rem;
   transform: scale(1.1);
 }

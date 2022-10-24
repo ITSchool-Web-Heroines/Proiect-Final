@@ -1,7 +1,7 @@
 import css from '../styles/Navbar.module.css'
 import {UilShoppingBag} from '@iconscout/react-unicons'
-import { useRouter } from "next/router"
-import Link from "next/link"
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 const navigationRoutes = ["about", "contact", "home", "products"];
 
