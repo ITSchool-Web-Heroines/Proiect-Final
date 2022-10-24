@@ -11,7 +11,10 @@ export default function FooterAndBackTop() {
   return (
     <>
       <BackToTop />
-      <footer className={styles.footer}>
+      <footer
+        className={`${styles.footer} ${refIsVisible ? styles.appear : ""}`}
+        ref={myRef}
+      >
         <p>&#9400; Arhitect Astancăi Maria Mădălina </p>
       </footer>
     </>

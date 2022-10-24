@@ -1,7 +1,8 @@
 @use "../../styles/mixins.scss" as *;
 
 .footer {
-  opacity: 0.7;
+  opacity: 0;
+  transition: opacity 500ms;
   inset-block-start: 1rem;
   inset-block-end: 1rem;
   border-block-start: 0.05rem solid var(--text-color);
@@ -11,6 +12,9 @@
   letter-spacing: 2px;
   p {
     padding-inline-start: 1.5rem;
+  }
+  &.appear {
+    opacity: 0.8;
   }
 }
 
