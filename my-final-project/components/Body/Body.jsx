@@ -4,10 +4,12 @@ import { Container, Row, Col } from 'reactstrap';
 import Image from 'next/image'
 import bgImg from '../images-page/bg.jpg';
 import classes from '../../styles/section.module.css'
+import Typewriter from 'typewriter-effect'
 
 
 
 function Body() {
+
     return (
 
         <section className={`${classes.body}`}>
@@ -27,7 +29,16 @@ function Body() {
                     <Col lg='6' md='6'>
                         <div className={`${classes.body_content}`}>
                             <Section title="Salut!" />
-                            <h2>Despre artist</h2>
+                            <h2>
+                                <Typewriter 
+                                options={{
+                                    strings:["Despre mine","Despre artist"],
+                                    autoStart:true,
+                                    delay:75,
+                                    loop:true
+                                }}
+                                />
+                                </h2>
                             <p>Portrete personalizate pentru patrupezi - se adresează tuturor celor care doresc să dăruiască un cadou original si unic persoanelor dragi.
                                 Pictura in ulei dateaza cu mii de ani in urma. <br></br>
                                 Reprezentarea picturii clasice s-a realizat mai ales asupra marilor personalități ale vremurilor trecute. Portretele au fost si vor ramane mereu  capodopere unice de artă.</p>

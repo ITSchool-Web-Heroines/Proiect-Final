@@ -22,7 +22,7 @@ const Projects = () => {
         }
     }, [filter]);
     return (
-        <section id="projects">
+        <section id="proiecte">
             <Container>
                 <Row>
                     <Col lg='6' md='6'>

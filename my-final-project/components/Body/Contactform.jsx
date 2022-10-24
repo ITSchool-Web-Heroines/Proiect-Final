@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React, { useState } from "react";
 import Section from "./Section";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
@@ -6,24 +6,37 @@ import classes from '../../styles/contact.module.css'
 import contact_image from '../images-page/contact.jpg'
 
 const Contact = () => {
+    function sendMessage(e) {
+        e.preventDefault()
+        let Name = document.getElementById('name');
+        let email = document.getElementById('email');
+        let msg = document.getElementById('message')
+        const succes = document.getElementById('succes')
+        const danger = document.getElementById('danger')
 
-    const [submitted, setSubmitted] = useState(false);
-    const handleSubmit = () => {
-        setTimeout(() => {
-            setSubmitted(true);
-        }, 100);
-    };
+        if (Name.value === '' || email.value === '' || msg.value === '') {
+            return danger.style.display = 'block';
+        }
+        else {
+            setTimeout((e) => {
+                Name.value = '';
+                email.value = '';
+                msg.value = '';
+            }, 2000);
+         
+            succes.style.display ='block';
+        }
 
-    if (submitted) {
-        return (
-            <>
-                <div className="text-2xl">Thank you!</div>
-                <div className="text-md">We'll be in touch soon.</div>
-            </>
-        );
+        setTimeout((e) => {
+            danger.style.display ='none';
+            succes.style.display = 'none';
+        },5000)
+        
     }
+
+
     return (
-        <section>
+        <section id="contact">
             <Container>
                 <Row>
                     <Col>
@@ -31,11 +44,12 @@ const Contact = () => {
                     </Col>
                     <Col>
                         <Section title='Formular de contact' />
-                        <form onSubmit={handleSubmit}>
-                            <div className= {`${classes.form_contact} mb-3 pt-0`}>
+                        <form>
+                            <div className={`${classes.form_contact} mb-3 pt-0`}>
                                 <input
                                     type="text"
                                     placeholder="Numele tau"
+                                    id="name"
                                     name="name"
                                     className="bg-white  rounded text-sm border-0 shado  text-black"
                                     size="40"
@@ -46,6 +60,7 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     placeholder="Email"
+                                    id="email"
                                     name="email"
                                     className="bg-white  bg-white rounded text-sm border-0 shad  text-black"
                                     size="40"
@@ -55,15 +70,20 @@ const Contact = () => {
                                 <textarea
                                     placeholder="Mesajul tau"
                                     name="message"
+                                    id="message"
                                     className="bg-white  bg-white rounded text-sm border-0 shad  text-black"
                                     rows="5" cols="50"
                                 />
                             </div>
                             <div className="mb-3 pt-0">
                                 <button className={`${classes.btn_active}`}
-                                    type="submit">
+                                    type="button" onClick={sendMessage}>
                                     Trimite un mesaj
                                 </button>
+                            </div>
+                            <div className="message-form">
+                                <div className={classes.succes} id="succes"> Mesajul a fost trimis cu succes</div>
+                                <div className={classes.danger} id="danger">Campurile sunt obligatorii</div>
                             </div>
                         </form>
                     </Col>

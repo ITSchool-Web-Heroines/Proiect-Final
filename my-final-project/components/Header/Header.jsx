@@ -43,6 +43,10 @@ const Header = () => {
             display: 'Acasa'
         },
         {
+            path:'#about-me',
+            display:'Despre'
+        },
+        {
             path: '#proiecte',
             display: 'Proiecte'
         }, {
