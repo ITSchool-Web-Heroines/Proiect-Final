@@ -5,37 +5,36 @@ import React, { useState } from "react";
 const NavLinks = [
   {
     pathname: "/",
-    label: "Home"
+    label: "Home",
   },
   {
     pathname: "/desprenoi",
-    label: "Despre Noi"
+    label: "Despre Noi",
   },
 
   {
     pathname: "/servicii",
-    label: "Servicii"
+    label: "Servicii",
   },
 
   {
     pathname: "/portofoliu",
-    label: "Portofoliu"
+    label: "Portofoliu",
   },
 
   {
     pathname: "/testimoniale",
-    label: "Testimoniale"
+    label: "Testimoniale",
   },
 
   {
     pathname: "/contact",
-    label: "Contact"
+    label: "Contact",
   },
 
-  
   {
     pathname: "/blog",
-    label: "Blog"
+    label: "Blog",
   },
 ];
 
@@ -43,31 +42,47 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const router = useRouter();
   return (
-
     <>
-      <nav className="navbar">
-        <div className="brand-title">Motion Agency</div>
-        <a
-          onClick={() => setToggle(!toggle)}
-          href="#"
-          className="toggle-button"
-        >
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </a>
-        <div className={`navbar-links ${toggle ? "active" : ""}`}>
-          
+      <nav>
+        <div className="main-navbar">
+          <div className="brand-title">Motion Agency</div>
+
+          <div className={`navbar-links`}>
+            <ul>
+              {NavLinks.map((link) => (
+                <li
+                  key={link.pathname}
+                  className={router.pathname == link.pathname ? "active" : ""}
+                >
+                  <Link href={link.pathname}>
+                    <a>{link.label}</a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <button onClick={() => setToggle(!toggle)} className="toggle-button">
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </button>
+        </div>
+
+        <div className={`sm-navbar ${toggle ? "active" : ""}`}>
+          <ul>
             {NavLinks.map((link) => (
-              <li key={link.pathname} className={router.pathname == link.pathname ? "active" : ""}>
+              <li
+                key={link.pathname}
+                className={router.pathname === link.pathname ? "active" : ""}
+              >
                 <Link href={link.pathname}>
                   <a>{link.label}</a>
                 </Link>
               </li>
             ))}
-          
+          </ul>
         </div>
       </nav>
     </>
