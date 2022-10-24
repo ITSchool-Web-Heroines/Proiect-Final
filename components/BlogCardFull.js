@@ -15,7 +15,7 @@ export default function BlogCardFull() {
             <div className="bg-blog-content p-3 p-md-5 ">
               <Link href="/blog">
                 <a>
-                  <h5 className="text-uppercase travel-guide">Strategii de Marketing Sportiv</h5>
+                  <h5 className="text-uppercase mk-guide">Strategii de Marketing Sportiv</h5>
                   <div className="card-date">3/31/21</div>
                   <h1 className="blog-title mt-3">
                   
