@@ -7,7 +7,7 @@ import {UilLinkedin} from '@iconscout/react-unicons'
 export default function Footer () {
     return(
       <div className={css.container}>
-        <p>Contact Us</p>
+        <p>Find more about us</p>
             <div className={css.social}>
             <UilFacebook size ="45" color='black'/>
             <UilInstagram size ="45" color='black'/>

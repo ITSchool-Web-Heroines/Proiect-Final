@@ -61,3 +61,16 @@
   align-items: center;
   right: -0.5rem;
 }
+
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 0.5rem;
+  }
+
+  .menu {
+    font-size: 0.5rem;
+    gap: 1rem;
+  }
+
+}
