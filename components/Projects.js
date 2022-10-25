@@ -1,7 +1,7 @@
 
 import styles from "./Projects.module.scss";
 import cards from './data/cardlist'; 
-import ProjectItem from './cards';
+import ProjectItem from './Cards';
 
 
   
