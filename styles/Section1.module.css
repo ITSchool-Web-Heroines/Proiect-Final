@@ -71,3 +71,9 @@
     }
   
   }
+
+  @media screen and (max-width: 480px){
+    .heading>:nth-child(1){
+    font-size: 1rem;
+    }
+}
