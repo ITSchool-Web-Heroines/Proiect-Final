@@ -59,21 +59,43 @@
     height: 15rem;
   }
 
-  @media screen and (max-width: 480px) {
-    .heading {
-      padding: 0.5rem;
-    }
-  
-    .menu {
-      font-size: 0.5rem;
-      margin-inline-start: 2rem;
-      gap: 1rem;
-    }
-  
-  }
-
   @media screen and (max-width: 480px){
     .heading>:nth-child(1){
     font-size: 1rem;
     }
-}
+
+    .heading>:nth-child(2), .heading>:nth-child(3){
+        font-size: 2rem;
+    }
+    
+    .services{
+        margin-block-start: 1rem;
+        gap: 0rem;
+    }
+    
+    .feature{
+        gap: 0rem;
+    }
+    
+    .ImageWrapper{
+        height: 10rem;
+        float: none;
+        margin-right:0;
+        width:auto;
+    }
+    
+    .feature>:nth-child(2){
+        font-size: 0.5rem;
+        float: none;
+    margin-right:0;
+    width:auto;  
+    }
+    
+    .feature>:nth-child(3)
+    {
+        font-size: 0.5rem;
+        float: none;
+    margin-right:0;
+    width:auto;
+    }
+  } 
