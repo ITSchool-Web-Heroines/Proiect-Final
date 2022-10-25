@@ -4,7 +4,6 @@ const Form = () => {
     return (
         <div className={css.container}>
             <div className={css.contact}>
-                <div className={css.left}></div>
                 <div className={css.right}>
                     <h2>Contact Us</h2>
                     <form name="contact" method="POST" data-netlify="true" onSubmit="submit" action="/success" data-netlify-honeypot="bot-field">

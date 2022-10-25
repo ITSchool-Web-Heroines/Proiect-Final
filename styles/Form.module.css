@@ -14,22 +14,16 @@
 	align-items: center;
 	text-align: center;
 	background-color: #fff;
-	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
-}
-
-.left{
-	background-size: cover;
-	height: 100%;
+	box-shadow: 0 0 1.2rem 0.3rem rgba(0,0,0,0.19);
 }
 
 .right{
-	padding: 25px 40px;
+	padding: 5rem 8rem;
 }
 
 .right h2{
 	position: relative;
-	padding: 0 0 10px;
-	margin-bottom: 10px;
+	padding: 0 0 1rem;
 }
 
 .right h2:after{
@@ -60,7 +54,7 @@
 }
 
 .textarea{
-	min-height: 10px;
+	min-height: 1rem;
 }
 
 .btn{
@@ -80,7 +74,7 @@
 }
 
 .field:focus{
-    border: 2px solid rgba(30,85,250,0.47);
+    border: 1rem solid rgba(30,85,250,0.47);
     background-color: #fff;
 }
 
@@ -88,7 +82,8 @@
 	.contact-box{
 		grid-template-columns: 1fr;
 	}
-	.left{
-		height: 200px;
-	}
+
+    .right{
+        padding: 2rem 4rem;
+    }
 }
