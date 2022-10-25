@@ -1,4 +1,4 @@
-
+import Image from "next/future/image";
 import Link from "next/link";
 import React, { useState } from 'react';
 import {Card, Modal, Carousel} from "react-bootstrap";
@@ -46,7 +46,7 @@ export default function ProjectItem({project}) {
             <Modal.Body className={styles.modalbody}>
                 <Carousel  className={styles.carousel} interval="5000">
                     <Carousel.Item className={styles.images}>
-                        <img
+                        <Image
                             className={styles.carouselimg}
                             src={project.image}
                             alt={project.title}
@@ -54,7 +54,7 @@ export default function ProjectItem({project}) {
         
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img
+                        <Image
                             className={styles.carouselimg}
                             src={project.pic1}
                             alt={project.title}
