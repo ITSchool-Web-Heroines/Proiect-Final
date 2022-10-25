@@ -28,7 +28,7 @@
   0% {
     fill: transparent;
     stroke: #000;
-    stroke-dashoffset: 25%;
+    stroke-dashoffset: 100;
     stroke-dasharray: 0 50%;
     stroke-width: 2;
   }
@@ -44,7 +44,7 @@
   100% {
     fill: #000;
     stroke: transparent;
-    stroke-dashoffset: -25%;
+    stroke-dashoffset: -100;
     stroke-dasharray: 50% 0;
     stroke-width: 0;
   }
@@ -54,7 +54,7 @@
   0% {
     fill: transparent;
     stroke: #fff;
-    stroke-dashoffset: 25%;
+    stroke-dashoffset: 100;
     stroke-dasharray: 0 50%;
     stroke-width: 2;
   }
@@ -70,7 +70,7 @@
   100% {
     fill: #fff;
     stroke: transparent;
-    stroke-dashoffset: -25%;
+    stroke-dashoffset: -100;
     stroke-dasharray: 50% 0;
     stroke-width: 0;
   }
