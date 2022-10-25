@@ -16,11 +16,11 @@ const Contact = () => {
           <div className="content">
             <h3>Ai o afacere pe care vrei sa o cresti?</h3>
             <p>
-            Hai sa discutam despre proiectul tau! Te rog sa ne trimiti o descriere cu ceea ce urmaresti tu sa obtii.
+              Hai sa discutam despre proiectul tau! Te rog sa ne trimiti o descriere cu ceea ce urmaresti tu sa obtii.
 
 
             </p>
-            <a href="#contact" className="btn">
+            <a href="/contact" className="btn">
               Mergi la contact
             </a>
           </div>
@@ -33,39 +33,8 @@ const Contact = () => {
           <span>Contact</span>
         </h1>
         <div className="row">
-          <form className="contact-form" method="POST" data-netlify="true">
-            <h3>Contacteaza-ne rapid</h3>
-            <input
-              type="text"
-              placeholder="Numele"
-              className="input-box focus-input"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="input-box focus-input"
-            />
-            <input
-              type="number"
-              placeholder="Telefon"
-              className="input-box focus-input"
-            />
-            <input
-              type="text"
-              placeholder="Subiect"
-              className="input-box focus-input"
-            />
-            <textarea
-              name
-              placeholder="Mesaj"
-              className="input-box focus-input"
-              id
-              cols={30}
-              rows={10}
-              defaultValue={""}
-            />
-            <input type="submit" value="send now" className="btn focus-input" />
-          </form>
+         <ContactForm>
+         </ContactForm>
         </div>
       </section>
       <Credit />
