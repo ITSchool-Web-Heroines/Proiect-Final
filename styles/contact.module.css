@@ -43,13 +43,23 @@
     display: none;
     color: orange;
 }
-
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:450px){
     .form {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
+        margin-inline-start: 5em;
         margin-block-start:-10em;
+        
+    }
+   
+}
+@media (min-width:401px) and (max-width:768px) {
+    .form {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        margin-block-end:-10em;
     }
 }
 

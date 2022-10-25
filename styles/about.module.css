@@ -21,9 +21,25 @@
     grid-row:1/3;  
     box-shadow: 10px 0px 5px rgba(204, 204, 204, 0.273);
 }
-@media only screen and (max-width:768px){
+@media only screen and  (max-width:450px) {
     .about_info{
-        font-size: smaller;
+        display:flex;
+        flex-direction: column;
         text-align: center;
+        align-content: center;
+        font-size: smaller;
+        margin-inline-end: -12em;
+    }
+    .about_images{
+        margin-inline-end: -11em;
+    }
+}
+@media (min-width:300px) and (max-width:768px){
+    .about_info{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+        font-size: smaller;
     }
 }

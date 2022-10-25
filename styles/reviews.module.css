@@ -1,22 +1,33 @@
-.slider_review{
+.slider_review {
     margin-block-start: 3em;
 }
-@media only screen and (max-width:768px){
-    .slider_review{
+
+@media (min-width:300px) and (max-width:450px) {
+    .slider_review {
+
+        margin-inline-end: -10em;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .slider_review {
         font-size: smaller;
         margin-inline-start: 1em;
     }
-    .review_info{
+
+    .review_info {
         font-size: large;
     }
-    .contact_info{
+
+    .contact_info {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-   .review_image{
-    height:300px;
-    width: 250px;
-    margin:auto;
-   }
+
+    .review_image {
+        height: 300px;
+        width: 250px;
+        margin: auto;
+    }
 }

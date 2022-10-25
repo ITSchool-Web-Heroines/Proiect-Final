@@ -69,4 +69,9 @@
         margin-block-start: 1em;
         position: relative;
     }
+    @media (min-width:300px) and (max-width:450px) {
+        .body_content{
+            margin-inline-end: -10em;
+        }
+    }
 }
