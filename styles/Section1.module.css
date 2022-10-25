@@ -58,4 +58,16 @@
     width: 20rem;
     height: 15rem;
   }
+
+  @media screen and (max-width: 480px) {
+    .heading {
+      padding: 0.5rem;
+    }
   
+    .menu {
+      font-size: 0.5rem;
+      margin-inline-start: 2rem;
+      gap: 1rem;
+    }
+  
+  }

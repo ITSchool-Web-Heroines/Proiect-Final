@@ -77,3 +77,67 @@
     cursor: pointer;
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 480px) {
+    .container{
+        display: flex;
+        position: relative;
+    }
+    
+    .left{
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    
+    .miniboxDiv{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: fit-content;
+        margin-block-start: -2rem;
+        padding: 1rem;
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+    
+    .sloganText{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+    
+    .miniText{
+        width: 100%;
+        font-weight: 800;
+    
+    }
+    .btn{
+        padding: 1rem 2.5rem;
+    }
+    
+    .right{
+        position: relative;
+    }
+    
+    .imageContainer{
+        width: 10rem;
+        margin-block-start: 5rem;
+        margin-inline-start: 5rem;
+    }
+    
+    .ContactUs{
+        gap: 0.5rem;
+        background-color: white;
+        box-shadow: var(--shadow);
+        margin-block-start: -10rem;
+        margin-inline-start: 5rem;
+        font-size: 0.7rem;
+    }
+    
+    .ContactUs>div{
+        width: 2rem;
+        height: 2rem;
+    }
+    
+}
