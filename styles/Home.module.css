@@ -1,5 +1,6 @@
 .main {
   min-height: 100vh;
+  width: 100%;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -8,7 +9,7 @@
   align-items: center;
 }
 .logo {
-  height: 1em;
+  height: 2vw;
   margin-left: 0.5rem;
 }
 .first-image {
@@ -16,7 +17,12 @@
   width: 90vw;
   height: fit-content;
 }
-
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-start: 2rem;
+}
 .btn-description {
   display: flex;
   flex-direction: column;
@@ -26,22 +32,16 @@
   padding-block: 4rem;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
 .title {
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
   padding-block: 2rem;
+}
+.subtitle {
+  font-size: 2.4rem;
+  line-height: 1.15;
+  text-align: center;
 }
 
 .title,
@@ -50,9 +50,10 @@
 }
 
 .description {
-  margin: 4rem 0;
+  width: 75rem;
+  margin: 2rem;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .grid {
@@ -92,10 +93,33 @@
   line-height: 1.5;
 }
 
+@media (max-width: 700px) {
+  .title {
+    font-size: 2.6rem;
+  }
+  .subtitle {
+    font-size: 1.6rem;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .description {
+    font-size: 0.8rem;
   }
 }
 

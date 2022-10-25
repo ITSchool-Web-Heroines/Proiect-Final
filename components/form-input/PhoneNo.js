@@ -5,7 +5,7 @@ export default function PhoneNo() {
   return (
     <Grid>
       <p className={styles["text-form"]}>Your phone number</p>
-      <Input type="number" />
+      <Input type="number" name="number" />
     </Grid>
   );
 }

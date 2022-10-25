@@ -1,23 +1,22 @@
-import { Checkbox } from "@nextui-org/react";
 import styles from "../../styles/form.module.css";
 
 export default function CheckboxType() {
   return (
     <div>
-      <p className={styles["text-form"]}>Type of your product</p>
-      <Checkbox.Group defaultValue={["journal"]} color="warning">
-        <Checkbox
-          color="warning"
-          defaultSelected={true}
-          className={styles.check}
-          value="journal"
-        >
+      <fieldset className={styles.fieldset}>
+        <legend className={styles.legend}>
+          Choose the type of the product
+        </legend>
+        <input type="radio" id="journal" name="type" className={styles.radio} />
+        <label htmlFor="journal" className={styles.textLabel}>
           Journal
-        </Checkbox>
-        <Checkbox defaultSelected={false} value="album">
+        </label>
+        <div></div>
+        <input type="radio" id="album" name="type" className={styles.radio} />
+        <label htmlFor="album" className={styles.textLabel}>
           Photo Album
-        </Checkbox>
-      </Checkbox.Group>
+        </label>
+      </fieldset>
     </div>
   );
 }
