@@ -66,7 +66,7 @@ import aperoicon from "../../images/lipstick/cayenne icon.png"
 
 const Lipstick = () => {
     const [shade, setShade]  = useState("beetroot");
-
+       
     return (
         <div id="lipstick">
             <article id="beetroot" className={shade == "beetroot" && "active"}>
