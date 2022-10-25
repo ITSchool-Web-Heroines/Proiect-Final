@@ -18,7 +18,7 @@ const Desprenoi = () => {
             </h3>
           </div>
           <div className="image">
-            <img src="images/home-img-2.png" alt="home" />
+  <img src={"images/home-img-2.png"} alt="home" />
           </div>
         </div>
       </section>

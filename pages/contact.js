@@ -33,8 +33,42 @@ const Contact = () => {
           <span>Contact</span>
         </h1>
         <div className="row">
-         <ContactForm>
-         </ContactForm>
+          import ContactForm from "../components/ContactForm";
+
+
+          <form className="contact-form">
+            <h3>Contacteaza-ne rapid</h3>
+            <input
+              type="text"
+              placeholder="Numele"
+              className="input-box focus-input"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              className="input-box focus-input"
+            />
+            <input
+              type="number"
+              placeholder="Telefon"
+              className="input-box focus-input"
+            />
+            <input
+              type="text"
+              placeholder="Subiect"
+              className="input-box focus-input"
+            />
+            <textarea
+              name
+              placeholder="Mesaj"
+              className="input-box focus-input"
+              id
+              cols={30}
+              rows={10}
+              defaultValue={""}
+            />
+            <input type="submit" value="send now" className="btn focus-input" />
+          </form>
         </div>
       </section>
       <Credit />

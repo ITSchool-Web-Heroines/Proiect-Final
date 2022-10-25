@@ -16,7 +16,7 @@ const Portololiu = () => {
       <section className="home" id="home">
         <div className="box">
           <div className="image">
-            <img src="images/home-img-1.png" alt="" />
+            <img src={"images/home-img-1.png"} alt="" />
           </div>
           <div className="content">
             <h3>La ce proiecte am lucrat?</h3>
