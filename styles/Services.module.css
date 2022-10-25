@@ -63,7 +63,6 @@
 
 @media screen and (max-width: 760px) {
   .services{
-    height: 6rem;
     float: none;
     margin-inline-start:0;
     width:auto;
