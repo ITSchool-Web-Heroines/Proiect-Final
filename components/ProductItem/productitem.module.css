@@ -5,6 +5,7 @@
   padding: 1rem 2.5rem;
   box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.395);
   margin-block-end: 4rem;
+  width: 15rem;
 }
 .card:hover {
   background-color: rgba(176, 222, 205, 0.515);

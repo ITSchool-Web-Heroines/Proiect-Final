@@ -9,6 +9,7 @@
 .text_image {
   color: white;
   text-align: center;
+  margin-block-end: 2rem;
 }
 .text_image h2 {
   font-family: "Bangers", cursive;
@@ -27,6 +28,8 @@
   color: white;
   text-decoration: none;
   font-style: italic;
+  margin-block-end: 2rem;
+  padding-block-end: 2rem;
 }
 .see_more:hover {
   color: rgb(231, 157, 157);

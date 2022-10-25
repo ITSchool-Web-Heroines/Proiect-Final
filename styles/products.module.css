@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: 20rem 20rem;
     gap: 1rem;
+    margin-inline: 7rem;
   }
 }
 
@@ -19,6 +20,6 @@
     display: grid;
     grid-template-columns: 20rem 20rem 20rem;
     gap: 1rem;
-    margin-inline: 16rem;
+    margin-inline: 18rem;
   }
 }
