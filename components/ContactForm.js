@@ -11,16 +11,10 @@ const ContactForm = () => {
             <input type="text" name="nume" placeholder="Numele" className="input-box" />
             <input type="email" name="email" placeholder="Email" className="input-box" />
             <input type="number" name="telefon" placeholder="Telefon" className="input-box" />
-            <input type="text"name="subiect"  placeholder="Subiect" className="input-box" />
-            <textarea
-              name="form"
-              placeholder="Mesaj"
-              className="input-box"
+            <input type="text" name="subiect" placeholder="Subiect" className="input-box" />
+            <label htmlFor="message">Mesajul tau pentru noi*</label>
 
-              cols={30}
-              rows={10}
-              value={""}
-            />
+            <textarea id="message" name="message" className="input-box" required></textarea>
             <input type="submit" name="trimite" value="Trimite" className="btn" />
           </form>
         </div>

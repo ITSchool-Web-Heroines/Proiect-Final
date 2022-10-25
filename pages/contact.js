@@ -33,7 +33,7 @@ const Contact = () => {
           <span>Contact</span>
         </h1>
         <div className="row">
-          {ContactForm}
+        <ContactForm title={"Trimite un mesaj"} btnvalue={"Trimite"} />
         </div>
       </section>
       <Credit />
