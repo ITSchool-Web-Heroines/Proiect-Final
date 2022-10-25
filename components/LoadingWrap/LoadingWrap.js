@@ -21,7 +21,7 @@ export default function LoadingWrap(props) {
   return (
     <div className={`${styles.loading}  ${theme.isDark ? styles.dark : ""}`}>
       {loading ? (
-        <div>
+        <div className={theme.isDark ? "app dark" : "app"}>
           <Head>
             <title>Portofoliu</title>
           </Head>

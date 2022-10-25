@@ -28,7 +28,7 @@
   &:hover,
   &:focus,
   &:focus-within {
-    filter: drop-shadow(-1rem -0.5rem 0rem rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(-1rem -0.5rem 0rem #989898);
   }
 }
 // PREVIOUS
@@ -41,7 +41,7 @@
   &:hover,
   &:focus,
   &:focus-within {
-    filter: drop-shadow(1rem -0.5rem 0rem rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(1rem -0.5rem 0rem #989898);
   }
 }
 // BOTH

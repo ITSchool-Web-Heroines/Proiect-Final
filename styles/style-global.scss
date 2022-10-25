@@ -67,7 +67,7 @@ body,
 }
 
 body {
-  scrollbar-color: #000 transparent;
+  scrollbar-color: var(--background) transparent;
   background-color: var(--background);
   overflow-y: auto;
   overflow-x: hidden;
@@ -76,10 +76,10 @@ body {
     width: 0.4rem;
   }
   &::-webkit-scrollbar-track {
-    background: transparent;
+    background: #fff;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #000;
+    background-color: #ccc;
     border-radius: 0rem;
   }
 }
