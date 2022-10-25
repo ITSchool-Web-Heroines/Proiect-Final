@@ -18,7 +18,6 @@ export default function Home() {
       <Head>
         <title>Skoob Journals</title>
         <meta name="description" content="Handmade Journals" />
-        
       </Head>
 
       <Nav />
@@ -40,7 +39,7 @@ export default function Home() {
         </h3>
         <p className={styles.description}>
           Whether you bought it for loved one or for yourself, the experience of
-          unwrapping a gift will always be a pleasant one. That's why we pack
+          unwrapping a gift will always be a pleasant one. That is why we pack
           each product with care.
         </p>
         <Cards />

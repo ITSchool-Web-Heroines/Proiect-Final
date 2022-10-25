@@ -10,7 +10,7 @@ export default function Process() {
     <div>
       <div className={styles["process-grid"]}>
         <p className={styles["process-text"]}>
-          Search for the perfect product for you &#10137;
+          Search for the perfect product for you
         </p>
 
         <Image
@@ -21,7 +21,7 @@ export default function Process() {
       </div>
       <div className={styles["process-grid"]}>
         <p className={styles["process-text"]}>
-          We will make it quickly and carefully &#10137;
+          We will make it quickly and carefully
         </p>
 
         <Image
@@ -32,7 +32,7 @@ export default function Process() {
       </div>
       <div className={styles["process-grid"]}>
         <p className={styles["process-text"]}>
-          It will arrive to you as soon as possible &#10137;
+          It will arrive to you as soon as possible
         </p>
 
         <Image
