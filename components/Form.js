@@ -6,7 +6,7 @@ const Form = () => {
             <div className={css.contact}>
                 <div className={css.right}>
                     <h2>Contact Us</h2>
-                    <form name="contact" method="POST" data-netlify="true" onSubmit="submit" action="/success" data-netlify-honeypot="bot-field">
+                    <form name="contact" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field">
                         <p>
                             <label>Your Name: <input type="text" name="name" /></label>
                         </p>
