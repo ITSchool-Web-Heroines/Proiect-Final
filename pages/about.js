@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
 import btns from "../styles/btn.module.css";
 import Gallery from "../components/Gallery";
-import Cart from "../components/cart";
 import Testimonials from "../components/Testimonials";
 import Link from "next/link";
 
@@ -14,7 +13,7 @@ export default function about() {
       <Nav />
       <main className={styles.main}>
         <div className={styles.info}>
-          <Cart />
+          {/* <Cart /> */}
           <h1 className={styles.title}>About us</h1>
           <p className={styles.description}>
             Since 2009, in the Skoob workshop, we have been producing natural

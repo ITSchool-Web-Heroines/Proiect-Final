@@ -3,7 +3,6 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 import btns from "../styles/btn.module.css";
 import Nav from "../components/Nav";
-import Cart from "../components/cart";
 import ImageF from "../components/ImageF";
 import Process from "../components/Process";
 import Footer from "../components/Footer";
@@ -22,7 +21,7 @@ export default function Home() {
 
       <Nav />
       <main className={styles.main}>
-        <Cart />
+        {/* <Cart /> */}
         <h1 className={styles.title}>Handmade Leather Products</h1>
 
         <h3 className={styles.subtitle}>Books and Notebooks made with care</h3>
