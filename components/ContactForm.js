@@ -6,18 +6,30 @@ const ContactForm = () => {
       <section className="contact" id="contact">
 
         <div className="row">
-          <form className="form-contact" method="POST" data-netlify="true">
-            <h3>Trimite un mesaj!</h3>
-            <input type="text" name="nume" placeholder="Numele" className="input-box" />
-            <input type="email" name="email" placeholder="Email" className="input-box" />
-            <input type="number" name="telefon" placeholder="Telefon" className="input-box" />
-            <input type="text" name="subiect" placeholder="Subiect" className="input-box" />
-            <label htmlFor="message">Mesajul tau pentru noi*</label>
-
-            <textarea id="message" name="message" className="input-box" required></textarea>
-            <input type="submit" name="trimite" value="Trimite" className="btn" />
-          </form>
+        <label htmlFor="name">Enter your name:
+        <form name="form-contact" method="POST" data-netlify="true">
+              <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <label>Your Role: <select name="role[]" multiple>
+                    <option value="leader">Leader</option>
+                    <option value="follower">Follower</option>
+                  </select></label>
+              </p>
+              <p>
+                <label>Message: <textarea name="message" defaultValue={""} /></label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form> </label>
+          <input type="text" id="name" />
         </div>
+        
       </section>
     </>
   );
