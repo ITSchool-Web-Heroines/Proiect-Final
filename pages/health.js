@@ -18,9 +18,10 @@ function HealthPage() {
         <h1 className={styles.title}> Sanatatea e ceea ce conteaza</h1>
         <div className={styles.gridH}>
         <h1> Ce inseamna stil de viata sanatos </h1> 
-        <h2> Multi dintre noi asociem stilul de viata sanatos cu slabitul si dietele. Cu siguranta, te va ajuta, insa o viata sanatoasa si echilibrata implica mult mai multe.</h2> 
-        <h2> Un stil de viata sanatos este un cumul de aspecte, de la sanatatea corpului fizic, la cea psihica, emotionala, spirituala, relationala si financiara.
-         Printre cele mai “vizibile” beneficii ale unui stil de viata sanatos, se numara faptul ca te simti nemaipomenit, ai mai multa energie, te poti concentra mai bine si te imbolnavesti mai rar sau, de ce nu, deloc.</h2> 
+        <h2 className={styles.txt}> Multi dintre noi asociem stilul de viata sanatos cu slabitul si dietele. Cu siguranta, te va ajuta, insa o viata sanatoasa si echilibrata implica mult mai multe.</h2> 
+        <h2 className={styles.txt}> Un stil de viata sanatos este un cumul de aspecte, de la sanatatea corpului fizic, la cea psihica, emotionala, spirituala, relationala si financiara.</h2> 
+        <h2 className={styles.txt}> Printre cele mai “vizibile” beneficii ale unui stil de viata sanatos, se numara faptul ca te simti nemaipomenit, ai mai multa energie, te poti concentra mai bine si te imbolnavesti mai rar sau, de ce nu, deloc.</h2> 
+        <h2 className={styles.txt}> Printre cele mai “vizibile” beneficii ale unui stil de viata sanatos, se numara faptul ca te simti nemaipomenit, ai mai multa energie, te poti concentra mai bine si te imbolnavesti mai rar sau, de ce nu, deloc.</h2> 
        </div>
         </main>
     </div>
