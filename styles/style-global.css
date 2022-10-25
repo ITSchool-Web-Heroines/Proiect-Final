@@ -1,7 +1,3 @@
-// MIXINS
-@use "./mixins.scss" as *;
-
-// FONTS
 @font-face {
   font-family: ag-regular;
   src: url("./fonts/agency-regular.woff") format("woff"),
@@ -43,7 +39,6 @@
   font-weight: 100;
 }
 
-// BODY
 html,
 body,
 * {
@@ -72,16 +67,16 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  &::-webkit-scrollbar {
-    width: 0.4rem;
-  }
-  &::-webkit-scrollbar-track {
-    background: #fff;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 0rem;
-  }
+}
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 0rem;
 }
 main {
   background-color: var(--background);
