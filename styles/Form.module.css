@@ -8,20 +8,8 @@
 	padding: 1.25rem 6rem;
 }
 
-.container:after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background-size: cover;
-	filter: blur(50px);
-	z-index: -1;
-}
 .contact{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
