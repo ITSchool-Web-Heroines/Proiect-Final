@@ -59,7 +59,8 @@
     height: 15rem;
   }
 
-  @media screen and (max-width: 480px){
+  
+  @media screen and (max-width: 1360px){
     .heading>:nth-child(1){
     font-size: 1rem;
     }
@@ -87,15 +88,15 @@
     .feature>:nth-child(2){
         font-size: 0.5rem;
         float: none;
-    margin-right:0;
-    width:auto;  
+        margin-right:0;
+        width:auto;  
     }
     
     .feature>:nth-child(3)
     {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
         float: none;
-    margin-right:0;
-    width:auto;
+        margin-right:0;
+        width:auto;
     }
   } 
