@@ -29,7 +29,7 @@ const Cart = () => {
                             <td><img src={Beetroot}/></td>
                             <td>Beetroot #1D1C</td>
                             <td>$30</td>
-                            <td><input type="number" min="1" max="5"></input></td>
+                            <td><input type="number" min="1" max="5" value="1"></input></td>
                             <td>$30</td>
                         </tr>
                         <tr>
@@ -37,7 +37,7 @@ const Cart = () => {
                             <td><img src={Praline} /></td>
                             <td>Praline #5D3C</td>
                             <td>$30</td>
-                            <td><input type="number" min="1" max="5"></input></td>
+                            <td><input type="number" min="1" max="5" value="1"></input></td>
                             <td>$60</td>
                         </tr>
                         <tr>
@@ -45,7 +45,7 @@ const Cart = () => {
                             <td><img src={HotTomato} /></td>
                             <td>Hot Tomato #2D7C</td>
                             <td>$30</td>
-                            <td><input type="number" min="1" max="5"></input></td>
+                            <td><input type="number" min="1" max="5" value="1"></input></td>
                             <td>$120</td>
                         </tr>
                     </tbody>
