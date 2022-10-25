@@ -18,12 +18,7 @@ export default function Home() {
       <Head>
         <title>Skoob Journals</title>
         <meta name="description" content="Handmade Journals" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
+        
       </Head>
 
       <Nav />
