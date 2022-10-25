@@ -38,7 +38,7 @@ const Cart = () => {
                             <td>Praline #5D3C</td>
                             <td>$30</td>
                             <td><input type="number" min="1" max="5"></input></td>
-                            <td>$30</td>
+                            <td>$60</td>
                         </tr>
                         <tr>
                             <td><FaTimes /><a href="#"></a></td>
@@ -46,7 +46,7 @@ const Cart = () => {
                             <td>Hot Tomato #2D7C</td>
                             <td>$30</td>
                             <td><input type="number" min="1" max="5"></input></td>
-                            <td>$30</td>
+                            <td>$120</td>
                         </tr>
                     </tbody>
                 </table>
@@ -65,7 +65,7 @@ const Cart = () => {
                     <table>
                         <tr>
                             <td>Cart Subtotal</td>
-                            <td>$30</td>
+                            <td>$120</td>
                         </tr>
                         <tr>
                             <td>Shipping</td>
@@ -73,7 +73,7 @@ const Cart = () => {
                         </tr>
                         <tr>
                             <td><strong>Total</strong></td>
-                            <td><strong>$30</strong></td>
+                            <td><strong>$120</strong></td>
                         </tr>
                     </table>
                     <button class="normal">Proceed to checkout</button>
