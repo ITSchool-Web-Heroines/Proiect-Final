@@ -59,3 +59,51 @@
       font-size: 0.5rem;
     }
   }
+
+  @media screen and (max-width: 480px){
+    .container {
+      height: auto;
+      text-align: center;
+      margin-block-start: 1rem;
+      height: 5rem;
+      background-color: white;
+      display: flex;
+    }
+
+    .container {
+      height: auto;
+      text-align: center;
+    }
+    .item:first-child {
+      display: none;
+    }
+  
+    .item {
+      flex-direction: column;
+    }
+  
+    .title {
+      font-size: 1rem;
+    }
+  
+    .text {
+      font-size: 0.5rem;
+    }
+    
+    .card {
+      margin-block-start: 10rem;
+    }
+    
+    .title {
+    margin-block-start: -7rem;
+      font-size: 1.3rem;
+      color: black;
+    }
+    
+    .motto {
+    margin-block-start: -5rem;
+    font-size: 1rem;
+    }
+  }
+
+
