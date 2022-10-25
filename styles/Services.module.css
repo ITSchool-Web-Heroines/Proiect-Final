@@ -60,3 +60,33 @@
   border-radius: 1rem;
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 760px) {
+  .services{
+    height: 6rem;
+    float: none;
+    margin-inline-start:0;
+    width:auto;
+  }
+  
+  .services h1{
+    font-size: 1.5rem;
+  }
+  
+   
+  .sbox h3{
+    font-size: 0.5rem;
+  }
+  
+  .sbox p{
+    margin: 1rem 0;
+    font-size: 0.5rem;
+
+  }
+  
+  .toggle{
+    margin-inline-start: 1rem;
+    font-size: 0.5rem;
+  }
+  
+}
