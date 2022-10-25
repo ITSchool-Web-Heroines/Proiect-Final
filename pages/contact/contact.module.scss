@@ -1,1 +1,39 @@
 @use "../../styles/mixins.scss" as *;
+
+.form {
+  display: grid;
+  gap: 1rem;
+  .form_title {
+    @include font-details(#000, "bc-regular", 1rem);
+    display: grid;
+    gap: 0.5rem;
+  }
+  .name,
+  .email,
+  .message {
+    width: 14rem;
+    padding: 0.5rem;
+    border: 0.1rem solid #000;
+    @include font-details(#000, "bc-regular", 1rem);
+  }
+  .button {
+    width: 5rem;
+    background-color: transparent;
+  }
+  textarea {
+    scrollbar-color: #000 transparent;
+    overflow: scroll;
+    height: 10rem;
+    padding-block-end: 0rem;
+    resize: none;
+  }
+  textarea::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  textarea::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  textarea::-webkit-scrollbar-thumb {
+    background-color: #000;
+  }
+}

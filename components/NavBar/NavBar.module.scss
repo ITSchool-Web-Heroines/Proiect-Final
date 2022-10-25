@@ -58,9 +58,9 @@
     inset-block-end: 0rem;
     position: fixed;
     padding: 0.5rem;
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     will-change: transform;
-    -webkit-perspective: 1000;
+    perspective: 1000;
     &::after {
       content: "";
       position: absolute;
@@ -74,9 +74,9 @@
       font-size: 1.25rem;
       position: absolute;
       outline: 1px solid transparent;
-      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
       will-change: transform;
-      -webkit-perspective: 1000;
+      perspective: 1000;
       transform: rotate(-90deg);
       &.home {
         grid-row: 2/3;
