@@ -20,7 +20,7 @@ const Contact = () => {
 
 
             </p>
-            <a href="/contact" className="btn">
+            <a href="#" className="btn">
               Mergi la contact
             </a>
           </div>
