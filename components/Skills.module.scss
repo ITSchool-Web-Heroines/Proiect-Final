@@ -1,0 +1,26 @@
+.skill  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+}
+
+.skillbox {
+    margin: 3rem 1rem;
+    padding: 1rem 2rem;
+    background: rgb(29, 28, 28);
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+.brand {
+    height: 4rem;
+    width: 3rem;
+    display: flex;
+    flex-direction: row;
+    
+}

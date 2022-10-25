@@ -1,0 +1,87 @@
+.box {
+    :hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+}
+.cards {
+    width: 18rem;
+    margin-inline: 3rem;
+    margin-block-end: 5rem;
+    :hover {
+        background-color: white;
+        border-color: white;
+        color: black; 
+       
+    }
+}
+
+.card {
+    background-color: white;
+    border-color: white;
+    padding: 1rem;
+    box-shadow: 0 0 1rem gray;
+    color: black;
+    font-family: 'IBM Plex Mono',arial,calib,monospace,sans-serif; 
+}
+
+.carouselimg {
+    width: 18rem;
+    height: 15rem;
+}
+
+.img {
+    height: 200px;
+}
+.body {
+    padding:0;
+}
+.carousel {
+    text-align: center;
+    margin: 2rem 2rem;
+}
+
+.modal {
+    border-color: white;
+    border-radius: 0cm;
+    margin: 1rem 1rem;
+        
+}
+
+.aboutproject {
+    margin: 2rem 1rem;
+    font-family: 'IBM Plex Mono',arial,calib,monospace,sans-serif;
+}
+.modaltitle {
+    text-align: center;
+    justify-self: center;
+    font-family: 'Saira Stencil One', Arial, Helvetica, sans-serif;
+}
+
+
+.modalbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: white;
+    text-align: center; 
+}
+
+.icon {
+    height: 1.5rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+@media (min-width:500px) {
+    .carouselimg {
+        width: 30rem;
+        height: 22rem;
+    }
+}
+
+@media (min-width:993px) {
+    .carouselimg {
+        width: 35rem;
+        height: 25rem;
+    }
+}
