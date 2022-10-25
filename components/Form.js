@@ -1,17 +1,32 @@
-import css from "../styles/Form.module.css";
+import css from "../styles/Form.module.css"
 
 const Form = () => {
     return (
-        <div className={css.containter}>
+        <div className={css.container}>
             <div className={css.contact}>
-                <input type="text" placeholder='Name'/>
-                <input type="text" placeholder='Email'/>
-                <input type="text" placeholder='Phone Number'/>
-                <input type="text" placeholder='Subject'/>
-                <input type="text" placeholder='Details'/>
-                <button type>Submit</button>
-            </div>
-        </div>
+                <div className={css.left}></div>
+                <div className={css.right}>
+                    <h2>Contact Us</h2>
+                    <form name="contact" method="POST" data-netlify="true" onSubmit="submit" onSubmit="submit" action="/success" data-netlify-honeypot="bot-field">
+                        <p>
+                            <label>Your Name: <input type="text" name="name" /></label>
+                        </p>
+                        
+                        <p>
+                            <label>Your Email: <input type="email" name="email" /></label>
+                        </p>
+                        
+                        <p>
+                            <label>Message: <textarea name="message"></textarea></label>
+                        </p>
+                        
+                        <p>
+                            <button type="submit">Send</button>
+                        </p>
+                    </form>
+                </div>
+	        </div>
+	    </div>
     )
 }
 
