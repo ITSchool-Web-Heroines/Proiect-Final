@@ -7,7 +7,7 @@ const ContactForm = () => {
 
         <div className="row">
         <label htmlFor="name">Enter your name:
-        <form name="form-contact" method="POST" data-netlify="true">
+        <form className="form-contact" name="form-contact" method="POST" data-netlify="true">
               <p>
                 <label>Your Name: <input type="text" name="name" /></label>
               </p>
