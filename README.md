@@ -1,4 +1,4 @@
-# Proiect-Final
+# Proiect Final
 
 Folosește acest Repo pentru a trimite codul proiectului final la Code Review, cum am făcut la o mare parte din teme. L-am lăsat intenționat gol, pentru a-ți oferi ocazia de a folosi orice tool-uri îti dorești. Preferabil unul dintre:
 
