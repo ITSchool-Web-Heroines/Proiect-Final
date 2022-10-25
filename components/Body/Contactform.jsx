@@ -97,6 +97,8 @@ const Contact = () => {
                                                 name="user_name"
                                                 className="bg-white  rounded text-sm border-0 shado  text-black"
                                                 size="40"
+                                                minLength="10"
+                                                maxLength="20"
                                             />
 
                                         </div>
@@ -110,6 +112,8 @@ const Contact = () => {
                                                 required
                                                 className="bg-white  bg-white rounded text-sm border-0 shad  text-black"
                                                 size="40"
+                                                minLength="10"
+                                                maxLength="25"
                                             />
                                         </div>
                                         <div className={`${classes.form_contact} mb-3 pt-0`}>
@@ -121,6 +125,8 @@ const Contact = () => {
                                                 id="message"
                                                 className="bg-white  bg-white rounded text-sm border-0 shad  text-black"
                                                 rows="5" cols="50"
+                                                minLength="10"
+                                                maxLength="400"
                                             />
                                         </div>
                                         <div className="mb-3 pt-0">
