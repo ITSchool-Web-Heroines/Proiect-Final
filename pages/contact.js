@@ -3,7 +3,8 @@ import Navbar from '../components/navbar'
 import styles from '../styles/Home.module.css'
 import Validate from './Validate'
 
-export default function contact () {
+export default function contact() {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,10 +14,10 @@ export default function contact () {
       </Head>
       <Navbar />
       <main className={styles.main}>
-     < h1 className="display-3 text-center mt-5">Formular de contact</h1>
-        <Validate/>
-    
-          </main>
+        <h1 className="display-3 text-center mt-5">Formular de contact</h1>
+        <Validate />
+
+      </main>
     </div>
   )
 }

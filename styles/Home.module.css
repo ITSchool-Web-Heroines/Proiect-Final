@@ -8,8 +8,8 @@
 }
 
 .NavbarContainer :hover {
-  color:#222;
-  text-transform:uppercase;
+  color: #222;
+  text-transform: uppercase;
 }
 
 .ASection {
@@ -32,6 +32,7 @@
   padding: 0.5rem;
   visibility: visible;
 }
+
 .container {
   padding: 0 rem;
 
@@ -121,7 +122,7 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 200px;
-  background-color:#eec4c4cc ;
+  background-color: #eec4c4cc;
 }
 
 .card:hover,
@@ -142,22 +143,25 @@
   font-size: 1.25rem;
   line-height: 1.5;
 }
-.cosmetic{
+
+.cosmetic {
   text-align: left;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border: 3px solid #776363;
-  background:#eeeaeacc;
+  background: #eeeaeacc;
 }
-.imagebook{
-display:grid;
-grid-template-columns: 1fr 1fr 1fr;
+
+.imagebook {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
 }
+
 .mainBook {
   min-height: 100vh;
   padding: 2rem 0;
-  flex: 1 ;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,25 +170,28 @@ grid-template-columns: 1fr 1fr 1fr;
   background-size: cover;
 
 }
-.containerhealth{
-  background-image:  url('/sanatos.jpg');
+
+.containerhealth {
+  background-image: url('/sanatos.jpg');
   background-size: cover;
   text-align: center;
-  
+
 }
-.mainHealth{
-  color:rgb(196, 139, 34);
+
+.mainHealth {
+  color: rgb(196, 139, 34);
   min-height: 100vh;
   padding: 2rem 0;
-  flex: 1 ;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.gridH{
-  display:grid;
-  grid-template-columns: 1fr 1fr ;
+
+.gridH {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   padding-inline-start: 2rem;
   padding: 2rem;
@@ -209,6 +216,7 @@ grid-template-columns: 1fr 1fr 1fr;
   .code {
     background: #111;
   }
+
   @media (max-width: 600px) {
     .NavbarContainer {
       width: 100%;

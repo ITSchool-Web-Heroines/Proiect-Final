@@ -16,7 +16,7 @@ export default function Home() {
       <Navbar />
       <main className={styles.main}>
         <h1
-           className={styles.title}>
+          className={styles.title}>
           Blog Personal
         </h1>
         <p className={styles.description}>
@@ -53,7 +53,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-          Created by SEMIDA Gaidos
+        Created by SEMIDA Gaidos
       </footer>
     </div>
   )
