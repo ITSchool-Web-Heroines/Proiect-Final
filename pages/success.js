@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import css from '../styles/Home.module.css'
 
-export default function Form () {
+export default function Success () {
   return (
     <Layout>
 
@@ -13,6 +13,7 @@ export default function Form () {
       </Head>
       {/* body */}
       <main>
+        Thank you
       </main>
     </div>
 
