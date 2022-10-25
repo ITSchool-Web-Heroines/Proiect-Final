@@ -42,3 +42,24 @@
     font-size: 1.5rem;
     color: black;
 }
+
+@media screen and (max-width: 1360px){
+    .container{
+        gap: 1rem;
+        margin-block-start: 2rem;
+    }
+    
+    .card{
+        width: 20rem;
+        height: 5rem;
+    }
+    
+    .image{
+        position: relative;
+    }
+    
+    .title{
+        margin-inline-end: 1rem;
+        font-size: 0.7rem;
+    }
+  } 
