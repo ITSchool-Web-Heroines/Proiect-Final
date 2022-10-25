@@ -79,16 +79,16 @@
     }
     
     .ImageWrapper{
-        height: 4rem;
+        height: 6rem;
         float: none;
-        margin-right:0;
+        margin-inline-start:0;
         width:auto;
     }
     
     .feature>:nth-child(2){
         font-size: 0.5rem;
         float: none;
-        margin-right:0;
+        margin-inline-start:0;
         width:auto;  
     }
     
@@ -96,7 +96,7 @@
     {
         font-size: 0.4rem;
         float: none;
-        margin-right:0;
+        margin-inline-start:0;
         width:auto;
     }
   } 
