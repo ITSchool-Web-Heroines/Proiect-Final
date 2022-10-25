@@ -82,7 +82,7 @@
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
     .left{
         align-items: flex-start;
         justify-content: flex-start;
