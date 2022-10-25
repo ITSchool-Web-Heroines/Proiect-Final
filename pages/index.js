@@ -28,7 +28,7 @@ export default function Home() {
       <Projects/>
       <h2>Let&apos;s work together!</h2>
       <div className={styles.advertising}>
-        <p>I'm available for entry level positions. Let me help you get your projects done!</p>
+        <p>I am available for entry level positions. Let me help you get your projects done!</p>
         <Button variant="light" className={styles.buttonhire}>Hire me
             <a href="mailto: abc@example.com"></a>
         </Button>

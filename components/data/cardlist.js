@@ -7,7 +7,7 @@ const cards = {
     image: "/images/js.jpg",
     pic1: "/images/js1.jpg",
     link: "https://deft-jelly-57ee4e.netlify.app/",
-    text: "The purpose of this website was to showcase the work I'm currenlty doing. I used a mobile first design approach as I consider this to be more practical."
+    text: "The purpose of this website was to showcase the work I am currenlty doing. I used a mobile first design approach as I consider this to be more practical."
     },
 
     {id: "02",
