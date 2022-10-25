@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { ThemeContext, ThemeContextWrap } from "../context/theme";
-import "../styles-all/style-global.scss";
+import "../styles/style-global.scss";
 
 function MyApp({ Component, pageProps }) {
   const theme = useContext(ThemeContext);
