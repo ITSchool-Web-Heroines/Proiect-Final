@@ -26,7 +26,7 @@ export default function Home() {
       <About />
       <h2 id="projects" className={styles.title1} >PROJECTS</h2>
       <Projects/>
-      <h2>Let's work together!</h2>
+      <h2>Let&apos;s work together!</h2>
       <div className={styles.advertising}>
         <p>I'm available for entry level positions. Let me help you get your projects done!</p>
         <Button variant="light" className={styles.buttonhire}>Hire me
