@@ -30,15 +30,11 @@
   width: 40px;
   height: 40px;
   padding: 0.5rem;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  position: relative;
-  top:auto;
+  visibility: visible;
 }
 .container {
   padding: 0 rem;
- 
+
 }
 
 .main {
@@ -75,13 +71,6 @@
   font-size: 20px;
 
 
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
 }
 
 .title a {
@@ -219,6 +208,12 @@ grid-template-columns: 1fr 1fr 1fr;
 
   .code {
     background: #111;
+  }
+  @media (max-width: 600px) {
+    .NavbarContainer {
+      width: 100%;
+      flex-direction: column;
+    }
   }
 
 }

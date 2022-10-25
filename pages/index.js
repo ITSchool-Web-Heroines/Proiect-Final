@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar"
 import styles from '../styles/Home.module.css'
 
 
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -33,7 +34,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
+            href="/blog"
             className={styles.card}
           >
             <h2>Lifesyle &rarr;</h2>
@@ -41,7 +42,7 @@ export default function Home() {
           </a>
 
           <a
-            href="/healt"
+            href="/health"
             className={styles.card}
           >
             <h2>Health &rarr;</h2>
