@@ -61,7 +61,7 @@
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1060px) {
   .services{
     float: none;
     margin-inline-start:0;
@@ -79,7 +79,7 @@
   
   .sbox p{
     margin: 1rem 0;
-    font-size: 0.5rem;
+    font-size: 0.4rem;
 
   }
   
