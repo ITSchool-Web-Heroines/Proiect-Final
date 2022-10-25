@@ -3,26 +3,42 @@ import Image from "next/future/image";
 
 // CONTEXT
 import { ThemeContext } from "../context/theme";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
+
+// STYLES
+import styles from "./index.module.scss";
 
 // COMPONENTS
 import NavLink from "../components/NavLink";
 import ThemeButton from "../components/ThemeButton/ThemeButton";
 import LoadingWrap from "../components/LoadingWrap/LoadingWrap";
-
-// STYLES
-import styles from "./index.module.scss";
-
-// IMGS
-import WLogo from "../images/home/sa.png";
-import BLogo from "../images/home/sn.png";
+import Signature from "../components/Signature/Signature";
 
 export default function Home() {
   // THEME BUTTON
-
   const theme = useContext(ThemeContext);
+
+  const [subtitle, setSubtitle] = useState(false);
+  const [extra, setExtra] = useState(false);
+  const [nav, setNav] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setSubtitle(true);
+    }, 10000);
+  });
+  useEffect(() => {
+    setTimeout(() => {
+      setExtra(true);
+    }, 11000);
+  });
+  useEffect(() => {
+    setTimeout(() => {
+      setNav(true);
+    }, 12000);
+  });
   return (
-    <LoadingWrap title={"arhitectura.arta"}>
+    <LoadingWrap title={"arhitectura & arta"}>
       <Head>
         <title>Portofoliu</title>
         <link rel="icon" href="/favicon.ico" />
@@ -30,15 +46,31 @@ export default function Home() {
       <header className={styles.banner_box}>
         <div className={styles.banner_content}>
           <nav>
-            <NavLink href="/about" className={styles.about}>
+            <NavLink
+              href="/about"
+              className={`${styles.about} ${nav ? styles.active : ""}`}
+            >
               detalii
             </NavLink>
-            <NavLink href="/projects" className={styles.projects}>
+            <NavLink
+              href="/projects"
+              className={`${styles.projects} ${nav ? styles.active : ""}`}
+            >
               proiecte
             </NavLink>
+            <NavLink
+              href="/contact"
+              className={`${styles.contact} ${nav ? styles.active : ""}`}
+            >
+              contact
+            </NavLink>
           </nav>
-          <span className={styles.line}>reper de artă</span>
-          <span className={styles.concept}>concept</span>
+          <span className={`${styles.line} ${extra ? styles.active : ""}`}>
+            reper de artă
+          </span>
+          <span className={`${styles.concept} ${extra ? styles.active : ""}`}>
+            concept
+          </span>
           <div className={styles.details_background}>
             <ThemeButton
               home={true}
@@ -46,12 +78,14 @@ export default function Home() {
               handleClick={theme.setTheme}
             />
           </div>
-          <Image
-            src={theme.isDark ? WLogo : BLogo}
-            className={styles.details_logo}
-            alt="Logo"
-          />
-          <div className={styles.details_text}>
+          <div className={styles.details_logo} alt="Logo">
+            <Signature />
+          </div>
+          <div
+            className={`${styles.details_text} ${
+              subtitle ? styles.active : ""
+            }`}
+          >
             <p className={styles.title}>maria mădălina</p>
             <p className={styles.sub_title}>arhitect</p>
           </div>

@@ -25,6 +25,9 @@ export default function NavBar() {
       <NavLink href="/projects" className={styles.projects}>
         proiecte
       </NavLink>
+      <NavLink href="/contact" className={styles.contact}>
+        contact
+      </NavLink>
       <ThemeButton
         home={false}
         theme={theme.isDark}

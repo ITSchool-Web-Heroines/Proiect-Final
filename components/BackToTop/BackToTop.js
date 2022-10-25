@@ -31,7 +31,11 @@ export default function BackToTop() {
       onClick={goToTop}
       className={`${styles.box} ${visible ? styles.visible : ""}`}
     >
-      <svg viewBox="0 0 32 32" class="icon icon-caret-top" ariaHidden="true">
+      <svg
+        viewBox="0 0 32 32"
+        className="icon icon-caret-top"
+        aria-hidden="true"
+      >
         <path
           className={visible ? styles.active : ""}
           d="M8 20.695l7.997-11.39L24 20.695z"
