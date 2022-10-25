@@ -127,3 +127,53 @@
     }
 
 }
+
+
+@media screen and (max-width: 720px) {
+    .left{
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    
+    .miniboxDiv{
+        justify-content: flex-start;
+        margin-block-start: -2rem;
+        padding: 0.5rem;
+        font-size: 0.5rem;
+    }
+    
+    .sloganText{
+        font-size: 1.5rem;
+    }
+    
+    .miniText{
+        width: 100%;
+        font-size: 0.5rem;
+    
+    }
+    
+    .imageContainer{
+        width: 15rem;
+        margin-block-start: 5rem;
+        margin-inline-start: 5rem;
+    }
+    
+    .ContactUs{
+        gap: 0.6rem;
+        margin-block-start: -13rem;
+        margin-inline-start: 8rem;
+        font-size: 0.7rem;
+    }
+    
+    .ContactUs>div{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .btn{
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
+
+}
