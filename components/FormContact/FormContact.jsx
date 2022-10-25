@@ -45,7 +45,7 @@ export default function FormContact() {
             </div>
           </div>
         </form>
-        <Image src={FormImg} className={styles.img} />
+        <Image src={FormImg} alt="image" className={styles.img} />
       </div>
     </div>
   );

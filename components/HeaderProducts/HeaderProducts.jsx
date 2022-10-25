@@ -6,7 +6,7 @@ import styles from "./headerProducts.module.css";
 export default function HeaderProducts() {
   return (
     <div className={styles.header}>
-      <Image src={FocusImg} className={styles.img} />
+      <Image src={FocusImg} alt="focus_img" className={styles.img} />
       <h1 className={styles.title}>Cele mai bune deserturi </h1>
     </div>
   );

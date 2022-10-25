@@ -11,6 +11,7 @@
 }
 .product_img {
   height: 15rem;
+  width: 100%;
   display: block;
   margin-inline: auto;
 }

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import styles from "./productitem.module.css";
 import { Store } from "../../info/Store";
+import Image from "next/future/image";
 
 export default function ProductItem({ product }) {
   const { state, send } = useContext(Store);
@@ -12,10 +13,12 @@ export default function ProductItem({ product }) {
 
   return (
     <div className={styles.card}>
-      <img
+      <Image
         src={product.image}
         alt={product.name}
         className={styles.product_img}
+        width={500}
+        height={500}
       />
       <div className={styles.set}>
         <p className={styles.product_price}>{product.price} RON</p>

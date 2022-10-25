@@ -15,7 +15,7 @@ export default function Header() {
         <div className={styles.mobile}>
           <Link href="/">
             <a>
-              <Image src={Logo} className={styles.logo} />
+              <Image src={Logo} alt="logo" className={styles.logo} />
             </a>
           </Link>
 

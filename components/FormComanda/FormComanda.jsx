@@ -85,7 +85,7 @@ export default function FormComanda() {
           </div>
         </form>
         <div>
-          <Image src={Poster} className={styles.poster} />
+          <Image src={Poster} alt="poster" className={styles.poster} />
         </div>
       </div>
     </div>

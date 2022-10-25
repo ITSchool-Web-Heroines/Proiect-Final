@@ -14,13 +14,25 @@ export default function FeaturedProducts() {
         src={Waffle}
         className={styles.featured_product}
         id={styles.waffle}
+        alt="Waffle"
       />
-      <Image src={Cake} className={styles.featured_product} id={styles.cake} />
-      <Image src={Pie} className={styles.featured_product} id={styles.pie} />
+      <Image
+        src={Cake}
+        className={styles.featured_product}
+        id={styles.cake}
+        alt="Cake"
+      />
+      <Image
+        src={Pie}
+        className={styles.featured_product}
+        id={styles.pie}
+        alt="Pie"
+      />
       <Image
         src={Pancake}
         className={styles.featured_product}
         id={styles.pancake}
+        alt="Pancakes"
       />
     </div>
   );

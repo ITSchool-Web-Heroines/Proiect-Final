@@ -31,28 +31,34 @@ function CartPage() {
       ) : (
         <div>
           {cartItems.map((product) => (
-            <div className={styles.list}>
-              <div className={styles.img_text}>
+            <div className={styles.list} key={product.id}>
+              <div className={styles.img_text} key={product.id}>
                 <Image
                   src={product.image}
                   alt={product.name}
                   width={500}
                   height={500}
                   className={styles.img}
+                  key={product.id}
                 />
-                <p className={styles.name}>{product.name}</p>
+                <p className={styles.name}>
+                  {product.name} key={product.id}
+                </p>
               </div>
-              <p className={styles.quantity}>{product.quantity} buc</p>
-              <div className={styles.price_remove}>
-                <p className={styles.price_style}>
+              <p className={styles.quantity} key={product.id}>
+                {product.quantity} buc
+              </p>
+              <div className={styles.price_remove} key={product.id}>
+                <p className={styles.price_style} key={product.id}>
                   {cartItems.reduce(() => product.quantity * product.price, 0)}{" "}
                   RON
                 </p>
                 <button
                   className={styles.remove}
                   onClick={() => removeItemHandler(product)}
+                  key={product.id}
                 >
-                  <Image src={Remove} />
+                  <Image src={Remove} alt="btn_remove" key={product.id} />
                 </button>
               </div>
             </div>

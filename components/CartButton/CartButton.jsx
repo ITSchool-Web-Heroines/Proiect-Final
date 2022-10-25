@@ -15,7 +15,7 @@ export default function CartButton() {
 
   return (
     <div className={styles.btn}>
-      <Image src={Cart_icon} className={styles.cart_icon} />
+      <Image src={Cart_icon} alt="cart_icon" className={styles.cart_icon} />
       <span className={styles.nr_items}>{cartItemsCount}</span>
     </div>
   );
