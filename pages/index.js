@@ -6,10 +6,11 @@ import Nav from "../components/Nav";
 import ImageF from "../components/ImageF";
 import Process from "../components/Process";
 import Footer from "../components/Footer";
-import Cards from "../components/cards";
+import Cards from "../components/Cards";
 import SeeMore from "../components/SeeMore";
 import Testimonials from "../components/Testimonials";
 import Link from "next/link";
+import Cart from "../components/Cart.js";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
 
       <Nav />
       <main className={styles.main}>
-        {/* <Cart /> */}
+        <Cart />
         <h1 className={styles.title}>Handmade Leather Products</h1>
 
         <h3 className={styles.subtitle}>Books and Notebooks made with care</h3>

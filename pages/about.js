@@ -6,6 +6,7 @@ import btns from "../styles/btn.module.css";
 import Gallery from "../components/Gallery";
 import Testimonials from "../components/Testimonials";
 import Link from "next/link";
+import Cart from "../components/Cart.js";
 
 export default function about() {
   return (
@@ -13,7 +14,7 @@ export default function about() {
       <Nav />
       <main className={styles.main}>
         <div className={styles.info}>
-          {/* <Cart /> */}
+          <Cart />
           <h1 className={styles.title}>About us</h1>
           <p className={styles.description}>
             Since 2009, in the Skoob workshop, we have been producing natural
