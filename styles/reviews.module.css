@@ -14,3 +14,17 @@
         width:400px;
     }
 }
+@media only screen and (max-width:400px){
+    .review_info{
+       display:flex;
+       flex-direction: column;
+       width:600px;
+       margin-block-start: -30%;
+       margin-inline-start: 5em;
+    }
+    .review_image{
+        margin-block-start:5%;
+        margin-inline-start: 45%;
+        width:400px;
+    }
+}

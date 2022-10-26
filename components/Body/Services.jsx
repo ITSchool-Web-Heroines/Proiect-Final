@@ -9,9 +9,8 @@ function Services() {
         <section id="services">
             <Row>
                 <div className={`${classes.services_content}`}>
-                    {/*  */}
                     <Col lg='6' md='6'>
-                        <div className={`${classes.services_container}d-flex align-items-center`}>
+                        <div className={`${classes.services_container}d-flex`}>
                             <div>
                                 <ServicesItem subtitle='Portret patruped clasic - ulei pe panza' icon='ri-artboard-line' />
 
