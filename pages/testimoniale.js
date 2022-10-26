@@ -10,7 +10,7 @@ const Testimoniale = () => {
         <section className="home" id="home">
           <div className="box">
             <div className="image">
-              <img src="images/home-img-1.png" alt="" />
+              <img src="images/home-img-1.png" alt="home" />
             </div>
             <div className="content">
               <h3>Ce spun clientii despre noi?</h3>
@@ -19,7 +19,7 @@ const Testimoniale = () => {
                 Clientii nostri ne lasa constant feedback pentru ca noi sa ne
                 putem imbunatatii serviciile constant.
               </p>
-              <a href="#" className="btn">
+              <a href="#reviews" className="btn">
                 read more
               </a>
             </div>
@@ -30,9 +30,9 @@ const Testimoniale = () => {
           <div className="box-container">
             <div className="box">
               <div className="user">
-                <img src="images/pic-1.png" alt="" />
+                <img src="images/pic-1.png" alt="matei" />
                 <div className="info">
-                  <h3>Clientul 1</h3>
+                  <h3>Matei Ioan</h3>
                   <div className="stars">
                     <i className="fas fa-star" />
                     <i className="fas fa-star" />
@@ -43,17 +43,15 @@ const Testimoniale = () => {
                 </div>
               </div>
               <p className="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi velit mollitia accusantium consequatur adipisci magni
-                architecto quam tenetur rerum odio voluptas quia earum vero est
-                error, illo beatae ut repudiandae!
+              Am lucrat cu cei de la Motion Agency timp de 3 ani si rezultatele nu au intarziat sa apara. 
+              
               </p>
             </div>
             <div className="box">
               <div className="user">
-                <img src="images/pic-2.png" alt="" />
+                <img src="images/pic-2.png" alt="alexandra" />
                 <div className="info">
-                  <h3>Clientul 2</h3>
+                  <h3>Alexandra Ioana</h3>
                   <div className="stars">
                     <i className="fas fa-star" />
                     <i className="fas fa-star" />
@@ -64,17 +62,14 @@ const Testimoniale = () => {
                 </div>
               </div>
               <p className="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi velit mollitia accusantium consequatur adipisci magni
-                architecto quam tenetur rerum odio voluptas quia earum vero est
-                error, illo beatae ut repudiandae!
+                Am lucrat la diverse proiecte de PR cu Motion Agency si au fost un real succes pentru clubul nostru.
               </p>
             </div>
             <div className="box">
               <div className="user">
                 <img src="images/pic-3.png" alt="" />
                 <div className="info">
-                  <h3>Clientul 3</h3>
+                  <h3>Andrei Octavian</h3>
                   <div className="stars">
                     <i className="fas fa-star" />
                     <i className="fas fa-star" />
@@ -85,10 +80,7 @@ const Testimoniale = () => {
                 </div>
               </div>
               <p className="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi velit mollitia accusantium consequatur adipisci magni
-                architecto quam tenetur rerum odio voluptas quia earum vero est
-                error, illo beatae ut repudiandae!
+               Daca vreti sa aveti alaturi de clubul specialisti in marketing sportiv, Motion Agency sunt echipa de care orice club are nevoie.
               </p>
             </div>
           </div>

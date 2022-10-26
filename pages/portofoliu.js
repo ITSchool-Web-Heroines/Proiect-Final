@@ -4,6 +4,7 @@ import React from "react";
 import Credit from "../components/Credit";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
+import ContactForm from "../components/ContactForm";
 
 const Portololiu = () => {
   return (
@@ -21,8 +22,11 @@ const Portololiu = () => {
           <div className="content">
             <h3>La ce proiecte am lucrat?</h3>
             <p>
-            Specialistii nostri cu experienta de peste 10 ani in programare, creatie web design, suport, management de proiect, marketing online si strategii de marketing, au dezvoltat proiecte pentru:
+              Specialistii nostri ofera federatiilor, ligilor si cluburilor servicii de marketing sportiv, PR si comunicare
             </p>
+            <a href="/contact" className="btn">
+              Cere Oferta
+            </a>
           </div>
         </div>
         <div
@@ -98,74 +102,35 @@ const Portololiu = () => {
           <div className="box">
             <img src="images/serv-1.png" alt="" />
             <h3>Rezultate garantate</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, delectus!
-            </p>
           </div>
           <div className="box">
             <img src="images/serv-2.png" alt="" />
             <h3>Oferte Personalizate</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, delectus!
-            </p>
           </div>
           <div className="box">
             <img src="images/serv-3.png" alt="" />
             <h3>Deadline-uri respectate</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, delectus!
-            </p>
           </div>
           <div className="box">
             <img src="images/serv-4.png" alt="" />
             <h3>Strategii Moderne de MK</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, delectus!
-            </p>
           </div>
           <div className="box">
             <img src="images/serv-5.png" alt="" />
             <h3>Strategii inovative</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, delectus!
-            </p>
           </div>
           <div className="box">
             <img src="images/serv-6.png" alt="" />
             <h3>Echipa Dedicata</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, delectus!
-            </p>
           </div>
         </div>
       </section>
       <section className="contact" id="contact">
-        <h1 className="heading">Contacteaza-ne rapid!</h1>
-        <div className="row">
-          <form className="form-contact">
-            <h3>Trimite un mesaj</h3>
-            <input type="text" placeholder="Numele" className="input-box" />
-            <input type="email" placeholder="Email" className="input-box" />
-            <input type="number" placeholder="Telefon" className="input-box" />
-            <input type="text" placeholder="Subiect" className="input-box" />
-            <textarea
-              name
-              placeholder="Mesaj"
-              className="input-box"
-              id
-              cols={30}
-              rows={10}
-              defaultValue={""}
-            />
-            <input type="submit" value="Trimite" className="btn" />
-          </form>
-        </div>
+      <h1 className="heading">
+          {" "}
+          <span>Contact</span>
+        </h1>
+      <ContactForm title={"Trimite un mesaj"} btnvalue={"Trimite"} />
       </section>
       <Newsletter />
       <Credit />

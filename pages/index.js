@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <meta charset="utf-8" />
+    
         <title>Motion Agency</title>
         <meta
           name="viewport"

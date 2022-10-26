@@ -17,12 +17,9 @@ const Servicii = () => {
           <div className="content">
             <h3>Ce servicii oferim?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              id repellendus numquam. Maxime veritatis consequatur nobis
-              architecto incidunt rem esse?
-            </p>
-            <a href="#" className="btn">
-              read more
+            Dezvoltam campanii publicitare, atat la nivel de local cat si la nivel national, oferim si consultanta in realizarea planurilor si strategiilor de comunicare.            </p>
+            <a href="/contact" className="btn">
+              Cere Oferta
             </a>
           </div>
         </div>
@@ -30,12 +27,10 @@ const Servicii = () => {
           <div className="content">
             <h3>Oferte Personalizata</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              id repellendus numquam. Maxime veritatis consequatur nobis
-              architecto incidunt rem esse?
+            Nevoile, cerintele, comportamentul si asteptarile specifice ale consumatorilor din segmentul tinta
             </p>
-            <a href="#" className="btn">
-              read more
+            <a href="/contact" className="btn">
+              Cere Oferta
             </a>
           </div>
           <div className="image">
@@ -49,12 +44,10 @@ const Servicii = () => {
           <div className="content">
             <h3>Peste 121 de clienti in portofoliu</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              id repellendus numquam. Maxime veritatis consequatur nobis
-              architecto incidunt rem esse?
+            Partenerii nostri activeaza in diverse industrii, astfel am acumulat experienta necesara pentru a putea livra rezultate in diferite nise.
             </p>
-            <a href="#" className="btn">
-              read more
+            <a href="/contact" className="btn">
+              Cere Oferta
             </a>
           </div>
         </div>
