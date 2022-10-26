@@ -14,6 +14,7 @@ export default function AbilitySection(props) {
         refIsVisible ? styles.appear : ""
       }`}
       ref={myRef}
+      tabIndex={"0"}
     >
       <p className={styles.section_title}>competențe {props.title} </p>
       <AbilityList abilities={props.ability} />

@@ -16,7 +16,9 @@
   }
   &.visible {
     opacity: 0.8;
-    &:hover {
+    &:hover,
+    &:focus,
+    &:focus-within {
       opacity: 1;
       svg path {
         animation: arrow-active 1.5s infinite alternate;

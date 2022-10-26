@@ -14,9 +14,10 @@ export default function DigitalList(props) {
         refIsVisible ? styles.appear : ""
       }`}
       ref={myRef}
+      tabIndex={"0"}
     >
       <p className={styles.section_title}>competențe digitale</p>
-      <p className={`${styles.title} ${styles.autodesk}`}> autodesk</p>
+      <p className={`${styles.title} ${styles.autodesk}`}>autodesk</p>
       <ul className={styles.second_list}>
         <li className={styles.list_item}>Revit</li>
         <SkillsBar level={4} />

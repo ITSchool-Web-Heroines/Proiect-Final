@@ -14,6 +14,7 @@ function InfoSection(props) {
         refIsVisible ? styles.appear : ""
       }`}
       ref={myRef}
+      tabIndex={"0"}
     >
       <p className={styles.section_title}>{props.title}</p>
       {info.map(item => (

@@ -45,13 +45,17 @@ nav {
     backface-visibility: hidden;
     will-change: transform;
     perspective: 1000px;
-    &:hover {
+    &:hover,
+    &:focus,
+    &:focus-within {
       filter: drop-shadow(-1rem -0.5rem 0rem #989898);
     }
   }
   .projects {
     inset-block-end: 5rem;
-    &:hover {
+    &:hover,
+    &:focus,
+    &:focus-within {
       filter: drop-shadow(1rem 0.5rem 0rem #989898);
     }
     @media (max-width: 375px) {
@@ -64,7 +68,9 @@ nav {
     backface-visibility: hidden;
     will-change: transform;
     perspective: 1000px;
-    &:hover {
+    &:hover,
+    &:focus,
+    &:focus-within {
       filter: drop-shadow(1rem -0.5rem 0rem rgba(0, 0, 0, 0.2));
     }
   }

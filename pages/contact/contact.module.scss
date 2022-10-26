@@ -58,6 +58,7 @@
   padding: 0.5rem;
   background-color: var(--background);
   border: 0.1rem solid var(--text-color);
+  border-radius: 0 !important;
   @include font-details(var(--text-color), "bc-regular", 0.8rem);
   &:focus,
   &:focus-within,
@@ -109,11 +110,17 @@
     border-bottom: 1px solid var(--text-color);
     transform: scale(0, 1);
   }
-  &:hover {
+  &:hover,
+  &:focus,
+  &:focus-within {
     letter-spacing: 4px;
   }
   &:hover::after,
-  &:hover::before {
+  &:hover::before,
+  &:focus::after,
+  &:focus::before,
+  &:focus-within::after,
+  &:focus-within::before {
     transform: scale(1, 1);
   }
 }

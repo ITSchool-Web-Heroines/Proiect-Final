@@ -88,7 +88,9 @@
       transition-delay: 0.15s;
     }
   }
-  &:hover {
+  &:hover,
+  &:focus,
+  &:focus-within {
     .top:after {
       inset-inline-start: 0;
       transition-delay: 0.15s;

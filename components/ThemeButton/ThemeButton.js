@@ -3,6 +3,7 @@ import React from "react";
 // STYLES
 import home_styles from "./HomeThemeButton.module.scss";
 import nav_styles from "./NavThemeButton.module.scss";
+
 export default function ThemeButton(props) {
   return props.home ? (
     <div
@@ -12,6 +13,7 @@ export default function ThemeButton(props) {
           : `${home_styles.button} ${home_styles.light}`
       }
       onClick={props.handleClick}
+      tabIndex={"0"}
     >
       <p className={home_styles.light}>Light</p>
       <p className={home_styles.dark}>Dark</p>
