@@ -27,7 +27,7 @@ nav {
     position: absolute;
     text-decoration: none;
     color: #fff;
-    @include font-details(var(--text-color), "ag-regular", 1.25rem);
+    @include font-details(var(--text-color), "ag-regular", 1em);
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;

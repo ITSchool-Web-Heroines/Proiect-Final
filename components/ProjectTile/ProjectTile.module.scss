@@ -61,14 +61,14 @@
     gap: 0.5rem;
     .subtitle {
       display: grid;
-      gap: 0.3rem;
-      &::before {
-        content: "";
-        position: absolute;
+      p:nth-child(1) {
         width: 7rem;
-        transform: translateY(0.9rem);
-        height: 0.08rem;
-        background-color: var(--text-color);
+        border-block-end: 0.15rem solid var(--text-color);
+      }
+      p {
+        height: 1rem;
+        display: flex;
+        align-items: center;
       }
     }
   }
@@ -106,7 +106,9 @@
   .project {
     transform: translate(0rem, 4.8rem);
     .subtitle {
-      justify-items: end;
+      p {
+        justify-content: end;
+      }
     }
   }
 }
@@ -151,10 +153,11 @@
     .project {
       font-size: 0.85rem;
       .subtitle {
-        &::before {
+        p:nth-child(1) {
           width: 8.5rem;
-          transform: translateY(1.2rem);
-          height: 0.15rem;
+        }
+        p {
+          height: 1.5rem;
         }
       }
     }
@@ -219,12 +222,15 @@
       }
     }
     .project {
+      font-size: 0.85rem;
       letter-spacing: 0.3px;
       font-size: 1.25rem;
       .subtitle {
-        &::before {
-          width: 13.2rem;
-          transform: translateY(1.5rem);
+        p:nth-child(1) {
+          width: 13rem;
+        }
+        p {
+          height: 1.75rem;
         }
       }
     }
@@ -258,12 +264,16 @@
     }
   }
   .boutique,
-  .medical,
   .skyscraper,
   .landmark,
-  .impreuna {
+  .medical {
     .project {
       letter-spacing: 4.5px;
+    }
+  }
+  .impreuna {
+    .project {
+      letter-spacing: 4px;
     }
   }
 }
