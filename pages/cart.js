@@ -39,11 +39,8 @@ function CartPage() {
                   width={500}
                   height={500}
                   className={styles.img}
-                  key={product.id}
                 />
-                <p className={styles.name}>
-                  {product.name} key={product.id}
-                </p>
+                <p className={styles.name}>{product.name}</p>
               </div>
               <p className={styles.quantity} key={product.id}>
                 {product.quantity} buc

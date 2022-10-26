@@ -15,7 +15,7 @@ export default function FormComanda() {
           data-netlify="true"
           onSubmit="submit"
         >
-          <h2 className={styles.title}>Adresa de livrare</h2>
+          <h2 className={styles.title}>Adresă de livrare</h2>
           <div className={styles.two}>
             <div className={styles.label_input}>
               <input
@@ -37,7 +37,7 @@ export default function FormComanda() {
             <input
               className={styles.input}
               name="adresa"
-              placeholder="Adresa"
+              placeholder="Adresă"
             ></input>
           </div>
           <div className={styles.two}>
@@ -53,7 +53,7 @@ export default function FormComanda() {
               <input
                 className={styles.input}
                 name="judet"
-                placeholder="Judet"
+                placeholder="Județ"
               ></input>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function FormComanda() {
               placeholder="Telefon"
             ></input>
           </div>
-          <h2 className={styles.title}>Metoda de expediere</h2>
+          <h2 className={styles.title}>Metodă de expediere</h2>
           <div className={styles.radio}>
             <input type="radio" id="expediere" name="expediere"></input>
             <label for="expediere">Standard - 19lei</label>
@@ -73,7 +73,7 @@ export default function FormComanda() {
             <input type="radio" id="expediere" name="expediere"></input>
             <label for="expediere">Express - 9lei</label>
           </div>
-          <h2 className={styles.title}>Metoda de plata</h2>
+          <h2 className={styles.title}>Metodă de plată</h2>
           <div className={styles.radio}>
             <input type="radio" id="plata" name="plata"></input>
             <label for="plata">Plata ramburs</label>

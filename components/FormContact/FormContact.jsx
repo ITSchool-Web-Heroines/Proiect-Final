@@ -18,16 +18,16 @@ export default function FormContact() {
         >
           <label className={styles.label}>
             Nume
-            <input type="text" name="name" className={styles.input} />
+            <input type="text" name="user_name" className={styles.input} />
           </label>
           <label className={styles.label}>
             Email
-            <input type="email" name="email" className={styles.input} />
+            <input type="email" name="user_email" className={styles.input} />
           </label>
 
           <label className={styles.label}>
             Subiect
-            <input type="text" name="subiect" className={styles.input} />
+            <input type="text" name="subject" className={styles.input} />
           </label>
           <div>
             <label className={styles.label}>
@@ -35,7 +35,7 @@ export default function FormContact() {
               <textarea
                 cols="5"
                 className={styles.textarea}
-                name="mesaj"
+                name="message"
               ></textarea>
             </label>
             <div className={styles.btn_div}>
