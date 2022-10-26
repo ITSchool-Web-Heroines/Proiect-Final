@@ -13,10 +13,9 @@ export default function formular() {
         method="post"
         className={styles["form-container"]}
         name="order"
-        netlify-honeypot="bot-field"
-        netlify
+        data-netlify="true"
       >
-        <input type="hidden" name="order" value="order" />
+        <input type="hidden" name="form-name" value="order" />
 
         <fieldset className={styles.fieldsetA}>
           <legend className={styles.legend}>About you</legend>
