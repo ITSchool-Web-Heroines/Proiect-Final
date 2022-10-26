@@ -3,6 +3,7 @@ import Credit from "../components/Credit";
 import ContactForm from "../components/ContactForm";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
+import Link from 'next/link'
 
 const Servicii = () => {
   return (
@@ -17,21 +18,21 @@ const Servicii = () => {
           <div className="content">
             <h3>Ce servicii oferim?</h3>
             <p>
-            Dezvoltam campanii publicitare, atat la nivel de local cat si la nivel national, oferim si consultanta in realizarea planurilor si strategiilor de comunicare.            </p>
-            <a href="/contact" className="btn">
+              Dezvoltam campanii publicitare, atat la nivel de local cat si la nivel national, oferim si consultanta in realizarea planurilor si strategiilor de comunicare.            </p>
+            <Link href="/contact" className="btn">
               Cere Oferta
-            </a>
+            </Link>
           </div>
         </div>
         <div className="box">
           <div className="content">
             <h3>Oferte Personalizata</h3>
             <p>
-            Nevoile, cerintele, comportamentul si asteptarile specifice ale consumatorilor din segmentul tinta
+              Nevoile, cerintele, comportamentul si asteptarile specifice ale consumatorilor din segmentul tinta
             </p>
-            <a href="/contact" className="btn">
+            <Link href="/contact" className="btn">
               Cere Oferta
-            </a>
+            </Link>
           </div>
           <div className="image">
             <img src="images/home-img-2.png" alt="" />
@@ -44,11 +45,11 @@ const Servicii = () => {
           <div className="content">
             <h3>Peste 121 de clienti in portofoliu</h3>
             <p>
-            Partenerii nostri activeaza in diverse industrii, astfel am acumulat experienta necesara pentru a putea livra rezultate in diferite nise.
+              Partenerii nostri activeaza in diverse industrii, astfel am acumulat experienta necesara pentru a putea livra rezultate in diferite nise.
             </p>
-            <a href="/contact" className="btn">
+            <Link href="/contact" className="btn">
               Cere Oferta
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -52,7 +52,7 @@ const Navbar = () => {
               {NavLinks.map((link) => (
                 <li key={link.pathname} className={router.pathname == link.pathname ? "active" : ""}>
                   <Link href={link.pathname}>
-                    <a>{link.label}</a>
+                    <Link>{link.label}</Link>
                   </Link>
                 </li>
               ))}
@@ -75,7 +75,7 @@ const Navbar = () => {
                 className={router.pathname === link.pathname ? "active" : ""}
               >
                 <Link href={link.pathname}>
-                  <a>{link.label}</a>
+                  <Link>{link.label}</Link>
                 </Link>
               </li>
             ))}
