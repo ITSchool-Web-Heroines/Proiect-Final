@@ -12,10 +12,15 @@ export default function formular() {
       <form
         method="post"
         className={styles["form-container"]}
-        name="order"
+        name="order v1"
         data-netlify="true"
+        onSubmit="submit"
+        data-netlify-honeypot="bot-field"
       >
-        <input type="hidden" name="form-name" value="order" />
+        <input type="hidden" name="form-name" value="order v1" />
+        <div hidden>
+          <input name="bot-field" />
+        </div>
 
         <fieldset className={styles.fieldsetA}>
           <legend className={styles.legend}>About you</legend>
@@ -27,7 +32,7 @@ export default function formular() {
               type="text"
               id="firstname"
               className={styles["text-input"]}
-              name="firstname"
+              name="first-name"
               required
             />
           </div>
@@ -38,7 +43,7 @@ export default function formular() {
             <input
               type="text"
               id="lastname"
-              name="lastname"
+              name="last-name"
               className={styles["text-input"]}
               required
             />
