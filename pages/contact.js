@@ -21,9 +21,9 @@ const Contact = () => {
 
 
             </p>
-            <Link href="#contact" className="btn">
+            <a href="#contact" className="btn">
               Mergi la contact
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -34,7 +34,7 @@ const Contact = () => {
           <span>Contact</span>
         </h1>
         <div className="row">
-        <ContactForm title={"Trimite un mesaj"} btnvalue={"Trimite"} />
+          <ContactForm title={"Trimite un mesaj"} btnvalue={"Trimite"} />
         </div>
       </section>
       <Credit />

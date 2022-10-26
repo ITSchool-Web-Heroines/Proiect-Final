@@ -13,8 +13,8 @@ export default function BlogCardFull() {
           </div>
           <div className="col-md-4 p-0">
             <div className="bg-blog-content p-3 p-md-5 ">
-              <Link href="/blog">
-                <Link>
+              <a href="/blog">
+                <a>
                   <h5 className="text-uppercase mk-guide">Strategii de Marketing Sportiv</h5>
                   <div className="card-date">3/31/21</div>
                   <h1 className="blog-title mt-3">
@@ -23,8 +23,8 @@ export default function BlogCardFull() {
                   <div className="card-text">
                     Ce sunt strategiile de marketing sporiv? Cand vorbim de marketing sportiv ne referim la...
                   </div>
-                </Link>
-              </Link>
+                </a>
+              </a>
             </div>
           </div>
         </div>

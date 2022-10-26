@@ -20,9 +20,9 @@ const Testimoniale = () => {
               Clientii nostri ne lasa constant feedback pentru ca noi sa ne
               putem imbunatatii serviciile constant.
             </p>
-            <Link href="#reviews" className="btn">
+            <a href="#reviews" className="btn">
               read more
-            </Link>
+            </a>
           </div>
         </div>
       </section>

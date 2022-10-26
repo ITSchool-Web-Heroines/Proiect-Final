@@ -11,7 +11,7 @@ const Portololiu = () => {
   return (
     <>
       <Head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+        <a href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
         {/* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" /> */}
       </Head>
       <Navbar />
@@ -25,9 +25,9 @@ const Portololiu = () => {
             <p>
               Specialistii nostri ofera federatiilor, ligilor si cluburilor servicii de marketing sportiv, PR si comunicare
             </p>
-            <Link href="/contact" className="btn">
+            <a href="/contact" className="btn">
               Cere Oferta
-            </Link>
+            </a>
           </div>
         </div>
         <div
@@ -127,11 +127,11 @@ const Portololiu = () => {
         </div>
       </section>
       <section className="contact" id="contact">
-      <h1 className="heading">
+        <h1 className="heading">
           {" "}
           <span>Contact</span>
         </h1>
-      <ContactForm title={"Trimite un mesaj"} btnvalue={"Trimite"} />
+        <ContactForm title={"Trimite un mesaj"} btnvalue={"Trimite"} />
       </section>
       <Newsletter />
       <Credit />
