@@ -3,7 +3,7 @@ import Credit from "../components/Credit";
 import ContactForm from "../components/ContactForm";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
-import Link from 'next/link'
+
 
 const Servicii = () => {
   return (

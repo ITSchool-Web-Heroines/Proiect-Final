@@ -2,7 +2,7 @@ import React from 'react';
 import Credit from '../components/Credit';
 import Navbar from '../components/Navbar';
 import Newsletter from '../components/Newsletter';
-import Link from 'next/link'
+
 
 const Testimoniale = () => {
   return (

@@ -28,7 +28,7 @@ const HomeMain = () => {
               id repellendus numquam. Maxime veritatis consequatur nobis
               architecto incidunt rem esse?
             </p>
-            <a href="/desprenoi" className="btn">
+            <a href="#" className="btn">
               Afla mai multe
             </a>
           </div>
