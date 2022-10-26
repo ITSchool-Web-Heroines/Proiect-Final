@@ -184,6 +184,14 @@
       transform: translate(0rem, 5.25rem);
     }
   }
+  .culturall,
+  .manufacturat {
+    .subtitle {
+      p:nth-child(1) {
+        font-size: 0.8rem;
+      }
+    }
+  }
   .boutique,
   .medical,
   .skyscraper,
