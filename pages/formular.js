@@ -10,11 +10,14 @@ export default function formular() {
   return (
     <div>
       <form
-        action="/api/form"
-        method="POST"
+        method="post"
         className={styles["form-container"]}
-        data-netlify="true"
+        name="order"
+        netlify-honeypot="bot-field"
+        netlify
       >
+        <input type="hidden" name="order" value="order" />
+
         <fieldset className={styles.fieldsetA}>
           <legend className={styles.legend}>About you</legend>
           <div>
