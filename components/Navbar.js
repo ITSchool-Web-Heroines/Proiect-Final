@@ -1,6 +1,7 @@
 
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import Link from 'next/link'
 
 const NavLinks = [
   {
@@ -50,10 +51,13 @@ const Navbar = () => {
           <div className={`navbar-links`}>
             <ul>
               {NavLinks.map((link) => (
-                <li key={link.pathname} className={router.pathname == link.pathname ? "active" : ""}>
-                  <a href={link.pathname}>
+                <li
+                  key={link.pathname}
+                  className={router.pathname == link.pathname ? "active" : ""}
+                >
+                  <Link href={link.pathname}>
                     <a>{link.label}</a>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -74,9 +78,9 @@ const Navbar = () => {
                 key={link.pathname}
                 className={router.pathname === link.pathname ? "active" : ""}
               >
-                <a href={link.pathname}>
+                <Link href={link.pathname}>
                   <a>{link.label}</a>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
