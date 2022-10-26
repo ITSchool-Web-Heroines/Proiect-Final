@@ -1,12 +1,12 @@
 @font-face {
   font-family: ag-regular;
   src: url("./fonts/agency-regular.woff") format("woff"),
-    url("./fonts/agency-regular.ttf") format("truetype");
+    url("./fonts/agency-regular.TTF") format("truetype");
 }
 @font-face {
   font-family: ag-bold;
   src: url("./fonts/agency-bold.woff") format("woff"),
-    url("./fonts/agency-bold.ttf") format("truetype");
+    url("./fonts/agency-bold.TTF") format("truetype");
 }
 @font-face {
   font-family: bc-bold;
