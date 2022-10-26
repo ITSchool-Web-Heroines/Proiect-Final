@@ -35,7 +35,7 @@ export default function ProjectDetails({ projects }) {
   let tabTitle = projectName.toUpperCase();
 
   return (
-    <LoadingWrap>
+    <LoadingWrap title={"skyscraper"}>
       <Head>
         <title>{tabTitle}</title>
       </Head>

@@ -94,8 +94,14 @@
   }
 }
 .manufacturat {
-  .title_box .subtitle {
-    letter-spacing: 6px;
+  .title_box {
+    .title {
+      letter-spacing: 2px;
+    }
+    .subtitle {
+      font-size: 0.8rem;
+      letter-spacing: 0px;
+    }
   }
 }
 // HEIGHT
@@ -372,6 +378,10 @@
 }
 // PHONE LANDSCAPE
 @media (max-height: 500px) {
+  .header {
+    height: 27.5rem;
+    align-items: center !important;
+  }
   .description {
     height: 23rem;
   }

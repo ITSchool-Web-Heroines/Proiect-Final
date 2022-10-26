@@ -1,6 +1,5 @@
 .loading {
   height: 100vh;
-  animation: fade 1s linear 4s;
   background-color: #fff;
   .svg {
     font-family: "ag-regular";
@@ -73,14 +72,6 @@
     stroke-dashoffset: -100;
     stroke-dasharray: 50% 0;
     stroke-width: 0;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
   }
 }
 
