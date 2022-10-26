@@ -14,9 +14,9 @@ const HomeMain = () => {
             <p>
               Noi suntem agentia ta de marketing online orientat spre rezultat!
             </p>
-            <Link href="#" className="btn">
+            <a href="#" className="btn">
               read more
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -28,9 +28,9 @@ const HomeMain = () => {
               id repellendus numquam. Maxime veritatis consequatur nobis
               architecto incidunt rem esse?
             </p>
-            <Link href="/desprenoi" className="btn">
+            <a href="/desprenoi" className="btn">
               Afla mai multe
-            </Link>
+            </a>
           </div>
           <div className="image">
             <img src={"images/home-img-2.png"} alt="home" />
@@ -46,9 +46,9 @@ const HomeMain = () => {
             <p>
               Suntem o agentie digitala full service si echipa noastra este formata din specialisti cu experienta de peste 10 ani
             </p>
-            <Link href="#" className="btn">
+            <a href="#" className="btn">
               read more
-            </Link>
+            </a>
           </div>
         </div>
       </section>

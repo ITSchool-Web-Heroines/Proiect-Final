@@ -9,9 +9,9 @@ const Credit = () => {
           Website Realizat de <span>Ana Maria Pacurar</span>{" "}
         </p>
         <div className="share">
-          <Link href="https://www.facebook.com/motionmarketingagency" className="fab fa-facebook-f" />
-          <Link href="https://www.instagram.com/motionagency.mkt/" className="fab fa-twitter" />
-          <Link href="#https://www.instagram.com/motionagency.mkt/" className="fab fa-instagram" />
+          <a href="https://www.facebook.com/motionmarketingagency" className="fab fa-facebook-f" />
+          <a href="https://www.instagram.com/motionagency.mkt/" className="fab fa-twitter" />
+          <a href="#https://www.instagram.com/motionagency.mkt/" className="fab fa-instagram" />
 
         </div>
       </section>

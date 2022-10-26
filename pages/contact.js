@@ -21,9 +21,9 @@ const Contact = () => {
 
 
             </p>
-            <Link href="#contact" className="btn">
+            <a href="#contact" className="btn">
               Mergi la contact
-            </Link>
+            </a>
           </div>
         </div>
       </section>
