@@ -78,4 +78,7 @@
         width:300px;
         margin-block-start:6em;
     }
+    .btn_active{
+        color:aliceblue;
+    }
 }
