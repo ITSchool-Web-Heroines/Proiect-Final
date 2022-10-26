@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 
 export default function BlogCardFull() {
   return (
@@ -13,8 +13,8 @@ export default function BlogCardFull() {
           </div>
           <div className="col-md-4 p-0">
             <div className="bg-blog-content p-3 p-md-5 ">
-              <a href="/blog">
-                <a>
+              <Link href="/blog">
+                <Link>
                   <h5 className="text-uppercase mk-guide">Strategii de Marketing Sportiv</h5>
                   <div className="card-date">3/31/21</div>
                   <h1 className="blog-title mt-3">
@@ -23,8 +23,8 @@ export default function BlogCardFull() {
                   <div className="card-text">
                     Ce sunt strategiile de marketing sporiv? Cand vorbim de marketing sportiv ne referim la...
                   </div>
-                </a>
-              </a>
+                </Link>
+              </Link>
             </div>
           </div>
         </div>

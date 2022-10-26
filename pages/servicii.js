@@ -19,9 +19,9 @@ const Servicii = () => {
             <h3>Ce servicii oferim?</h3>
             <p>
               Dezvoltam campanii publicitare, atat la nivel de local cat si la nivel national, oferim si consultanta in realizarea planurilor si strategiilor de comunicare.            </p>
-            <a href="/contact" className="btn">
+            <Link href="/contact" className="btn">
               Cere Oferta
-            </a>
+            </Link>
           </div>
         </div>
         <div className="box">
@@ -30,9 +30,9 @@ const Servicii = () => {
             <p>
               Nevoile, cerintele, comportamentul si asteptarile specifice ale consumatorilor din segmentul tinta
             </p>
-            <a href="/contact" className="btn">
+            <Link href="/contact" className="btn">
               Cere Oferta
-            </a>
+            </Link>
           </div>
           <div className="image">
             <img src="images/home-img-2.png" alt="" />
@@ -47,9 +47,9 @@ const Servicii = () => {
             <p>
               Partenerii nostri activeaza in diverse industrii, astfel am acumulat experienta necesara pentru a putea livra rezultate in diferite nise.
             </p>
-            <a href="/contact" className="btn">
+            <Link href="/contact" className="btn">
               Cere Oferta
-            </a>
+            </Link>
           </div>
         </div>
       </section>

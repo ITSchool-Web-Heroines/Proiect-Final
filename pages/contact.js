@@ -12,7 +12,7 @@ const Contact = () => {
       <section className="home" id="home">
         <div className="box">
           <div className="image">
-            <img src="images/home-img-1.png" alt="" />
+            <img src="images/home-img-1.png" alt="images" />
           </div>
           <div className="content">
             <h3>Ai o afacere pe care vrei sa o cresti?</h3>
@@ -21,9 +21,9 @@ const Contact = () => {
 
 
             </p>
-            <a href="#contact" className="btn">
+            <Link href="#contact" className="btn">
               Mergi la contact
-            </a>
+            </Link>
           </div>
         </div>
       </section>

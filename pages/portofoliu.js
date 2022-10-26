@@ -5,13 +5,13 @@ import Credit from "../components/Credit";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import ContactForm from "../components/ContactForm";
-import Link from 'next/link'
+import Link from 'next/link';
 
 const Portololiu = () => {
   return (
     <>
       <Head>
-        <a href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+        <Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
         {/* <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" /> */}
       </Head>
       <Navbar />
@@ -25,9 +25,9 @@ const Portololiu = () => {
             <p>
               Specialistii nostri ofera federatiilor, ligilor si cluburilor servicii de marketing sportiv, PR si comunicare
             </p>
-            <a href="/contact" className="btn">
+            <Link href="/contact" className="btn">
               Cere Oferta
-            </a>
+            </Link>
           </div>
         </div>
         <div
