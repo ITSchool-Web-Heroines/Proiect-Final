@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import ContactForm from "../components/ContactForm";
 import Credit from "../components/Credit";
@@ -20,9 +21,9 @@ const Contact = () => {
 
 
             </p>
-            <a href="#contact" className="btn">
+            <Link href="#contact" className="btn">
               Mergi la contact
-            </a>
+            </Link>
           </div>
         </div>
       </section>
