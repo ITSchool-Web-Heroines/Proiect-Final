@@ -67,25 +67,18 @@
     z-index:1;
 }
 
-@media only screen and (max-width:768px) {
-    
-   
-
-    .navigation{
-       
-        font-size:1em;
-        justify-content: flex-end;
-    }
-    .header__shrink {
-        position:sticky;
+@media only screen and (max-width:992px) {
+    .navigation {
+        position:fixed;
         top:0;
         left:0;
         width:100%;
-        height:5em;
+        height:3em;
+    }
+    .nav_menu{
+        display:flex;
+        justify-content: space-around;
         box-shadow: 5px 5px 10px -5px orange !important;
-        z-index:1;
     }
-    .logo h1{
-        font-size:0.8em;
-    }
+    
 }

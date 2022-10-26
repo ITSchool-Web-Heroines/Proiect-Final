@@ -12,6 +12,21 @@
 	font: inherit;
 	cursor: pointer;
 }
-@media only screen and (max-width:768px){
-	
+.project_photo{
+	display:flex;
+}
+.buttons{
+	display: flex;
+	justify-content: flex-end;
+	margin-inline-end: -25em;
+	margin-bottom: 2em;
+}
+
+@media only screen and (max-width:992px){
+	.project_photo{
+		width:800px;
+	}
+	.buttons{
+		margin-inline-start: -50%;
+	}
 }

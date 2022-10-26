@@ -43,36 +43,21 @@
     display: none;
     color: orange;
 }
-@media only screen and (max-width:450px){
-    .form {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        margin-inline-start: 5em;
-        margin-block-start:-10em;
-        
-    }
-   
+.image{
+    margin-inline-start: 3em;
+    margin-block-start: 3em;
 }
-@media (min-width:401px) and (max-width:768px) {
+@media only screen and (max-width:992px){
     .form {
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        margin-block-end:-10em;
+        gap:5em;
     }
-}
-
-@media only screen and (min-width:769px) {
-    .form {
-        display: flex;
-        flex-direction:row;
-        gap: 2em;
-        margin-block-start: -3em;
-        
+    .form_contact{
+        width:400px;
     }
     .image{
-        margin-block-start: 3em;
+        width:400px;
+        margin-block-start:3em;
+        margin-inline: auto;
     }
-    
 }

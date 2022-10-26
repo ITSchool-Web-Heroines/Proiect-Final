@@ -25,29 +25,33 @@ const Projects = () => {
         <section id="proiecte">
             <Container>
                 <Row>
-                    <Col lg='6' md='6'>
-                        <Section title='Proiecte finalizate' />
-                        <h4> Unele dintre cele mai ample picturi realizate</h4>
-                    </Col>
-                    <Col lg='6' md='6'>
-                        <div className="project_text text-center">
-                            <button className={`${classes.tab_btn_active}`}
-                                onClick={() => setFilter('Pensula')
-                                }
-                            > Pagina 1 </button>
-                            <button className={`${classes.tab_btn_inactive}`}
-                                onClick={() => setFilter('Creion')}
-                                    > Pagina 2 </button>
-                    </div>
-                </Col>
-                {
-                    data?.map((item) => (
-                        <Col lg='4' md='3' key={item.id}>
-                            <Projectsitem item={item} />
+                    <div className={`${classes.project_box}`}>
+                        <Col lg='6' md='6'>
+                            <Section title='Proiecte finalizate' />
+                            <h4> Unele dintre cele mai ample picturi realizate</h4>
                         </Col>
-                    ))}
-            </Row>
-        </Container>
+                        <Col lg='6' md='6'>
+                            <div className={`${classes.buttons}`}>
+                                <button className={`${classes.tab_btn_active}`}
+                                    onClick={() => setFilter('Pensula')
+                                    }
+                                > Pagina 1 </button>
+                                <button className={`${classes.tab_btn_inactive}`}
+                                    onClick={() => setFilter('Creion')}
+                                > Pagina 2 </button>
+                            </div>
+                        </Col>
+                        <div className={`${classes.project_photo}`}>
+                            {
+                                data?.map((item) => (
+                                    <Col lg='4' md='3' key={item.id}>
+                                        <Projectsitem item={item} />
+                                    </Col>
+                                ))}
+                        </div>
+                    </div>
+                </Row>
+            </Container>
         </section >
     )
 }

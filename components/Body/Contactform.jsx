@@ -109,7 +109,6 @@ const Contact = () => {
                                                 placeholder="Email"
                                                 id="email"
                                                 name="user_email"
-                                                required
                                                 className="bg-white  bg-white rounded text-sm border-0 shad  text-black"
                                                 size="40"
                                                 minLength="10"
@@ -125,7 +124,7 @@ const Contact = () => {
                                                 id="message"
                                                 className="bg-white  bg-white rounded text-sm border-0 shad  text-black"
                                                 rows="5" cols="50"
-                                                minLength="10"
+                                                minLength="20"
                                                 maxLength="400"
                                             />
                                         </div>

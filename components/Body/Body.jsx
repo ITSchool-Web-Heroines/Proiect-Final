@@ -17,7 +17,7 @@ function Body() {
                 <Row>
                     {/*  */}
                     <Col lg='6' md='6'>
-                        <div className={`${classes.body_image} d-flex align-items-center gap-3`}>
+                        <div className={`${classes.body_image} d-flex align-items-center`}>
                             <Image alt="" src={bgImg} width='400' height='400' />
                         </div>
                         <div className={`${classes.body_skills}`}>

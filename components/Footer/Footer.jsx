@@ -17,7 +17,7 @@ const Footer= () => {
                 
                     <ul className={`${classes.footer_subchild}`}>
                         <li><i class="ri-instagram-line"></i>Instagram</li>
-                        <li> <i class="ri-messenger-fill"></i> Facebook</li>
+                        <li><i class="ri-messenger-fill"></i><a href ="https://www.facebook.com/abby.despina"> Despina Barabas</a></li>
                         <li><i class="ri-mail-send-line"></i>Gmail</li>
                     </ul>
                     <div className={`${classes.footer_principal}`}>

@@ -1,22 +1,4 @@
-.nav_menu {
-    display:flex;
-    align-items: center;
-    column-gap: 2rem;
-}
-.nav_menu a {
-    color:#808dad;
-    font-weight: 500;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: .3s;
-}
-.nav_menu a:first-child {
-    color:orange;
-}
 
-.nav_menu a:hover{
-    color:aliceblue;
-}
 .footer_principal h4 {
     text-align: right;
     color:#808dad43;
@@ -24,11 +6,15 @@
 }
 .footer_subchild  {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap:2em;
     width: 100%;
     text-align: start;
     color:aliceblue;
     list-style-type:none;
+}
+.footer_subchild a:hover{
+    color:orange;
 }
 .footer_subchild i {
     color:orange;
@@ -38,8 +24,8 @@
     .footer_subchild{
         display:flex;
         flex-direction: row;
+        margin-block-start: 30%;
         gap:1em;
-        justify-content: flex-start;
-
+        justify-content: flex-end;
     }
 }
