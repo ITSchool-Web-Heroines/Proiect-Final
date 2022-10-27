@@ -1,0 +1,36 @@
+.services_container {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.services_info {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.services_content {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .services_content {
+        gap: 2em;
+    }
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    .services_content {
+        flex-direction: column;
+    }
+    .services_info {
+        font-size: 1.4rem;
+        text-align: center;
+        width: 550px;
+        margin-inline-start: 5em;
+    }
+    .services_container{
+        
+    }
+}
