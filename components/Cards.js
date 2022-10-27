@@ -76,7 +76,7 @@ export default function ProjectItem({project}) {
                     
                     {project.title}
                     <Link href= {project.link} passHref>
-                        <a target="_blank">
+                        <a target="_blank" rel="noreferrer">
                             <FontAwesomeIcon 
                                 icon={faUpRightFromSquare} 
                                 className={styles.icon}
@@ -88,7 +88,7 @@ export default function ProjectItem({project}) {
                 <p className={styles.aboutproject}>{project.text}</p>
             </Modal.Body>
             <Modal.Footer className={styles.modal}>
-            <a href="https://github.com" target="_blank">
+            <a href="https://github.com" target="_blank" rel="noreferrer">
                     <FiGithub className={styles.icon2} />
                 </a>
             </Modal.Footer>
