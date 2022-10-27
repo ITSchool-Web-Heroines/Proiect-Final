@@ -3,9 +3,11 @@ import css from '../styles/Info.module.css'
 import Tech from '../images/Tech.gif'
 import {UilCircuit} from '@iconscout/react-unicons'
 import {UilPhone} from '@iconscout/react-unicons'
+import {BrowserRouter as Router, Link} from 'react-router-dom'
 
 export default function Info() {
     return(
+        <Router>
         <div className={css.container}>
             
             {/*left side */}
@@ -26,9 +28,12 @@ export default function Info() {
             Technology Takes It To The Next Level.
             </p>
 
+            <Link to="/products">
+
             <button className={`btn ${css.btn}`}>
                 Get Started
             </button>
+            </Link>
 
             </div>
 
@@ -49,6 +54,7 @@ export default function Info() {
             </div>
 
         </div>
+        </Router>
 
     )
 }
