@@ -15,7 +15,7 @@ const HomeMain = () => {
               Noi suntem agentia ta de marketing online orientat spre rezultat!
             </p>
             <a href="#" className="btn">
-              read more
+              Afla mai multe
             </a>
           </div>
         </div>
@@ -45,7 +45,7 @@ const HomeMain = () => {
               Suntem o agentie digitala full service si echipa noastra este formata din specialisti cu experienta de peste 10 ani
             </p>
             <a href="#" className="btn">
-              read more
+              Afla mai multe
             </a>
           </div>
         </div>

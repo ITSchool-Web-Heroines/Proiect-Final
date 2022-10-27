@@ -21,7 +21,7 @@ const Testimoniale = () => {
               putem imbunatatii serviciile constant.
             </p>
             <a href="#reviews" className="btn">
-              read more
+              Afla mai multe
             </a>
           </div>
         </div>
