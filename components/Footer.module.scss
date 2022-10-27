@@ -1,0 +1,26 @@
+.footerbox {
+    background: black;
+    height: 7rem;
+}
+
+.iconbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    :hover{
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+}
+
+.icons {
+    color: aliceblue;
+    height: 1.8rem;
+    margin: 1.4rem;
+    
+}
+
+.copy {
+    text-align: center;
+    color: rgb(76, 66, 66);
+}

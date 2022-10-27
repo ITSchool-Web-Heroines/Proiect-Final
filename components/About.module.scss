@@ -1,0 +1,63 @@
+.photocard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-inline: 2rem ;
+    z-index: 1;
+    
+}
+
+.me {
+    border-bottom: 3rem solid rgb(253, 253, 253);
+    margin-block-end: 2rem;
+    align-self: center;
+    transition: transform 0.2s ease-out;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.5rem gray;  
+}
+
+.me:hover {
+    box-shadow: 0 0 1rem gray;
+}
+
+.introduction {
+    margin-block-end: 5rem;
+    font-family: 'IBM Plex Mono',arial,calib,monospace,sans-serif;
+}
+
+.cardheader {
+    background-color: rgb(241, 240, 237);
+}
+
+
+@media (min-width: 520px) {
+    .cardcontext {
+        padding: 2rem;
+    }
+}
+@media (min-width: 850px) {
+    .photocard {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .introduction {
+        margin-inline: 2rem;
+    }
+
+    .me {
+        margin-block-end: 5rem;
+    }
+}
+
+
+@media (min-width: 1500px) {
+    .photocard {
+        margin-inline: 7rem;
+    }
+}
+@media (min-width: 1500px) {
+    .photocard {
+        margin-inline: 10rem;
+    }
+}

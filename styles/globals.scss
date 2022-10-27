@@ -1,0 +1,38 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body, html, p {
+  font-family: 'IBM Plex Mono',arial,calib,monospace,sans-serif;
+}
+
+
+a {
+  color: black;
+  text-decoration: none!important;
+  
+}
+
+a:hover, a:visited, a:link, a:active
+{
+  text-decoration-line: none;
+  color: black;
+
+}
+
+h2 {
+  font-family: 'Saira Stencil One', Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5rem;
+}
+
+h5 {
+  font-family: 'Saira Stencil One', Arial, Helvetica, sans-serif;
+
+}
+
+
+
