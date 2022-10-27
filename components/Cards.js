@@ -23,20 +23,20 @@ export default function Cards() {
             alt="handmade products"
             className={styles["image-card"]}
             // onClick={handleMouseHover}
-          ></Image>
+          />
         </div>
 
         <Image
           src={photo2}
           alt="handmade products"
           className={styles["image-card"]}
-        ></Image>
+        />
 
         <Image
           src={photo3}
           alt="handmade products"
           className={styles["image-card"]}
-        ></Image>
+        />
       </div>
     </div>
   );

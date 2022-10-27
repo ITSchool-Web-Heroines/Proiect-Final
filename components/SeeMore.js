@@ -1,21 +1,14 @@
 import React from "react";
 import { useRouter } from "next/router";
 import styles from "../styles/btn.module.css";
+import Link from "next/link";
 
 export default function SeeMore() {
   const router = useRouter();
 
   return (
-    <button
-      className={styles["see-more"]}
-      type="button"
-      onClick={() => {
-        router.push({
-          pathname: "/about",
-        });
-      }}
-    >
-      Click here to see more
-    </button>
+    <Link href="/about">
+      <a className={styles["see-more"]}>Click here to see more</a>
+    </Link>
   );
 }

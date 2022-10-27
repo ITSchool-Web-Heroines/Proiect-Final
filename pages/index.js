@@ -59,9 +59,7 @@ export default function Home() {
         </Link>
       </main>
 
-      <footer className={styles.footer}>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }

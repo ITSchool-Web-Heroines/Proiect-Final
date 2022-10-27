@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
@@ -11,6 +12,13 @@ import Cart from "../components/Cart.js";
 export default function about() {
   return (
     <div>
+      <Head>
+        <title>About Skoob Atelier</title>
+        <meta
+          name="description"
+          content="About our handmade leather products"
+        />
+      </Head>
       <Nav />
       <main className={styles.main}>
         <div className={styles.info}>
@@ -36,9 +44,8 @@ export default function about() {
           </a>
         </Link>
       </main>
-      <footer className={styles.footer}>
-        <Footer />
-      </footer>
+
+      <Footer />
     </div>
   );
 }

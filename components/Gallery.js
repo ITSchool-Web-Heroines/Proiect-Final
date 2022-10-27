@@ -15,45 +15,123 @@ import photo11 from "./pictures/photo11.jpg";
 import photo12 from "./pictures/photo12.jpg";
 import colorpick from "./pictures/colorpick.JPG";
 import dimensions from "./pictures/dimensions.JPG";
+import photo15 from "./pictures/photo15.jpg";
+import photo16 from "./pictures/photo16.jpg";
 
 export default function Gallery() {
+  const images = [
+    {
+      src: photo1,
+      alt: "Handmade leather journals and photo albums",
+      row: "1 / 2",
+      column: "1 / 2",
+    },
+    {
+      src: photo2,
+      alt: "Handmade leather journals and photo albums",
+      row: "2 / 3",
+      column: "1 / 2",
+    },
+    {
+      src: photo3,
+      alt: "Handmade leather journals and photo albums",
+      row: "2 / 3",
+      column: "2 / 3",
+    },
+    {
+      src: photo4,
+      alt: "Handmade leather journals and photo albums",
+      row: "1 / 2",
+      column: "2 / 3",
+    },
+    {
+      src: photo5,
+      alt: "Handmade leather journals and photo albums",
+      row: "2 / 3",
+      column: "3 / 4",
+    },
+    {
+      src: photo6,
+      alt: "Handmade leather journals and photo albums",
+      row: "3 / 4",
+      column: "1 / 2",
+    },
+    {
+      src: photo7,
+      alt: "Handmade leather journals and photo albums",
+      row: "3 / 4",
+      column: "3 / 4",
+    },
+    {
+      src: photo8,
+      alt: "Handmade leather journals and photo albums",
+      row: "4 / 5",
+      column: "1 / 2",
+    },
+    {
+      src: photo9,
+      alt: "Handmade leather journals and photo albums",
+      row: "4 / 5",
+      column: "2 / 3",
+    },
+    {
+      src: photo10,
+      alt: "Handmade leather journals and photo albums",
+      row: "4 / 5",
+      column: "3 / 4",
+    },
+    {
+      src: photo11,
+      alt: "Handmade leather journals and photo albums",
+      row: "1 / 2",
+      column: "4 / 5",
+    },
+    {
+      src: photo12,
+      alt: "Handmade leather journals and photo albums",
+      row: "2 / 3",
+      column: "4 / 5",
+    },
+    {
+      src: colorpick,
+      alt: "Handmade leather journals and photo albums",
+      row: "3 / 4",
+      column: "4 / 5",
+    },
+    {
+      src: dimensions,
+      alt: "Handmade leather journals and photo albums",
+      row: "4 / 5",
+      column: "4 / 5",
+    },
+    {
+      src: photo15,
+      alt: "Handmade leather journals and photo albums",
+      row: "1 / 2",
+      column: "3 / 4",
+    },
+    {
+      src: photo16,
+      alt: "Handmade leather journals and photo albums",
+      row: "3 / 4",
+      column: "2 / 3",
+    },
+  ];
   return (
     <div className={styles.wraper}>
       <div className={styles["gallery-container"]}>
-        <Image src={photo1} alt="handmade product" className={styles.photo1} />
-        <Image src={photo2} alt="handmade product" className={styles.photo2} />
-        <Image src={photo3} alt="handmade product" className={styles.photo3} />
-        <Image src={photo4} alt="handmade product" className={styles.photo4} />
-        <Image src={photo5} alt="handmade product" className={styles.photo5} />
-        <Image src={photo6} alt="handmade product" className={styles.photo6} />
-        <Image src={photo7} alt="handmade product" className={styles.photo7} />
-        <Image src={photo8} alt="handmade product" className={styles.photo8} />
-        <Image
-          src={colorpick}
-          alt="handmade product"
-          className={styles.photo9}
-        />
-        <Image
-          src={dimensions}
-          alt="handmade product"
-          className={styles.photo10}
-        />
-        <Image
-          src={photo12}
-          alt="handmade product"
-          className={styles.photo11}
-        />
-        <Image src={photo9} alt="handmade product" className={styles.photo12} />
-        <Image
-          src={photo10}
-          alt="handmade product"
-          className={styles.photo13}
-        />
-        <Image
-          src={photo11}
-          alt="handmade product"
-          className={styles.photo14}
-        />
+        {images.map((img) => (
+          <Image
+            key={img.src.src}
+            src={img.src}
+            alt={img.alt}
+            className={styles.photo}
+            style={{
+              gridRow: img.row,
+              gridColumn: img.column,
+            }}
+          />
+        ))}
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import UserIcon from "./UserIcon";
 import Image from "next/future/image";
 import styles from "../styles/testimonials.module.css";
 import user from "./pictures/user.png";
