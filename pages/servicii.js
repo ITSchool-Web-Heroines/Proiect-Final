@@ -55,11 +55,14 @@ const Servicii = () => {
       </section>
 
       <section className="contact" id="contact">
-        <ContactForm title={"Trimite un mesaj"} btnvalue={"Trimite"} />
+        <h1 className="heading">
+          {" "}
+          <span>Contact</span>
+        </h1>
+        <div className="row">
+          <ContactForm title={"Trimite un mesaj"} btnvalue={"Trimite"} />
+        </div>
       </section>
-
-      <Newsletter />
-      <Credit />
     </>
   );
 };
