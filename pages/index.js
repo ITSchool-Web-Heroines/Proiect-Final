@@ -23,7 +23,15 @@ export default function Home() {
         <Navbar />
         <HomeMain />
         <Services />
-        <ContactForm/>
+        <section className="contact" id="contact">
+        <h1 className="heading">
+          {" "}
+          <span>Contact</span>
+        </h1>
+        <div className="row">
+          <ContactForm title={"Trimite un mesaj"} btnvalue={"Trimite"} />
+        </div>
+      </section>
         <Newsletter />
         <Credit />
       </div>
