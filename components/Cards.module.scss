@@ -1,6 +1,5 @@
 .box {
     :hover {
-        opacity: 0.9;
         cursor: pointer;
     }
 }
@@ -12,8 +11,8 @@
         background-color: white;
         border-color: white;
         color: black; 
-       
-    }
+        transform: scale(1.1);
+    }    
 }
 
 .card {
@@ -23,6 +22,9 @@
     box-shadow: 0 0 1rem gray;
     color: black;
     font-family: 'IBM Plex Mono',arial,calib,monospace,sans-serif; 
+    :hover {
+        transform: scale(1);
+    }
 }
 
 .carouselimg {
@@ -35,21 +37,40 @@
 }
 .body {
     padding:0;
+    :hover {
+        transform: scale(1);
+    }
+}
+
+.title {
+    :hover {
+        transform: scale(1);
+    }
+}
+
+.text {
+    :hover {
+        transform: scale(1);
+    }
 }
 .carousel {
     text-align: center;
-    margin: 2rem 2rem;
+    margin-block-end: 2rem;
 }
 
 .modal {
     border-color: white;
-    border-radius: 0cm;
-    margin: 1rem 1rem;
+    border-radius: 0;
+    margin: 0.5rem 0.5rem;
         
+}
+.icon2 {
+    width: 2rem;
+    font-size: 2rem;
 }
 
 .aboutproject {
-    margin: 2rem 1rem;
+    margin: 1.5rem 1rem;
     font-family: 'IBM Plex Mono',arial,calib,monospace,sans-serif;
 }
 .modaltitle {

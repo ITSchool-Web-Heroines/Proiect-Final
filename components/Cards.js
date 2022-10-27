@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import {Card, Modal, Carousel} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
+import {FiGithub} from "react-icons/fi";
 import styles from "./Cards.module.scss"
 
 
@@ -41,15 +42,20 @@ export default function ProjectItem({project}) {
                 className={styles.modalbox}
             >
 
-            <Modal.Header closeButton className={styles.modal}>
-            </Modal.Header>
+            <Modal.Header 
+                closeButton 
+                className={styles.modal}
+            />
+
             <Modal.Body className={styles.modalbody}>
-                <Carousel  className={styles.carousel} interval="5000">
+                <Carousel  className={styles.carousel} interval={5000}>
                     <Carousel.Item className={styles.images}>
                         <Image
                             className={styles.carouselimg}
                             src={project.image}
                             alt={project.title}
+                            width={288}
+                            height={288}
                         />
         
                     </Carousel.Item>
@@ -58,21 +64,33 @@ export default function ProjectItem({project}) {
                             className={styles.carouselimg}
                             src={project.pic1}
                             alt={project.title}
+                            width={288}
+                            height={288}
+                            
                         />
                     </Carousel.Item>
                 </Carousel>
             
                 
-                <Modal.Title className={styles.modaltitle}>{project.title}
-                <Link href= {project.link} passHref>
+                <Modal.Title className={styles.modaltitle}>
+                    
+                    {project.title}
+                    <Link href= {project.link} passHref>
                         <a target="_blank">
-                        <FontAwesomeIcon icon={faUpRightFromSquare} className={styles.icon}/>
+                            <FontAwesomeIcon 
+                                icon={faUpRightFromSquare} 
+                                className={styles.icon}
+                            />
+                            
                         </a>
-                </Link>
+                    </Link>
                 </Modal.Title>
                 <p className={styles.aboutproject}>{project.text}</p>
             </Modal.Body>
             <Modal.Footer className={styles.modal}>
+            <a href="https://github.com" target="_blank">
+                    <FiGithub className={styles.icon2} />
+                </a>
             </Modal.Footer>
             </Modal>
         </div>

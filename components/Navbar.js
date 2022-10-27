@@ -11,7 +11,9 @@ const Navbar = () => {
         {menu.map((list) => (
 
           <li 
-          key={list.pathname} className={styles.navbar}>
+            key={list.pathname} 
+            className={styles.navbar}
+          >
 
             <Link href={list.pathname} passHref>
                 <a className={styles.nav}>{list.label}</a>

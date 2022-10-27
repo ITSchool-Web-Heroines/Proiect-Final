@@ -1,6 +1,6 @@
 import styles from "./Skills.module.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHtml5, faCss3, faJs, faSass, faReact, faBootstrap } from "@fortawesome/free-brands-svg-icons";
+import {faHtml5, faCss3, faJs, faSass, faReact, faBootstrap, faGitSquare} from "@fortawesome/free-brands-svg-icons";
 
 const Skills = () => {
   return (
@@ -22,7 +22,7 @@ const Skills = () => {
         </div>
 
         <div className={styles.skillbox}>
-          <FontAwesomeIcon className={styles.brand} icon={faSass} />
+          <FontAwesomeIcon className={styles.brand} icon={faGitSquare} />
           <span>GIT</span>
         </div>
 

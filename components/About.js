@@ -16,8 +16,8 @@ export default function About() {
                 <Image 
                     src={Me}
                     alt="me"
-                    width={320}
-                    height={350}
+                    width={300}
+                    height={340}
                     className={styles.me}
                     
                 />
