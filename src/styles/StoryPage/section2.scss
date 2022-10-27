@@ -1,0 +1,29 @@
+#section2story {
+    padding-inline: 2rem;
+    padding-block-start: 2rem;
+    display: flex;
+    flex-direction: row;
+
+    .col {
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+
+        h2 {
+            font-family: customFont;
+            font-size: 8vh;
+            padding-block-end: 1rem;
+        }
+        p {
+            font-family: customFont2;
+            text-align: justify;
+            font-size: 3.5vh;
+            text-indent: 50px;
+            padding-block-end: 1rem;
+
+        }
+        img {
+            padding-block: 2rem;
+        }
+    }
+}

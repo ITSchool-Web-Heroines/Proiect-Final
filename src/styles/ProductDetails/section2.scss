@@ -1,0 +1,36 @@
+#section2product {
+    padding-inline: 2rem;
+    padding-block: 2rem;
+
+    h2 {
+        
+        text-align: center;
+        font-family: customFont2;
+        font-size: 8vh;
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: justify;
+
+        .col {
+            padding-inline: 1.5rem;
+            width: 33.3vw;
+            display: flex;
+            flex-direction: column;
+            padding-block: 2rem;
+            h3 {
+                padding-block-end: 1rem;
+                font-size: 5vh;
+                text-align: center;
+                font-family: customFont;
+            }
+            p {
+                font-family: customFont2;
+            }
+
+        }
+    }
+}

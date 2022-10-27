@@ -1,0 +1,98 @@
+#section2home {
+    width: 100%;
+    margin-block: 0;
+    background: white;
+    color: white;
+    font-size: 13px;
+    line-height: 20px;
+
+    h2 {
+        background-color: #D2687A;
+        color:white;
+        font-size: 6vh;
+        padding-block: 3.3rem;
+        padding-inline-start: 2rem;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+
+    .col {
+        flex-basis: 25%;
+        justify-content: center;
+        align-content: center;
+
+        .pro {
+                width: 100%;
+                min-width: 250px;
+                border: none;
+                background: white;
+                cursor: pointer;
+                position: relative;
+        
+                img {
+                    width: 100%;
+        
+                }
+        
+                .hoverpicture {
+                    width: 100%;
+                    left: 0;
+                    position: absolute;
+                    opacity: 0;
+                    transition: all .3s ease-in;
+                }
+        
+                :hover {
+                    opacity: 1;
+                }
+
+                .description {
+                    display: flex;
+                    flex-direction: column;
+                    
+                    h5 {
+                        text-align: center;
+                        font-family: customFont;
+                        font-size: 3vh;
+                        color:black;
+                    }
+                
+                    .star {
+                        text-align: center;
+                        margin-block-start: 1rem;
+                        color: #D2687A;
+                    }
+                
+                    h4 {
+                        text-align: center;
+                        font-family: customFont2;
+                        font-size: 3vh;
+                        color: black;
+                        padding-block-end: 0.5rem;
+                    }
+                
+                    button {
+                        font-size: 3.5vh;
+                        text-align: center;
+                        padding-block:1.5rem ;
+                        margin-inline: 4rem;
+                        background-color: #D2687A;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                        /*margin-block-end: 2rem;*/
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

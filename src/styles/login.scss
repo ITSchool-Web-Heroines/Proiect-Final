@@ -1,0 +1,124 @@
+#login {
+    margin-block: 0rem;
+    padding-block: 2rem;
+    box-sizing: border-box;
+    background-image: url(../images/STEPS_DESKTOP_STEP2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    section {
+        margin-block: 2rem;
+        margin-inline: 27rem;
+        width: 100%;
+        max-width: 420px;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        padding: 1rem;
+        background-color: #D2687A;
+
+        h1 {
+            font-family: customFont2;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-grow: 1;
+            padding-bottom: 1rem;
+            color: white;
+        }
+
+        a,
+        a:visited {
+            color: #fff;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        button,
+        textarea {
+            outline: none;
+            border: none;
+            font-family: 'Nunito', sans-serif;
+            font-size: 22px;
+            padding: 0.25rem;
+            border-radius: 0.5rem;
+        }
+
+        label,
+        button {
+            font-family: customFont2;
+            color: white;
+            margin-top: 1rem;
+        }
+
+        button {
+            background: #CA4B60;
+            outline-offset: none;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 0.5rem;
+        }
+
+        .instructions {
+            font-family: customFont2;
+            font-size: 0.75rem;
+            border-radius: 0.5rem;
+            background: #EC8594;
+            color: #fff;
+            padding: 0.25rem;
+            position: relative;
+            bottom: -10px;
+        }
+
+        .instructions>svg {
+            margin-right: 0.25rem;
+        }
+
+        .offscreen {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .valid {
+            color: limegreen;
+            margin-left: 0.25rem;
+        }
+
+        .invalid {
+            color: red;
+            margin-left: 0.25rem;
+        }
+
+        .errmsg {
+            background-color: lightpink;
+            color: firebrick;
+            font-weight: bold;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .line {
+            display: inline-block;
+        }
+
+        p {
+            font-family: customFont2;
+            color: white;
+        }
+
+        a {
+            font-family: customFont2;
+            color: white;
+        }
+    }
+}
