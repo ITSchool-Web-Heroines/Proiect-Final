@@ -47,40 +47,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 50%;
+    width: 70%;
     position: relative;
+    float: none;
     margin-inline-start: 10rem;
-    margin-block-start: 5rem;
 }
 
-.ContactUs{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: max-content;
-    padding: 1rem;
-    border-radius: 5rem;
-    gap: 1rem;
-    background-color: white;
-    box-shadow: var(--shadow);
-    margin-block-start: -40rem;
-    margin-inline-start: 100rem;
-}
-
-.ContactUs>div{
-    background: rgb(59 208 59);
-    border-radius: 50%;
-    width: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-}
-
-.ContactUs:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
 
 @media screen and (max-width: 580px) {
     .left{
@@ -110,18 +82,6 @@
         width: 10rem;
         margin-block-start: 5rem;
         margin-inline-start: 5rem;
-    }
-    
-    .ContactUs{
-        gap: 0.6rem;
-        margin-block-start: -10rem;
-        margin-inline-start: 6rem;
-        font-size: 0.7rem;
-    }
-    
-    .ContactUs>div{
-        width: 2rem;
-        height: 2rem;
     }
 
     .btn{
