@@ -1,22 +1,13 @@
 import React from "react";
 import UserIcon from "./UserIcon";
-import Image from "next/future/image";
 import styles from "../styles/testimonials.module.css";
-import user from "./pictures/user.png";
-import user2 from "./pictures/user2.png";
-import star from "./pictures/star.png";
 
 export default function Testimonials() {
   return (
     <>
       <div className={styles["test-container"]}>
         <div>
-          <Image src={user} alt="client" className={styles.client}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
+          <UserIcon />
           <p className={styles["client-text"]}>
             I ordered 2 journals in the course of 4 months. The first time I was
             speechless as it was something special, the second time I was amazed
@@ -27,24 +18,14 @@ export default function Testimonials() {
           </p>
         </div>
         <div>
-          <Image src={user2} alt="client" className={styles.client}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
+          <UserIcon />
           <p className={styles["client-text"]}>
             I am really impressed by the journal I received! A real art! If you
             want special gifts, order products from SkooBooks!
           </p>
         </div>
         <div>
-          <Image src={user} alt="client" className={styles.client}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
+          <UserIcon />
           <p className={styles["client-text"]}>
             I was impressed by the speed and quality of the order! The journal I
             ordered looks absolutely perfect. It is easy to notice the soul and
@@ -54,24 +35,14 @@ export default function Testimonials() {
           </p>
         </div>
         <div>
-          <Image src={user2} alt="client" className={styles.client}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
+          <UserIcon />
           <p className={styles["client-text"]}>
             Absolutely amazed by the quality of the leader, the paper, the map
             inside.. Everything is perfect!
           </p>
         </div>
         <div>
-          <Image src={user} alt="client" className={styles.client}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
+          <UserIcon />
           <p className={styles["client-text"]}>
             Objects produced with and from the heart, quality and attention to
             details that you rarely find! I placed 2 orders in the course of 2
@@ -82,12 +53,7 @@ export default function Testimonials() {
           </p>
         </div>
         <div>
-          <Image src={user2} alt="client" className={styles.client}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
-          <Image src={star} alt="star" className={styles.star}></Image>
+          <UserIcon />
           <p className={styles["client-text"]}>
             Original products, with leather and quality materials! I recommend,
             I am very satisfied with them Keep up the good work.
