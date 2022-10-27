@@ -42,56 +42,56 @@ export default function ProjectItem({project}) {
                 className={styles.modalbox}
             >
 
-            <Modal.Header 
-                closeButton 
-                className={styles.modal}
-            />
+                <Modal.Header 
+                    closeButton 
+                    className={styles.modal}
+                />
 
-            <Modal.Body className={styles.modalbody}>
-                <Carousel  className={styles.carousel} interval={5000}>
-                    <Carousel.Item className={styles.images}>
-                        <Image
-                            className={styles.carouselimg}
-                            src={project.image}
-                            alt={project.title}
-                            width={288}
-                            height={288}
-                        />
-        
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <Image
-                            className={styles.carouselimg}
-                            src={project.pic1}
-                            alt={project.title}
-                            width={288}
-                            height={288}
-                            
-                        />
-                    </Carousel.Item>
-                </Carousel>
-            
-                
-                <Modal.Title className={styles.modaltitle}>
-                    
-                    {project.title}
-                    <Link href= {project.link} passHref>
-                        <a target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon 
-                                icon={faUpRightFromSquare} 
-                                className={styles.icon}
+                <Modal.Body className={styles.modalbody}>
+                    <Carousel  className={styles.carousel} interval={5000}>
+                        <Carousel.Item className={styles.images}>
+                            <Image
+                                className={styles.carouselimg}
+                                src={project.image}
+                                alt={project.title}
+                                width={288}
+                                height={288}
                             />
-                            
-                        </a>
-                    </Link>
-                </Modal.Title>
-                <p className={styles.aboutproject}>{project.text}</p>
-            </Modal.Body>
-            <Modal.Footer className={styles.modal}>
-            <a href="https://github.com" target="_blank" rel="noreferrer">
-                    <FiGithub className={styles.icon2} />
-                </a>
-            </Modal.Footer>
+            
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Image
+                                className={styles.carouselimg}
+                                src={project.pic1}
+                                alt={project.title}
+                                width={288}
+                                height={288}
+                                
+                            />
+                        </Carousel.Item>
+                    </Carousel>
+                
+                    
+                    <Modal.Title className={styles.modaltitle}>
+                        
+                        {project.title}
+                        <Link href= {project.link} passHref>
+                            <a target="_blank" rel="noreferrer">
+                                <FontAwesomeIcon 
+                                    icon={faUpRightFromSquare} 
+                                    className={styles.icon}
+                                />
+                                
+                            </a>
+                        </Link>
+                    </Modal.Title>
+                    <p className={styles.aboutproject}>{project.text}</p>
+                </Modal.Body>
+                <Modal.Footer className={styles.modal}>
+                    <a href="https://github.com" target="_blank" rel="noreferrer">
+                        <FiGithub className={styles.icon2} />
+                    </a>
+                </Modal.Footer>
             </Modal>
         </div>
     )

@@ -8,7 +8,10 @@ import Timeline from "./Timeline";
 export default function Exp () {
     return (
     <div className={styles.expbox}>{timelineElements.map((timer) => (
-        <Timeline timer={timer} key={timer.id}>
+        <Timeline 
+            timer={timer} 
+            key={timer.id}
+        >
         </Timeline>
         ))}
     </div>

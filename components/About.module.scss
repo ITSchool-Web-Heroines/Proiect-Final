@@ -6,14 +6,14 @@
     z-index: 1;
     
 }
+
 .me {
     border-bottom: 3rem solid rgb(253, 253, 253);
     margin-block-end: 2rem;
     align-self: center;
     transition: transform 0.2s ease-out;
     border-radius: 0.3rem;
-    box-shadow: 0 0 0.5rem gray;
-    
+    box-shadow: 0 0 0.5rem gray;  
 }
 
 .me:hover {

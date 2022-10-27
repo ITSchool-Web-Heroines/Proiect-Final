@@ -8,7 +8,11 @@ import ProjectItem from './Cards';
 export default function Projects() {
   return (
     <div className={styles.projects}>{cards.projects.map((project) => (
-      <ProjectItem project={project} key={project.id}></ProjectItem>
-  ) )}</div>
+      <ProjectItem 
+        project={project} 
+        key={project.id}>
+      </ProjectItem>
+     ))}
+    </div>
   )
 }
