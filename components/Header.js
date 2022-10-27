@@ -4,7 +4,7 @@ import styles from "./Header.module.scss";
 import Clip from  "../public/Clip.jpg";
 import Cat from "../public/githubcat.png";
 import Link from "next/link";
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faCog} from "@fortawesome/free-solid-svg-icons";
 

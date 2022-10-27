@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/future/image";
 import Me from "../public/me.jpg";
 import styles from "./About.module.scss";
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
 import {AiFillApple, AiFillWindows, AiFillAndroid} from  "react-icons/ai";
 import aboutme from "./data/aboutme"
 import {FcBusinesswoman} from "react-icons/fc";

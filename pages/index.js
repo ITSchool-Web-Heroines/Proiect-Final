@@ -1,13 +1,13 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.scss';
-import Header from '../components/Header';
-import Navbar from '../components/Navbar';
-import About from '../components/About';
+import Head from "next/head";
+import styles from "../styles/Home.module.scss";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
+import About from "../components/About";
 import Projects from "../components/Projects";
-import Skills from '../components/Skills';
-import Footer from '../components/Footer';
-import Exp from '../components/Experience';
-import { Button } from 'react-bootstrap';
+import Skills from "../components/Skills";
+import Footer from "../components/Footer";
+import Exp from "../components/Experience";
+import { Button } from "react-bootstrap";
 import coding from "../public/coding.jpg";
 import Image from "next/future/image";
 

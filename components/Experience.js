@@ -1,5 +1,5 @@
 import styles from "./Experience.module.scss";
-import React from 'react';
+import React from "react";
 import timelineElements from "./data/timelist";
 import Timeline from "./Timeline";
 

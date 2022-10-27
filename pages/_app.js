@@ -1,4 +1,4 @@
-import '../styles/globals.scss';
+import "../styles/globals.scss";
 import "@fontsource/ibm-plex-mono";
 import "@fontsource/saira-stencil-one";
 import 'bootstrap/dist/css/bootstrap.css';

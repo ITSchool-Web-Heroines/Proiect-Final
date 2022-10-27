@@ -1,5 +1,5 @@
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import { VerticalTimeline, VerticalTimelineElement }  from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 import styles from "./Experience.module.scss";
 
 export default function Timeline ({timer}) {
@@ -13,7 +13,7 @@ export default function Timeline ({timer}) {
               contentArrowStyle={{ borderRight: '0.5rem solid'}}
               date={timer.date}
               position={ "right"}
-              iconStyle={{ background: "rgb(232,214,161)", color: '#fff' }}
+              iconStyle={{ background: "rgb(232,214,161)", color: "#fff" }}
               icon={timer.icon}
             >
               

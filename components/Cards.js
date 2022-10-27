@@ -1,6 +1,6 @@
 import Image from "next/future/image";
 import Link from "next/link";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {Card, Modal, Carousel} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
