@@ -27,7 +27,7 @@ const ContactForm = () => {
             </p>
             <p>
               <p>
-                <button type="submit" className="btn">Trimite</button>
+                <button type="submit" className="btn" name="trimite">Trimite</button>
               </p>
             </p>
           </form>
