@@ -1,0 +1,18 @@
+.carousel_img {
+  height: 100%;
+}
+
+@media (min-width: 780px) {
+  .carouselEdit {
+    margin-block-start: -120px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1020px) {
+  .carousel_img {
+    width: 100%;
+    height: 51.8rem;
+    object-fit: cover;
+  }
+}

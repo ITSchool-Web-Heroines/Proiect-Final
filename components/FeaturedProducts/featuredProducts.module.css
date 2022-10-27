@@ -1,0 +1,39 @@
+.featured_products {
+  background-color: rgba(0, 0, 0, 0.252);
+  padding: 1rem;
+}
+.featured_products {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.featured_product {
+  height: 100%;
+  width: 3rem;
+}
+#waffle:hover {
+  content: url("../../images/waffle_color.png");
+}
+#cake:hover {
+  content: url("../../images/cake_color.png");
+}
+#pie:hover {
+  content: url("../../images/pies_color.png");
+}
+#pancake:hover {
+  content: url("../../images/pancakes_color.png");
+}
+
+@media (min-width: 700px) {
+  .featured_products {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .featured_product {
+    height: 100%;
+    width: 7rem;
+  }
+}

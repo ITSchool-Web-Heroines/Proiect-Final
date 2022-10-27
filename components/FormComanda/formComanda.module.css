@@ -1,0 +1,78 @@
+.container {
+  margin-block-start: 7rem;
+}
+.form {
+  color: white;
+  margin-inline: 1rem;
+}
+.title {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.label_input {
+  display: flex;
+  flex-direction: column;
+}
+.input,
+.radio {
+  background-color: rgba(252, 252, 252, 0.122);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: 0.05rem solid rgba(255, 255, 255, 0.448);
+  color: white;
+  margin-block-end: 1rem;
+}
+.btn {
+  display: block;
+  margin-inline: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgb(193, 226, 226);
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  margin-block-end: 3rem;
+}
+.btn:hover {
+  background-color: rgb(106, 124, 137);
+}
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-block-start: 0.5rem;
+}
+.poster {
+  display: block;
+  width: 80%;
+  height: 100%;
+  margin-inline: auto;
+  margin-block: 0 3rem;
+}
+
+@media (min-width: 780px) {
+  .container {
+    margin-block-start: 1.5rem;
+  }
+  .title {
+    text-align: start;
+  }
+  .form {
+    width: 80%;
+    margin-inline-start: 4rem;
+  }
+  .two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .all {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .poster {
+    width: 50%;
+    height: 70%;
+  }
+}

@@ -1,0 +1,57 @@
+.card {
+  border: 1px solid rgb(53, 53, 53);
+  background-color: rgba(128, 128, 128, 0.152);
+  border-radius: 1rem;
+  padding: 1rem 2.5rem;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.395);
+  margin-block-end: 4rem;
+  width: 15rem;
+}
+.card:hover {
+  background-color: rgba(176, 222, 205, 0.515);
+}
+.product_img {
+  width: 15rem;
+  height: 100%;
+  display: block;
+  margin-inline: auto;
+}
+.set {
+  color: white;
+  text-align: start;
+  margin: 0;
+}
+.product_price {
+  margin-block-end: 0;
+  color: rgba(176, 222, 205, 0.789);
+}
+.product_nameLink {
+  text-decoration: none;
+}
+.product_name {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-inline-end: 1rem;
+  margin-block: 0;
+}
+.name_add {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  background-color: rgba(176, 222, 205, 0.515);
+  color: rgba(255, 255, 255, 0.659);
+  padding: 0.6rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 760px) {
+  .product_name {
+    font-size: 1.5rem;
+  }
+}

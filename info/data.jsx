@@ -1,0 +1,90 @@
+const data = {
+  products: [
+    {
+      id: "1",
+      price: 20,
+      name: "Waffle cu afine",
+      image: "/pictures/product2.png",
+      description: "lorem",
+    },
+    {
+      id: "2",
+      price: 20,
+      name: "Waffle cu căpșuni",
+      image: "/pictures/product1.png",
+      description: "lorem",
+    },
+    {
+      id: "3",
+      price: 20,
+      name: "Waffle cu ciocolată",
+      image: "/pictures/product3.png",
+      description: "lorem",
+    },
+    {
+      id: "4",
+      price: 20,
+      name: "Clătite cu banane",
+      image: "/pictures/product4.png",
+      description: "lorem",
+    },
+    {
+      id: "5",
+      price: 20,
+      name: "Clătite cu căpșuni",
+      image: "/pictures/product5.png",
+      description: "lorem",
+    },
+    {
+      id: "6",
+      price: 20,
+      name: "Mini clătite simple",
+      image: "/pictures/product6.png",
+      description: "lorem",
+    },
+    {
+      id: "7",
+      price: 20,
+      name: "Macarons vegani",
+      image: "/pictures/product7.png",
+      description: "lorem",
+    },
+    {
+      id: "8",
+      price: 20,
+      name: "Macarons cu fructe",
+      image: "/pictures/product8.png",
+      description: "lorem",
+    },
+    {
+      id: "9",
+      price: 20,
+      name: "Macarons cu ciocolată",
+      image: "/pictures/product9.png",
+      description: "lorem",
+    },
+    {
+      id: "10",
+      price: 20,
+      name: "Cheesecake ciocolată",
+      image: "/pictures/product10.png",
+      description: "lorem",
+    },
+    {
+      id: "11",
+      price: 20,
+      name: "Prajitura SweetCake",
+      image: "/pictures/product11.png",
+      description: "lorem",
+    },
+    {
+      id: "12",
+      price: 20,
+      name: "Cheesecake căpșuni",
+      image: "/pictures/product12.png",
+      description: "lorem",
+    },
+  ],
+};
+
+export default data;
