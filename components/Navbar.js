@@ -1,5 +1,5 @@
 import css from '../styles/Navbar.module.css'
-import {UilShoppingBag} from '@iconscout/react-unicons'
+import {UilStore} from '@iconscout/react-unicons'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
@@ -32,8 +32,7 @@ export default function Navbar () {
       {/* right side */}
       <div className={css.rightSide}>
         <div className={css.cart}>
-          <UilShoppingBag size={35}/>
-        <div className={css.badge}>0</div>
+          <UilStore size={35}/>
         </div>
       </div>
     </div>
