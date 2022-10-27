@@ -55,7 +55,10 @@
   font-size: 0.8rem;
   margin-block-start: 0.5rem;
 }
-
+.popup_text {
+  color: white;
+  text-align: center;
+}
 @media (min-width: 770px) {
   .input,
   .textarea {
