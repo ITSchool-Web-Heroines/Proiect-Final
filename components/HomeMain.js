@@ -24,9 +24,7 @@ const HomeMain = () => {
           <div className="content">
             <h3>Servicii de inalta calitate</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              id repellendus numquam. Maxime veritatis consequatur nobis
-              architecto incidunt rem esse?
+            Suntem agentia digitala specializata in servicii complete, de tip 360°, pentru promovare online, dezvoltari web, grafica si continut SEO. 
             </p>
             <a href="#" className="btn">
               Afla mai multe
