@@ -14,10 +14,17 @@ const Section4 = () => {
     const onSubmit = event => {
         event.preventDefault();
         popup.style.display = `inline-flex`;
+        
+    }
+    const onSubmit2 = event => {
+        event.preventDefault();
         popup2.style.display = `inline-flex`
     }
     const close = event => {
         popup.style.display = `none`;
+        popup2.style.display = `none`
+    }
+    const close2 = event => {
         popup2.style.display = `none`
     }
 
@@ -75,7 +82,7 @@ const Section4 = () => {
                     <article id="party" className={btn == "party" && "active"}>
                         <div class="col">
                             <img src={Party} />
-                            <form onSubmit={onSubmit}>
+                            <form onSubmit={onSubmit2}>
                                 <label>Firstname and Surname</label>
                                 <input type="text" class="input" placeholder="..." required />
                                 <br />
@@ -112,7 +119,7 @@ const Section4 = () => {
                                 <br />
                                 <h7>Thank you!</h7>
                                 <p> Your request has been successfully submitted</p>
-                                <button type="button" id="closepopup2" onClick={close}>Ok</button>
+                                <button type="button" id="closepopup2" onClick={close2}>Ok</button>
                             </div>
                         </div>
                     </article>

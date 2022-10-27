@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
+import { useMemo } from "react";
 import "../../styles/ProductDetails/lipstick.scss";
 import beetroot from "../../images/lipstick/beetroot.png";
 import beetrootlips from "../../images/lipstick/beetrootlips.jpg"
@@ -66,8 +67,7 @@ import aperoicon from "../../images/lipstick/cayenne icon.png"
 
 const Lipstick = () => {
     const [shade, setShade]  = useState("beetroot");
-
-       
+ 
     return (
         <div id="lipstick">
             <article id="beetroot" className={shade == "beetroot" && "active"}>
