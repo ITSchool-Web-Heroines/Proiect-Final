@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.logo>p{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  justify-content: center;
+  z-index: 99;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu>li:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+.rightSide {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.cart{
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  z-index: 99;
+}
+
+@media screen and (max-width: 580px) {
+  .header {
+    padding: 0.5rem;
+  }
+
+  .menu {
+    font-size: 0.5rem;
+    margin-inline-start: 2rem;
+    gap: 1rem;
+  }
+
+}

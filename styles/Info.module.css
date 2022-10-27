@@ -1,0 +1,94 @@
+.container{
+    display: flex;
+    position: relative;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.miniboxDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 0.1rem solid black;
+    margin-block-start: 3rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sloganText{
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.miniText{
+    width: 70%;
+    font-weight: 800;
+
+}
+
+.btn{
+    padding: 1rem 2.5rem;
+}
+
+.right{
+    position: relative;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 70%;
+    position: relative;
+    float: none;
+    margin-inline-start: 10rem;
+}
+
+
+@media screen and (max-width: 580px) {
+    .left{
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    
+    .miniboxDiv{
+        justify-content: flex-start;
+        margin-block-start: -2rem;
+        padding: 0.5rem;
+        font-size: 0.5rem;
+    }
+    
+    .sloganText{
+        font-size: 1.5rem;
+    }
+    
+    .miniText{
+        width: 100%;
+        font-size: 0.5rem;
+    
+    }
+    
+    .imageContainer{
+        width: 10rem;
+        margin-block-start: 5rem;
+        margin-inline-start: 5rem;
+    }
+
+    .btn{
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
+
+}
+
+
