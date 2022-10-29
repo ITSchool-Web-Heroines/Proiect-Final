@@ -20,10 +20,10 @@ const Contact = () => {
         const danger = document.getElementById('danger')
 
         emailjs.sendForm(
-            'service_tf744cl',
-            'template_e80uwfg',
+            '',
+            '',
             form.current,
-            'jHmmhU2HjFMvw6NuE')
+            '')
             
             .then((result) => {
                 console.log(result.text);
