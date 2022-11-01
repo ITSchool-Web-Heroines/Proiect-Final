@@ -44,7 +44,9 @@ export default function Home() {
         </p>
         <Cards />
         <h3 className={styles.subtitle}>What our clients say</h3>
-        <Testimonials />
+        <div>
+          <Testimonials />
+        </div>
         <h3 className={styles.subtitle}>Delivery process</h3>
         <div className={styles.grid}>
           <Process />
@@ -58,8 +60,9 @@ export default function Home() {
           </a>
         </Link>
       </main>
-
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
