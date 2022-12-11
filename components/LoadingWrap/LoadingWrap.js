@@ -13,7 +13,7 @@ export default function LoadingWrap(props) {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 4500);
+    }, 2500);
   }, []);
 
   const theme = useContext(ThemeContext);

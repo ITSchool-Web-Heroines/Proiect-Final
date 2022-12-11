@@ -9,7 +9,7 @@
   }
   .svg text {
     text-transform: uppercase;
-    animation: stroke 4s infinite alternate;
+    animation: stroke 2.5s infinite alternate;
     stroke-width: 2;
     stroke: #000;
     font-size: 8rem;
@@ -17,7 +17,7 @@
   &.dark {
     background-color: #000;
     .svg text {
-      animation: stroke-dark 4s infinite alternate;
+      animation: stroke-dark 2.5s infinite alternate;
       stroke: #fff;
     }
   }
