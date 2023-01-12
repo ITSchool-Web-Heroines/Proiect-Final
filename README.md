@@ -1,34 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Final Project
 
-## Getting Started
+I built an ecommerce website using the React framework. 
 
-First, run the development server:
+The website is designed to allor users to easily browse and purchase various types of sweets. It features a clean and user-friendly interface, making it easy for customers to find what they're looking for. 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+It includes a shopping cart feature, allowing customers to add products to their cart and review their selections before checking out. The checkout process is simple and streamlined, with a form that customers must complete to submit their orders.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I have attached some pictures and videos below to give you a glimpse of the content and design of my website. ( If you want to see more, you can access the website on https://sweetcake-bakery.netlify.app/)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![1a](https://user-images.githubusercontent.com/32037529/212162588-e5a6b5e7-6802-4ac7-9ab0-da916ec7ae9f.jpg)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/32037529/212162692-c0d08b3f-c330-4c97-9215-e08788ef4f4b.gif)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![image](https://user-images.githubusercontent.com/32037529/212162765-374bd126-ad97-4d35-be22-af4db9b6b1a2.png)
+![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/32037529/212162702-64945053-604e-4510-be22-1f10e80147b5.gif)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
