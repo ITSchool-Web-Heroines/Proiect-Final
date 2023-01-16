@@ -1,0 +1,108 @@
+.mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+.logo {
+  width: 3rem;
+  height: 100%;
+  cursor: pointer;
+}
+.nav_link {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.nav_link:hover {
+  color: rgb(185, 64, 64);
+}
+.bar {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  margin-block-end: 0.3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 780px) {
+  .nav_cont {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/texture.png");
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+  }
+  .activeNav_cont {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../images/texture.png");
+    transform: translateX(50%);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+  }
+  .nav_link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 1rem;
+    margin-inline-start: 1rem;
+
+    z-index: 1;
+  }
+  .activeHamburger .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .activeHamburger .bar:nth-child(1) {
+    transform: translateY(0.5rem) rotate(45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  .activeHamburger .bar:nth-child(3) {
+    transform: translateY(-0.5rem) rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+@media (min-width: 780px) {
+  .container {
+    display: flex;
+    padding: 0 2rem 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .logo {
+    width: 4rem;
+  }
+  .bar {
+    display: none;
+  }
+  .nav_link {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .nav_cont {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    width: 6.6rem;
+  }
+  .nav_link {
+    font-size: 1.3rem;
+  }
+}

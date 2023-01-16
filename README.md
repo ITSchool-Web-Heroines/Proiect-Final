@@ -1,9 +1,18 @@
-# Proiect Final
+# Final Project
 
-Folosește acest Repo pentru a trimite codul proiectului final la Code Review, cum am făcut la o mare parte din teme. L-am lăsat intenționat gol, pentru a-ți oferi ocazia de a folosi orice tool-uri îti dorești. Preferabil unul dintre:
+I built an ecommerce website using the React framework. 
 
-- [Parcel](https://parceljs.org/recipes/react/) - Este ce am folosit în acest curs, dar nu oferă toate funcționalitățile React
-- [create-react-app](https://create-react-app.dev/docs/getting-started) - Este unelta oficială de la Facebook pentru începerea proiectelor de React, dar poate avea uneori nevoie de mai multe setări.
-- [Next.js](https://nextjs.org/docs/getting-started) - Este un framework de React ([React **nu** este însuși framework](https://kruschecompany.com/react-framework-library/)), care vine cu multe setări gata-făcute. 
+The website is designed to allor users to easily browse and purchase various types of sweets. It features a clean and user-friendly interface, making it easy for customers to find what they're looking for. 
 
-Mie îmi place Next, dar e OK dacă alegi să le folosești pe celelalte.
+It includes a shopping cart feature, allowing customers to add products to their cart and review their selections before checking out. The checkout process is simple and streamlined, with a form that customers must complete to submit their orders.
+
+I have attached some pictures and videos below to give you a glimpse of the content and design of my website. ( If you want to see more, you can access the website on https://sweetcake-bakery.netlify.app/)
+
+![1a](https://user-images.githubusercontent.com/32037529/212162588-e5a6b5e7-6802-4ac7-9ab0-da916ec7ae9f.jpg)
+
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/32037529/212162692-c0d08b3f-c330-4c97-9215-e08788ef4f4b.gif)
+
+![image](https://user-images.githubusercontent.com/32037529/212162765-374bd126-ad97-4d35-be22-af4db9b6b1a2.png)
+![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/32037529/212162702-64945053-604e-4510-be22-1f10e80147b5.gif)
+
+
