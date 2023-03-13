@@ -1,0 +1,25 @@
+.btn,
+.see-more {
+  line-height: 1.5;
+  font-family: "Playfair Display", serif;
+  vertical-align: middle;
+  background-color: #9b2226;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 3px 9px 16px 2px rgba(0, 0, 0, 0.28);
+}
+.btn:hover,
+.see-more:hover {
+  background-color: #fff;
+  color: #9b2226;
+}
+@media (max-width: 750px) {
+  .btn,
+  .see-more {
+    font-size: 1.4rem;
+  }
+} ;
