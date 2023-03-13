@@ -1,0 +1,32 @@
+.tab_btn_active {
+    color:orange;
+    background: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+}
+.tab_btn_inactive {
+    color:aliceblue;
+    background: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+}
+.project_photo{
+	display:flex;
+}
+.buttons{
+	display: flex;
+	justify-content: flex-end;
+	margin-inline-end: -25em;
+	margin-bottom: 2em;
+}
+
+@media only screen and (max-width:992px){
+	.project_photo{
+		width:800px;
+	}
+	.buttons{
+		margin-inline-start: -50%;
+	}
+}
